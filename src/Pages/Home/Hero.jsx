@@ -122,7 +122,7 @@ const HeroBanner = () => {
   return (
     <div 
       ref={ref}
-      className="  w-full h-auto bg-gray-100 mx-auto px-3 md:px-10 lg:px-20 md:py-8 py-4 lg:py-30 flex flex-col-reverse lg:flex-row items-center"
+      className="  w-full h-auto bg-white mx-auto px-3 md:px-10 lg:px-20 md:py-8 py-4 lg:py-30 flex flex-col-reverse lg:flex-row items-center"
     >
       {/* Left Section */}
       <motion.div
