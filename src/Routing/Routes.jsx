@@ -3,15 +3,17 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 // Import your pages
-import Home from "./pages/Home";
-
+import Home from "../Pages/Home/Home";
+import Navbar from "../Component/Navbar";
 
 const AppRoutes = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-    
-    </Routes>
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </div>
   );
 };
 

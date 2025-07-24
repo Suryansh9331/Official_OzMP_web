@@ -1,14 +1,16 @@
-// App.jsx
-// import React from "react";
-// import { BrowserRouter } from "react-router-dom";
-// import AppRoutes from "./routes";
-import Navbar from "./Component/Navbar";
+
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./Routing/Routes";
+
 const App = () => {
   return (
-    // <BrowserRouter>
-    //   <AppRoutes />
-    // </BrowserRouter>
-<Navbar/>
+  
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
+   
+
   );
 };
 

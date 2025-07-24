@@ -19,7 +19,7 @@ const navLinks = [
     dropdown: true,
     items: ["Healthcare", "Finance", "Retail"],
   },
-  { label: "Blog", dropdown: true, items: ["Articles", "News"] },
+
   { label: "Careers", dropdown: true, items: ["Openings", "Culture"] },
 ];
 
@@ -47,7 +47,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden lg:flex space-x-6 text-[16px] font-bold text-black">
+        <ul className="hidden lg:flex space-x-8 text-[16px] font-bold text-black">
           {navLinks.map((link) => (
             <li key={link.label} className="relative group overflow-visible">
               <button
