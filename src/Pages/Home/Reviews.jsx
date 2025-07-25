@@ -107,7 +107,7 @@ const StatsSection = () => {
   return (
       <div 
         ref={sectionRef}
-      className="bg-[#dcd4ff] py-10 px-6 rounded-[2rem] relative overflow-hidden transition-all duration-300"
+      className="bg-[#dcd4ff] py-8 px-6 rounded-[2rem] relative overflow-hidden transition-all duration-300"
       style={{
         boxShadow: hovered
           ? "-6px -6px 0 0 rgba(0,0,0,0.8)"
