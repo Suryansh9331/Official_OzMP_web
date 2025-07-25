@@ -1,6 +1,7 @@
 import HeroBanner from "./Hero";
 import TrustedBrands from "./Partners";
 import StatsSection from "./Reviews";
+import ServicesOverview from "./Services";
 import WhoWeAre from "./WhoWeAre";
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
      </div>
       <TrustedBrands/>
       <WhoWeAre/>
+      <ServicesOverview/>
     </div>
   );
 };

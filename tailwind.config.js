@@ -23,7 +23,7 @@ export default {
         poppins: ["Poppins", "sans-serif"],
          satoshi: ['"Satoshi"', 'sans-serif'],
           archivo: ["Archivo", "sans-serif"],
-     
+          inter: ['Inter', 'sans-serif'],
       },
     },
   },
