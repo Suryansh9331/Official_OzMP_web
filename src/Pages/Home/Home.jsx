@@ -1,6 +1,7 @@
 import HeroBanner from "./Hero";
 import TrustedBrands from "./Partners";
 import StatsSection from "./Reviews";
+import WhoWeAre from "./WhoWeAre";
 const Home = () => {
   return (
     <div>
@@ -9,6 +10,7 @@ const Home = () => {
       <StatsSection/>
      </div>
       <TrustedBrands/>
+      <WhoWeAre/>
     </div>
   );
 };

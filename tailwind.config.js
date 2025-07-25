@@ -22,6 +22,8 @@ export default {
         outfit: ["Outfit", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
          satoshi: ['"Satoshi"', 'sans-serif'],
+          archivo: ["Archivo", "sans-serif"],
+     
       },
     },
   },
