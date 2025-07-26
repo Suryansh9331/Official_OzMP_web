@@ -25,6 +25,10 @@ export default {
           archivo: ["Archivo", "sans-serif"],
           inter: ['Inter', 'sans-serif'],
       },
+      colors: {
+      primary: '#3D0D84',
+      cardBg: '#DCD4FF',
+    }
     },
   },
   plugins: [],

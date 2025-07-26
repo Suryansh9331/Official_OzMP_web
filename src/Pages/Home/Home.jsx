@@ -1,4 +1,6 @@
+import CaseStudiesSection from "./CaseStudy";
 import HeroBanner from "./Hero";
+import IndustrySection from "./IndustrySection";
 import TrustedBrands from "./Partners";
 import StatsSection from "./Reviews";
 import ServicesOverview from "./Services";
@@ -15,6 +17,8 @@ const Home = () => {
       <TrustedBrands/>
       <WhoWeAre/>
       <ServicesOverview/>
+      <IndustrySection/>
+      <CaseStudiesSection/>
     </div>
   );
 };
