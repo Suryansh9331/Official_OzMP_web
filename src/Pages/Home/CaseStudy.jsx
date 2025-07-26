@@ -231,6 +231,8 @@
 // };
 
 // export default CaseStudiesSection;
+
+
 import React, { useState, useEffect, useRef } from 'react';
 import { User, AlertTriangle, Lightbulb, TrendingUp, Users, Clock, BarChart3, Zap, Target, Globe } from 'lucide-react';
 
@@ -326,7 +328,7 @@ const CaseStudiesSection = () => {
   };
 
   return (
-    <div ref={sectionRef} className="py-16 px-4 max-w-7xl mx-auto">
+    <div ref={sectionRef} className="py-10 px-4 max-w-7xl mx-auto">
       {/* Header Section */}
       <div className="text-center mb-8">
         <div 
@@ -382,7 +384,7 @@ const CaseStudiesSection = () => {
               }}
             >
               {/* Card Image */}
-              <div className="h-48 relative overflow-hidden">
+              <div className=" rounded-xl h-[400px] relative overflow-hidden">
                 <img 
                   src={study.image} 
                   alt={study.title}
@@ -399,7 +401,7 @@ const CaseStudiesSection = () => {
                 </h3>
 
                 {/* Details */}
-                <div className="space-y-4 mb-6">
+                <div className="space-y-2 mb-2">
                   <div className="flex items-start gap-3">
                     <User className="w-4 h-4 text-gray-500 mt-1 flex-shrink-0" />
                     <div>
@@ -444,7 +446,7 @@ const CaseStudiesSection = () => {
                 </div>
 
                 {/* Results */}
-                <div className="space-y-3 mb-8 flex-grow">
+                <div className="space-y-3  flex-auto">
                   {study.results.map((result, idx) => (
                     <div key={idx} className="flex items-center gap-3">
                       <span className="text-lg">{result.icon}</span>
@@ -457,7 +459,7 @@ const CaseStudiesSection = () => {
                 </div>
 
                 {/* Learn More Button - Left Aligned */}
-                <div className="mt-auto">
+                <div className="">
                   <button
                     onClick={() => handleLearnMore(study.link)}
                     className="inline-block bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg active:scale-[0.98]"
