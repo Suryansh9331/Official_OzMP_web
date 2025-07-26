@@ -465,9 +465,8 @@
 
 
 
-
 import React, { useState, useEffect, useRef } from 'react';
-import { User, AlertTriangle, Lightbulb, TrendingUp, Users, Clock, BarChart3, Zap, Target, Globe } from 'lucide-react';
+import { User, AlertTriangle, Lightbulb } from 'lucide-react';
 
 const CaseStudiesSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -477,7 +476,7 @@ const CaseStudiesSection = () => {
     {
       id: 1,
       title: "E-Commerce Growth Acceleration",
-      image: "/images/card1.png", // Replace with your image path
+      image: "/images/card1.png",
       client: "Fashion Retailer",
       challenge: "Low online visibility and stagnant sales.",
       solution: "Website optimization, targeted ad campaigns, SEO, and conversion tracking.",
@@ -491,7 +490,7 @@ const CaseStudiesSection = () => {
     {
       id: 2,
       title: "B2B Lead Generation for SaaS Startup",
-      image: "/images/card1.png", // Replace with your image path
+      image: "/images/card1.png",
       client: "SaaS Platform",
       challenge: "Poor brand recognition and low-quality leads.",
       solution: "Brand revamp, landing page optimization, and multichannel outreach via LinkedIn and email.",
@@ -505,7 +504,7 @@ const CaseStudiesSection = () => {
     {
       id: 3,
       title: "Workflow Automation for Service Business",
-      image: "/images/card1.png", // Replace with your image path
+      image: "/images/card1.png",
       client: "Professional Services Firm",
       challenge: "Time-consuming client onboarding.",
       solution: "Custom CRM integration, automated workflows, and digital document management.",
@@ -516,11 +515,10 @@ const CaseStudiesSection = () => {
       ],
       link: "/case-study/workflow-automation"
     },
-    // Extra card for tablet view
     {
       id: 4,
       title: "Digital Marketing Transformation",
-      image: "/images/card1.png", // Replace with your image path
+      image: "/images/card1.png",
       client: "Healthcare Provider",
       challenge: "Outdated marketing strategies and low patient engagement.",
       solution: "Digital marketing overhaul, social media strategy, and patient portal optimization.",
@@ -555,17 +553,14 @@ const CaseStudiesSection = () => {
   }, []);
 
   const handleLearnMore = (link) => {
-    // Replace with your actual navigation logic
     console.log(`Navigating to: ${link}`);
-    // window.location.href = link; // or use your router
   };
 
   return (
     <div ref={sectionRef} className="py-10 px-4 max-w-7xl mx-auto">
       {/* Header Section */}
       <div className="text-center mb-8">
-        <div 
-          className={`transition-all duration-700 ease-out ${
+        <div className={`transition-all duration-700 ease-out ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
@@ -580,10 +575,9 @@ const CaseStudiesSection = () => {
         </div>
       </div>
 
-      {/* Subheading - Left Aligned */}
+      {/* Subheading */}
       <div className="mb-12">
-        <div 
-          className={`transition-all duration-700 ease-out ${
+        <div className={`transition-all duration-700 ease-out ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
           style={{ transitionDelay: '200ms' }}
@@ -598,7 +592,6 @@ const CaseStudiesSection = () => {
       {/* Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
         {caseStudies.map((study, index) => {
-          // Show only 3 cards on desktop, 4 on tablet, 1 on mobile
           const isTabletOnly = index === 3;
           const cardClasses = isTabletOnly 
             ? "hidden md:block lg:hidden xl:hidden" 
@@ -613,11 +606,12 @@ const CaseStudiesSection = () => {
                   : 'opacity-0 translate-y-12'
               }`}
               style={{
-                transitionDelay: `${index * 150}ms`
+                transitionDelay: `${index * 150}ms`,
+                minHeight: '650px' // Added minimum height for consistency
               }}
             >
               {/* Card Image */}
-              <div className="rounded-xl h-[250px] relative overflow-hidden">
+              <div className="rounded-xl h-[200px] md:h-[250px] relative overflow-hidden">
                 <img 
                   src={study.image} 
                   alt={study.title}
@@ -634,7 +628,7 @@ const CaseStudiesSection = () => {
                 </h3>
 
                 {/* Details */}
-                <div className="space-y-2 mb-2">
+                <div className="space-y-2 mb-4">
                   <div className="flex items-start gap-3">
                     <User className="w-4 h-4 text-gray-500 mt-1 flex-shrink-0" />
                     <div>
@@ -663,7 +657,7 @@ const CaseStudiesSection = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-2">
+                  <div className="flex items-start gap-3">
                     <Lightbulb className="w-4 h-4 text-gray-500 mt-1 flex-shrink-0" />
                     <div>
                       <span className="text-sm font-medium text-gray-600" 
@@ -679,7 +673,7 @@ const CaseStudiesSection = () => {
                 </div>
 
                 {/* Results */}
-                <div className="space-y-2 ">
+                <div className="space-y-3 mb-6 flex-grow">
                   {study.results.map((result, idx) => (
                     <div key={idx} className="flex items-center gap-3">
                       <span className="text-lg">{result.icon}</span>
@@ -691,11 +685,11 @@ const CaseStudiesSection = () => {
                   ))}
                 </div>
 
-                {/* Learn More Button - Left Aligned */}
-                <div className="mt-auto">
+                {/* Learn More Button */}
+                <div className="mt-auto pt-4">
                   <button
                     onClick={() => handleLearnMore(study.link)}
-                    className="inline-block bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg active:scale-[0.98]"
+                    className="w-full bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg active:scale-[0.98]"
                     style={{ fontFamily: 'Outfit, sans-serif' }}
                   >
                     LEARN MORE
