@@ -231,7 +231,6 @@
 // };
 
 // export default CaseStudiesSection;
-
 import React, { useState, useEffect, useRef } from 'react';
 import { User, AlertTriangle, Lightbulb, TrendingUp, Users, Clock, BarChart3, Zap, Target, Globe } from 'lucide-react';
 
@@ -243,6 +242,7 @@ const CaseStudiesSection = () => {
     {
       id: 1,
       title: "E-Commerce Growth Acceleration",
+      image: "/images/card1.png", // Replace with your image path
       client: "Fashion Retailer",
       challenge: "Low online visibility and stagnant sales.",
       solution: "Website optimization, targeted ad campaigns, SEO, and conversion tracking.",
@@ -256,6 +256,7 @@ const CaseStudiesSection = () => {
     {
       id: 2,
       title: "B2B Lead Generation for SaaS Startup",
+      image: "/images/card1.png", // Replace with your image path
       client: "SaaS Platform",
       challenge: "Poor brand recognition and low-quality leads.",
       solution: "Brand revamp, landing page optimization, and multichannel outreach via LinkedIn and email.",
@@ -269,6 +270,7 @@ const CaseStudiesSection = () => {
     {
       id: 3,
       title: "Workflow Automation for Service Business",
+      image: "/images/card1.png", // Replace with your image path
       client: "Professional Services Firm",
       challenge: "Time-consuming client onboarding.",
       solution: "Custom CRM integration, automated workflows, and digital document management.",
@@ -283,6 +285,7 @@ const CaseStudiesSection = () => {
     {
       id: 4,
       title: "Digital Marketing Transformation",
+      image: "/images/card1.png", // Replace with your image path
       client: "Healthcare Provider",
       challenge: "Outdated marketing strategies and low patient engagement.",
       solution: "Digital marketing overhaul, social media strategy, and patient portal optimization.",
@@ -378,17 +381,14 @@ const CaseStudiesSection = () => {
                 transitionDelay: `${index * 150}ms`
               }}
             >
-              {/* Card Image Placeholder */}
-              <div className="h-48 bg-gradient-to-br from-purple-100 to-purple-200 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-400/20 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 right-4">
-                  <div className="w-12 h-12 bg-white/80 rounded-lg flex items-center justify-center backdrop-blur-sm">
-                    {index === 0 && <TrendingUp className="w-6 h-6 text-purple-600" />}
-                    {index === 1 && <Target className="w-6 h-6 text-purple-600" />}
-                    {index === 2 && <Zap className="w-6 h-6 text-purple-600" />}
-                    {index === 3 && <Globe className="w-6 h-6 text-purple-600" />}
-                  </div>
-                </div>
+              {/* Card Image */}
+              <div className="h-48 relative overflow-hidden">
+                <img 
+                  src={study.image} 
+                  alt={study.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
 
               {/* Card Content */}
