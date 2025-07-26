@@ -232,8 +232,6 @@
 
 // export default CaseStudiesSection;
 
-
-
 import React, { useState, useEffect, useRef } from 'react';
 import { User, AlertTriangle, Lightbulb, TrendingUp, Users, Clock, BarChart3, Zap, Target, Globe } from 'lucide-react';
 
@@ -371,7 +369,7 @@ const CaseStudiesSection = () => {
           return (
             <div
               key={study.id}
-              className={`bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 overflow-hidden group ${cardClasses} ${
+              className={`bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 overflow-hidden group flex flex-col ${cardClasses} ${
                 isVisible 
                   ? 'opacity-100 translate-y-0' 
                   : 'opacity-0 translate-y-12'
@@ -462,7 +460,7 @@ const CaseStudiesSection = () => {
                 <div className="mt-auto">
                   <button
                     onClick={() => handleLearnMore(study.link)}
-                    className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg active:scale-[0.98]"
+                    className="inline-block bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg active:scale-[0.98]"
                     style={{ fontFamily: 'Outfit, sans-serif' }}
                   >
                     LEARN MORE
