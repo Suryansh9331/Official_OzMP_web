@@ -24,6 +24,7 @@ export default {
          satoshi: ['"Satoshi"', 'sans-serif'],
           archivo: ["Archivo", "sans-serif"],
           inter: ['Inter', 'sans-serif'],
+           Arima: ['"Arima"', "cursive"],
       },
       colors: {
       primary: '#3D0D84',
