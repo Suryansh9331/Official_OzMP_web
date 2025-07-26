@@ -151,7 +151,7 @@ const OZMediaSection = () => {
         leftContent.style.top = '0px';
         leftContent.style.left = '0px';
         leftContent.style.width = window.innerWidth >= 1024 ? '50vw' : '100vw';
-        leftContent.style.height = '100vh';
+        leftContent.style.height = '0px';
         leftContent.style.zIndex = '10';
       } else if (sectionRect.top > 0) {
         // Section hasn't entered viewport yet
@@ -168,7 +168,7 @@ const OZMediaSection = () => {
         leftContent.style.bottom = '0px';
         leftContent.style.left = '0px';
         leftContent.style.width = window.innerWidth >= 1024 ? '50%' : '100%';
-        leftContent.style.height = '100vh';
+        leftContent.style.height = '10vh';
         leftContent.style.zIndex = '10';
       }
     };
@@ -219,7 +219,7 @@ const OZMediaSection = () => {
   return (
     <div 
       ref={sectionRef}
-      className="relative min-h-[250vh] bg-[#1E1C21] overflow-hidden"
+      className="relative min-h-[230vh] bg-[#1E1C21] overflow-hidden"
       style={{ fontFamily: 'Archivo, sans-serif' }}
     >
       {/* Left Side - Sticky Content */}
