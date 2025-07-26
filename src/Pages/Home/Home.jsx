@@ -22,6 +22,7 @@ const Home = () => {
       <CaseStudiesSection/>
       
       <WhyChoose/>
+       
        <section className="w-full  lg:px-18  md:px-10 px-2  lg:py-26 md:py-24 py-16 text-center flex flex-col items-center">
       {/* Main Heading */}
       <h1
@@ -37,12 +38,12 @@ const Home = () => {
       </h1>
 
       {/* Buttons */}
-      <div className="mt-8 flex flex-col sm:flex-row gap-4">
-        <button className="bg-[#E0D8FF] text-black font-semibold px-6 py-3 rounded-full text-sm hover:bg-[#d4caff] transition">
-          GET A FREE CONSULTATION
+      <div className="md:mt-14 mt-8 flex flex-col sm:flex-row md:gap-14 gap-6 ">
+        <button className="uppercase font-outfit font-semibold hover:cursor-pointer bg-[#dcd4ff] text-black px-5 sm:px-6 py-3 rounded-full shadow-lg transition-transform duration-300 hover:shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1">
+          Our Impact in Action
         </button>
-        <button className="border border-black text-black font-semibold px-6 py-3 rounded-full text-sm hover:bg-gray-100 transition">
-          VIEW OUR PORTFOLIO
+        <button className=" uppercase font-outfit font-semibold hover:cursor-pointer border border-black px-8 sm:px-8 py-3 rounded-full transition-transform duration-300 hover:shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1">
+        Plan With Us – No Cost
         </button>
       </div>
     </section>
