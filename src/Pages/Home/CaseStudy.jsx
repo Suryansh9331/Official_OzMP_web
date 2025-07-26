@@ -387,7 +387,8 @@ const CaseStudiesSection = () => {
               </div>
 
               {/* Card Content */}
-              <div className="p-6 flex flex-col h-full">
+            <div className="p-6 flex flex-col justify-between flex-grow">
+
                 <h3 className="text-xl font-bold mb-6" style={{ fontFamily: 'Archivo, sans-serif', color: '#3D0D84' }}>
                   {study.title}
                 </h3>
