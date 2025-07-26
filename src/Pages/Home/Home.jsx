@@ -5,8 +5,10 @@ import ServicesOverview from "./Services";
 import WhoWeAre from "./WhoWeAre";
 const Home = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
+    <div className="w-full overflow-hidden">
       <HeroBanner/>
+   </div>
      <div className="lg:px-16 px-2 md:px-4 mb-6 mt-6  md:mt-2  " >
       <StatsSection/>
      </div>

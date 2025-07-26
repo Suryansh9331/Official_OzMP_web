@@ -249,7 +249,7 @@ export default function Navbar() {
 
               {link.dropdown && (
                 <ul
-                  className="absolute top-10 left-0 bg-gray-100 backdrop-blur-sm shadow-xl border border-[#dcd4ff] py-2 w-52 rounded-xl
+                  className="absolute top-10 left-0 bg-white backdrop-blur-sm shadow-xl border border-[#dcd4ff] py-2 w-52 rounded-xl
             opacity-0 invisible group-hover:opacity-100 group-hover:visible 
             transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 
             scale-95 group-hover:scale-100 z-50"
