@@ -634,14 +634,12 @@ const OZMediaSection = () => {
           className="absolute right-0 top-0 w-[62vw] px-12 py-20 space-y-18"
         >
           {features.map((feature, index) => (
-         <div
-  key={index}
-  className={`bg-[#DBD2FF] p-10 shadow-lg transition-transform duration-500 ${
-    activeBox === index ? "scale-105 shadow-2xl" : "scale-100"
-  } rounded-tl-4xl rounded-br-4xl rounded-tr-none rounded-bl-none`}
->
-
-
+            <div
+              key={index}
+              className={`bg-[#DBD2FF] p-10 shadow-lg transition-transform duration-500 ${
+                activeBox === index ? "scale-105 shadow-2xl" : "scale-100"
+              } rounded-tl-4xl rounded-br-4xl rounded-tr-none rounded-bl-none`}
+            >
               <div className="absolute -top-3 left-8">
                 <div className="w-12 h-12 bg-[#DBD2FF] rounded-full flex items-center justify-center shadow-md border-2 border-black">
                   <svg
@@ -687,7 +685,7 @@ const OZMediaSection = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-[#DBD2FF] rounded-2xl p-6 shadow-md space-y-4"
+              className="bg-[#DBD2FF]  p-6 shadow-md space-y-4   rounded-tl-4xl rounded-br-4xl rounded-tr-none rounded-bl-none"
             >
               <h3 className="text-[#1E1C21] text-xl font-bold">
                 {feature.title}
