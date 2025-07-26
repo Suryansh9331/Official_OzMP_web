@@ -20,7 +20,9 @@ const Home = () => {
       <ServicesOverview/>
       <IndustrySection/>
       <CaseStudiesSection/>
+      
       <WhyChoose/>
+        <IndustrySection/>
     </div>
   );
 };

@@ -28,6 +28,9 @@ export default {
       colors: {
       primary: '#3D0D84',
       cardBg: '#DCD4FF',
+    },
+     borderRadius: {
+      'xl': '1.25rem' // match reference image corner
     }
     },
   },
