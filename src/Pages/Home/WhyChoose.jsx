@@ -117,9 +117,11 @@
 // export default WhyChoose;
 
 
+
+
 import React, { useEffect, useRef, useState } from 'react';
 
-const WhyChoose = () => {
+const OZMediaSection = () => {
   const sectionRef = useRef(null);
   const leftContentRef = useRef(null);
   const rightContentRef = useRef(null);
@@ -134,41 +136,49 @@ const WhyChoose = () => {
       const rightContent = rightContentRef.current;
       
       const sectionRect = section.getBoundingClientRect();
-      const boxes = rightContent.querySelectorAll('.feature-box');
+      const sectionHeight = section.offsetHeight;
+      const viewportHeight = window.innerHeight;
       
-      // Calculate which box should be active based on scroll position
-      let newActiveBox = 0;
-      boxes.forEach((box, index) => {
-        const boxRect = box.getBoundingClientRect();
-        const boxCenter = boxRect.top + boxRect.height / 2;
-        const viewportCenter = window.innerHeight / 2;
-        
-        if (boxCenter <= viewportCenter && index > newActiveBox) {
-          newActiveBox = index;
-        }
-      });
-      
-      setActiveBox(newActiveBox);
+      // Calculate which box should be active based on scroll position within the section
+      const scrollProgress = Math.max(0, -sectionRect.top) / (sectionHeight - viewportHeight);
+      const boxIndex = Math.min(Math.floor(scrollProgress * 4), 3);
+      setActiveBox(boxIndex);
 
-      // Handle sticky behavior
-      if (sectionRect.top <= 0 && sectionRect.bottom > window.innerHeight) {
+      // Handle sticky behavior for the entire section scroll
+      if (sectionRect.top <= 0 && sectionRect.bottom >= viewportHeight) {
+        // Section is in viewport, make left content sticky
         leftContent.style.position = 'fixed';
         leftContent.style.top = '0px';
-        leftContent.style.width = '50%';
+        leftContent.style.left = '0px';
+        leftContent.style.width = window.innerWidth >= 1024 ? '50vw' : '100vw';
+        leftContent.style.height = '100vh';
+        leftContent.style.zIndex = '10';
       } else if (sectionRect.top > 0) {
+        // Section hasn't entered viewport yet
         leftContent.style.position = 'relative';
         leftContent.style.top = 'auto';
+        leftContent.style.left = 'auto';
         leftContent.style.width = 'auto';
+        leftContent.style.height = 'auto';
+        leftContent.style.zIndex = 'auto';
       } else {
+        // Section has passed viewport
         leftContent.style.position = 'absolute';
         leftContent.style.top = 'auto';
         leftContent.style.bottom = '0px';
-        leftContent.style.width = '50%';
+        leftContent.style.left = '0px';
+        leftContent.style.width = window.innerWidth >= 1024 ? '50%' : '100%';
+        leftContent.style.height = '100vh';
+        leftContent.style.zIndex = '10';
       }
     };
 
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleScroll);
+    };
   }, []);
 
   const features = [
@@ -209,13 +219,13 @@ const WhyChoose = () => {
   return (
     <div 
       ref={sectionRef}
-      className="relative min-h-[400vh] bg-[#1E1C21] overflow-hidden"
+      className="relative min-h-[250vh] bg-[#1E1C21] overflow-hidden"
       style={{ fontFamily: 'Archivo, sans-serif' }}
     >
       {/* Left Side - Sticky Content */}
       <div 
         ref={leftContentRef}
-        className="w-full lg:w-1/2 h-screen flex flex-col justify-center px-6 lg:px-12 xl:px-16 relative z-10"
+        className="w-full lg:w-[30%] h-screen lg:mt-12 flex flex-col justify-center px-6 lg:px-12 xl:px-16 relative z-10"
       >
         <div className="max-w-md">
           <h1 className="text-white text-3xl lg:text-4xl xl:text-5xl font-bold mb-6 leading-tight">
@@ -244,20 +254,21 @@ const WhyChoose = () => {
       {/* Right Side - Scrollable Boxes */}
       <div 
         ref={rightContentRef}
-        className="absolute top-0 right-0 w-full lg:w-1/2 px-6 lg:px-8 xl:px-12 py-20"
+        className="absolute top-0 right-0 w-full lg:w-[60%] px-6 lg:px-8 xl:px-10 py-20"
       >
         <div className="space-y-20 lg:space-y-32">
           {features.map((feature, index) => (
             <div 
               key={index}
-              className={`feature-box bg-[#DBD2FF] rounded-3xl p-8 lg:p-10 relative transition-all duration-500 ${
+              className={`feature-box bg-[#DBD2FF] rounded-2xl p-8 lg:p-10 relative transition-all duration-500 shadow-lg ${
                 activeBox === index ? 'scale-105 shadow-2xl' : 'scale-100'
               }`}
+              style={{ borderRadius: '24px' }}
             >
               {/* Quote Icon */}
-              <div className="absolute -top-4 left-8">
-                <div className="w-12 h-12 bg-[#DBD2FF] rounded-full flex items-center justify-center shadow-lg">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-[#1E1C21]">
+              <div className="absolute -top-3 left-8">
+                <div className="w-10 h-10 bg-[#DBD2FF] rounded-full flex items-center justify-center shadow-md border-2 border-white">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-[#1E1C21]">
                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z" fill="currentColor"/>
                   </svg>
                 </div>
@@ -313,11 +324,12 @@ const WhyChoose = () => {
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="bg-[#DBD2FF] rounded-3xl p-6 relative"
+              className="bg-[#DBD2FF] rounded-2xl p-6 relative shadow-lg"
+              style={{ borderRadius: '24px' }}
             >
-              <div className="absolute -top-4 left-6">
-                <div className="w-12 h-12 bg-[#DBD2FF] rounded-full flex items-center justify-center shadow-lg">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-[#1E1C21]">
+              <div className="absolute -top-3 left-6">
+                <div className="w-10 h-10 bg-[#DBD2FF] rounded-full flex items-center justify-center shadow-md border-2 border-white">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-[#1E1C21]">
                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z" fill="currentColor"/>
                   </svg>
                 </div>
@@ -347,4 +359,7 @@ const WhyChoose = () => {
   );
 };
 
-export default WhyChoose;
+export default OZMediaSection;
+
+
+// Finalized React + Tailwind Component With Sticky Scroll Layout & Responsive Design
