@@ -273,7 +273,7 @@ const CaseStudiesSection = () => {
     {
       id: 2,
       title: "B2B Lead Generation for SaaS Startup",
-      image: "/images/card1.png",
+      image: "/images/card2.png",
       client: "SaaS Platform",
       challenge: "Poor brand recognition and low-quality leads.",
       solution: "Brand revamp, landing page optimization, and multichannel outreach via LinkedIn and email.",
@@ -287,7 +287,7 @@ const CaseStudiesSection = () => {
     {
       id: 3,
       title: "Workflow Automation for Service Business",
-      image: "/images/card1.png",
+      image: "/images/card3.png",
       client: "Professional Services Firm",
       challenge: "Time-consuming client onboarding.",
       solution: "Custom CRM integration, automated workflows, and digital document management.",
@@ -340,23 +340,23 @@ const CaseStudiesSection = () => {
   };
 
   return (
-    <div ref={sectionRef} className="py-10 px-4 max-w-7xl mx-auto">
+    <div ref={sectionRef} className=" py-14 px-4 max-w-7xl mx-auto">
       {/* Header */}
       <div className="text-center mb-8">
         <div className={`transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-          <p className="text-sm font-medium text-gray-500 mb-4 tracking-wider uppercase" style={{ fontFamily: 'Outfit, sans-serif' }}>
-            ------ OUR STUDIES ------
+          <p className="text-lg font-semibold text-[#3D0D84] mb-4 tracking-wider uppercase" style={{ fontFamily: 'Outfit, sans-serif' }}>
+            ----- OUR STUDIES -----
           </p>
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8" style={{ fontFamily: 'Archivo, sans-serif' }}>
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-2" style={{ fontFamily: 'Archivo, sans-serif' }}>
             Case Studies
           </h1>
         </div>
       </div>
 
       {/* Subheading */}
-      <div className="mb-12">
+      <div className="mb-6">
         <div className={`transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '200ms' }}>
-          <p className="text-xl text-gray-700 font-medium text-left" style={{ fontFamily: 'Archivo, sans-serif' }}>
+          <p className="text-2xl text-black font-medium text-left" style={{ fontFamily: 'Archivo, sans-serif' }}>
             Real Results, Proven Growth
           </p>
         </div>
@@ -377,7 +377,7 @@ const CaseStudiesSection = () => {
               style={{ transitionDelay: `${index * 150}ms` }}
             >
               {/* Card Image */}
-              <div className="rounded-xl h-[400px] relative overflow-hidden">
+              <div className="rounded-xl h-[250px] relative overflow-hidden">
                 <img 
                   src={study.image} 
                   alt={study.title}
@@ -389,15 +389,15 @@ const CaseStudiesSection = () => {
               {/* Card Content */}
             <div className="p-6 flex flex-col justify-between flex-grow">
 
-                <h3 className="text-xl font-bold mb-6" style={{ fontFamily: 'Archivo, sans-serif', color: '#3D0D84' }}>
+                <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: 'Archivo, sans-serif', color: '#3D0D84' }}>
                   {study.title}
                 </h3>
 
                 <div className="space-y-2 mb-2">
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3 border-black border rounded-xl px-1 py-1">
                     <User className="w-4 h-4 text-gray-500 mt-1 flex-shrink-0" />
                     <div>
-                      <span className="text-sm font-medium text-gray-600" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                      <span className="text-sm  font-medium text-gray-600" style={{ fontFamily: 'Poppins, sans-serif' }}>
                         Client:
                       </span>
                       <span className="text-sm text-gray-800 ml-1" style={{ fontFamily: 'Poppins, sans-serif' }}>
@@ -406,7 +406,7 @@ const CaseStudiesSection = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3 border-black border rounded-2xl py-1 px-1">
                     <AlertTriangle className="w-4 h-4 text-gray-500 mt-1 flex-shrink-0" />
                     <div>
                       <span className="text-sm font-medium text-gray-600" style={{ fontFamily: 'Poppins, sans-serif' }}>
@@ -418,7 +418,7 @@ const CaseStudiesSection = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3 border-black border rounded-2xl py-1 px-1">
                     <Lightbulb className="w-4 h-4 text-gray-500 mt-1 flex-shrink-0" />
                     <div>
                       <span className="text-sm font-medium text-gray-600" style={{ fontFamily: 'Poppins, sans-serif' }}>
@@ -432,7 +432,7 @@ const CaseStudiesSection = () => {
                 </div>
 
                 {/* ✅ Updated: Removed flex-auto to fix height issue */}
-                <div className="space-y-3 mb-4">
+                <div className="space-y-2 mb-6">
                   {study.results.map((result, idx) => (
                     <div key={idx} className="flex items-center gap-3">
                       <span className="text-lg">{result.icon}</span>
@@ -444,13 +444,13 @@ const CaseStudiesSection = () => {
                 </div>
 
                 {/* Learn More Button */}
-                <div>
+                <div mt-4>
                   <button
                     onClick={() => handleLearnMore(study.link)}
-                    className="inline-block bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg active:scale-[0.98]"
+                    className="font-outfit font-normal hover:cursor-pointer hover:bg-[#dcd4ff] border border-black px-8 sm:px-8 py-2 rounded-full transition-transform duration-300 shadow-[2px_2px_0px_#000] hover:-translate-x-1 hover:-translate-y-1"
                     style={{ fontFamily: 'Outfit, sans-serif' }}
                   >
-                    LEARN MORE
+                    Learn More
                   </button>
                 </div>
               </div>

@@ -5,6 +5,7 @@ import TrustedBrands from "./Partners";
 import StatsSection from "./Reviews";
 import ServicesOverview from "./Services";
 import WhoWeAre from "./WhoWeAre";
+import WhyChoose from "./WhyChoose";
 const Home = () => {
   return (
     <div className="overflow-hidden">
@@ -19,6 +20,7 @@ const Home = () => {
       <ServicesOverview/>
       <IndustrySection/>
       <CaseStudiesSection/>
+      <WhyChoose/>
     </div>
   );
 };

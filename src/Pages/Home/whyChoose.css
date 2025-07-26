@@ -1,0 +1,13 @@
+/* whyChoose.css */
+.sticky-content {
+  position: sticky;
+  top: 5rem; /* adjust based on your header height */
+  height: fit-content;
+}
+
+.scroll-area {
+  max-height: 80vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  padding-right: 0.25rem;
+}
