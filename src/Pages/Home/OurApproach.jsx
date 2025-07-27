@@ -161,7 +161,7 @@ const OurApproach = () => {
   const loopedCards = [...cardData, ...cardData]; // Duplicate for seamless scroll
 
   return (
-    <section className="w-full bg-white   font-[Archivo] relative">
+    <section className="w-full bg-[#1E1C21]   font-[Archivo] relative">
       {/* Inline Keyframes */}
       <style>
         {`
@@ -179,12 +179,12 @@ const OurApproach = () => {
       <div className="w-full  flex flex-col lg:flex-row items-start  justify-between gap-8 lg:py-12">
         {/* Left Side */}
         <div className="w-full lg:w-[30%] md:w-full md:text-center lg:text-left text-center  lg:pl-8 md:px-4 px-2">
-          <h2 className="text-3xl md:text-5xl font-semibold mb-4 text-gray-900">Our Approach</h2>
-          <p className="text-base text-gray-700 mb-6">
+          <h2 className="text-3xl md:text-5xl font-semibold mb-4 text-[white]">Our Approach</h2>
+          <p className="text- text-[white] mb-6">
             Integrated and Impact-Driven Tailored to meet your business objectives through creativity,
             strategy, and cutting-edge technology.
           </p>
-          <button className="bg-[#E4DDFF] px-8 py-3 rounded-full font-normal text-sm hover:shadow-[4px_4px_0px_#000] transition">
+          <button className="bg-[#E4DDFF] px-8 py-3 rounded-full font-normal text-sm hover:shadow-[4px_4px_0px_#000] hover:cursor-po transition">
             VIEW ALL
           </button>
         </div>
