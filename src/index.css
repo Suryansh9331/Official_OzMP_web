@@ -13,3 +13,12 @@
 .animate-slideDown {
   animation: slideDown 0.3s ease-in-out forwards;
 }
+
+/* hide scrollbar cross-browser */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari */
+}
