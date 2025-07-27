@@ -19,7 +19,7 @@ import OurApproach from "./OurApproach";
 
 const Home = () => {
   return (
-    <div className="overflow-hidden">
+    <div className= " w-full overflow-hidden">
       <div className="w-full overflow-hidden">
         <HeroBanner />
       </div>
