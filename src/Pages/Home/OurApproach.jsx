@@ -144,7 +144,7 @@ const cardData = [
       'Robust Technology Solutions Including Websites, Custom Software, Mobile Applications, And E-Commerce Platforms Built On The Latest Frameworks.',
     description:
       'Ensuring Scalability, Security, And High-Performance Delivery.',
-    image: '/images/CardImg3.png',
+    image: '/images/Img3.png',
   },
   {
     bgColor: 'bg-[#DBD2FE]',
