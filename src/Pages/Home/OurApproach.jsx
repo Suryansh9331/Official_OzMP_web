@@ -135,7 +135,7 @@ const cardData = [
       'Brand Identity Design, Content Strategy, And Creative Asset Development Including Websites, Social Media, Video, And Advertising Collateral',
     description:
       'Focused On User Engagement, Storytelling, And Brand Loyalty Creation.',
-    image: '/images/CardImg1.png',
+    image: '/images/CardImg2.png',
   },
   {
     bgColor: 'bg-[#FFF27A]',
@@ -144,7 +144,7 @@ const cardData = [
       'Robust Technology Solutions Including Websites, Custom Software, Mobile Applications, And E-Commerce Platforms Built On The Latest Frameworks.',
     description:
       'Ensuring Scalability, Security, And High-Performance Delivery.',
-    image: '/images/CardImg1.png',
+    image: '/images/CardImg3.png',
   },
   {
     bgColor: 'bg-[#DBD2FE]',
@@ -153,7 +153,7 @@ const cardData = [
       'Data-Backed Digital Marketing Campaigns Focusing On Lead Generation, Customer Acquisition, And Sales Growth.',
     description:
       'Real-Time Analytics, Regular Reporting, And Performance Refinement Cycles.',
-    image: '/images/CardImg1.png',
+    image: '/images/CardImg4.png',
   },
 ];
 
@@ -161,7 +161,7 @@ const OurApproach = () => {
   const loopedCards = [...cardData, ...cardData]; // Duplicate for seamless scroll
 
   return (
-    <section className="w-full bg-[#1E1C21]   font-[Archivo] relative">
+    <section className="w-full bg-white   font-[Archivo] relative">
       {/* Inline Keyframes */}
       <style>
         {`
@@ -179,8 +179,8 @@ const OurApproach = () => {
       <div className="w-full  flex flex-col lg:flex-row items-start  justify-between gap-8 lg:py-12">
         {/* Left Side */}
         <div className="w-full lg:w-[30%] md:w-full md:text-center lg:text-left text-center  lg:pl-8 md:px-4 px-2">
-          <h2 className="text-3xl md:text-5xl font-semibold mb-4 text-[white]">Our Approach</h2>
-          <p className="text- text-[white] mb-6">
+          <h2 className="text-3xl md:text-5xl font-semibold mb-4 text-gray-900">Our Approach</h2>
+          <p className="text-base text-gray-700 mb-6">
             Integrated and Impact-Driven Tailored to meet your business objectives through creativity,
             strategy, and cutting-edge technology.
           </p>
@@ -211,8 +211,8 @@ const OurApproach = () => {
                 
               >
                 <div>
-                  <h3 className="text-xl font-bold mb-2">{card.title}</h3>
-                  <p className="text-sm text-gray-700 font-medium mb-1">{card.subtitle}</p>
+                  <h3 className="text-xl font-bold mb-3">{card.title}</h3>
+                  <p className="text-sm text-gray-700 font-medium mb-2">{card.subtitle}</p>
                   <p className="text-sm text-gray-800 leading-relaxed">{card.description}</p>
                 </div>
                 <div className="flex justify-center  mt-4 ">
