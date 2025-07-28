@@ -13,6 +13,7 @@ import WhyChoose from "./WhyChoose";
 import AnimatedHeadingSection from "./Headline";
 import OurApproach from "./OurApproach";
 import InsightSection from "./Blogs";
+import PricingSection from "./Pricing";
 
 
 
@@ -38,6 +39,7 @@ const Home = () => {
       <AnimatedHeadingSection />
       <OurApproach/>
       <InsightSection/>
+      <PricingSection/>
     </div>
   );
 };
