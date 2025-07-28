@@ -70,7 +70,7 @@ const cardData = [
 
 const PricingSection = () => {
   return (
-    <section className="w-full lg:py-18 md:py-16 py-2 md:px-4 px-2 lg:px-20 font-[Archivo] text-center">
+    <section className="w-full lg:py-18 md:py-16 py-8 md:px-4 px-2 lg:px-20 font-[Archivo] text-center">
       <img
         src="/images/Star.png"
         alt="Star Icon"
