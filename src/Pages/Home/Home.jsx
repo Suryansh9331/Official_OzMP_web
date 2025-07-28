@@ -14,6 +14,7 @@ import AnimatedHeadingSection from "./Headline";
 import OurApproach from "./OurApproach";
 import InsightSection from "./Blogs";
 import PricingSection from "./Pricing";
+import ParallaxSection from "./Parallax";
 
 
 
@@ -39,6 +40,7 @@ const Home = () => {
       <AnimatedHeadingSection />
       <OurApproach/>
       <InsightSection/>
+      <ParallaxSection/>
       <PricingSection/>
     </div>
   );
