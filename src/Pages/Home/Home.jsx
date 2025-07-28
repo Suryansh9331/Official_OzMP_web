@@ -12,6 +12,7 @@ import WhoWeAre from "./WhoWeAre";
 import WhyChoose from "./WhyChoose";
 import AnimatedHeadingSection from "./Headline";
 import OurApproach from "./OurApproach";
+import InsightSection from "./Blogs";
 
 
 
@@ -36,6 +37,7 @@ const Home = () => {
    
       <AnimatedHeadingSection />
       <OurApproach/>
+      <InsightSection/>
     </div>
   );
 };
