@@ -114,7 +114,7 @@
 
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
-
+import { Link } from 'react-router-dom';
 const WhoWeAreSection = () => {
   const [ref, inView] = useInView({
     triggerOnce: false,
@@ -252,12 +252,14 @@ const WhoWeAreSection = () => {
 
             {/* Button with Pop Animation */}
             <motion.div variants={buttonVariant}>
+           <Link to = "/about-us">   
               <button
-                className="bg-[#EFEBFF] hover:bg-purple-300 rounded-3xl shadow-[4px_4px_0px_#000] text-[#7352F6] px-6 sm:px-8 py-2.5 sm:py-3 font-medium transition duration-200 hover:scale-105"
+                className="bg-[#EFEBFF] hover:bg-purple-200  hover:cursor-pointer  rounded-3xl shadow-[4px_4px_0px_#000] text-[#7352F6] px-6 sm:px-8 py-2.5 sm:py-3 font-medium transition duration-200 hover:scale-105"
                 style={{ fontFamily: 'Roboto, sans-serif' }}
               >
                 LEARN MORE
               </button>
+           </Link> 
             </motion.div>
           </motion.div>
         </div>
