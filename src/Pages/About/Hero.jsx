@@ -52,7 +52,7 @@ const Hero = () => {
       initial={{ opacity: 0, y: 50 }}      // Start hidden and slightly down
       animate={{ opacity: 1, y: 0 }}       // Animate to visible and original position
       transition={{ duration: 1, ease: "easeOut" }} // Smooth transition
-      className="bg-white h-auto flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-20 pb-6"
+      className="bg-white h-auto flex flex-col-reverse md:flex-row items-center justify-between px-4 md:py-14 lg:py-0 lg:px-16 md:px-4  pb-6"
     >
       {/* LEFT TEXT SIDE */}
       <motion.div
@@ -61,7 +61,7 @@ const Hero = () => {
         transition={{ delay: 0.3, duration: 1 }}
         className="md:w-[50%] md:space-y-6 space-y-2"
       >
-        <h1 className="text-3xl md:text-6xl font-bold text-black leading-tight font-[Archivo]">
+        <h1 className="text-3xl lg:text-6xl md:text-3xl font-bold text-black leading-tight font-[Archivo]">
           INNOVATE <span className="text-[#818BFF]">INSPIRE</span> <br /> IMPACT
         </h1>
 

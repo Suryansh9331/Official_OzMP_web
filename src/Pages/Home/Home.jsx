@@ -24,7 +24,7 @@ const Home = () => {
   return (
     <div className= " w-full overflow-hidden">
       <div className="w-full overflow-hidden">
-        <HeroBanner />
+        <HeroBanner  />
       </div>
       <div className="lg:px-16 px-2 md:px-4 mb-6 mt-6 md:mt-2">
         <StatsSection />

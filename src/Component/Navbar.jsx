@@ -431,17 +431,18 @@ export default function Navbar() {
     >
       <div className="mx-6 py-4 flex items-center justify-between">
         {/* Logo */}
+       <Link to= "/">
         <div className="flex items-center space-x-2">
           <img
             src="/images/logo.png"
             alt="Logo"
             className="h-12 w-12 rounded-lg bg-black"
           />
-          <span className="text-xl text-black font-['serif'] font-extrabold tracking-wide">
+          <span className="text-2xl text-black font-['serif'] font-extrabold tracking-wide">
             Oz Media
           </span>
         </div>
-
+</Link>
         {/* Desktop Menu */}
         <ul className="hidden lg:flex space-x-8 text-[17px] font-bold text-black">
           {navLinks.map((link) => (
