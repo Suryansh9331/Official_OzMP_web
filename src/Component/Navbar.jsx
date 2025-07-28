@@ -352,6 +352,7 @@
 //     </nav>
 //   );
 // }
+
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import { FaChevronDown, FaArrowRight } from "react-icons/fa";
@@ -531,6 +532,7 @@ export default function Navbar() {
                   {!link.dropdown ? (
                     <Link
                       to={link.route}
+                      onClick={() => setMobileMenuOpen(false)} // ✅ close menu
                       className="block w-full py-2 px-2 rounded-md hover:bg-gray-100 transition-all duration-200"
                     >
                       {link.label}
@@ -556,6 +558,7 @@ export default function Navbar() {
                             <Link
                               key={item.name}
                               to={item.route}
+                              onClick={() => setMobileMenuOpen(false)} // ✅ close menu
                               className="flex items-center gap-2 pl-2 py-1 text-md text-gray-700 rounded-md hover:bg-violet-100 cursor-pointer transition-all duration-300"
                             >
                               <FaArrowRight

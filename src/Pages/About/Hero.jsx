@@ -41,6 +41,7 @@
 
 // export default Hero;
 
+
 import React from "react";
 import { motion } from "framer-motion";
 import video from "../../assets/Video/About.mp4";

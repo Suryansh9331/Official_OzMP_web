@@ -2,6 +2,7 @@
 
 
 import Hero from "./Hero"
+import OverviewSection from "./Overview";
 
 
 const About = () => {
@@ -9,6 +10,7 @@ const About = () => {
     <div className= " w-full overflow-hidden">
       
       <Hero/>
+      <OverviewSection/>
     </div>
   );
 };
