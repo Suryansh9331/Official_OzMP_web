@@ -51,10 +51,10 @@
 //           {navLinks.map((link) => (
 //             <li key={link.label} className="relative group overflow-visible">
 //               <button
-//                 className="flex items-center gap-1 relative text-black font-extrabold transition duration-300 
-//           before:absolute before:bottom-0 before:left-0 before:w-0 
-//           before:h-[2px] before:bg-[#dcd4ff] hover:cursor-pointer 
-//           before:transition-all before:duration-500 
+//                 className="flex items-center gap-1 relative text-black font-extrabold transition duration-300
+//           before:absolute before:bottom-0 before:left-0 before:w-0
+//           before:h-[2px] before:bg-[#dcd4ff] hover:cursor-pointer
+//           before:transition-all before:duration-500
 //           group-hover:before:w-full"
 //               >
 //                 {link.label}
@@ -64,15 +64,15 @@
 //               {link.dropdown && (
 //                 <ul
 //                   className="absolute top-10 left-0 bg-gray-100 backdrop-blur-sm shadow-xl border border-[#dcd4ff] py-2 w-52 rounded-xl
-//             opacity-0 invisible group-hover:opacity-100 group-hover:visible 
-//             transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 
+//             opacity-0 invisible group-hover:opacity-100 group-hover:visible
+//             transition-all duration-300 transform translate-y-2 group-hover:translate-y-0
 //             scale-95 group-hover:scale-100 z-50"
 //                 >
 //                   {link.items.map((item, index) => (
 //                     <li
 //                       key={item}
-//                       className={`flex items-center gap-2 px-4 py-2 text-md cursor-pointer transition-all duration-300 
-//                 hover:bg-[#dcd4ff] hover:text-black border-b border-transparent 
+//                       className={`flex items-center gap-2 px-4 py-2 text-md cursor-pointer transition-all duration-300
+//                 hover:bg-[#dcd4ff] hover:text-black border-b border-transparent
 //                 hover:border-[#dcd4ff] delay-${index * 75}`}
 //                     >
 //                       <FaArrowRight
@@ -168,8 +168,6 @@
 //     </nav>
 //   );
 // }
-
-
 
 // import { motion, AnimatePresence } from "framer-motion";
 // import { useEffect, useState } from "react";
@@ -237,10 +235,10 @@
 //           {navLinks.map((link) => (
 //             <li key={link.label} className="relative group overflow-visible">
 //               <button
-//                 className="flex items-center gap-1 relative text-black font-extrabold transition duration-300 
-//           before:absolute before:bottom-0 before:left-0 before:w-0 
-//           before:h-[2px] before:bg-[#dcd4ff] hover:cursor-pointer 
-//           before:transition-all before:duration-500 
+//                 className="flex items-center gap-1 relative text-black font-extrabold transition duration-300
+//           before:absolute before:bottom-0 before:left-0 before:w-0
+//           before:h-[2px] before:bg-[#dcd4ff] hover:cursor-pointer
+//           before:transition-all before:duration-500
 //           group-hover:before:w-full"
 //               >
 //                 {link.label}
@@ -250,15 +248,15 @@
 //               {link.dropdown && (
 //                 <ul
 //                   className="absolute top-10 left-0 bg-white backdrop-blur-sm shadow-xl border border-[#dcd4ff] py-2 w-52 rounded-xl
-//             opacity-0 invisible group-hover:opacity-100 group-hover:visible 
-//             transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 
+//             opacity-0 invisible group-hover:opacity-100 group-hover:visible
+//             transition-all duration-300 transform translate-y-2 group-hover:translate-y-0
 //             scale-95 group-hover:scale-100 z-50"
 //                 >
 //                   {link.items.map((item, index) => (
 //                     <li
 //                       key={item}
-//                       className={`flex items-center gap-2 px-4 py-2 text-md cursor-pointer transition-all duration-300 
-//                 hover:bg-[#dcd4ff] hover:text-black border-b border-transparent 
+//                       className={`flex items-center gap-2 px-4 py-2 text-md cursor-pointer transition-all duration-300
+//                 hover:bg-[#dcd4ff] hover:text-black border-b border-transparent
 //                 hover:border-[#dcd4ff] delay-${index * 75}`}
 //                     >
 //                       <FaArrowRight
@@ -354,9 +352,6 @@
 //     </nav>
 //   );
 // }
-
-
-
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import { FaChevronDown, FaArrowRight } from "react-icons/fa";
@@ -365,20 +360,49 @@ import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.jpg";
 
 const navLinks = [
-  { label: "Home", dropdown: false },
-  { label: "About Us", dropdown: true, items: ["Our Team", "Our Story"] },
+  { label: "Home", dropdown: false, route: "/" },
+  {
+    label: "About Us",
+    dropdown: true,
+    items: [
+      { name: "Our Team", route: "/about/our-team" },
+      { name: "Our Story", route: "/about-us" },
+    ],
+  },
   {
     label: "Services",
     dropdown: true,
-    items: ["Design", "Development", "Marketing"],
+    items: [
+      { name: "Design", route: "/services/design" },
+      { name: "Development", route: "/services/development" },
+      { name: "Marketing", route: "/services/marketing" },
+    ],
   },
-  { label: "Case Studies", dropdown: true, items: ["Clients", "Projects"] },
+  {
+    label: "Case Studies",
+    dropdown: true,
+    items: [
+      { name: "Clients", route: "/case-studies/clients" },
+      { name: "Projects", route: "/case-studies/projects" },
+    ],
+  },
   {
     label: "Industries We Serve",
     dropdown: true,
-    items: ["Healthcare", "Finance", "Retail"],
+    items: [
+      { name: "Healthcare", route: "/industries/healthcare" },
+      { name: "Finance", route: "/industries/finance" },
+      { name: "Retail", route: "/industries/retail" },
+    ],
   },
-  { label: "Careers", dropdown: true, items: ["Openings", "Culture"] },
+  {
+    label: "Careers",
+    dropdown: true,
+    items: [
+      { name: "Openings", route: "/careers/openings" },
+      { name: "Culture", route: "/careers/culture" },
+    ],
+  },
 ];
 
 export default function Navbar() {
@@ -401,10 +425,10 @@ export default function Navbar() {
   return (
     <nav
       className={`${
-        isScrolled ? "bg-purple-50  shadow-md" : "bg-transparent"
+        isScrolled ? "bg-purple-50 shadow-md" : "bg-transparent"
       } sticky top-0 z-50 font-['Nunito'] transition-all duration-300`}
     >
-      <div className="mx-6 py-4 flex items-center justify-between ">
+      <div className="mx-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <img
@@ -421,40 +445,53 @@ export default function Navbar() {
         <ul className="hidden lg:flex space-x-8 text-[17px] font-bold text-black">
           {navLinks.map((link) => (
             <li key={link.label} className="relative group overflow-visible">
-              <button
-                className="flex items-center gap-1 relative text-black font-extrabold transition duration-300 
-          before:absolute before:bottom-0 before:left-0 before:w-0 
-          before:h-[2px] before:bg-[#dcd4ff] hover:cursor-pointer 
-          before:transition-all before:duration-500 
-          group-hover:before:w-full"
-              >
-                {link.label}
-                {link.dropdown && <FaChevronDown size={14} />}
-              </button>
-
-              {link.dropdown && (
-                <ul
-                  className="absolute top-10 left-0 bg-white backdrop-blur-sm shadow-xl border border-[#dcd4ff] py-2 w-52 rounded-xl
-            opacity-0 invisible group-hover:opacity-100 group-hover:visible 
-            transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 
-            scale-95 group-hover:scale-100 z-50"
+              {!link.dropdown ? (
+                <Link
+                  to={link.route}
+                  className="flex items-center gap-1 relative text-black font-extrabold transition duration-300 
+                  before:absolute before:bottom-0 before:left-0 before:w-0 
+                  before:h-[2px] before:bg-[#dcd4ff] hover:cursor-pointer 
+                  before:transition-all before:duration-500 
+                  hover:before:w-full"
                 >
-                  {link.items.map((item, index) => (
-                    <Link
-                      to={`/${item.toLowerCase().replace(/\s+/g, "-")}`}
-                      key={item}
-                      className={`flex items-center gap-2 px-4 py-2 text-md cursor-pointer transition-all duration-300 
-                    hover:bg-[#dcd4ff] hover:text-black border-b border-transparent 
-                    hover:border-[#dcd4ff] delay-${index * 75}`}
-                    >
-                      <FaArrowRight
-                        size={16}
-                        className="text-violet-400 mt-[4px]"
-                      />
-                      {item}
-                    </Link>
-                  ))}
-                </ul>
+                  {link.label}
+                </Link>
+              ) : (
+                <>
+                  <button
+                    className="flex items-center gap-1 relative text-black font-extrabold transition duration-300 
+                    before:absolute before:bottom-0 before:left-0 before:w-0 
+                    before:h-[2px] before:bg-[#dcd4ff] hover:cursor-pointer 
+                    before:transition-all before:duration-500 
+                    group-hover:before:w-full"
+                  >
+                    {link.label}
+                    <FaChevronDown size={14} />
+                  </button>
+
+                  <ul
+                    className="absolute top-10 left-0 bg-white backdrop-blur-sm shadow-xl border border-[#dcd4ff] py-2 w-52 rounded-xl
+                    opacity-0 invisible group-hover:opacity-100 group-hover:visible 
+                    transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 
+                    scale-95 group-hover:scale-100 z-50"
+                  >
+                    {link.items.map((item, index) => (
+                      <Link
+                        key={item.name}
+                        to={item.route}
+                        className={`flex items-center gap-2 px-4 py-2 text-md cursor-pointer transition-all duration-300 
+                          hover:bg-[#dcd4ff] hover:text-black border-b border-transparent 
+                          hover:border-[#dcd4ff] delay-${index * 75}`}
+                      >
+                        <FaArrowRight
+                          size={16}
+                          className="text-violet-400 mt-[4px]"
+                        />
+                        {item.name}
+                      </Link>
+                    ))}
+                  </ul>
+                </>
               )}
             </li>
           ))}
@@ -491,37 +528,46 @@ export default function Navbar() {
             <ul className="space-y-4 text-xl font-bold text-black">
               {navLinks.map((link) => (
                 <li key={link.label} className="relative">
-                  <button
-                    onClick={() => toggleDropdown(link.label)}
-                    className="w-full flex justify-between items-center py-2 px-2 rounded-md hover:bg-gray-100 transition-all duration-200"
-                  >
-                    {link.label}
-                    {link.dropdown && (
-                      <FaChevronDown
-                        size={14}
-                        className={`transition-transform duration-300 ${
-                          openDropdown === link.label ? "rotate-180" : ""
-                        }`}
-                      />
-                    )}
-                  </button>
+                  {!link.dropdown ? (
+                    <Link
+                      to={link.route}
+                      className="block w-full py-2 px-2 rounded-md hover:bg-gray-100 transition-all duration-200"
+                    >
+                      {link.label}
+                    </Link>
+                  ) : (
+                    <>
+                      <button
+                        onClick={() => toggleDropdown(link.label)}
+                        className="w-full flex justify-between items-center py-2 px-2 rounded-md hover:bg-gray-100 transition-all duration-200"
+                      >
+                        {link.label}
+                        <FaChevronDown
+                          size={14}
+                          className={`transition-transform duration-300 ${
+                            openDropdown === link.label ? "rotate-180" : ""
+                          }`}
+                        />
+                      </button>
 
-                  {link.dropdown && openDropdown === link.label && (
-                    <ul className="ml-4 mt-2 space-y-4 animate-slideDown">
-                      {link.items.map((item, index) => (
-                        <Link
-                          to={`/${item.toLowerCase().replace(/\s+/g, "-")}`}
-                          key={item}
-                          className="flex items-center gap-2 pl-2 py-1 text-md text-gray-700 rounded-md hover:bg-violet-100 cursor-pointer transition-all duration-300"
-                        >
-                          <FaArrowRight
-                            size={10}
-                            className="text-violet-500 mt-[2px]"
-                          />
-                          {item}
-                        </Link>
-                      ))}
-                    </ul>
+                      {openDropdown === link.label && (
+                        <ul className="ml-4 mt-2 space-y-4 animate-slideDown">
+                          {link.items.map((item) => (
+                            <Link
+                              key={item.name}
+                              to={item.route}
+                              className="flex items-center gap-2 pl-2 py-1 text-md text-gray-700 rounded-md hover:bg-violet-100 cursor-pointer transition-all duration-300"
+                            >
+                              <FaArrowRight
+                                size={10}
+                                className="text-violet-500 mt-[2px]"
+                              />
+                              {item.name}
+                            </Link>
+                          ))}
+                        </ul>
+                      )}
+                    </>
                   )}
                 </li>
               ))}

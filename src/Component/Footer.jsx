@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import {
   Facebook,
@@ -32,11 +31,27 @@ const footerSections = [
   {
     title: "Services",
     links: [
-      { label: "Digital Marketing", icon: TrendingUp, to: "/services/digital-marketing" },
-      { label: "Content Creation", icon: PenTool, to: "/services/content-creation" },
-      { label: "Social Media Management", icon: Users, to: "/services/social-media" },
+      {
+        label: "Digital Marketing",
+        icon: TrendingUp,
+        to: "/services/digital-marketing",
+      },
+      {
+        label: "Content Creation",
+        icon: PenTool,
+        to: "/services/content-creation",
+      },
+      {
+        label: "Social Media Management",
+        icon: Users,
+        to: "/services/social-media",
+      },
       { label: "SEO Optimization", icon: Search, to: "/services/seo" },
-      { label: "Brand Strategy", icon: Palette, to: "/services/brand-strategy" },
+      {
+        label: "Brand Strategy",
+        icon: Palette,
+        to: "/services/brand-strategy",
+      },
       { label: "Web Development", icon: Code, to: "/services/web-development" },
     ],
   },
@@ -62,17 +77,17 @@ const footerSections = [
       { label: "Newsletter", icon: Mail, to: "/newsletter" },
     ],
   },
-//   {
-//     title: "Solutions",
-//     links: [
-//       { label: "Analytics & Insights", icon: TrendingUp, to: "/solutions/analytics" },
-//       { label: "Market Research", icon: Search, to: "/solutions/research" },
-//       { label: "Creative Design", icon: Palette, to: "/solutions/design" },
-//       { label: "Video Production", icon: Video, to: "/solutions/video" },
-//       { label: "Podcast Services", icon: Headphones, to: "/solutions/podcast" },
-//       { label: "Global Campaigns", icon: Globe, to: "/solutions/global" },
-//     ],
-//   },
+  //   {
+  //     title: "Solutions",
+  //     links: [
+  //       { label: "Analytics & Insights", icon: TrendingUp, to: "/solutions/analytics" },
+  //       { label: "Market Research", icon: Search, to: "/solutions/research" },
+  //       { label: "Creative Design", icon: Palette, to: "/solutions/design" },
+  //       { label: "Video Production", icon: Video, to: "/solutions/video" },
+  //       { label: "Podcast Services", icon: Headphones, to: "/solutions/podcast" },
+  //       { label: "Global Campaigns", icon: Globe, to: "/solutions/global" },
+  //     ],
+  //   },
   {
     title: "Support",
     links: [
@@ -92,23 +107,28 @@ const Footer = () => {
   return (
     <footer className="relative bg-[#1C1A1F] text-white font-body overflow-hidden">
       {/* <div className="absolute inset-0 opacity-5"> */}
-      <div className="absolute inset-0 opacity-5 bg-grid-pattern pointer-events-none z-0">
-
-       
-      </div>
- <div className="border-t border-gray-700 mt-12  mx-4 max-w-full"></div>
+      <div className="absolute inset-0 opacity-5 bg-grid-pattern pointer-events-none z-0"></div>
+      <div className="border-t border-gray-700 mt-12  mx-4 max-w-full"></div>
       <div className="relative z-10 w-full mx-auto px-6 lg:py-16 md:py-12 py-8 ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 lg:gap-14 md:gap-20 gap-10">
           {/* Brand Section */}
           <div className="lg:col-span-2">
-            <div className="flex items-center mb-4">
-              <div className="w-16 h-16 mr-3 rounded-none overflow-hidden bg-black flex items-center justify-center">
-               <img className="w-full h-full bg-contain" src="/images/logo.png" alt="" />
+            <Link to="./">
+              {" "}
+              <div className="flex items-center mb-4 ">
+                <div className="w-16 h-16 mr-3 rounded-none overflow-hidden bg-black flex items-center justify-center">
+                  <img
+                    className="w-full h-full bg-contain "
+                    src="/images/logo.png"
+                    alt=""
+                  />
+                </div>
+                <h2 className="text-3xl font-bold text-white font-['serif'] ">
+                  Oz Media Planet
+                </h2>
               </div>
-              <h2 className="text-3xl font-bold text-white font-['serif']">
-                Oz Media Planet
-              </h2>
-            </div>
+            </Link>
+
             <h3 className="text-lg font-semibold mb-3 text-[#DBD2FE] font-heading">
               Digital Marketing Excellence
             </h3>
@@ -120,7 +140,9 @@ const Footer = () => {
             </p>
 
             <div className="mb-6 p-4 bg-gray-800/50 rounded-none border border-gray-700/50">
-              <h4 className="text-[#DBD2FE] font-medium mb-3 font-heading">Stay Updated</h4>
+              <h4 className="text-[#DBD2FE] font-medium mb-3 font-heading">
+                Stay Updated
+              </h4>
               <div className="flex items-center space-x-3">
                 <label className="relative cursor-pointer">
                   <input
@@ -159,15 +181,17 @@ const Footer = () => {
 
             {/* Socials */}
             <div className="flex space-x-3">
-              {[Facebook, Twitter, Instagram, Linkedin, Youtube].map((Icon, idx) => (
-                <a
-                  key={idx}
-                  href="#"
-                  className="w-10 h-10 bg-gray-700/50 hover:bg-[#DBD2FE] rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-[#DBD2FE]/20"
-                >
-                  <Icon className="w-5 h-5 text-gray-300 group-hover:text-[#1C1A1F] transition-colors duration-300" />
-                </a>
-              ))}
+              {[Facebook, Twitter, Instagram, Linkedin, Youtube].map(
+                (Icon, idx) => (
+                  <a
+                    key={idx}
+                    href="#"
+                    className="w-10 h-10 bg-gray-700/50 hover:bg-[#DBD2FE] rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-[#DBD2FE]/20"
+                  >
+                    <Icon className="w-5 h-5 text-gray-300 group-hover:text-[#1C1A1F] transition-colors duration-300" />
+                  </a>
+                )
+              )}
             </div>
           </div>
 
@@ -201,13 +225,22 @@ const Footer = () => {
               © 2024 Oz Media Planet. All Rights Reserved.
             </div>
             <div className="flex space-x-6 text-sm">
-              <Link to="/privacy-policy" className="text-gray-400 hover:text-[#DBD2FE] transition-colors duration-200">
+              <Link
+                to="/privacy-policy"
+                className="text-gray-400 hover:text-[#DBD2FE] transition-colors duration-200"
+              >
                 Privacy Policy
               </Link>
-              <Link to="/terms" className="text-gray-400 hover:text-[#DBD2FE] transition-colors duration-200">
+              <Link
+                to="/terms"
+                className="text-gray-400 hover:text-[#DBD2FE] transition-colors duration-200"
+              >
                 Terms of Service
               </Link>
-              <Link to="/cookie-policy" className="text-gray-400 hover:text-[#DBD2FE] transition-colors duration-200">
+              <Link
+                to="/cookie-policy"
+                className="text-gray-400 hover:text-[#DBD2FE] transition-colors duration-200"
+              >
                 Cookie Policy
               </Link>
             </div>
