@@ -43,7 +43,7 @@ const footerSections = [
   {
     title: "Company",
     links: [
-      { label: "About Us", icon: Globe, to: "/about" },
+      { label: "About Us", icon: Globe, to: "/about-us" },
       { label: "Our Team", icon: Users, to: "/team" },
       { label: "Careers", icon: Award, to: "/careers" },
       { label: "Portfolio", icon: Camera, to: "/portfolio" },
