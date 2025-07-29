@@ -5,6 +5,7 @@ import Hero from "./Hero"
 import OverviewSection from "./Overview";
 import MissionVision from "./Mission&Vision";
 import ValuesSection from "./OurValue";
+import WhyChooseUs from "./WhyChooseUs";
 
 
 const About = () => {
@@ -15,6 +16,7 @@ const About = () => {
       <OverviewSection/>
       <MissionVision/>
       <ValuesSection/>
+      <WhyChooseUs/>
     </div>
   );
 };
