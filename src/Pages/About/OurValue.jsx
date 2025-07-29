@@ -120,7 +120,7 @@ const ValuesSection = () => {
   ];
 
   return (
-    <div className=" bg-[#1E1C21] lg:py-20 py-16  px-4 sm:px-6 lg:px-8">
+    <div className=" bg-[#1E1C21] lg:py-20 py-16  px-4 sm:px-6 lg:px-8 min-h-screen">
       <div className="max-w-8xl mx-auto">
         {/* Header Section */}
         <div className="text-center md:mb-16 mb-10 ">

@@ -3,7 +3,7 @@ import illustration from "../../assets/images/overview2.png"; // Replace with yo
 
 const OverviewSection = () => {
   return (
-    <section className="bg-[#DBD2FF] py-12 px-4 lg:px-16 md:px-6  flex flex-col md:flex-row items-center justify-between gap-10">
+    <section className="bg-[#DBD2FF] py-12 lg:py-16 px-4 lg:px-16 md:px-6  flex flex-col md:flex-row items-center justify-between gap-10">
       {/* Left Image */}
       <div className="w-full md:w-[45%]">
         <img

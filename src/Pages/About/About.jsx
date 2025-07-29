@@ -6,6 +6,7 @@ import OverviewSection from "./Overview";
 import MissionVision from "./Mission&Vision";
 import ValuesSection from "./OurValue";
 import WhyChooseUs from "./WhyChooseUs";
+import FAQ from "./FAQ";
 
 
 const About = () => {
@@ -17,6 +18,7 @@ const About = () => {
       <MissionVision/>
       <ValuesSection/>
       <WhyChooseUs/>
+      <FAQ/>
     </div>
   );
 };
