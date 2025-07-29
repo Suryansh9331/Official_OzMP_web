@@ -4,6 +4,7 @@
 import Hero from "./Hero"
 import OverviewSection from "./Overview";
 import MissionVision from "./Mission&Vision";
+import ValuesSection from "./OurValue";
 
 
 const About = () => {
@@ -13,6 +14,7 @@ const About = () => {
       <Hero/>
       <OverviewSection/>
       <MissionVision/>
+      <ValuesSection/>
     </div>
   );
 };
