@@ -3,6 +3,7 @@
 
 import Hero from "./Hero"
 import OverviewSection from "./Overview";
+import MissionVision from "./Mission&Vision";
 
 
 const About = () => {
@@ -11,6 +12,7 @@ const About = () => {
       
       <Hero/>
       <OverviewSection/>
+      <MissionVision/>
     </div>
   );
 };
