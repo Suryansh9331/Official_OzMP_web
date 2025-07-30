@@ -189,7 +189,7 @@ const WhyChooseUs = () => {
             ].map((box, i) => (
               <motion.div
                 key={i}
-                className={`lg:p-4 md:p-4 rounded-xl shadow-md border-black border ${box.bg} ${box.hover}`}
+                className={`lg:p-4 md:p-4 p-4 rounded-xl shadow-md border-black border ${box.bg} ${box.hover}`}
                 variants={boxVariants}
                 initial="hidden"
                 animate={controls}
