@@ -1,10 +1,10 @@
 
 import icon1 from "../../assets/images/Icon1.png"; // Creative Excellence
 import icon2 from "../../assets/images/icon2.png"; // Seamless Integration
-import icon3 from "../../assets/images/icon3.png"; // Innovation & Tech
-import icon4 from "../../assets/images/icon4.png"; // Effective Strategy
-import icon5 from "../../assets/images/icon5.png"; // Scalability
-import icon6 from "../../assets/images/icon6.png"; // Data Driven
+import icon3 from "../../assets/images/Icon3.png"; // Innovation & Tech
+import icon4 from "../../assets/images/Icon4.png"; // Effective Strategy
+import icon5 from "../../assets/images/Icon5.png"; // Scalability
+import icon6 from "../../assets/images/Icon6.png"; // Data Driven
 
 // const values = [
 //   {
