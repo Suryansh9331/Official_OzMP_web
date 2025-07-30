@@ -1,6 +1,6 @@
 
 import icon1 from "../../assets/images/Icon1.png"; // Creative Excellence
-import icon2 from "../../assets/images/icon2.png"; // Seamless Integration
+import icon2 from "../../assets/images/Icon2.png"; // Seamless Integration
 import icon3 from "../../assets/images/Icon3.png"; // Innovation & Tech
 import icon4 from "../../assets/images/Icon4.png"; // Effective Strategy
 import icon5 from "../../assets/images/Icon5.png"; // Scalability
