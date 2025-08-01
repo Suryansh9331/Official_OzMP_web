@@ -5,10 +5,10 @@ const HeroBanner = () => {
     <section
       className="min-h-screen flex items-center justify-start px-8 md:px-16 bg-no-repeat bg-cover bg-right"
       style={{
-        backgroundImage: "url('/your-background-image.png')", // Replace with actual path
+        backgroundImage: "url('/images/Bannerbg.png')", // Replace with actual path
       }}
     >
-      <div className="max-w-xl">
+      <div className="max-w-5xl">
         <h1
           className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight"
           style={{ fontFamily: "Archivo, sans-serif" }}
