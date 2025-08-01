@@ -19,7 +19,7 @@ const AppRoutes = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<About/>} />
-        <Route path="/Services-digital-marketing" element={<DigitalMarket/>} />
+        <Route path="/services-digital-marketing" element={<DigitalMarketing/>} />
       </Routes>
       <Footer/>
         <ScrollToTopButton/>
