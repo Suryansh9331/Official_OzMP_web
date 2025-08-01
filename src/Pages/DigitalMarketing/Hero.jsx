@@ -5,7 +5,7 @@ const HeroBanner = () => {
     <section
       className="min-h-screen flex items-center justify-start px-8 md:px-16 bg-no-repeat bg-cover bg-right"
       style={{
-        backgroundImage: "url('/images/Bannerbg.png')", // Replace with actual path
+        backgroundImage: "url('/images/Bannerbg.png') url route", // Replace with actual path
       }}
     >
       <div className="max-w-5xl">
