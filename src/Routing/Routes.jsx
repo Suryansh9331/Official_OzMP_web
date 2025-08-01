@@ -9,7 +9,7 @@ import Footer from "../Component/Footer";
 import About from "../Pages/About/About";
 import ScrollToTop from "../Component/ScrollToTop";
 import ScrollToTopButton from "../Component/SttButton";
-
+import DigitalMarketing from "../Pages/DigitalMarketing/DigitalMarketing"
 const AppRoutes = () => {
   return (
     <div>
@@ -19,6 +19,7 @@ const AppRoutes = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<About/>} />
+        <Route path="/Services-digital-marketing" element={<DigitalMarket/>} />
       </Routes>
       <Footer/>
         <ScrollToTopButton/>
