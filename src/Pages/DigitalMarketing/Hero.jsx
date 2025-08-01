@@ -1,23 +1,41 @@
 import React from "react";
+import bg from "../../assets/images/bg.png";
 
 const HeroBanner = () => {
   return (
     <section
-      className="min-h-screen flex items-center justify-start px-8 md:px-16 bg-no-repeat bg-cover bg-right"
+      className={`
+        min-h-screen 
+        flex 
+        items-center 
+        px-8 md:px-12 
+        bg-no-repeat bg-cover 
+        justify-center 
+        lg:justify-start
+      `}
       style={{
-        backgroundImage: "url('/images/Bannerbg.png') url route", // Replace with actual path
+        backgroundImage: `url(${bg})`,
+        backgroundPosition: "right center",
+        backgroundImage: `url(${bg})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "right center",
       }}
     >
-      <div className="max-w-5xl">
+      <div
+        className={`
+          max-w-5xl
+          mt-10
+          text-center 
+          lg:text-left
+        `}
+      >
         <h1
-          className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight"
+          className="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight"
           style={{ fontFamily: "Archivo, sans-serif" }}
         >
           Transforming Digital Marketing <br />
-          with <span className="relative">
-            Strategy & Creativity
-            <span className="absolute left-0 -bottom-1 w-full h-1 bg-gradient-to-r from-pink-300 via-purple-300 to-purple-300 rounded-md"></span>
-          </span>
+          with <span className="relative">Strategy & Creativity</span>
         </h1>
 
         <p
