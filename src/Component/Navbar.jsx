@@ -1,4 +1,3 @@
-
 // import { motion, AnimatePresence } from "framer-motion";
 // import { useEffect, useState } from "react";
 // import { FaChevronDown, FaArrowRight } from "react-icons/fa";
@@ -96,10 +95,10 @@
 //               {!link.dropdown ? (
 //                 <Link
 //                   to={link.route}
-//                   className="flex items-center gap-1 relative text-black font-extrabold transition duration-300 
-//                   before:absolute before:bottom-0 before:left-0 before:w-0 
-//                   before:h-[2px] before:bg-[#dcd4ff] hover:cursor-pointer 
-//                   before:transition-all before:duration-500 
+//                   className="flex items-center gap-1 relative text-black font-extrabold transition duration-300
+//                   before:absolute before:bottom-0 before:left-0 before:w-0
+//                   before:h-[2px] before:bg-[#dcd4ff] hover:cursor-pointer
+//                   before:transition-all before:duration-500
 //                   hover:before:w-full"
 //                 >
 //                   {link.label}
@@ -107,10 +106,10 @@
 //               ) : (
 //                 <>
 //                   <button
-//                     className="flex items-center gap-1 relative text-black font-extrabold transition duration-300 
-//                     before:absolute before:bottom-0 before:left-0 before:w-0 
-//                     before:h-[2px] before:bg-[#dcd4ff] hover:cursor-pointer 
-//                     before:transition-all before:duration-500 
+//                     className="flex items-center gap-1 relative text-black font-extrabold transition duration-300
+//                     before:absolute before:bottom-0 before:left-0 before:w-0
+//                     before:h-[2px] before:bg-[#dcd4ff] hover:cursor-pointer
+//                     before:transition-all before:duration-500
 //                     group-hover:before:w-full"
 //                   >
 //                     {link.label}
@@ -119,16 +118,16 @@
 
 //                   <ul
 //                     className="absolute top-10 left-0 bg-white backdrop-blur-sm shadow-xl border border-[#dcd4ff] py-2 w-52 rounded-xl
-//                     opacity-0 invisible group-hover:opacity-100 group-hover:visible 
-//                     transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 
+//                     opacity-0 invisible group-hover:opacity-100 group-hover:visible
+//                     transition-all duration-300 transform translate-y-2 group-hover:translate-y-0
 //                     scale-95 group-hover:scale-100 z-50"
 //                   >
 //                     {link.items.map((item, index) => (
 //                       <Link
 //                         key={item.name}
 //                         to={item.route}
-//                         className={`flex items-center gap-2 px-4 py-2 text-md cursor-pointer transition-all duration-300 
-//                           hover:bg-[#dcd4ff] hover:text-black border-b border-transparent 
+//                         className={`flex items-center gap-2 px-4 py-2 text-md cursor-pointer transition-all duration-300
+//                           hover:bg-[#dcd4ff] hover:text-black border-b border-transparent
 //                           hover:border-[#dcd4ff] delay-${index * 75}`}
 //                       >
 //                         <FaArrowRight
@@ -237,9 +236,6 @@
 //     </nav>
 //   );
 // }
-
-
-
 
 // import { motion, AnimatePresence } from "framer-motion";
 // import { useEffect, useState } from "react";
@@ -374,10 +370,10 @@
 //               {!link.dropdown ? (
 //                 <Link
 //                   to={link.route}
-//                   className="flex items-center gap-1 relative text-black font-extrabold transition duration-300 
-//                   before:absolute before:bottom-0 before:left-0 before:w-0 
-//                   before:h-[2px] before:bg-[#dcd4ff] hover:cursor-pointer 
-//                   before:transition-all before:duration-500 
+//                   className="flex items-center gap-1 relative text-black font-extrabold transition duration-300
+//                   before:absolute before:bottom-0 before:left-0 before:w-0
+//                   before:h-[2px] before:bg-[#dcd4ff] hover:cursor-pointer
+//                   before:transition-all before:duration-500
 //                   hover:before:w-full"
 //                 >
 //                   {link.label}
@@ -385,10 +381,10 @@
 //               ) : (
 //                 <>
 //                   <button
-//                     className="flex items-center gap-1 relative text-black font-extrabold transition duration-300 
-//                     before:absolute before:bottom-0 before:left-0 before:w-0 
-//                     before:h-[2px] before:bg-[#dcd4ff] hover:cursor-pointer 
-//                     before:transition-all before:duration-500 
+//                     className="flex items-center gap-1 relative text-black font-extrabold transition duration-300
+//                     before:absolute before:bottom-0 before:left-0 before:w-0
+//                     before:h-[2px] before:bg-[#dcd4ff] hover:cursor-pointer
+//                     before:transition-all before:duration-500
 //                     group-hover:before:w-full"
 //                   >
 //                     {link.label}
@@ -402,8 +398,8 @@
 //                         {!item.subItems ? (
 //                           <Link
 //                             to={item.route}
-//                             className={`flex items-center gap-2 px-4 py-2 text-md cursor-pointer transition-all duration-300 
-//                             hover:bg-[#dcd4ff] hover:text-black border-b border-transparent 
+//                             className={`flex items-center gap-2 px-4 py-2 text-md cursor-pointer transition-all duration-300
+//                             hover:bg-[#dcd4ff] hover:text-black border-b border-transparent
 //                             hover:border-[#dcd4ff] delay-${index * 75}`}
 //                           >
 //                             <FaArrowRight
@@ -555,17 +551,6 @@
 //   );
 // }
 
-
-
-
-
-
-
-
-
-
-
-
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import { FaChevronDown, FaArrowRight } from "react-icons/fa";
@@ -659,7 +644,6 @@ const navLinks = [
       { name: "Openings", route: "/careers/openings" },
       { name: "Openings2", route: "/careers/openings" },
       { name: "Openings3", route: "/careers/openings" },
-     
     ],
   },
 ];
@@ -697,7 +681,11 @@ export default function Navbar() {
         {/* Logo */}
         <Link to="/">
           <div className="flex items-center space-x-2">
-            <img src="/images/logo.png" alt="Logo" className="h-12 w-12 rounded-lg bg-black" />
+            <img
+              src="/images/logo.png"
+              alt="Logo"
+              className="h-12 w-12 rounded-lg bg-black"
+            />
             <span className="text-2xl text-black font-['serif'] font-extrabold tracking-wide">
               Oz Media
             </span>
@@ -707,12 +695,18 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <ul className="hidden lg:flex space-x-8 text-[16px] font-bold font-['Nunito'] text-black ">
           {navLinks.map((link) => (
-            <li key={link.label} className="relative group  before:absolute before:bottom-0 before:left-0 before:w-0 
+            <li
+              key={link.label}
+              className="relative group  before:absolute before:bottom-0 before:left-0 before:w-0 
                    before:h-[2px] before:bg-[#dcd4ff] hover:cursor-pointer 
                    before:transition-all before:duration-500 
-                   hover:before:w-full">
+                   hover:before:w-full"
+            >
               {!link.dropdown ? (
-                <Link to={link.route} className="flex items-center gap-1 relative text-black font-extrabold hover:cursor-pointer">
+                <Link
+                  to={link.route}
+                  className="flex items-center gap-1 relative text-black font-extrabold hover:cursor-pointer"
+                >
                   {link.label}
                 </Link>
               ) : (
@@ -724,33 +718,44 @@ export default function Navbar() {
                     {link.items.map((item) => (
                       <div key={item.name} className="relative group/item">
                         {!item.subItems ? (
-                          <Link to={item.route} className="block px-4 py-2 hover:bg-[#dcd4ff]">
-                           <span className="flex items-center gap-2">
- <FaArrowRight
-                           size={14}
-                           className="text-violet-400 mt-[4px]"
-                     />    {item.name}
-  </span>
+                          <Link
+                            to={item.route}
+                            className="block px-4 py-2 hover:bg-[#dcd4ff]"
+                          >
+                            <span className="flex items-center gap-2">
+                              <FaArrowRight
+                                size={14}
+                                className="text-violet-400 mt-[4px]"
+                              />{" "}
+                              {item.name}
+                            </span>
                           </Link>
                         ) : (
                           <>
                             <button className="w-full text-left px-4 py-2 hover:bg-[#dcd4ff] flex items-center justify-between">
-                               <span className="flex items-center gap-2">
- <FaArrowRight
-                           size={14}
-                           className="text-violet-400 mt-[4px]"
-                     />    {item.name}
-  </span><FaChevronDown size={10} />
+                              <span className="flex items-center gap-2">
+                                <FaArrowRight
+                                  size={14}
+                                  className="text-violet-400 mt-[4px]"
+                                />{" "}
+                                {item.name}
+                              </span>
+                              <FaChevronDown size={10} />
                             </button>
                             <ul className="absolute left-full top-0 bg-white shadow-xl border border-[#dcd4ff] py-2 w-48 rounded-xl opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-all duration-300 z-50">
                               {item.subItems.map((sub) => (
-                                <Link key={sub.name} to={sub.route} className="block px-4 py-2 hover:bg-[#dcd4ff]">
-                                    <span className="flex items-center gap-2">
- <FaArrowRight
-                           size={14}
-                           className="text-violet-400 mt-[4px]"
-                     />    {sub.name}
-  </span>
+                                <Link
+                                  key={sub.name}
+                                  to={sub.route}
+                                  className="block px-4 py-2 hover:bg-[#dcd4ff]"
+                                >
+                                  <span className="flex items-center gap-2">
+                                    <FaArrowRight
+                                      size={14}
+                                      className="text-violet-400 mt-[4px]"
+                                    />{" "}
+                                    {sub.name}
+                                  </span>
                                 </Link>
                               ))}
                             </ul>
@@ -767,7 +772,7 @@ export default function Navbar() {
 
         {/* Contact Button */}
         <div className="hidden lg:block">
-          <button className="bg-[#dcd4ff] text-black font-bold px-6 py-2 rounded-full border border-black hover:shadow-lg hover:-translate-y-1 transition">
+          <button className="bg-[#dcd4ff] text-black font-bold px-6 py-2 rounded-full border border-black hover:shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1">
             CONTACT US
           </button>
         </div>
@@ -783,14 +788,13 @@ export default function Navbar() {
       {/* Mobile Dropdown */}
       <AnimatePresence>
         {mobileMenuOpen && (
-         <motion.div
-  initial={{ opacity: 0, y: -20 }}
-  animate={{ opacity: 1, y: 0 }} 
-  exit={{ opacity: 0, y: -20 }}
-  transition={{ duration: 0.3 }}
-  className="lg:hidden px-6 pb-6 max-h-[95vh] overflow-y-auto  scrollbar-thin scrollbar-thumb-purple-300 scrollbar-track-transparent"
->
-
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3 }}
+            className="lg:hidden px-6 pb-6 max-h-[95vh] overflow-y-auto  scrollbar-thin scrollbar-thumb-purple-300 scrollbar-track-transparent"
+          >
             <ul className="space-y-4 text-lg font-bold text-black">
               {navLinks.map((link) => (
                 <li key={link.label}>
@@ -827,12 +831,13 @@ export default function Navbar() {
                                   className="block text-md py-1 pl-2 hover:bg-purple-100 rounded"
                                 >
                                   {/* <FaArrowRight className="inline-block mr-1" size={10} /> */}
-                                    <span className="flex items-center gap-2">
- <FaArrowRight
-                           size={14}
-                           className="text-violet-400 mt-[4px]"
-                     />    {item.name}
-  </span>
+                                  <span className="flex items-center gap-2">
+                                    <FaArrowRight
+                                      size={14}
+                                      className="text-violet-400 mt-[4px]"
+                                    />{" "}
+                                    {item.name}
+                                  </span>
                                 </Link>
                               ) : (
                                 <>
@@ -840,16 +845,19 @@ export default function Navbar() {
                                     onClick={() => toggleSubMenu(item.name)}
                                     className="w-full text-left text-md py-1 pl-2 font-semibold flex justify-between items-center hover:bg-purple-100 rounded"
                                   >
-                                      <span className="flex items-center gap-2">
- <FaArrowRight
-                           size={14}
-                           className="text-violet-400 mt-[4px]"
-                     />    {item.name}
-  </span>
+                                    <span className="flex items-center gap-2">
+                                      <FaArrowRight
+                                        size={14}
+                                        className="text-violet-400 mt-[4px]"
+                                      />{" "}
+                                      {item.name}
+                                    </span>
                                     <FaChevronDown
                                       size={12}
                                       className={`transition-transform ${
-                                        openSubMenus[item.name] ? "rotate-180" : ""
+                                        openSubMenus[item.name]
+                                          ? "rotate-180"
+                                          : ""
                                       }`}
                                     />
                                   </button>
@@ -859,15 +867,18 @@ export default function Navbar() {
                                         <Link
                                           key={sub.name}
                                           to={sub.route}
-                                          onClick={() => setMobileMenuOpen(false)}
+                                          onClick={() =>
+                                            setMobileMenuOpen(false)
+                                          }
                                           className="block text-md py-2 pl-4 hover:bg-purple-100 rounded"
                                         >
-                                           <span className="flex items-center gap-2">
- <FaArrowRight
-                           size={14}
-                           className="text-violet-400 mt-[4px]"
-                     />     {sub.name}
-  </span>
+                                          <span className="flex items-center gap-2">
+                                            <FaArrowRight
+                                              size={14}
+                                              className="text-violet-400 mt-[4px]"
+                                            />{" "}
+                                            {sub.name}
+                                          </span>
                                         </Link>
                                       ))}
                                     </ul>
@@ -885,7 +896,7 @@ export default function Navbar() {
 
               {/* Contact Button */}
               <li>
-                <button className="w-full bg-[#dcd4ff] text-black font-bold py-2 mt-4 rounded-full border border-black hover:shadow-lg hover:-translate-y-1 transition">
+                <button className="w-full bg-[#dcd4ff] text-black font-bold py-2 mt-4 rounded-full border border-black hover:shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1">
                   CONTACT US
                 </button>
               </li>
