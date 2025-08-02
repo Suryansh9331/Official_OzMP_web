@@ -2,6 +2,8 @@
 
 
 import Hero from "./Hero"
+import DigitalMarketingSection from "./Overview";
+import ServiceIntro from "./ServicesIntro";
 import SecondSection from "./ThreeBox";
 
 
@@ -12,6 +14,8 @@ const DigitalMarketing = () => {
       
       <Hero/>
       <SecondSection/>
+      <DigitalMarketingSection/>
+      <ServiceIntro/>
      
     </div>
   );

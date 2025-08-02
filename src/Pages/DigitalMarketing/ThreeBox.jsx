@@ -46,7 +46,7 @@ const SecondSection = () => {
           <h2 className="text-2xl md:text-4xl font-[Archivo] font-semibold text-black">
             Power Your Growth With Smarter Marketing
           </h2>
-          <p className="text-base md:text-lg mt-4 text-gray-700 max-w-4xl mx-auto">
+          <p className="text-base md:text-lg mt-4 text-gray-700 max-w-3xl mx-auto">
             All-In-One Platform To Manage SEO, Ads, Social Media, And Email — With Real-Time Insights And Automation Built In
           </p>
         </div>
