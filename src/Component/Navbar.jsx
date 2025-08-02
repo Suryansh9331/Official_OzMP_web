@@ -772,12 +772,14 @@ export default function Navbar() {
 
         {/* Contact Button */}
         <div className="hidden lg:block">
+        <Link to = "/contact-us"> 
           <button className="bg-[#dcd4ff] text-black font-extrabold text-sm tracking-wide py-2 hover:cursor-pointer px-8 rounded-full flex items-center gap-2 border border-gray-600 hover:shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 transition-transform duration-300">
             CONTACT US{" "}
             <span className="rounded-full border border-black p-1">
               <FaArrowRight size={12} />
             </span>
           </button>
+        </Link>
         </div>
 
         {/* Mobile Toggle */}
@@ -899,12 +901,14 @@ export default function Navbar() {
 
               {/* Contact Button */}
               <li>
+              <Link to ="/contact-us">  
                  <button className="w-full bg-[#dcd4ff] text-black font-bold py-2 rounded-full flex justify-center items-center gap-2 border border-black hover:bg-[#c9bcfd] hover:shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300 mt-4">
                    CONTACT US
                    <span className="rounded-full border border-black p-1">
                      <FaArrowRight size={12} />
                    </span>
                 </button>
+              </Link>
               </li>
             </ul>
           </motion.div>
