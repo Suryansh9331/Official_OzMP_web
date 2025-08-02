@@ -10,6 +10,7 @@ import About from "../Pages/About/About";
 import ScrollToTop from "../Component/ScrollToTop";
 import ScrollToTopButton from "../Component/SttButton";
 import DigitalMarketing from "../Pages/DigitalMarketing/DigitalMarketing"
+import Contact from "../Pages/Contact/Contact"
 const AppRoutes = () => {
   return (
     <div>
@@ -20,6 +21,7 @@ const AppRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<About/>} />
         <Route path="/services-digital-marketing" element={<DigitalMarketing/>} />
+        <Route path="/contact-us" element={<Contact/>} />
       </Routes>
       <Footer/>
         <ScrollToTopButton/>

@@ -16,10 +16,10 @@ const HeroBanner = () => {
       style={{
         backgroundImage: `url(${bg})`,
         backgroundPosition: "right center",
-        backgroundImage: `url(${bg})`,
+      
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "right center",
+   
       }}
     >
       <div
