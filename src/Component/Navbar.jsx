@@ -591,7 +591,7 @@ const navLinks = [
           { name: "Mobile", route: "/services/development/mobile" },
         ],
       },
-      { name: "Marketing", route: "/services/marketing" },
+      { name: "Marketing", route: "/services-digital-marketing" },
     ],
   },
   {
