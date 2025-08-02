@@ -40,13 +40,13 @@ const SecondSection = () => {
         `}
       </style>
 
-      <section className="px-4 md:py-24 py-14  md:px-2 lg:px-24 font-[Poppins]">
+      <section className="px-4 md:py-28 py-14  md:px-2 lg:px-24 font-[Poppins]">
         {/* Heading */}
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-[Archivo] font-semibold text-black">
             Power Your Growth With Smarter Marketing
           </h2>
-          <p className="text-base md:text-lg mt-4 text-gray-700 lg:max-w-3xl  md:max-w-2xl mx-auto">
+          <p className="text-base md:text-lg mt-4 text-gray-700 lg:max-w-6xl  md:max-w-2xl mx-auto">
             All-In-One Platform To Manage SEO, Ads, Social Media, And Email — With Real-Time Insights And Automation Built In
           </p>
         </div>
