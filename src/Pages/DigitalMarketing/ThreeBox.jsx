@@ -40,7 +40,7 @@ const SecondSection = () => {
         `}
       </style>
 
-      <section className="px-4 py-26 md:px-2 lg:px-24 font-[Poppins]">
+      <section className="px-4 md:py-24 py-14  md:px-2 lg:px-24 font-[Poppins]">
         {/* Heading */}
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-[Archivo] font-semibold text-black">

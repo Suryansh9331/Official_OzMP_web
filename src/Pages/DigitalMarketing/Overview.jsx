@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const DigitalMarketingSection = () => {
   return (
-    <section className="h-auto flex flex-col lg:flex-row items-center justify-between px-8 md:px-16 py-4 overflow-hidden">
+    <section className="h-auto flex flex-col lg:flex-row items-center justify-between px-4  md:px-16  overflow-hidden">
       {/* Left Section */}
       <motion.div
         className="lg:w-[45%] text-center lg:text-left"
@@ -14,7 +14,7 @@ const DigitalMarketingSection = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: false, amount: 0.4 }}
       >
-        <h2 className="text-3xl md:text-5xl font-bold text-black font-archivo mb-6">
+        <h2 className="text-2xl md:text-5xl font-bold text-[#1E1C21] font-archivo mb-6">
           Digital Marketing Services Overview
         </h2>
         <p className="text-gray-700 text-base md:text-lg font-poppins mb-8">
