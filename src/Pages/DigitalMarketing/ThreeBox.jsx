@@ -40,7 +40,7 @@ const SecondSection = () => {
         `}
       </style>
 
-      <section className="px-4 py-26 md:px-12 lg:px-24 font-[Poppins]">
+      <section className="px-4 py-26 md:px-2 lg:px-24 font-[Poppins]">
         {/* Heading */}
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-[Archivo] font-semibold text-black">
@@ -56,7 +56,7 @@ const SecondSection = () => {
           {cards.map((card, index) => (
             <div
               key={index}
-              className="group transition-all duration-300 ease-in-out p-6  rounded-xl text-center cursor-pointer hover:border hover:border-black hover:bg-[#E2DCFF] hover:shadow-lg"
+              className="group transition-all duration-300 ease-in-out p-6  rounded-xl text-center cursor-pointer hover:border shadow-lg hover:border-black hover:bg-[#E2DCFF] hover:shadow-lg"
             >
               <div className={`w-14 h-14 mx-auto mb-4 ${card.animation}`}>
                 <img
