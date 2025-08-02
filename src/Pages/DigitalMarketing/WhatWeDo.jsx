@@ -9,7 +9,7 @@ const InfoBox = ({ icon, title, description }) => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
-      className="flex flex-col items-center text-center p-6 bg-white rounded-md "
+      className="flex flex-col items-center text-center p-6  rounded-md "
     >
       <img src={icon} alt="icon" className="w-10 h-10 mb-4" />
       <h3 className="text-xl font-medium font-[Archivo] text-[#1C1A1F] mb-2">{title}</h3>
@@ -49,7 +49,7 @@ const WhatWeDo = () => {
   };
 
   return (
-    <section className="w-full py-12 px-4 md:px-10 lg:px-16">
+    <section className=" mt-10 w-full py-12 px-2 md:px-10 lg:px-16  lg:py-20 md:py-12  bg-[#DCD4FF]">
       <div
         className="
           grid

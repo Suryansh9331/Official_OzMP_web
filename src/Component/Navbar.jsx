@@ -570,13 +570,14 @@ const navLinks = [
           { name: "Creative", route: "/about/team/creative" },
         ],
       },
-      { name: "Our Story", route: "/about/story" },
+      { name: "Our Story", route: "/about-us" },
     ],
   },
   {
     label: "Services",
     dropdown: true,
     items: [
+       { name: "IT", route: "/services-digital-marketing" },
       {
         name: "Design",
         subItems: [
@@ -589,6 +590,8 @@ const navLinks = [
         subItems: [
           { name: "Web", route: "/services/development/web" },
           { name: "Mobile", route: "/services/development/mobile" },
+          { name: "Software", route: "/services/development/mobile" },
+          { name: "API", route: "/services/development/mobile" },
         ],
       },
       { name: "Marketing", route: "/services-digital-marketing" },
