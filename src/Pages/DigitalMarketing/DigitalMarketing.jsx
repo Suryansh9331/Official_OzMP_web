@@ -2,6 +2,7 @@
 
 
 import Hero from "./Hero"
+import SecondSection from "./ThreeBox";
 
 
 
@@ -10,6 +11,7 @@ const DigitalMarketing = () => {
     <div className= " w-full overflow-hidden">
       
       <Hero/>
+      <SecondSection/>
      
     </div>
   );

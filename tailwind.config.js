@@ -6,6 +6,7 @@ export default {
     extend: {
       animation: {
         slideDown: "slideDown 0.3s ease-in-out",
+        'spin-slow': 'spin 3s linear infinite',
       },
       keyframes: {
         slideDown: {
@@ -34,6 +35,7 @@ export default {
      borderRadius: {
       'xl': '1.25rem' // match reference image corner
     }
+    
     },
   },
   plugins: [scrollbarHide],
