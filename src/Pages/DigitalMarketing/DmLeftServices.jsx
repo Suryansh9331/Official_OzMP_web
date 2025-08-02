@@ -144,7 +144,7 @@ const LeftServiceSection = ({
           <img
             src={image}
             alt="illustration"
-            className="lg:max-w-[90%] md:max-w-full "
+            className="lg:max-w-[92%] md:max-w-full "
           />
         </motion.div>
 
@@ -164,7 +164,7 @@ const LeftServiceSection = ({
             {points.map((point, idx) => (
               <li
                 key={idx}
-                className="flex items-start gap-2 text-[Inter] text-sm md:text-xs lg:text-sm text-gray-700"
+                className="flex items-start gap-2 text-[Inter] text-sm md:text-xs lg:text-lg  font-normal text-gray-800 "
               >
                 <CheckCircle2 className="text-[#8D8DFF]" size={18 } />
                 <span>{point}</span>
@@ -175,7 +175,7 @@ const LeftServiceSection = ({
           {/* Read More Button */}
           <motion.button
             style={{ backgroundColor: buttonColor }}
-            className="px-5  md:px-4  lg:px-6 py-2 rounded-full font-normal font-[Inter] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-md transition mt-4 md:mt-2 lg:mt-4 md:text-xs sm:text-sm lg:text-base"
+            className="px-5  md:px-4  lg:px-6 py-2 rounded-full font-normal font-[Inter] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-md transition-transform  hover:cursor-pointer mt-4 md:mt-2 lg:mt-4 md:text-xs sm:text-sm lg:text-base  hover:-translate-x-1 hover:-translate-y-1  duration-300"
           >
             {buttonText}
           </motion.button>
