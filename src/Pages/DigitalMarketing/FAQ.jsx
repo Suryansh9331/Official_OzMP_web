@@ -32,11 +32,7 @@ const FAQ = () => {
     answer:
       "Absolutely. We can plug into your current team or tech stack seamlessly — whether you're using WordPress, Shopify, or a custom CMS. Collaboration is key, and we tailor our approach to complement your brand and resources.",
   },
-  {
-    question: "How do we get started with a digital marketing plan?",
-    answer:
-      "Simply fill out our quick discovery form or book a free strategy call. We’ll assess your goals, audit your current efforts, and propose a clear action plan — no fluff, just real strategy.",
-  },
+
 ];
 
 

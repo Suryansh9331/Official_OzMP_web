@@ -40,7 +40,7 @@ const HWW = () => {
   };
 
   return (
-    <div className="w-full font-[Poppins] space-y-4 max-w-6xl mx-auto px-4 md:py-8 py-4 ">
+    <div className="w-full font-[Poppins] space-y-6 max-w-6xl mx-auto px-4 md:py-8 py-4 ">
       {accordionData.map((item, index) => {
         const isActive = activeIndex === index;
 
@@ -56,7 +56,7 @@ const HWW = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: index * 0.1 }}
-            className={`transition-all duration-300 rounded-xl border overflow-hidden shadow-sm ${
+            className={`transition-all duration-300 rounded-xl border shadow-[8px_8px_0px_rgb(0,0,0,0.8)] overflow-hidden  ${
               isActive ? 'bg-[#DBD2FF] border-2 border-[#ADA5A5]' : 'bg-white border-2 border-[#ADA5A5]'
             }`}
           >
