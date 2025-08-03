@@ -13,6 +13,7 @@ import WhatWeDo from "./WhatWeDo";
 import HowWeWork from "./HowWeWork";
 import PricingSection from "../Home/Pricing";
 import TestimonialSlider from "../../Component/Testimonial";
+import FAQ from "./FAQ";
 
 const DigitalMarketing = () => {
   return (
@@ -117,6 +118,7 @@ const DigitalMarketing = () => {
       <HowWeWork />
        <PricingSection/>
        <TestimonialSlider/>
+       <FAQ/>
     </div>
   );
 };
