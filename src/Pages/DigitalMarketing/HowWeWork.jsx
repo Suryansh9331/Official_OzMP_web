@@ -73,9 +73,11 @@ const HWW = () => {
               </div>
 
               {/* Right: Read More */}
-              <div className="text-sm text-[#9E71FF] font-medium">
-                +
-              </div>
+             {/* Right: Read More */}
+<div className="text-sm text-[#9E71FF] font-medium">
+  {isActive ? '🔼' : '➕'}
+</div>
+
             </div>
 
             {/* Expanded content */}
