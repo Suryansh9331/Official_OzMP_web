@@ -10,6 +10,7 @@ import SecondSection from "./ThreeBox";
 import LeftServiceSection from "./DmLeftServices";
 import RightServiceSection from "./DmRightServices";
 import WhatWeDo from "./WhatWeDo";
+import HowWeWork from "./HowWeWork";
 
 const DigitalMarketing = () => {
   return (
@@ -111,6 +112,7 @@ const DigitalMarketing = () => {
           Tailored Digital Marketing Campaigns That Deliver Real Results.
         </p>
       </section>
+      <HowWeWork />
     </div>
   );
 };
