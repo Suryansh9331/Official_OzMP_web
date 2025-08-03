@@ -11,7 +11,7 @@ const TestimonialSlider = () => {
       name: "Sarah Johnson",
       designation: "CEO & Founder",
       company: "TechStart Solutions",
-      image: "https://randomuser.me/api/portraits/women/44.jpg",
+      image: "https://randomuser.me/api/portraits/women/42.jpg",
       testimonial: "We love Oz Media Planet! Their designers were using it for their projects, so we already knew what kind of design they want.",
       rating: 5
     },
@@ -169,14 +169,14 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <div className="w-full bg-gray-50 py-16 px-4">
-      <div className="max-w-7xl mx-auto">
+    <div className="w-full bg-white py-16 ">
+      <div className="w-full mx-auto ">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Outfit, sans-serif' }}>
+          <h2 className="md:text-4xl text-4xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Outfit, sans-serif' }}>
             Our Loyal Customers Have Said
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto" style={{ fontFamily: 'Poppins, sans-serif' }}>
+          <p className="text-gray-600 max-w-2xl  mx-auto" style={{ fontFamily: 'Poppins, sans-serif' }}>
             Oz Media Planet gives you the blocks & components you need to create a truly
             professional website, landing page or admin panel for your SaaS.
           </p>
@@ -201,7 +201,7 @@ const TestimonialSlider = () => {
                     <img
                       src={testimonial.image}
                       alt={testimonial.name}
-                      className="w-16 h-16 rounded-full object-cover border-2 border-white shadow-md"
+                      className="w-16 h-16 rounded-full object-cover border-2 border-purple-400 shadow-md"
                     />
                     {index === 0 && (
                       <div className="absolute -top-2 -right-2 bg-blue-500 text-white text-xs px-2 py-1 rounded-full">
@@ -264,20 +264,20 @@ const TestimonialSlider = () => {
             </button>
             <button
               onClick={scrollRight}
-              className="w-10 h-10 rounded-lg bg-purple-500 hover:bg-purple-600 flex items-center justify-center transition-colors duration-200 shadow-sm"
+              className="w-10 h-10 rounded-lg border border-gray-300  hover:border-purple-400 bg-white hover:bg-gray-50 flex items-center justify-center transition-colors duration-200 shadow-sm"
               disabled={currentIndex >= testimonials.length - 1}
             >
-              <ChevronRight className="w-5 h-5 text-white" />
+              <ChevronRight className="w-5 h-5 text-purple-400" />
             </button>
           </div>
 
           {/* See All Reviews Link */}
-          <div className="text-center mt-6">
+          {/* <div className="text-center mt-6">
             <button className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 font-medium" style={{ fontFamily: 'Poppins, sans-serif' }}>
               See all reviews by our customers
               <ChevronRight className="w-4 h-4" />
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
 
