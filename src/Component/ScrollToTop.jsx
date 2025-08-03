@@ -1,17 +1,16 @@
+// ScrollToTop.jsx
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 const ScrollToTop = () => {
-  const { pathname } = useLocation();
+  const location = useLocation();
 
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }, [pathname]); // This will run on every route change and refresh
+    // Scroll to top on any location change (new or same route)
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [location.key]); // location.key ensures re-trigger even for same pathname
 
-  return null;
+  return null; // This component doesn’t render anything
 };
 
 export default ScrollToTop;
