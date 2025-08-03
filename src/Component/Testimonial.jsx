@@ -169,7 +169,7 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <div className="w-full bg-white py-16 ">
+    <div className="w-full bg-white py-8 md:py-14 ">
       <div className="w-full mx-auto ">
         {/* Header */}
         <div className="text-center mb-12">
