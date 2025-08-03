@@ -11,6 +11,7 @@ import LeftServiceSection from "./DmLeftServices";
 import RightServiceSection from "./DmRightServices";
 import WhatWeDo from "./WhatWeDo";
 import HowWeWork from "./HowWeWork";
+import PricingSection from "../Home/Pricing";
 
 const DigitalMarketing = () => {
   return (
@@ -113,6 +114,7 @@ const DigitalMarketing = () => {
         </p>
       </section>
       <HowWeWork />
+       <PricingSection/>
     </div>
   );
 };
