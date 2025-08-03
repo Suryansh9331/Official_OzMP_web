@@ -1,6 +1,7 @@
 
 
 import S1 from "../../assets/images/DMS1.png"
+import S2 from "../../assets/images/DMS2.png"
 import Hero from "./Hero"
 import DigitalMarketingSection from "./Overview";
 import ServiceIntro from "./ServicesIntro";
@@ -33,18 +34,19 @@ const DigitalMarketing = () => {
         buttonColor="#DBD2FF"
       />
       <RightServiceSection
-        image={S1}
-        heading="Social Media Marketing"
-        subheading="Boost your website’s visibility on search engines with targeted keyword strategies and on-page excellence. Drive consistent, high-quality organic traffic."
-        points={[
-          "Custom static and dynamic websites tailored to your brand",
-          "Mobile and desktop responsive designs",
-          "SEO-optimized site architecture",
-          "Performance-focused for fast loading and high engagement",
-        ]}
-        buttonText="Read More"
-        buttonColor="#DBD2FF"
-      />
+  image={S2}
+  heading="Social Media Marketing"
+  subheading="Designs That Communicate and Convert. We create stunning visuals and intuitive interfaces that reflect your brand and enhance user engagement."
+  points={[
+    "Custom software for various industries",
+    "ERP, CRM, and SaaS platforms using MERN, MEAN, PHP, Python",
+    "Secure and scalable backend infrastructure",
+    "Dashboard-driven solutions ready for integration",
+  ]}
+  buttonText="Read More"
+  buttonColor="#DBD2FF"
+/>
+
       <LeftServiceSection
         image={S1}
         heading="Search Engine Optimization (SEO)"
