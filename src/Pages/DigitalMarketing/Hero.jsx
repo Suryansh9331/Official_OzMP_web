@@ -45,7 +45,7 @@ const HeroContent = () => (
     `}
   >
     <h1
-      className="text-xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight"
+      className="text-2xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight"
       style={{ fontFamily: "Archivo, sans-serif" }}
     >
       Transforming Digital Marketing <br />
