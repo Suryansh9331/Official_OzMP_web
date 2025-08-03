@@ -50,10 +50,10 @@ const fullText =
   return (
     <section
       ref={sectionRef}
-      className="w-full max-w-7xl  md:px-10 px-2 lg:py-16 md:py-24 py-16 text-center flex flex-col items-center"
+      className="w-full   md:px-10 px-2 lg:py-16 md:py-24 py-16 text-center flex flex-col items-center"
     >
       <h1
-        className="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] font-semibold leading-snug min-h-[4rem]"
+        className="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[38px] font-semibold leading-snug min-h-[4rem]"
         style={{
           fontFamily: "'Arima', cursive",
           color: "#19007C",
