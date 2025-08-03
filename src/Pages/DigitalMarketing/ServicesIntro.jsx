@@ -32,7 +32,7 @@ const useTypewriter = (text, speed = 60, active = false) => {
 
 const ServiceIntro = () => {
   const { ref, inView } = useInView({ triggerOnce: false });
-  const fullHeading = "TTypes Of Services We Offer";
+  const fullHeading = "Types Of Services We Offer";
   const typedText = useTypewriter(fullHeading, 60, inView);
 
   return (

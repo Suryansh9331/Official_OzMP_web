@@ -23,76 +23,76 @@ const DigitalMarketing = () => {
       <SecondSection />
       <DigitalMarketingSection />
       <ServiceIntro />
+      <section className="md:px-6 lg:px-8 px-2">
+        <LeftServiceSection
+          image={S1}
+          heading="Search Engine Optimization (SEO)"
+          subheading="Boost your website’s visibility on search engines with targeted keyword strategies and on-page excellence. Drive consistent, high-quality organic traffic."
+          points={[
+            "Custom static and dynamic websites tailored to your brand",
+            "Mobile and desktop responsive designs",
+            "SEO-optimized site architecture",
+            "Performance-focused for fast loading and high engagement",
+          ]}
+          buttonText="Read More"
+          buttonColor="#DBD2FF"
+        />
+        <RightServiceSection
+          image={S2}
+          heading="Social Media Marketing"
+          subheading="Designs That Communicate and Convert. We create stunning visuals and intuitive interfaces that reflect your brand and enhance user engagement."
+          points={[
+            "Custom software for various industries",
+            "ERP, CRM, and SaaS platforms using MERN, MEAN, PHP, Python",
+            "Secure and scalable backend infrastructure",
+            "Dashboard-driven solutions ready for integration",
+          ]}
+          buttonText="Read More"
+          buttonColor="#DBD2FF"
+        />
 
-      <LeftServiceSection
-        image={S1}
-        heading="Search Engine Optimization (SEO)"
-        subheading="Boost your website’s visibility on search engines with targeted keyword strategies and on-page excellence. Drive consistent, high-quality organic traffic."
-        points={[
-          "Custom static and dynamic websites tailored to your brand",
-          "Mobile and desktop responsive designs",
-          "SEO-optimized site architecture",
-          "Performance-focused for fast loading and high engagement",
-        ]}
-        buttonText="Read More"
-        buttonColor="#DBD2FF"
-      />
-      <RightServiceSection
-        image={S2}
-        heading="Social Media Marketing"
-        subheading="Designs That Communicate and Convert. We create stunning visuals and intuitive interfaces that reflect your brand and enhance user engagement."
-        points={[
-          "Custom software for various industries",
-          "ERP, CRM, and SaaS platforms using MERN, MEAN, PHP, Python",
-          "Secure and scalable backend infrastructure",
-          "Dashboard-driven solutions ready for integration",
-        ]}
-        buttonText="Read More"
-        buttonColor="#DBD2FF"
-      />
+        <LeftServiceSection
+          image={S3}
+          heading="Email Marketing"
+          subheading="Boost your website’s visibility on search engines with targeted keyword strategies and on-page excellence. Drive consistent, high-quality organic traffic."
+          points={[
+            "Custom static and dynamic websites tailored to your brand",
+            "Mobile and desktop responsive designs",
+            "SEO-optimized site architecture",
+            "Performance-focused for fast loading and high engagement",
+          ]}
+          buttonText="Read More"
+          buttonColor="#DBD2FF"
+        />
 
-      <LeftServiceSection
-        image={S3}
-        heading="Email Marketing"
-        subheading="Boost your website’s visibility on search engines with targeted keyword strategies and on-page excellence. Drive consistent, high-quality organic traffic."
-        points={[
-          "Custom static and dynamic websites tailored to your brand",
-          "Mobile and desktop responsive designs",
-          "SEO-optimized site architecture",
-          "Performance-focused for fast loading and high engagement",
-        ]}
-        buttonText="Read More"
-        buttonColor="#DBD2FF"
-      />
+        <RightServiceSection
+          image={S4}
+          heading="Content Marketing"
+          subheading="Designs That Communicate and Convert. We create stunning visuals and intuitive interfaces that reflect your brand and enhance user engagement."
+          points={[
+            "Custom software for various industries",
+            "ERP, CRM, and SaaS platforms using MERN, MEAN, PHP, Python",
+            "Secure and scalable backend infrastructure",
+            "Dashboard-driven solutions ready for integration",
+          ]}
+          buttonText="Read More"
+          buttonColor="#DBD2FF"
+        />
 
-      <RightServiceSection
-        image={S4}
-        heading="Content Marketing"
-        subheading="Designs That Communicate and Convert. We create stunning visuals and intuitive interfaces that reflect your brand and enhance user engagement."
-        points={[
-          "Custom software for various industries",
-          "ERP, CRM, and SaaS platforms using MERN, MEAN, PHP, Python",
-          "Secure and scalable backend infrastructure",
-          "Dashboard-driven solutions ready for integration",
-        ]}
-        buttonText="Read More"
-        buttonColor="#DBD2FF"
-      />
-
-      <LeftServiceSection
-        image={S5}
-        heading="Affiliate Marketing"
-        subheading="Boost your website’s visibility on search engines with targeted keyword strategies and on-page excellence. Drive consistent, high-quality organic traffic."
-        points={[
-          "Custom static and dynamic websites tailored to your brand",
-          "Mobile and desktop responsive designs",
-          "SEO-optimized site architecture",
-          "Performance-focused for fast loading and high engagement",
-        ]}
-        buttonText="Read More"
-        buttonColor="#DBD2FF"
-      />
-
+        <LeftServiceSection
+          image={S5}
+          heading="Affiliate Marketing"
+          subheading="Boost your website’s visibility on search engines with targeted keyword strategies and on-page excellence. Drive consistent, high-quality organic traffic."
+          points={[
+            "Custom static and dynamic websites tailored to your brand",
+            "Mobile and desktop responsive designs",
+            "SEO-optimized site architecture",
+            "Performance-focused for fast loading and high engagement",
+          ]}
+          buttonText="Read More"
+          buttonColor="#DBD2FF"
+        />
+      </section>
       <WhatWeDo />
 
       <section className="w-full px-4 py-12 text-center">
@@ -117,16 +117,13 @@ const DigitalMarketing = () => {
         </p>
       </section>
       <HowWeWork />
-       <PricingSection/>
-       <TestimonialSlider/>
-    
-       <FAQ/>
-         <Headline/>
+      <PricingSection />
+      <TestimonialSlider />
+
+      <FAQ />
+      <Headline />
     </div>
   );
 };
 
 export default DigitalMarketing;
-
-
-

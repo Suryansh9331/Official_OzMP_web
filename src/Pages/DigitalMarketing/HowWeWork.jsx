@@ -40,7 +40,7 @@ const HWW = () => {
   };
 
   return (
-    <div className="w-full font-[Poppins] space-y-6 max-w-6xl mx-auto px-4 md:py-8 py-4 ">
+    <div className="w-full font-[Poppins] space-y-8 max-w-6xl mx-auto md:px-8 px-4  md:py-8 py-4 ">
       {accordionData.map((item, index) => {
         const isActive = activeIndex === index;
 
