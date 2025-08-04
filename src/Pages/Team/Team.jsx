@@ -1,10 +1,10 @@
 import Hero from "./Hero"
-
+import Teams from "./MemeberCard";
 const  OurTeam = () =>{
 return (
 <div>
 <Hero/>
-<OurTeam/>
+<Teams/>
 </div>
 );
 }

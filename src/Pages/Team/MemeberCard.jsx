@@ -1,52 +1,48 @@
 import React from "react";
 import "../../index.css"; // Assuming Tailwind and fonts are imported here
-import AvniImg from "../../assets/team/avni.jpg";
-import KajalImg from "../../assets/team/kajal.jpg";
-import AtulImg from "../../assets/team/atul.jpg";
-import PalakImg from "../../assets/team/palak.jpg";
-import RajeevImg from "../../assets/team/rajeev.jpg";
-import SuryanshImg from "../../assets/team/suryansh.jpg";
+import Img from "../../assets/images/techimage.png";
+
 
 const teamMembers = [
   {
     name: "Avni Bhadouriya",
     role: "Chief Executive Officer (CEO)",
-    image: AvniImg,
+    image :Img,
     description:
       "Avni is the founder and strategic force behind OZ Media Planet, driving innovation and market leadership.",
   },
   {
     name: "Kajal Agrahari",
     role: "Human Resources (HR) Manager",
-    image: KajalImg,
+    image:Img,
     description:
       "Kajal ensures we recruit, retain, and nurture talent while fostering a supportive and high-performance culture.",
   },
   {
     name: "Atul Kumar Rawat",
     role: "Lead UI/UX Designer",
-    image: AtulImg,
+    image :Img,
     description:
       "Atul leads creative design with a human-centered approach, focusing on seamless user experience across all devices.",
   },
   {
     name: "Palak Tiwari",
     role: "Senior Full Stack Developer",
-    image: PalakImg,
+    image:Img,
     description:
       "Palak crafts scalable full-stack applications, merging backend efficiency with dynamic frontend interfaces.",
   },
   {
     name: "Rajeev Patel",
     role: "Senior Full Stack Developer",
-    image: RajeevImg,
+    image: Img,
     description:
       "Rajeev specializes in developing secure, high-performing digital products with full-stack technologies.",
   },
   {
     name: "Suryansh Mishra",
     role: "Mobile App & Software Developer",
-    image: SuryanshImg,
+    image: Img,
     description:
       "Suryansh delivers custom software and mobile apps with strong UX and robust performance across platforms.",
   },
