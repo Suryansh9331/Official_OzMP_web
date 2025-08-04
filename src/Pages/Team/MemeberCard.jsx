@@ -1,102 +1,195 @@
-import React from "react";
-import "../../index.css"; // Assuming Tailwind and fonts are imported here
-import Img from "../../assets/images/techimage.png";
+import React from 'react';
+import { Share2 } from 'lucide-react';
 
+const OurTeam = () => {
+  const teamMembers = [
+    {
+      name: "Atul kumar Rawat",
+      role: "UI/Ux",
+      designation: "designer",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=face",
+      description: "Expert UI/UX designer crafting intuitive digital experiences with deep expertise in user-centered design, wireframing, and interactive prototyping for web and mobile platforms.",
+      socialLinks: ["facebook", "twitter", "instagram", "linkedin"]
+    },
+    {
+      name: "Rajeev Patel",
+      role: "software",
+      designation: "Developer",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=500&fit=crop&crop=face",
+      description: "Full-stack developer delivering scalable solutions with expertise in React, Node.js, and modern web technologies. Specialized in building high-performance applications.",
+      socialLinks: ["facebook", "twitter", "instagram", "linkedin"]
+    },
+    {
+      name: "Palak Tiwari",
+      role: "software",
+      designation: "Developer",
+      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=500&fit=crop&crop=face",
+      description: "Senior developer focused on creating robust backend architectures and seamless API integrations. Expert in database design and cloud deployment solutions.",
+      socialLinks: ["facebook", "twitter", "instagram", "linkedin"]
+    },
+    {
+      name: "Kajal Agrahari",
+      role: "HR",
+      designation: "",
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=500&fit=crop&crop=face",
+      description: "HR Manager leading talent acquisition and employee engagement initiatives. Building high-performance teams and fostering organizational growth through strategic HR practices.",
+      socialLinks: ["facebook", "twitter", "instagram", "pinterest"]
+    },
+    {
+      name: "Avni Bhadouriya",
+      role: "Founder &",
+      designation: "CEO",
+      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=500&fit=crop&crop=face",
+      description: "Visionary founder and CEO driving digital innovation and business transformation. Leading OZ Media Planet with strategic expertise in market positioning and growth.",
+      socialLinks: ["facebook", "twitter", "instagram", "pinterest"]
+    },
+    {
+      name: "Suryansh Mishra",
+      role: "software",
+      designation: "Developer",
+      image: "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=400&h=500&fit=crop&crop=face",
+      description: "Mobile app specialist creating advanced cross-platform applications. Expert in React Native, Flutter, and native iOS/Android development with focus on user experience.",
+      socialLinks: ["facebook", "twitter", "instagram", "linkedin"]
+    }
+  ];
 
-const teamMembers = [
-  {
-    name: "Avni Bhadouriya",
-    role: "Chief Executive Officer (CEO)",
-    image :Img,
-    description:
-      "Avni is the founder and strategic force behind OZ Media Planet, driving innovation and market leadership.",
-  },
-  {
-    name: "Kajal Agrahari",
-    role: "Human Resources (HR) Manager",
-    image:Img,
-    description:
-      "Kajal ensures we recruit, retain, and nurture talent while fostering a supportive and high-performance culture.",
-  },
-  {
-    name: "Atul Kumar Rawat",
-    role: "Lead UI/UX Designer",
-    image :Img,
-    description:
-      "Atul leads creative design with a human-centered approach, focusing on seamless user experience across all devices.",
-  },
-  {
-    name: "Palak Tiwari",
-    role: "Senior Full Stack Developer",
-    image:Img,
-    description:
-      "Palak crafts scalable full-stack applications, merging backend efficiency with dynamic frontend interfaces.",
-  },
-  {
-    name: "Rajeev Patel",
-    role: "Senior Full Stack Developer",
-    image: Img,
-    description:
-      "Rajeev specializes in developing secure, high-performing digital products with full-stack technologies.",
-  },
-  {
-    name: "Suryansh Mishra",
-    role: "Mobile App & Software Developer",
-    image: Img,
-    description:
-      "Suryansh delivers custom software and mobile apps with strong UX and robust performance across platforms.",
-  },
-];
-
-const Teams = () => {
-  return (
-    <section className="px-4 py-12 md:px-10 lg:px-24">
-      <div className="text-center mb-12">
-        <p className="text-sm tracking-wide text-[#a09bbc] font-Archivo">OUR TEAM</p>
-        <h2 className="text-4xl md:text-5xl font-Outfit font-bold text-black leading-tight">
-          The Futures Elevate Your Brand <span className="text-[#7b61ff]">Experience</span>
-        </h2>
+  const SocialIcon = ({ type, isPurple = false }) => {
+    const baseClass = "w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium transition-all duration-300 cursor-pointer";
+    const colorClass = isPurple 
+      ? "bg-purple-500 text-white hover:bg-purple-600 hover:scale-110 shadow-lg" 
+      : "bg-white text-gray-600 border border-gray-200 hover:bg-gray-50 hover:scale-110 hover:shadow-md";
+    
+    return (
+      <div className={`${baseClass} ${colorClass}`}>
+        {type === 'facebook' && 'f'}
+        {type === 'twitter' && '𝕏'}
+        {type === 'instagram' && '@'}
+        {type === 'linkedin' && 'in'}
+        {type === 'pinterest' && 'P'}
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {teamMembers.map((member, idx) => (
-          <div
-            key={idx}
-            className="relative p-4 rounded-2xl shadow-md bg-white transition-transform hover:-translate-y-1"
-          >
-            <div className="absolute top-0 right-0 w-20 h-20 bg-[#E2DCFF] rounded-bl-full"></div>
-            <img
-              src={member.image}
-              alt={member.name}
-              className="rounded-md w-full h-64 object-cover z-10"
-            />
-            <div className="mt-4">
-              <h3 className="text-lg font-semibold font-Archivo text-gray-800">
-                {member.name}
-              </h3>
-              <p className="text-sm text-gray-500 font-Archivo mb-2">
-                {member.role}
-              </p>
-              <p className="text-sm text-gray-600 font-Archivo">
-                {member.description}
-              </p>
-            </div>
-            <div className="mt-4 flex justify-between items-center">
-              <button className="bg-[#E2DCFF] p-2 rounded-full">
-                <img src="/assets/icons/share-icon.png" alt="Share" className="w-4 h-4" />
-              </button>
-              {/* Social icons can be customized or passed as components */}
-              <div className="flex gap-3">
-                <img src="/assets/icons/fb.png" alt="fb" className="w-4 h-4" />
-                <img src="/assets/icons/x.png" alt="x" className="w-4 h-4" />
-                <img src="/assets/icons/insta.png" alt="insta" className="w-4 h-4" />
-                <img src="/assets/icons/linkedin.png" alt="linkedin" className="w-4 h-4" />
+    );
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br  py-20 px-4 sm:px-6 lg:px-8">
+      <div className="w-full mx-auto">
+        {/* Header Section with Animation */}
+        <div className="text-left mb-20">
+          <div className="animate-fade-in-up">
+            <p className="text-purple-600 text-sm font-semibold mb-8 font-['Archivo'] tracking-[0.2em] uppercase opacity-80">
+              OUR TEAM
+            </p>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-4 font-['Outfit'] leading-[1.1] tracking-tight">
+              The Futures Elevate Your
+            </h1>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-16 font-['Outfit'] leading-[1.1] tracking-tight">
+              Brand <span className="text-purple-600 bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">Experience</span>
+            </h1>
+          </div>
+          
+          {/* Navigation buttons with hover effects */}
+         
+        </div>
+
+        {/* Team Grid with staggered animation */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          {teamMembers.map((member, index) => (
+            <div 
+              key={index} 
+              className="w-full max-w-sm mx-auto animate-fade-in-up group"
+              style={{ animationDelay: `${index * 150}ms` }}
+            >
+              {/* Card Container - EXACT match to reference */}
+              <div 
+                className="relative rounded-3xl  shadow-[4px_4px_0px_#000] p-6 h-[450px] flex flex-col transition-all duration-500  cursor-pointer overflow-hidden"
+                style={{ backgroundColor: '' }}
+              >
+                {/* Subtle gradient overlay for depth */}
+                <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                {/* Name and Role - Top positioned exactly like reference */}
+                <div className="relative z-10 mb-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-1 font-['Archivo'] group-hover:text-gray-800 transition-colors">
+                    {member.name}
+                  </h3>
+                  <p className="text-gray-700 text-sm font-['Archivo'] opacity-80">
+                    {member.role}
+                  </p>
+                  {member.designation && (
+                    <p className="text-gray-700 text-sm font-['Archivo'] opacity-80">
+                      {member.designation}
+                    </p>
+                  )}
+                </div>
+
+                {/* Profile Image - Center with hover effects */}
+                <div className="relative z-10 flex-1 flex  justify-end mb-6">
+                  <div className="relative">
+                    <div className="w-36 h-40  overflow-hidden shadow-lg group-hover:shadow-xl transition-all duration-500 group-hover:scale-105">
+                      <img 
+                        src={member.image} 
+                        alt={member.name}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
+                      {/* Image overlay on hover */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    </div>
+                    {/* Floating animation circle behind image */}
+                    <div className="absolute -inset-4 bg-gradient-to-r from-purple-400/20 to-indigo-400/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700 -z-10"></div>
+                  </div>
+                </div>
+
+                {/* Bottom Section - Social Icons and Share - exact positioning */}
+                <div className="relative z-10 flex items-center justify-between mb-4">
+                  {/* Social Icons - Left side */}
+                  <div className="flex gap-2">
+                    {member.socialLinks.slice(0, 3).map((social, socialIndex) => (
+                      <SocialIcon key={socialIndex} type={social} />
+                    ))}
+                    {member.socialLinks.length > 3 && (
+                      <SocialIcon type={member.socialLinks[3]} isPurple={true} />
+                    )}
+                  </div>
+                  
+                  {/* Share Button - Right side */}
+                  <button className="w-8 h-8 rounded-full bg-white border border-gray-200 flex items-center justify-center hover:bg-gray-50 hover:scale-110 hover:shadow-md transition-all duration-300 group/share">
+                    <Share2 size={14} className="text-gray-600 group-hover/share:text-gray-800 transition-colors" />
+                  </button>
+                </div>
+
+                {/* Description Text - Bottom center exactly like reference */}
+                <div className="relative z-10 text-center">
+                  <p className="text-gray-700 text-xs font-['Archivo'] leading-relaxed px-2 group-hover:text-gray-600 transition-colors">
+                    {member.description}
+                  </p>
+                </div>
+
+                {/* Animated border on hover */}
+                <div className="absolute inset-0 rounded-3xl border-2 border-transparent group-hover:border-purple-300/50 transition-all duration-500"></div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </section>
+
+      <style jsx>{`
+        @keyframes fade-in-up {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        .animate-fade-in-up {
+          animation: fade-in-up 0.8s ease-out forwards;
+        }
+      `}</style>
+    </div>
   );
 };
 
-export default Teams;
+export default OurTeam;
