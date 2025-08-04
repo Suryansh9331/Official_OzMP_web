@@ -565,10 +565,7 @@ const navLinks = [
     items: [
       {
         name: "Our Team",
-        subItems: [
-          { name: "Leadership", route: "/about/team/leadership" },
-          { name: "Creative", route: "/about/team/creative" },
-        ],
+        route:"our-team"
       },
       { name: "Our Story", route: "/about-us" },
     ],

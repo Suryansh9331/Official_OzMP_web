@@ -11,6 +11,7 @@ import About from "../Pages/About/About";
 import ScrollToTopButton from "../Component/SttButton";
 import DigitalMarketing from "../Pages/DigitalMarketing/DigitalMarketing"
 import Contact from "../Pages/Contact/Contact"
+import OurTeam from "../Pages/Team/Team";
 const AppRoutes = () => {
   return (
     <div>
@@ -22,6 +23,7 @@ const AppRoutes = () => {
         <Route path="/about-us" element={<About/>} />
         <Route path="/services-digital-marketing" element={<DigitalMarketing/>} />
         <Route path="/contact-us" element={<Contact/>} />
+        <Route path="/our-team" element={<OurTeam/>} />
       </Routes>
       <Footer/>
         <ScrollToTopButton/>
