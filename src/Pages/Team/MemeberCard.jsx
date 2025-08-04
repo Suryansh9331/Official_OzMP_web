@@ -125,7 +125,7 @@ const OurTeam = () => {
                 {/* Profile Image - Center with hover effects */}
                 <div className="relative z-10 flex-1 flex  justify-end mb-6">
                   <div className="relative">
-                    <div className="w-36 h-40  overflow-hidden shadow-lg group-hover:shadow-xl transition-all duration-500 group-hover:scale-105">
+                    <div className="w-44 h-44  overflow-hidden shadow-lg group-hover:shadow-xl transition-all duration-500 group-hover:scale-105">
                       <img 
                         src={member.image} 
                         alt={member.name}
