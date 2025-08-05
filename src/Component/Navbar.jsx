@@ -644,9 +644,8 @@ const navLinks = [
     label: "Blogs",
     dropdown: true,
     items: [
-      { name: "Openings", route: "/careers/openings" },
-      { name: "Openings2", route: "/careers/openings" },
-      { name: "Openings3", route: "/careers/openings" },
+      { name: "Blog", route: "/blogs" },
+ 
     ],
   },
 ];
