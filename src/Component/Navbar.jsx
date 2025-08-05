@@ -578,7 +578,7 @@ const navLinks = [
       {
         name: "Design",
         subItems: [
-          { name: "UI/UX", route: "/services/design/ui-ux" },
+          { name: "UI/UX", route: "/it-services/graphics-uiux-developement" },
           { name: "Branding", route: "/services/design/branding" },
         ],
       },
@@ -677,26 +677,26 @@ export default function Navbar() {
   return (
     <nav
       className={`${
-        isScrolled ? "bg-purple-50 shadow-md" : "bg-transparent"
+        isScrolled ? "bg-purple-50 bg-blur-xl shadow-md" : "bg-transparent"
       } sticky top-0 z-50 font-['Nunito'] transition-all duration-300`}
     >
-      <div className="mx-4 py-4 flex items-center justify-between">
+      <div className="mx-4 py-2 flex items-center justify-between">
         {/* Logo */}
         <Link to="/">
           <div className="flex items-center space-x-2">
             <img
               src="/images/logo.png"
               alt="Logo"
-              className="h-12 w-12 rounded-lg bg-black"
+              className="md:h-12 md:w-12 h-8 w-8 rounded-lg bg-black"
             />
-            <span className="text-2xl text-black font-['serif'] font-extrabold tracking-wide">
-              Oz Media
+            <span className="md:text-2xl text-xl  text-black font-['serif'] font-extrabold tracking-wide">
+              Oz Media 
             </span>
           </div>
         </Link>
 
         {/* Desktop Menu */}
-        <ul className="hidden lg:flex space-x-8 text-[16px] font-bold font-['Nunito'] text-black ">
+        <ul className="hidden lg:flex space-x-8 text-[16px] font-bold font-['Nunito'] text-black  ">
           {navLinks.map((link) => (
             <li
               key={link.label}
