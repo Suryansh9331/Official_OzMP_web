@@ -21,6 +21,7 @@ import ECommerceDevelopmentPage from "../Pages/Ecommerce/ECommerceDevelopmentPag
 import ITPage from "../Pages/IT/ITPage";
 import Blog from "../Pages/Blog/Blog";
 import ProjectDetails from "../Pages/Project/Project";
+import Inspirewall from "../Pages/Project/p1";
 const AppRoutes = () => {
   return (
     <div>
@@ -71,6 +72,10 @@ const AppRoutes = () => {
         <Route
           path="/projects-details"
           element={<ProjectDetails />}
+        />
+        <Route
+          path="/projects-details/inspirewall-mentalhealth-saas-platform"
+          element={<Inspirewall />}
         />
       </Routes>
       <Footer />

@@ -138,89 +138,94 @@
 
 // export default ProjectDetails;
 
-
-import React, { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import HeroBanner from "./Hero";
 
 const bgImages = [
-  'https://source.unsplash.com/1600x900/?technology,web',
-  'https://source.unsplash.com/1600x900/?startup,code',
-  'https://source.unsplash.com/1600x900/?software,design'
+  "https://plus.unsplash.com/premium_photo-1681400054984-c20bf5879c3b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D",
+  "https://images.unsplash.com/photo-1496065187959-7f07b8353c55?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://plus.unsplash.com/premium_photo-1661964187664-e26f70e1a224?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTZ8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D",
 ];
 
 const projects = [
   {
     id: 1,
-    title: 'InspireWell – Mental Health SaaS Platform',
+    title: "InspireWell – Mental Health SaaS Platform",
     description:
-      'InspireWell is a comprehensive mental wellness SaaS solution built for therapists and individuals. It includes online booking, mood tracking, AI-guided journaling, and analytics for self-growth. Built using React, Laravel, and MongoDB.',
+      "InspireWell is a comprehensive mental wellness SaaS solution built for therapists and individuals. It includes online booking, mood tracking, AI-guided journaling, and analytics for self-growth. Built using React, Laravel, and MongoDB.",
     image:
-      'https://assets-global.website-files.com/6422e4c30c8cc26f2239d8c5/6481bdbb1e810a33e812e7f2_saassss.png',
-    tech: ['React', 'Laravel', 'MongoDB', 'Tailwind CSS', 'Framer Motion'],
+      "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGVjaG5vbG9neXxlbnwwfHwwfHx8MA%3D%3D",
+    tech: ["React", "Laravel", "MongoDB", "Tailwind CSS", "Framer Motion"],
   },
   {
     id: 2,
-    title: 'ShopEase – E-commerce Web App',
+    title: "ShopEase – E-commerce Web App",
     description:
-      'A fast, scalable e-commerce web app that supports multiple vendors, real-time inventory, and AI-driven recommendations. Designed for startups and small businesses.',
+      "A fast, scalable e-commerce web app that supports multiple vendors, real-time inventory, and AI-driven recommendations. Designed for startups and small businesses.",
     image:
-      'https://www.codica.com/_next/image?url=%2Fimages%2Fsolutions%2Fecommerce-solution-cover.png&w=1080&q=75',
-    tech: ['Next.js', 'Node.js', 'PostgreSQL', 'Tailwind CSS'],
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D",
+    tech: ["Next.js", "Node.js", "PostgreSQL", "Tailwind CSS"],
   },
   {
     id: 3,
-    title: 'LeadBoost – Digital Marketing Dashboard',
+    title: "LeadBoost – Digital Marketing Dashboard",
     description:
-      'A custom-built marketing analytics dashboard tailored for agencies and digital teams to track campaigns, leads, CTR, and performance using integrated APIs like Google Ads, Facebook Ads, and more.',
+      "A custom-built marketing analytics dashboard tailored for agencies and digital teams to track campaigns, leads, CTR, and performance using integrated APIs like Google Ads, Facebook Ads, and more.",
     image:
-      'https://assets-global.website-files.com/63358716c7c2d4e93d44ffdd/63358d77e2ce8a7c07bc1632_digital-marketing-dashboard.png',
-    tech: ['Vue.js', 'Laravel', 'REST APIs', 'Chart.js'],
+      "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D",
+    tech: ["Vue.js", "Laravel", "REST APIs", "Chart.js"],
   },
+  {
+  id: 4,
+  title: "EduTrack – Learning Management System (LMS)",
+  description:
+    "EduTrack is a feature-rich LMS designed for universities and online education providers. It offers course management, real-time quizzes, student analytics, and progress tracking. Built to scale with performance in mind.",
+  image:
+    "https://images.unsplash.com/photo-1625217527288-93919c99650a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3BzJTIwdHJhY2tlcnxlbnwwfHwwfHx8MA%3D%3D",
+  tech: ["React", "Express.js", "MySQL", "Tailwind CSS", "Redux Toolkit"],
+},
+{
+  id: 5,
+  title: "FitNation – Fitness and Nutrition App",
+  description:
+    "FitNation is a cross-platform fitness tracking app that provides personalized workout routines, meal plans, and progress insights. Includes user authentication, calendar scheduling, and goal tracking features.",
+  image:
+    "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fEZpdHxlbnwwfHwwfHx8MA%3D%3D",
+  tech: ["React Native", "Firebase", "Node.js", "Expo", "Styled Components"],
+},
+{
+  id: 6,
+  title: "RentRoam – Real Estate Rental Platform",
+  description:
+    "RentRoam is an advanced property rental marketplace allowing agents and users to list, filter, and book properties in real-time. It includes map integration, user messaging, and landlord dashboards.",
+  image:
+    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVhbCUyMGVzdGF0ZXxlbnwwfHwwfHx8MA%3D%3D",
+  tech: ["Next.js", "Laravel", "MySQL", "Leaflet.js", "Tailwind CSS"],
+},
+
 ];
 
 const ProjectDetails = () => {
-  const [currentBg, setCurrentBg] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentBg((prev) => (prev + 1) % bgImages.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
+ 
 
   return (
-    <div className="bg-white text-black font-poppins">
+    <div className=" text-black font-poppins">
       {/* Hero Section with Animated Background */}
-      <section
-        className="relative w-full h-[90vh] flex flex-col justify-center items-center text-white text-center px-6 overflow-hidden"
-        style={{ backgroundImage: `url(${bgImages[currentBg]})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-      >
-        <div className="absolute inset-0 bg-black bg-opacity-60 backdrop-blur-sm z-0" />
-        <motion.div
-          className="z-10 relative"
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          <h1 className="text-5xl md:text-6xl font-[Archivo] font-bold mb-4 text-white">
-            Our Work Speaks for Itself
-          </h1>
-          <p className="text-xl font-[Outfit] max-w-3xl mx-auto text-white">
-            Explore real-world projects in Web, Mobile, Software, and SaaS that define performance, innovation, and excellence.
-          </p>
-        </motion.div>
-      </section>
+      <HeroBanner/>
 
       {/* Project Showcase Section */}
-      <section className="px-4 md:px-16 py-24 bg-white">
+      <section className="px-4 md:px-16 py-24 bg-[#DBD2FF] ">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
           className="text-center"
         >
-          <h2 className="text-4xl font-[Archivo] text-black mb-2">Recent Projects</h2>
+          <h2 className="text-4xl font-[Archivo] text-black mb-2">
+            Recent Projects
+          </h2>
           <p className="text-gray-600 font-[Outfit]">
             Genuine case studies demonstrating our expertise
           </p>
@@ -234,7 +239,7 @@ const ProjectDetails = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="bg-gray-50 shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition-all"
+              className="bg-gray-50  shadow-[8px_8px_0px_rgb(0,0,0,0.6)] rounded-xl overflow-hidden duration-10 transition-all"
             >
               <img
                 src={project.image}
@@ -249,7 +254,7 @@ const ProjectDetails = () => {
                   {project.description}
                 </p>
                 <div className="mt-4 text-xs font-[Inter] text-gray-500">
-                  Tech Stack: {project.tech.join(', ')}
+                  Tech Stack: {project.tech.join(", ")}
                 </div>
                 <Link
                   to={`/projects/${project.id}`}
@@ -271,27 +276,38 @@ const ProjectDetails = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <h2 className="text-4xl font-[Archivo] mb-6">Why Businesses Trust Us</h2>
+          <h2 className="text-4xl font-[Archivo] mb-6">
+            Why Businesses Trust Us
+          </h2>
           <p className="text-gray-600 font-[Outfit] text-lg mb-8">
-            We bring together creativity, technology, and performance with a strategy-first approach to deliver industry-grade IT and Marketing solutions.
+            We bring together creativity, technology, and performance with a
+            strategy-first approach to deliver industry-grade IT and Marketing
+            solutions.
           </p>
           <div className="grid md:grid-cols-3 gap-8 text-left">
             <div>
-              <h3 className="font-[Archivo] text-xl mb-2">Tailored Solutions</h3>
+              <h3 className="font-[Archivo] text-xl mb-2">
+                Tailored Solutions
+              </h3>
               <p className="font-[Poppins] text-sm text-gray-600">
-                We design and develop products specific to your goals. No templates. No limits.
+                We design and develop products specific to your goals. No
+                templates. No limits.
               </p>
             </div>
             <div>
               <h3 className="font-[Archivo] text-xl mb-2">Agile Development</h3>
               <p className="font-[Poppins] text-sm text-gray-600">
-                Agile processes with rapid iterations to reduce time-to-market and improve quality.
+                Agile processes with rapid iterations to reduce time-to-market
+                and improve quality.
               </p>
             </div>
             <div>
-              <h3 className="font-[Archivo] text-xl mb-2">Performance & Support</h3>
+              <h3 className="font-[Archivo] text-xl mb-2">
+                Performance & Support
+              </h3>
               <p className="font-[Poppins] text-sm text-gray-600">
-                Long-term partnerships with performance optimization and 24/7 client support.
+                Long-term partnerships with performance optimization and 24/7
+                client support.
               </p>
             </div>
           </div>
@@ -305,9 +321,12 @@ const ProjectDetails = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-3xl md:text-4xl font-[Archivo] mb-4">Have a Vision? Let’s Build It Together.</h2>
+          <h2 className="text-3xl md:text-4xl font-[Archivo] mb-4">
+            Have a Vision? Let’s Build It Together.
+          </h2>
           <p className="text-lg font-[Outfit] text-gray-600 mb-6">
-            We work with startups, SMEs, and enterprises to build scalable, performant applications that make an impact.
+            We work with startups, SMEs, and enterprises to build scalable,
+            performant applications that make an impact.
           </p>
           <a
             href="mailto:contact@ozmediaplanet.com"
