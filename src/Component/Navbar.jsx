@@ -574,7 +574,7 @@ const navLinks = [
     label: "Services",
     dropdown: true,
     items: [
-       { name: "IT", route: "/services-digital-marketing" },
+       { name: "IT", route: "/it-services" },
       {
         name: "Design",
         subItems: [
@@ -585,10 +585,13 @@ const navLinks = [
       {
         name: "Development",
         subItems: [
-          { name: "Web", route: "/services/development/web" },
-          { name: "Mobile", route: "/services/development/mobile" },
-          { name: "Software", route: "/services/development/mobile" },
-          { name: "API", route: "/services/development/mobile" },
+          { name: "Web", route: "/it-services/website-developement" },
+          { name: "Mobile App", route: "/it-services/mobile-application-developement" },
+          { name: "Software", route: "/it-services/software-developement" },
+          { name: "Graphics UI/UX", route: "/it-services/graphics-uiux-developement" },
+          { name: "E-commerce", route: "/it-services/e-commerce-solution" },
+          { name: "Hosting & Server", route: "/it-services/e-commerce-solution" },
+          { name: "Tech Support & AMC", route: "/it-services/e-commerce-solution" },
         ],
       },
       { name: "Marketing", route: "/services-digital-marketing" },
