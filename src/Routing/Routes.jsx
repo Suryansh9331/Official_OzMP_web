@@ -27,6 +27,7 @@ import LeadBoost from "../Pages/Project/p3";
 import EduTrack from "../Pages/Project/P4";
 import FitNation from "../Pages/Project/p5";
 import RentRoam from "../Pages/Project/p6";
+import Career from "../Pages/Carrier/Carrier";
 const AppRoutes = () => {
   return (
     <div>
@@ -102,7 +103,16 @@ const AppRoutes = () => {
           path="/projects-details/rentroam-real-state-rental-platofrm"
           element={<RentRoam />}
         />
+      
+        <Route
+          path="/careers/future-options-we-have"
+          element={<Career />}
+        />
+      
+      
+      
       </Routes>
+
       <Footer />
       <ScrollToTopButton />
     </div>

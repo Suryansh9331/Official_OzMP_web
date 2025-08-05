@@ -1,6 +1,6 @@
 import React from "react";
-import hero from "../../assets/Career Oppurtunity/Herobanner.png";
-import career from "../../assets/Career Oppurtunity/career.png";
+import hero from "../../assets/images/hero.png";
+import career from "../../assets/images/Career.png";
 
 const Career = () => {
   return (
@@ -11,30 +11,10 @@ const Career = () => {
       </div>
 
       {/* Why Work With Us Section */}
-      <div className="flex flex-col items-center justify-center mt-10 text-xl font-semibold">
-        <p className="text-blue-600">---Why Work With Us?---</p>
-        <h1 className="text-7xl mt-10 font-bold">
-          Trusted By Brands, Driven By
-        </h1>
-        <p className="text-blue-500 text-7xl font-bold">Results</p>
-      </div>
+     
 
       {/* Side Text Section */}
-      <div className="mt-5 flex flex-row">
-        <img src={career} alt="Career Visual" />
-        <div className="text-4xl text-center text-gray-800 font-bold -rotate-90 space-y-10">
-          <p>01. Growth & Learning</p>
-          <hr className="text-blue-500 border w-[500px]" />
-          <p>02. Inclusive Culture</p>
-          <hr className="text-blue-500 w-[500px]" />
-          <p>03. Work-Life Balance</p>
-          <hr className="text-blue-500 w-[500px]" />
-          <p>04. Impact-Driven Work</p>
-          <hr className="text-blue-500 w-[500px]" />
-          <p>05. Innovation & Creativity</p>
-          <hr className="text-blue-500 w-[500px]" />
-        </div>
-      </div>
+     
 
       {/* Open Positions Title */}
       <span className="flex gap-3 flex-row font-bold items-center justify-center text-center mt-5">

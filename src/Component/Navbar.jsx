@@ -646,7 +646,7 @@ const navLinks = [
     label: "Careers",
     dropdown: true,
     items: [
-      { name: "Openings", route: "/careers/openings" },
+      { name: "Carrier Options", route: "/careers/future-options-we-have" },
       {
         name: "Culture",
         subItems: [
