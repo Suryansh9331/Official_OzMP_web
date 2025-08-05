@@ -618,8 +618,8 @@ const navLinks = [
         name: "Recent Work",
         subItems: [
           { name: "Healthcare SaaS Platform", route: "/projects-details/inspirewall-mentalhealth-saas-platform" },
-          { name: "Project2", route: "/industries/finance/insurance" },
-          { name: "Project3", route: "/industries/finance/insurance" },
+          { name: "E-commerce", route: "/projects-details/shopease-e-commerce-web-app" },
+          { name: "Digital Marketing Dashboard", route: "/projects-details/leadboost-digital-marketing-dashboard" },
           { name: "Project4", route: "/industries/finance/insurance" },
           { name: "Project5", route: "/industries/finance/insurance" },
           { name: "Project6", route: "/industries/finance/insurance" },
@@ -765,7 +765,7 @@ export default function Navbar() {
                               </span>
                               <FaChevronDown size={10} />
                             </button>
-                            <ul className="absolute left-full top-0 bg-white shadow-xl border border-[#dcd4ff] py-2 w-48 rounded-xl opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-all duration-300 z-50">
+                            <ul className="absolute left-full top-0 bg-white shadow-xl border border-[#dcd4ff] py-2 w-68 rounded-xl opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-all duration-300 z-50">
                               {item.subItems.map((sub) => (
                                 <Link
                                   key={sub.name}

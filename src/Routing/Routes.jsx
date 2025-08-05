@@ -22,6 +22,8 @@ import ITPage from "../Pages/IT/ITPage";
 import Blog from "../Pages/Blog/Blog";
 import ProjectDetails from "../Pages/Project/Project";
 import Inspirewall from "../Pages/Project/p1";
+import ShopEase from "../Pages/Project/p2";
+import LeadBoost from "../Pages/Project/p3";
 const AppRoutes = () => {
   return (
     <div>
@@ -78,12 +80,12 @@ const AppRoutes = () => {
           element={<Inspirewall />}
         />
         <Route
-          path="/projects-details/inspirewall-mentalhealth-saas-platform"
-          element={<Inspirewall />}
+          path="/projects-details/shopease-e-commerce-web-app"
+          element={<ShopEase />}
         />
         <Route
-          path="/projects-details/inspirewall-mentalhealth-saas-platform"
-          element={<Inspirewall />}
+          path="/projects-details/leadboost-digital-marketing-dashboard"
+          element={<LeadBoost />}
         />
         <Route
           path="/projects-details/inspirewall-mentalhealth-saas-platform"
