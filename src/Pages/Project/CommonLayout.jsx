@@ -1,5 +1,6 @@
 // Reusable Project Detail Page Component Template
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   FaCogs,
   FaRocket,
@@ -35,7 +36,7 @@ const ProjectDetails = ({
         <img
           src={image}
           alt={title}
-          className="w-full h-full object-cover brightness-50"
+          className="w-full h-full object-cover brightness-45"
         />
         <div className="absolute inset-0 flex items-center justify-center text-center px-4">
           <div className="transform transition-all duration-700 ease-out opacity-0 translate-y-4 animate-[fadeInUp_0.8s_0.2s_ease-out_forwards]">
@@ -53,9 +54,12 @@ const ProjectDetails = ({
         <div className="transform transition-all duration-500 ease-out opacity-0 translate-y-4 animate-[fadeInUp_0.6s_0.4s_ease-out_forwards]">
           {/* Overview */}
           <h2 className="text-3xl font-[Archivo] mb-4 flex items-center gap-3">
-            <FaHeartbeat className="text-[#DBD2FF] animate-pulse" /> Project Overview
+            <FaHeartbeat className="text-[#DBD2FF] animate-pulse" /> Project
+            Overview
           </h2>
-          <p className="text-gray-700 text-lg font-[Poppins] mb-8">{overview}</p>
+          <p className="text-gray-700 text-lg font-[Poppins] mb-8">
+            {overview}
+          </p>
 
           {/* Features & Tech Stack */}
           <div className="grid md:grid-cols-2 gap-10 mb-16">
@@ -87,7 +91,9 @@ const ProjectDetails = ({
                   </span>
                 ))}
               </div>
-              <p className="text-gray-600 font-[Poppins] text-sm">{techExplanation}</p>
+              <p className="text-gray-600 font-[Poppins] text-sm">
+                {techExplanation}
+              </p>
             </div>
           </div>
 
@@ -142,13 +148,13 @@ const ProjectDetails = ({
           </div>
 
           <div className="text-center">
-            <a
-              href="mailto:contact@ozmediaplanet.com"
+            <Link
+              to="/contact-us"
               className="inline-flex items-center gap-2 bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-full font-[Outfit] transition-all duration-200 shadow-md hover:shadow-lg transform hover:translate-y-[-1px]"
             >
               Work With Us
               <FaRocket className="text-sm" />
-            </a>
+            </Link>
           </div>
         </div>
       </section>
