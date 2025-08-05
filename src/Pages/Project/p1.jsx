@@ -155,11 +155,11 @@ const Inspirewall = () => {
   return (
     <div className="font-poppins text-black bg-white">
       {/* Hero Section */}
-      <section className="relative w-full h-[60vh] overflow-hidden">
+      <section className="relative w-full h-[80vh]  overflow-hidden">
         <img
           src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=1200&q=80"
           alt="InspireWell Hero"
-          className="w-full h-full object-cover brightness-75"
+          className="w-full h-full object-cover brightness-50"
         />
         <div className="absolute inset-0 flex items-center justify-center text-center px-4">
           <div className="transform transition-all duration-700 ease-out opacity-0 translate-y-4 animate-[fadeInUp_0.8s_0.2s_ease-out_forwards]">
@@ -218,7 +218,7 @@ const Inspirewall = () => {
               </ul>
             </div>
 
-            <div className="transform transition-all duration-300 hover:translate-y-[-2px] hover:shadow-lg rounded-lg p-1">
+            <div className=" bg-[#DBD2FF] border-2 border-black rounded-tl-4xl rounded-br-4xl rounded-tr-none rounded-bl-none p-6  transform transition-all duration-300 hover:translate-y-[-2px] shadow-[8px_8px_0px_rgb(0,0,0,0.8)] ">
               <h3 className="text-2xl font-[Archivo] mb-4 flex items-center gap-2">
                 <FaCogs className="text-[#DBD2FF]" /> Tech Stack
               </h3>
@@ -226,7 +226,7 @@ const Inspirewall = () => {
                 {["React", "Laravel", "MongoDB", "Tailwind CSS", "Framer Motion"].map((tech, i) => (
                   <span
                     key={i}
-                    className="bg-[#DBD2FF] text-black px-4 py-2 rounded-full font-[Outfit] text-sm shadow-sm hover:shadow-md transition-shadow duration-200"
+                    className="bg-white border-black border text-black px-4 py-2 rounded-full font-[Outfit] text-sm shadow-sm hover:shadow-md transition-shadow duration-200"
                   >
                     {tech}
                   </span>

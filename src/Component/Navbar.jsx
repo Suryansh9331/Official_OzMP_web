@@ -146,12 +146,12 @@
 
 //         {/* Contact Button */}
 //         <div className="hidden lg:block">
-          // <button className="bg-[#dcd4ff] text-black font-extrabold text-sm tracking-wide py-2 hover:cursor-pointer px-8 rounded-full flex items-center gap-2 border border-gray-600 hover:shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 transition-transform duration-300">
-          //   CONTACT US{" "}
-          //   <span className="rounded-full border border-black p-1">
-          //     <FaArrowRight size={12} />
-          //   </span>
-          // </button>
+// <button className="bg-[#dcd4ff] text-black font-extrabold text-sm tracking-wide py-2 hover:cursor-pointer px-8 rounded-full flex items-center gap-2 border border-gray-600 hover:shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 transition-transform duration-300">
+//   CONTACT US{" "}
+//   <span className="rounded-full border border-black p-1">
+//     <FaArrowRight size={12} />
+//   </span>
+// </button>
 //         </div>
 
 //         {/* Mobile Menu Toggle */}
@@ -565,7 +565,7 @@ const navLinks = [
     items: [
       {
         name: "Our Team",
-        route:"our-team"
+        route: "our-team",
       },
       { name: "Our Story", route: "/about-us" },
     ],
@@ -574,7 +574,7 @@ const navLinks = [
     label: "Services",
     dropdown: true,
     items: [
-       { name: "IT", route: "/it-services" },
+      { name: "IT", route: "/it-services" },
       {
         name: "Design",
         subItems: [
@@ -586,12 +586,24 @@ const navLinks = [
         name: "Development",
         subItems: [
           { name: "Web", route: "/it-services/website-developement" },
-          { name: "Mobile App", route: "/it-services/mobile-application-developement" },
+          {
+            name: "Mobile App",
+            route: "/it-services/mobile-application-developement",
+          },
           { name: "Software", route: "/it-services/software-developement" },
-          { name: "Graphics UI/UX", route: "/it-services/graphics-uiux-developement" },
+          {
+            name: "Graphics UI/UX",
+            route: "/it-services/graphics-uiux-developement",
+          },
           { name: "E-commerce", route: "/it-services/e-commerce-solution" },
-          { name: "Hosting & Server", route: "/it-services/e-commerce-solution" },
-          { name: "Tech Support & AMC", route: "/it-services/e-commerce-solution" },
+          {
+            name: "Hosting & Server",
+            route: "/it-services/e-commerce-solution",
+          },
+          {
+            name: "Tech Support & AMC",
+            route: "/it-services/e-commerce-solution",
+          },
         ],
       },
       { name: "Marketing", route: "/services-digital-marketing" },
@@ -601,12 +613,16 @@ const navLinks = [
     label: "Case Studies",
     dropdown: true,
     items: [
-      { name: "Clients", route: "/case-studies/clients" },
+      { name: "All Projects", route: "/projects-details" },
       {
-        name: "Projects",
+        name: "Recent Work",
         subItems: [
-          { name: "Completed", route: "/projects-details" },
-         
+          { name: "Healthcare SaaS Platform", route: "/projects-details/inspirewall-mentalhealth-saas-platform" },
+          { name: "Project2", route: "/industries/finance/insurance" },
+          { name: "Project3", route: "/industries/finance/insurance" },
+          { name: "Project4", route: "/industries/finance/insurance" },
+          { name: "Project5", route: "/industries/finance/insurance" },
+          { name: "Project6", route: "/industries/finance/insurance" },
         ],
       },
     ],
@@ -651,7 +667,6 @@ const navLinks = [
       { name: "Blog4", route: "/blogs" },
       { name: "Blog5", route: "/blogs" },
       { name: "Blog6", route: "/blogs" },
- 
     ],
   },
 ];
@@ -695,7 +710,7 @@ export default function Navbar() {
               className="md:h-12 md:w-12 h-8 w-8 rounded-lg bg-black"
             />
             <span className="md:text-2xl text-xl  text-black font-['serif'] font-extrabold tracking-wide">
-              Oz Media 
+              Oz Media
             </span>
           </div>
         </Link>
@@ -780,14 +795,14 @@ export default function Navbar() {
 
         {/* Contact Button */}
         <div className="hidden lg:block">
-        <Link to = "/contact-us"> 
-          <button className="bg-[#dcd4ff] text-black font-extrabold text-sm tracking-wide py-2 hover:cursor-pointer px-8 rounded-full flex items-center gap-2 border border-gray-600 hover:shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 transition-transform duration-300">
-            CONTACT US{" "}
-            <span className="rounded-full border border-black p-1">
-              <FaArrowRight size={12} />
-            </span>
-          </button>
-        </Link>
+          <Link to="/contact-us">
+            <button className="bg-[#dcd4ff] text-black font-extrabold text-sm tracking-wide py-2 hover:cursor-pointer px-8 rounded-full flex items-center gap-2 border border-gray-600 hover:shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 transition-transform duration-300">
+              CONTACT US{" "}
+              <span className="rounded-full border border-black p-1">
+                <FaArrowRight size={12} />
+              </span>
+            </button>
+          </Link>
         </div>
 
         {/* Mobile Toggle */}
@@ -909,14 +924,14 @@ export default function Navbar() {
 
               {/* Contact Button */}
               <li>
-              <Link to ="/contact-us">  
-                 <button className="w-full bg-[#dcd4ff] text-black font-bold py-2 rounded-full flex justify-center items-center gap-2 border border-black hover:bg-[#c9bcfd] hover:shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300 mt-4">
-                   CONTACT US
-                   <span className="rounded-full border border-black p-1">
-                     <FaArrowRight size={12} />
-                   </span>
-                </button>
-              </Link>
+                <Link to="/contact-us">
+                  <button className="w-full bg-[#dcd4ff] text-black font-bold py-2 rounded-full flex justify-center items-center gap-2 border border-black hover:bg-[#c9bcfd] hover:shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300 mt-4">
+                    CONTACT US
+                    <span className="rounded-full border border-black p-1">
+                      <FaArrowRight size={12} />
+                    </span>
+                  </button>
+                </Link>
               </li>
             </ul>
           </motion.div>

@@ -77,6 +77,26 @@ const AppRoutes = () => {
           path="/projects-details/inspirewall-mentalhealth-saas-platform"
           element={<Inspirewall />}
         />
+        <Route
+          path="/projects-details/inspirewall-mentalhealth-saas-platform"
+          element={<Inspirewall />}
+        />
+        <Route
+          path="/projects-details/inspirewall-mentalhealth-saas-platform"
+          element={<Inspirewall />}
+        />
+        <Route
+          path="/projects-details/inspirewall-mentalhealth-saas-platform"
+          element={<Inspirewall />}
+        />
+        <Route
+          path="/projects-details/inspirewall-mentalhealth-saas-platform"
+          element={<Inspirewall />}
+        />
+        <Route
+          path="/projects-details/inspirewall-mentalhealth-saas-platform"
+          element={<Inspirewall />}
+        />
       </Routes>
       <Footer />
       <ScrollToTopButton />
