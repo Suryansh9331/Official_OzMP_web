@@ -20,6 +20,7 @@ import GraphicUIUXDesignPage from "../Pages/GraphicUIUX/GraphicUIUXDesignPage";
 import ECommerceDevelopmentPage from "../Pages/Ecommerce/ECommerceDevelopmentPage";
 import ITPage from "../Pages/IT/ITPage";
 import Blog from "../Pages/Blog/Blog";
+import ProjectDetails from "../Pages/Project/Project";
 const AppRoutes = () => {
   return (
     <div>
@@ -66,6 +67,10 @@ const AppRoutes = () => {
         <Route
           path="/blogs"
           element={<Blog />}
+        />
+        <Route
+          path="/projects-details"
+          element={<ProjectDetails />}
         />
       </Routes>
       <Footer />
