@@ -605,8 +605,8 @@ const navLinks = [
       {
         name: "Projects",
         subItems: [
-          { name: "Completed", route: "/case-studies/projects/completed" },
-          { name: "Ongoing", route: "/case-studies/projects/ongoing" },
+          { name: "Completed", route: "/projects-details" },
+         
         ],
       },
     ],
