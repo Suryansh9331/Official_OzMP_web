@@ -87,7 +87,7 @@ const HeroBanner = () => {
     <>
       {/* Large Screen Version with BG */}
       <section
-        className="hidden lg:flex h-[90vh] items-center justify-center bg-no-repeat bg-cover"
+        className="hidden md:flex h-[95vh]  items-center justify-center bg-no-repeat bg-cover"
         style={{
           backgroundImage: `url(${bg})`,
           backgroundPosition: "center",
@@ -145,3 +145,5 @@ const HeroContent = () => (
 );
 
 export default HeroBanner;
+
+
