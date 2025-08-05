@@ -24,6 +24,9 @@ import ProjectDetails from "../Pages/Project/Project";
 import Inspirewall from "../Pages/Project/p1";
 import ShopEase from "../Pages/Project/p2";
 import LeadBoost from "../Pages/Project/p3";
+import EduTrack from "../Pages/Project/P4";
+import FitNation from "../Pages/Project/p5";
+import RentRoam from "../Pages/Project/p6";
 const AppRoutes = () => {
   return (
     <div>
@@ -88,16 +91,16 @@ const AppRoutes = () => {
           element={<LeadBoost />}
         />
         <Route
-          path="/projects-details/inspirewall-mentalhealth-saas-platform"
-          element={<Inspirewall />}
+          path="/projects-details/edu-track-learning-management-system"
+          element={<EduTrack />}
         />
         <Route
-          path="/projects-details/inspirewall-mentalhealth-saas-platform"
-          element={<Inspirewall />}
+          path="/projects-details/fitnation-fitness-and-nutrition-app"
+          element={<FitNation />}
         />
         <Route
-          path="/projects-details/inspirewall-mentalhealth-saas-platform"
-          element={<Inspirewall />}
+          path="/projects-details/rentroam-real-state-rental-platofrm"
+          element={<RentRoam />}
         />
       </Routes>
       <Footer />
