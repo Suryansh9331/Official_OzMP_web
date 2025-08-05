@@ -645,6 +645,12 @@ const navLinks = [
     dropdown: true,
     items: [
       { name: "Blog", route: "/blogs" },
+      { name: "Blog1", route: "/blogs" },
+      { name: "Blog2", route: "/blogs" },
+      { name: "Blog3", route: "/blogs" },
+      { name: "Blog4", route: "/blogs" },
+      { name: "Blog5", route: "/blogs" },
+      { name: "Blog6", route: "/blogs" },
  
     ],
   },
