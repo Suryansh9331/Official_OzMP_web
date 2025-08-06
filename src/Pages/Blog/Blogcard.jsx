@@ -103,6 +103,7 @@ import b3 from "../../assets/images/Blog3.png"
 
 import React from "react";
 import { Calendar, User, Folder } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const blogs = [
   {
@@ -114,6 +115,7 @@ const blogs = [
     date: "August 1, 2025",
     author: "Admin",
     category: "IT Solutions",
+    Link :"/blogs/blog-article-1"
   },
   {
     id: 2,
@@ -124,6 +126,7 @@ const blogs = [
     date: "July 22, 2025",
     author: "Marketing Team",
     category: "Digital Marketing",
+    Link :""
   },
   {
     id: 3,
@@ -134,6 +137,7 @@ const blogs = [
     date: "July 10, 2025",
     author: "UX Department",
     category: "UI/UX Design",
+    Link :""
   },
 ];
 
@@ -143,9 +147,9 @@ const BlogList = () => {
       {blogs.map((blog) => (
         <div
           key={blog.id}
-          className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col "
+          className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col  pb-4"
         >
-          <div className="md:w-1/2  lg:w-full ">
+          <div className="w-full  lg:w-full ">
             <img
               src={blog.image}
               alt={blog.title}
@@ -153,13 +157,13 @@ const BlogList = () => {
             />
           </div>
 
-          <div className="md:w-1/2 lg:w-full w-full p-10 flex flex-col justify-center">
-            <div className="flex items-center text-sm text-gray-500 gap-6 mb-3 w-auto py-2 px-2 rounded-xl  border-2 border-purple-400 ">
+          <div className=" lg:w-full w-full md:p-10 p-4 flex flex-col justify-center">
+            <div className="flex items-center text-sm text-gray-500 gap-6 mb-3 w-auto py-2 px-2 rounded-xl   ">
               <span className="flex items-center gap-1">
                 <Calendar className="w-4 h-4" />
                 {blog.date}
               </span>
-              <span className="flex items-center gap-1">
+              <span className="md:flex  items-center gap-1 hidden md:block ">
                 <User className="w-4 h-4" />
                 {blog.author}
               </span>
@@ -177,9 +181,11 @@ const BlogList = () => {
               {blog.description}
             </p>
 
-            <button className="mt-6 w-fit px-6 py-2 bg-[#DBD2FF] text-black font-medium shadow-[4px_4px_0px_rgb(0,0,0,0.6)] rounded-full text-sm font-[Poppins] hover:scale-105 transition-all">
+          <Link to ={blog.Link}> 
+            <button className="mt-6 w-fit px-6 py-2 cursor-pointer bg-[#DBD2FF] text-black font-medium shadow-[4px_4px_0px_rgb(0,0,0,0.6)] rounded-full text-sm font-[Poppins] hover:scale-105 transition-all">
               Read More
             </button>
+          </Link>
           </div>
         </div>
       ))}

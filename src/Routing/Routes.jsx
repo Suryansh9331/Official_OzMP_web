@@ -38,6 +38,7 @@ import RentRoam from "../Pages/Project/p6";
 import Career from "../Pages/Carrier/Carrier";
 import TermsAndConditions from "../Pages/Terms/Terms";
 import PrivacyPolicy from "../Pages/Privacy/Privacy";
+import Blog1 from "../Pages/Blog/BlogsPages/Blog1";
 const AppRoutes = () => {
   return (
     <div>
@@ -113,6 +114,10 @@ const AppRoutes = () => {
         <Route
           path="/blogs"
           element={<Blog />}
+        />
+        <Route
+          path="/blogs/blog-article-1"
+          element={<Blog1 />}
         />
         <Route
           path="/projects-details"
