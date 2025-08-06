@@ -232,13 +232,13 @@ const Footer = () => {
                 Privacy Policy
               </Link>
               <Link
-                to="/terms"
+                to="/terms-and-condition"
                 className="text-gray-400 hover:text-[#DBD2FE] transition-colors duration-200"
               >
                 Terms of Service
               </Link>
               <Link
-                to="/cookie-policy"
+                to=""
                 className="text-gray-400 hover:text-[#DBD2FE] transition-colors duration-200"
               >
                 Cookie Policy

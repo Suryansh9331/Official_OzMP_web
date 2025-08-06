@@ -31,6 +31,7 @@ import EduTrack from "../Pages/Project/P4";
 import FitNation from "../Pages/Project/p5";
 import RentRoam from "../Pages/Project/p6";
 import Career from "../Pages/Carrier/Carrier";
+import TermsAndConditions from "../Pages/Terms/Terms";
 const AppRoutes = () => {
   return (
     <div>
@@ -123,6 +124,11 @@ const AppRoutes = () => {
         <Route
           path="/careers/future-options-we-have"
           element={<Career />}
+        />
+      
+        <Route
+          path="/terms-and-condition"
+          element={<TermsAndConditions />}
         />
       
       
