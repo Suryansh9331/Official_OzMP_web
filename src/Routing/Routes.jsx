@@ -18,6 +18,9 @@ import SoftwareDevelopmentPage from "../Pages/SoftWareDevelopement/SoftwareDevel
 import MobileAppDevelopmentPage from "../Pages/MobileApp/MobileAppDevelopmentPage";
 import GraphicUIUXDesignPage from "../Pages/GraphicUIUX/GraphicUIUXDesignPage";
 import ECommerceDevelopmentPage from "../Pages/Ecommerce/ECommerceDevelopmentPage";
+import TechSupportAMCPage from "../Pages/TechSupport/TechSupportAMCPage";
+import HostingServerManagement from "../Pages/HostingServerManagement/HostingServerManagementPage";
+import SEOServicesPage from "../Pages/SEOService/SEOServicesPage";
 import ITPage from "../Pages/IT/ITPage";
 import Blog from "../Pages/Blog/Blog";
 import ProjectDetails from "../Pages/Project/Project";
@@ -68,6 +71,19 @@ const AppRoutes = () => {
           path="/it-services/e-commerce-solution"
           element={<ECommerceDevelopmentPage />}
         />
+        <Route
+          path="/it-services/tech-support-sollution"
+          element={<TechSupportAMCPage />}
+        />
+        <Route
+          path="/it-services/hosting-server-management"
+          element={<HostingServerManagement />}
+        />
+        <Route
+          path="/services/seo-services"
+          element={<SEOServicesPage />}
+        />
+        
         {/* <Route path="/it-services/hosting-and-server" element={</>} />
         <Route path="/it-services/techsupport-amc-services" element={<OurTeam/>} /> */}
 
