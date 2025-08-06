@@ -126,7 +126,7 @@ const blogs = [
     date: "July 22, 2025",
     author: "Marketing Team",
     category: "Digital Marketing",
-    Link :""
+    Link :"/blogs/blog-article-2"
   },
   {
     id: 3,
@@ -137,7 +137,7 @@ const blogs = [
     date: "July 10, 2025",
     author: "UX Department",
     category: "UI/UX Design",
-    Link :""
+    Link :"/blogs/blog-article-3"
   },
 ];
 

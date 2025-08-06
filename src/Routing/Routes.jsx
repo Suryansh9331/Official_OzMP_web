@@ -39,6 +39,9 @@ import Career from "../Pages/Carrier/Carrier";
 import TermsAndConditions from "../Pages/Terms/Terms";
 import PrivacyPolicy from "../Pages/Privacy/Privacy";
 import Blog1 from "../Pages/Blog/BlogsPages/Blog1";
+import Blog2 from "../Pages/Blog/BlogsPages/Blog2";
+import Blog3 from "../Pages/Blog/BlogsPages/Blog3";
+import Blog4 from "../Pages/Blog/BlogsPages/Blog4";
 const AppRoutes = () => {
   return (
     <div>
@@ -118,6 +121,34 @@ const AppRoutes = () => {
         <Route
           path="/blogs/blog-article-1"
           element={<Blog1 />}
+        />
+        <Route
+          path="/blogs/blog-article-2"
+          element={<Blog2 />}
+        />
+        <Route
+          path="/blogs/blog-article-3"
+          element={<Blog3 />}
+        />
+        <Route
+          path="/blogs/blog-article-4"
+          element={<Blog4 />}
+        />
+        <Route
+          path="/blogs/blog-article-2"
+          element={<Blog2 />}
+        />
+        <Route
+          path="/blogs/blog-article-2"
+          element={<Blog2 />}
+        />
+        <Route
+          path="/blogs/blog-article-2"
+          element={<Blog2 />}
+        />
+        <Route
+          path="/blogs/blog-article-2"
+          element={<Blog2 />}
         />
         <Route
           path="/projects-details"

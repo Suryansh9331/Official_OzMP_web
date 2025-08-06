@@ -154,7 +154,7 @@ const SidebarWidget = () => {
       date: "October 19, 2024",
       title: "Inspiring Brands is the a Empowering Stories",
       img: b4,
-      path: "/blog/inspiring-brands",
+      path: "/blogs/blog-article-4",
     },
     {
       date: "October 19, 2024",

@@ -60,7 +60,7 @@ const Blog1 = () => {
       </div>
 
       {/* Title */}
-      <h1 className="text-4xl font-[Outfit] font-bold text-gray-800 mb-3 leading-tight">
+      <h1 className="md:text-4xl text-2xl font-[Outfit] font-bold text-gray-800 mb-3 leading-tight">
         {blog.title}
       </h1>
 
