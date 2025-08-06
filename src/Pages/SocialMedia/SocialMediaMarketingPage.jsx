@@ -49,7 +49,7 @@ const SocialMediaMarketingPage = () => {
     }
   ];
 
-  const portfolio = [
+    const portfolio = [
     {
       id: 1,
       title: "Fashion Brand Campaign",
@@ -61,7 +61,7 @@ const SocialMediaMarketingPage = () => {
         timeframe: "6 months",
         followers: "45K new followers"
       },
-      image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=500&h=300&fit=crop",
+      image: "https://img.freepik.com/premium-psd/top-fashion-banners-enhance-your-brands-visual-appeal_839034-944.jpg",
       tags: ["Instagram", "Influencer Collabs", "Content Creation"]
     },
     {
@@ -75,7 +75,7 @@ const SocialMediaMarketingPage = () => {
         timeframe: "3 months",
         followers: "12K new followers"
       },
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop",
+      image: "https://img.freepik.com/free-psd/start-up-business-concept-banner-template_23-2148806580.jpg",
       tags: ["LinkedIn", "Twitter", "Lead Generation"]
     },
     {
@@ -89,7 +89,7 @@ const SocialMediaMarketingPage = () => {
         timeframe: "4 months",
         followers: "28K new followers"
       },
-      image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500&h=300&fit=crop",
+      image: "https://img.freepik.com/free-psd/modern-banner-breakfast-restaurant_23-2148351348.jpg",
       tags: ["Facebook", "Local Marketing", "Promotions"]
     },
     {
@@ -103,7 +103,7 @@ const SocialMediaMarketingPage = () => {
         timeframe: "8 months",
         followers: "95K new followers"
       },
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=300&fit=crop",
+      image: "https://assets.weforum.org/editor/oivngYtaavLuKdG_6ul2G0E_rRoZvWm5uGuEgSyf8jY.jpg",
       tags: ["TikTok", "YouTube", "Viral Content"]
     }
   ];
