@@ -598,11 +598,11 @@ const navLinks = [
           { name: "E-commerce", route: "/it-services/e-commerce-solution" },
           {
             name: "Hosting & Server",
-            route: "/it-services/e-commerce-solution",
+            route: "/it-services/hosting-server-management",
           },
           {
             name: "Tech Support & AMC",
-            route: "/it-services/e-commerce-solution",
+            route: "/it-services/tech-support-sollution",
           },
         ],
       },
