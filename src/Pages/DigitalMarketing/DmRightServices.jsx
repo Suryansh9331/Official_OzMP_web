@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { CheckCircle2 } from "lucide-react";
+import { Link } from "react-router-dom"; // ✅ Import Link
 
 const RightServiceSection = ({
   image,
@@ -10,6 +11,7 @@ const RightServiceSection = ({
   points,
   buttonText = "READ MORE",
   buttonColor = "#DBD2FF",
+  path = "#",   
 }) => {
   const { ref, inView } = useInView({
     triggerOnce: false,
@@ -71,12 +73,14 @@ const RightServiceSection = ({
             ))}
           </ul>
 
-          <motion.button
-            style={{ backgroundColor: buttonColor }}
-            className="px-5  md:px-4  lg:px-6 py-2 rounded-full font-normal font-[Inter] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-md transition-transform  hover:cursor-pointer mt-4 md:mt-2 lg:mt-4 md:text-xs sm:text-sm lg:text-base  hover:-translate-x-1 hover:-translate-y-1  duration-300"
-          >
-            {buttonText}
-          </motion.button>
+          <Link to={path}>
+            <motion.button
+              style={{ backgroundColor: buttonColor }}
+              className="px-5  md:px-4  lg:px-6 py-2 rounded-full font-normal font-[Inter] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-md transition-transform  hover:cursor-pointer mt-4 md:mt-2 lg:mt-4 md:text-xs sm:text-sm lg:text-base  hover:-translate-x-1 hover:-translate-y-1  duration-300"
+            >
+              {buttonText}
+            </motion.button>
+          </Link>
         </motion.div>
 
         {/* Right Image (moved below) */}
