@@ -32,6 +32,7 @@ import FitNation from "../Pages/Project/p5";
 import RentRoam from "../Pages/Project/p6";
 import Career from "../Pages/Carrier/Carrier";
 import TermsAndConditions from "../Pages/Terms/Terms";
+import PrivacyPolicy from "../Pages/Privacy/Privacy";
 const AppRoutes = () => {
   return (
     <div>
@@ -129,6 +130,11 @@ const AppRoutes = () => {
         <Route
           path="/terms-and-condition"
           element={<TermsAndConditions />}
+        />
+      
+        <Route
+          path="/privacy-policy"
+          element={<PrivacyPolicy />}
         />
       
       
