@@ -90,7 +90,7 @@ const EmailMarketingPage = () => {
         timeframe: "6 months",
         conversionRate: "8.2%"
       },
-      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500&h=300&fit=crop",
+      image: "https://097cb0ca.delivery.rocketcdn.me/wp-content/uploads/62e3888add6d204e844bff40-6465fb8d84d7c47cf066e614-11-20-Types-20of-20-Ecommerce-20-Email-20-Marketing-20-Campaigns-b83a6dee81-1.webp",
       tags: ["Automation", "Segmentation", "Personalization"]
     },
     {
@@ -104,7 +104,7 @@ const EmailMarketingPage = () => {
         timeframe: "9 months",
         conversionRate: "12.5%"
       },
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
+      image: "https://crunch-marketing.com/wp-content/uploads/2022/07/SaaS-Email-Marketing-01.png",
       tags: ["Lead Nurturing", "Content Strategy", "Onboarding"]
     },
     {
@@ -118,7 +118,7 @@ const EmailMarketingPage = () => {
         timeframe: "5 months",
         conversionRate: "15.3%"
       },
-      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500&h=300&fit=crop",
+      image: "https://cdn2.avada.io/media/resources/17G2Uqo.jpg",
       tags: ["Automation", "Patient Engagement", "Reminders"]
     },
     {
@@ -132,7 +132,7 @@ const EmailMarketingPage = () => {
         timeframe: "7 months",
         conversionRate: "6.8%"
       },
-      image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=500&h=300&fit=crop",
+      image: "https://cdn.taggbox.com/v7/taggbox.com/blog/wp-content/uploads/2020/10/nonprofit.jpg",
       tags: ["Donor Engagement", "Storytelling", "Fundraising"]
     }
   ];
