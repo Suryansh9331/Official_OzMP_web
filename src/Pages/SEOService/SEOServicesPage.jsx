@@ -58,7 +58,7 @@ const SEOServicesPage = () => {
         timeframe: "8 months",
         rankings: "150+ keywords in top 10"
       },
-      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500&h=300&fit=crop",
+      image: "https://images.squarespace-cdn.com/content/v1/5f0f2f1bd47e182f22a3bd84/1614204340871-F8G9HCTNA3NLWYJHGFVA/seo_for_ecommerce.jpg",
       tags: ["E-commerce SEO", "Local SEO", "Content Marketing"]
     },
     {
@@ -72,7 +72,7 @@ const SEOServicesPage = () => {
         timeframe: "6 months",
         rankings: "95+ local keywords ranking #1"
       },
-      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500&h=300&fit=crop",
+      image: "https://digitalismedical.com/wp-content/uploads/2020/03/Healthcare-SEO.jpg",
       tags: ["Local SEO", "Medical SEO", "Reputation Management"]
     },
     {
@@ -86,7 +86,7 @@ const SEOServicesPage = () => {
         timeframe: "12 months",
         rankings: "200+ technical keywords ranking"
       },
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
+      image: "https://www.pagetraffic.in/wp-content/uploads/2023/10/SEO-for-SaaS.jpg",
       tags: ["Technical SEO", "Content Strategy", "Lead Generation"]
     },
     {
@@ -100,7 +100,7 @@ const SEOServicesPage = () => {
         timeframe: "10 months",
         rankings: "120+ location-based keywords"
       },
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=500&h=300&fit=crop",
+      image: "https://ezranking.s3.eu-west-2.amazonaws.com/blog/wp-content/uploads/2022/12/07115334/SEO-For-Real-Estate.jpg",
       tags: ["Local SEO", "Real Estate SEO", "Google My Business"]
     }
   ];
@@ -150,14 +150,14 @@ const SEOServicesPage = () => {
     }
   ];
 
-  const testimonials = [
+    const testimonials = [
     {
       name: "Sarah Mitchell",
       company: "TechStart Solutions",
       position: "Marketing Director",
       quote: "Our organic traffic increased by 350% in just 6 months. The ROI from SEO has been incredible - we're getting 5x more qualified leads.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1494790108755-2616b332c3b7?w=100&h=100&fit=crop&crop=face",
+      image: "https://m.media-amazon.com/images/S/amzn-author-media-prod/nbgv9ibf9u2f0bs3os7du4lh3t.jpg",
       results: "350% traffic increase"
     },
     {
