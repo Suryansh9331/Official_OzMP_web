@@ -21,6 +21,11 @@ import ECommerceDevelopmentPage from "../Pages/Ecommerce/ECommerceDevelopmentPag
 import TechSupportAMCPage from "../Pages/TechSupport/TechSupportAMCPage";
 import HostingServerManagement from "../Pages/HostingServerManagement/HostingServerManagementPage";
 import SEOServicesPage from "../Pages/SEOService/SEOServicesPage";
+import AffiliateMarketingPage from "../Pages/AffiliateMarketing/AffiliateMarketingPage";
+import ContentMarketingPage from "../Pages/ContentMarketing/ContentMarketingPage";
+import EmailMarketingPage from "../Pages/EmailMarketing/EmailMarketingPage";
+import SocialMediaMarketingPage from "../Pages/SocialMedia/SocialMediaMarketingPage";
+
 import ITPage from "../Pages/IT/ITPage";
 import Blog from "../Pages/Blog/Blog";
 import ProjectDetails from "../Pages/Project/Project";
@@ -82,8 +87,24 @@ const AppRoutes = () => {
           element={<HostingServerManagement />}
         />
         <Route
-          path="/services/seo-services"
+          path="/services/marketing/seo-services"
           element={<SEOServicesPage />}
+        />
+        <Route
+          path="/services/marketing/affiliate-marketing"
+          element={<AffiliateMarketingPage />}
+        />
+        <Route
+          path="/services/marketing/content-marketing"
+          element={<ContentMarketingPage />}
+        />
+        <Route
+          path="/services/marketing/email-marketing"
+          element={<EmailMarketingPage />}
+        />
+        <Route
+          path="/services/marketing/social-media-marketing"
+          element={<SocialMediaMarketingPage />}
         />
         
         {/* <Route path="/it-services/hosting-and-server" element={</>} />

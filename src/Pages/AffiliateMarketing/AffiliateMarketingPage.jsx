@@ -4,256 +4,259 @@ import {
   CheckCircle, ArrowRight, Users, Award, Lightbulb, Monitor,
   FileText, Settings, Smartphone, Gauge, Star, Trophy,
   PieChart, LineChart, Activity, Layers, Code, Link,
-  MousePointer, Calendar, Clock, MapPin, Heart, ThumbsUp
+  MousePointer, Calendar, Clock, MapPin, Heart, ThumbsUp,
+  DollarSign, ShoppingCart, Share2, Percent, ClipboardList,
+  UserPlus, CreditCard, Repeat2, Gift, Tag, BarChart2
 } from "lucide-react";
 
-const SEOServicesPage = () => {
+const AffiliateMarketingPage = () => {
   const [activeExpertise, setActiveExpertise] = useState(0);
   const [hoveredPortfolio, setHoveredPortfolio] = useState(null);
   const [activeTestimonial, setActiveTestimonial] = useState(0);
   const [activeFaq, setActiveFaq] = useState(0);
-  const [seoMetrics, setSeoMetrics] = useState({
-    organicTraffic: 85,
-    keywordRankings: 72,
-    clickThroughRate: 68,
-    conversionRate: 45
+  const [metrics, setMetrics] = useState({
+    conversionRate: 65,
+    trafficGrowth: 78,
+    commissionEarned: 42,
+    roi: 320
   });
 
   const expertiseAreas = [
     {
-      icon: <Search size={40} />,
-      title: "Keyword Research & Strategy",
-      description: "Comprehensive keyword analysis to identify high-value search terms that drive qualified traffic and conversions for your business.",
-      benefits: ["Competitor keyword analysis", "Search volume research", "Long-tail keyword discovery", "Intent-based targeting"]
+      icon: <Share2 size={40} />,
+      title: "Affiliate Program Setup",
+      description: "Comprehensive setup of your affiliate program including tracking, commission structures, and recruitment strategies.",
+      benefits: ["Program configuration", "Tracking setup", "Commission models", "Recruitment strategy"]
     },
     {
-      icon: <Code size={40} />,
-      title: "Technical SEO",
-      description: "Advanced technical optimization including site speed, mobile responsiveness, schema markup, and crawlability improvements.",
-      benefits: ["Site speed optimization", "Mobile-first indexing", "Schema markup implementation", "XML sitemap optimization"]
+      icon: <ShoppingCart size={40} />,
+      title: "Product Promotion Strategy",
+      description: "Strategic promotion of affiliate products through content marketing, email campaigns, and social media.",
+      benefits: ["Content strategy", "Email campaigns", "Social promotion", "Influencer partnerships"]
     },
     {
-      icon: <FileText size={40} />,
-      title: "Content Optimization",
-      description: "Strategic content creation and optimization that engages users while satisfying search engine algorithms and ranking factors.",
-      benefits: ["Content gap analysis", "On-page optimization", "Meta tag optimization", "Internal linking strategy"]
+      icon: <BarChart2 size={40} />,
+      title: "Performance Tracking",
+      description: "Advanced tracking and analytics to measure affiliate performance and optimize campaigns.",
+      benefits: ["Conversion tracking", "ROI analysis", "A/B testing", "Performance reporting"]
     },
     {
-      icon: <Link size={40} />,
-      title: "Link Building",
-      description: "High-quality backlink acquisition through ethical white-hat techniques that build domain authority and search rankings.",
-      benefits: ["Authority link building", "Guest posting campaigns", "Broken link recovery", "Local citation building"]
+      icon: <UserPlus size={40} />,
+      title: "Affiliate Recruitment",
+      description: "Targeted recruitment of high-quality affiliates to promote your products and services.",
+      benefits: ["Affiliate outreach", "Vetting process", "Onboarding", "Relationship management"]
     }
   ];
 
-  const portfolio = [
+    const portfolio = [
     {
       id: 1,
-      title: "E-commerce Fashion Store",
-      category: "Retail & E-commerce",
-      description: "Increased organic traffic by 340% and revenue by 280% in 8 months",
+      title: "Fitness Supplement Brand",
+      category: "Health & Wellness",
+      description: "Generated $120,000 in affiliate sales in 6 months",
       metrics: {
-        trafficIncrease: "340%",
-        revenueGrowth: "280%",
-        timeframe: "8 months",
-        rankings: "150+ keywords in top 10"
+        salesGenerated: "$120,000",
+        roi: "450%",
+        timeframe: "6 months",
+        affiliates: "50+ active affiliates"
       },
-      image: "https://images.squarespace-cdn.com/content/v1/5f0f2f1bd47e182f22a3bd84/1614204340871-F8G9HCTNA3NLWYJHGFVA/seo_for_ecommerce.jpg",
-      tags: ["E-commerce SEO", "Local SEO", "Content Marketing"]
+      image: "https://asset7.ckassets.com/blog/wp-content/uploads/sites/6/2024/07/retailer-hyugalife.jpg",
+      tags: ["Supplement niche", "Influencer marketing", "Email campaigns"]
     },
     {
       id: 2,
-      title: "Healthcare Clinic Chain",
-      category: "Healthcare & Medical",
-      description: "Improved local search visibility resulting in 250% more appointment bookings",
+      title: "SaaS Productivity Tool",
+      category: "Software & Technology",
+      description: "Increased affiliate-driven signups by 300% in 4 months",
       metrics: {
-        trafficIncrease: "180%",
-        revenueGrowth: "250%",
-        timeframe: "6 months",
-        rankings: "95+ local keywords ranking #1"
+        salesGenerated: "2,500+ signups",
+        roi: "380%",
+        timeframe: "4 months",
+        affiliates: "30+ tech affiliates"
       },
-      image: "https://digitalismedical.com/wp-content/uploads/2020/03/Healthcare-SEO.jpg",
-      tags: ["Local SEO", "Medical SEO", "Reputation Management"]
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlDJbrT2YxJXjbU2QOSLQBkdj9_LqdoUfbCw&s",
+      tags: ["SaaS marketing", "Recurring commissions", "Tech influencers"]
     },
     {
       id: 3,
-      title: "SaaS Technology Platform",
-      category: "Technology & Software",
-      description: "Achieved 400% growth in qualified leads through strategic content SEO",
+      title: "E-commerce Fashion Store",
+      category: "Retail & Apparel",
+      description: "Drove 40% of total revenue through affiliate program",
       metrics: {
-        trafficIncrease: "420%",
-        revenueGrowth: "400%",
-        timeframe: "12 months",
-        rankings: "200+ technical keywords ranking"
+        salesGenerated: "$280,000",
+        roi: "520%",
+        timeframe: "8 months",
+        affiliates: "75+ fashion affiliates"
       },
-      image: "https://www.pagetraffic.in/wp-content/uploads/2023/10/SEO-for-SaaS.jpg",
-      tags: ["Technical SEO", "Content Strategy", "Lead Generation"]
+      image: "https://ahkr.b-cdn.net/wp-content/uploads/2022/08/fashion-affiliate-featured.jpg",
+      tags: ["Fashion bloggers", "Seasonal promotions", "Social commerce"]
     },
     {
       id: 4,
-      title: "Real Estate Agency",
-      category: "Real Estate & Property",
-      description: "Dominated local search results with 300% increase in property inquiries",
+      title: "Online Course Platform",
+      category: "Education & Training",
+      description: "Achieved 600% ROI on affiliate marketing spend",
       metrics: {
-        trafficIncrease: "290%",
-        revenueGrowth: "300%",
-        timeframe: "10 months",
-        rankings: "120+ location-based keywords"
+        salesGenerated: "$95,000",
+        roi: "600%",
+        timeframe: "5 months",
+        affiliates: "40+ education affiliates"
       },
-      image: "https://ezranking.s3.eu-west-2.amazonaws.com/blog/wp-content/uploads/2022/12/07115334/SEO-For-Real-Estate.jpg",
-      tags: ["Local SEO", "Real Estate SEO", "Google My Business"]
+      image: "https://www.proideators.com/wp-content/uploads/2019/01/Affiliate-Marketing-Proideators.jpg",
+      tags: ["Course promotion", "Webinar strategy", "Email funnels"]
     }
   ];
 
-  const seoTools = [
+
+  const tools = [
     {
-      name: "Google Analytics",
-      category: "Analytics & Tracking",
-      description: "Advanced traffic analysis and user behavior insights",
-      icon: "📊",
+      name: "ClickBank",
+      category: "Affiliate Network",
+      description: "Leading affiliate marketplace with thousands of products",
+      icon: "💰",
       color: "from-blue-500 to-purple-600"
     },
     {
-      name: "SEMrush",
-      category: "Keyword Research",
-      description: "Comprehensive keyword and competitor analysis",
-      icon: "🔍",
+      name: "ShareASale",
+      category: "Affiliate Network",
+      description: "Robust affiliate tracking and management platform",
+      icon: "🔄",
       color: "from-orange-500 to-red-600"
     },
     {
-      name: "Ahrefs",
-      category: "Backlink Analysis",
-      description: "Professional backlink research and monitoring",
-      icon: "🔗",
+      name: "Impact",
+      category: "Affiliate Platform",
+      description: "Enterprise-level affiliate marketing solution",
+      icon: "📈",
       color: "from-green-500 to-blue-600"
     },
     {
-      name: "Screaming Frog",
-      category: "Technical SEO",
-      description: "Website crawling and technical audit tool",
-      icon: "🐸",
+      name: "Post Affiliate Pro",
+      category: "Tracking Software",
+      description: "Self-hosted affiliate tracking solution",
+      icon: "🔍",
       color: "from-purple-500 to-pink-600"
     },
     {
-      name: "Google Search Console",
-      category: "Performance Monitoring",
-      description: "Search performance and indexing insights",
-      icon: "🎯",
+      name: "PartnerStack",
+      category: "SaaS Affiliates",
+      description: "Specialized in SaaS and tech partnerships",
+      icon: "🤝",
       color: "from-cyan-500 to-blue-600"
     },
     {
-      name: "PageSpeed Insights",
-      category: "Performance Optimization",
-      description: "Core Web Vitals and speed optimization",
-      icon: "⚡",
+      name: "Affise",
+      category: "Performance Marketing",
+      description: "Advanced tracking and analytics platform",
+      icon: "🎯",
       color: "from-yellow-500 to-orange-600"
     }
   ];
 
-    const testimonials = [
+  const testimonials = [
     {
-      name: "Sarah Mitchell",
-      company: "TechStart Solutions",
+      name: "Jessica Williams",
+      company: "FitLife Supplements",
       position: "Marketing Director",
-      quote: "Our organic traffic increased by 350% in just 6 months. The ROI from SEO has been incredible - we're getting 5x more qualified leads.",
+      quote: "Our affiliate program went from generating $5,000/month to over $30,000/month in just 4 months. The strategic approach to recruiting quality affiliates made all the difference.",
       rating: 5,
-      image: "https://m.media-amazon.com/images/S/amzn-author-media-prod/nbgv9ibf9u2f0bs3os7du4lh3t.jpg",
-      results: "350% traffic increase"
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&crop=face",
+      results: "500% revenue increase"
     },
     {
-      name: "Michael Chen",
-      company: "Urban Fitness Chain",
+      name: "David Kim",
+      company: "TechFlow SaaS",
       position: "CEO",
-      quote: "They transformed our local SEO completely. We went from page 3 to ranking #1 for all our target keywords. Membership sign-ups doubled.",
+      quote: "The affiliate marketing strategy delivered a consistent 8:1 ROI, becoming our most profitable customer acquisition channel. We've scaled it to 40% of our new business.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
-      results: "200% membership growth"
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop&crop=face",
+      results: "8:1 ROI consistently"
     },
     {
-      name: "Emily Rodriguez",
-      company: "Boutique Fashion Store",
+      name: "Maria Rodriguez",
+      company: "EduMaster Courses",
       position: "Owner",
-      quote: "The content strategy they developed not only improved our rankings but also increased our average order value by 40%. Amazing results!",
+      quote: "Working with their team transformed our affiliate program from an afterthought to our primary sales channel. We now get 60% of our enrollments through affiliates.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
-      results: "40% AOV increase"
+      image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=100&h=100&fit=crop&crop=face",
+      results: "60% of total sales"
     }
   ];
 
   const faqs = [
     {
-      question: "How long does it take to see SEO results?",
-      answer: "SEO is a long-term strategy, and results typically begin showing within 3-6 months. However, some improvements like technical fixes and content optimization can show faster results. Full SEO benefits usually manifest within 6-12 months with consistent effort."
+      question: "How much does affiliate marketing cost?",
+      answer: "Affiliate marketing is performance-based, meaning you only pay when you get results. Typical commission rates range from 5-30% of the sale price depending on your industry and profit margins. Our service fees vary based on the scope of work."
     },
     {
-      question: "What's the difference between organic and paid search?",
-      answer: "Organic search results appear naturally based on relevance and SEO optimization, while paid search results are advertisements. Organic traffic is 'free' but requires time and effort to build, while paid search provides immediate visibility but requires ongoing ad spend."
+      question: "How long does it take to see results?",
+      answer: "Initial results can appear within 30-60 days as affiliates begin promoting your products. Significant results typically take 3-6 months as you build relationships with top-performing affiliates and optimize your program."
     },
     {
-      question: "Do you guarantee first page rankings?",
-      answer: "While we can't guarantee specific rankings (no ethical SEO company can), we focus on improving your overall search visibility, organic traffic, and conversions. Our data-driven approach consistently delivers measurable improvements in search performance."
+      question: "What types of businesses benefit from affiliate marketing?",
+      answer: "Almost any business with products or services to sell can benefit. E-commerce stores, SaaS companies, digital product creators, and service providers all see excellent results with properly managed affiliate programs."
     },
     {
-      question: "How do you measure SEO success?",
-      answer: "We track multiple metrics including organic traffic growth, keyword rankings, click-through rates, conversion rates, and ultimately ROI. We provide detailed monthly reports showing progress across all key performance indicators."
+      question: "How do you recruit quality affiliates?",
+      answer: "We use targeted outreach to bloggers, influencers, and content creators in your niche, combined with attractive commission structures and promotional materials to attract serious affiliates who will actively promote your offers."
     },
     {
-      question: "Is SEO worth it for small businesses?",
-      answer: "Absolutely! SEO is especially valuable for small businesses as it levels the playing field with larger competitors. Local SEO can help small businesses dominate their geographic area and attract customers who are ready to buy."
+      question: "What's the difference between affiliates and influencers?",
+      answer: "Affiliates earn commissions on sales they generate, while influencers typically charge fixed fees for promotion. Many influencers also participate in affiliate programs, combining both models for maximum earnings."
     },
     {
-      question: "What's included in your SEO services?",
-      answer: "Our comprehensive SEO services include keyword research, technical SEO audits, on-page optimization, content strategy, link building, local SEO (if applicable), analytics setup, and monthly performance reporting."
+      question: "How do you track affiliate sales?",
+      answer: "We implement robust tracking systems using specialized software that attributes sales to specific affiliates through unique tracking links, cookies, and other methods to ensure accurate commission payments."
     }
   ];
 
-  // SEO Dashboard Component
-  const SEODashboard = () => {
+  // Affiliate Dashboard Component
+  const AffiliateDashboard = () => {
     const [currentMetric, setCurrentMetric] = useState(0);
     
-    const metrics = [
+    const dashboardMetrics = [
       {
-        title: "Organic Traffic",
-        value: seoMetrics.organicTraffic,
-        change: "+45%",
-        icon: <TrendingUp size={16} />,
+        title: "Conversion Rate",
+        value: metrics.conversionRate,
+        change: "+12%",
+        icon: <Percent size={16} />,
         color: "from-green-500 to-emerald-600"
       },
       {
-        title: "Keyword Rankings",
-        value: seoMetrics.keywordRankings,
-        change: "+23%",
-        icon: <Target size={16} />,
+        title: "Traffic Growth",
+        value: metrics.trafficGrowth,
+        change: "+28%",
+        icon: <TrendingUp size={16} />,
         color: "from-blue-500 to-cyan-600"
       },
       {
-        title: "Click-Through Rate",
-        value: seoMetrics.clickThroughRate,
-        change: "+18%",
-        icon: <MousePointer size={16} />,
+        title: "Commission Earned",
+        value: metrics.commissionEarned,
+        change: "+15%",
+        icon: <DollarSign size={16} />,
         color: "from-purple-500 to-pink-600"
       },
       {
-        title: "Conversion Rate",
-        value: seoMetrics.conversionRate,
-        change: "+32%",
-        icon: <Trophy size={16} />,
+        title: "ROI",
+        value: metrics.roi,
+        change: "+40%",
+        icon: <Repeat2 size={16} />,
         color: "from-orange-500 to-red-600"
       }
     ];
 
     useEffect(() => {
       const interval = setInterval(() => {
-        setCurrentMetric(prev => (prev + 1) % metrics.length);
+        setCurrentMetric(prev => (prev + 1) % dashboardMetrics.length);
         
         // Animate metrics
-        setSeoMetrics(prev => ({
-          organicTraffic: Math.max(70, Math.min(95, prev.organicTraffic + (Math.random() - 0.5) * 5)),
-          keywordRankings: Math.max(60, Math.min(85, prev.keywordRankings + (Math.random() - 0.5) * 4)),
-          clickThroughRate: Math.max(55, Math.min(80, prev.clickThroughRate + (Math.random() - 0.5) * 3)),
-          conversionRate: Math.max(35, Math.min(60, prev.conversionRate + (Math.random() - 0.5) * 3))
+        setMetrics(prev => ({
+          conversionRate: Math.round(Math.max(55, Math.min(80, prev.conversionRate + (Math.random() - 0.5) * 5))),
+          trafficGrowth: Math.max(65, Math.min(90, prev.trafficGrowth + (Math.random() - 0.5) * 4)),
+          commissionEarned: Math.max(30, Math.min(55, prev.commissionEarned + (Math.random() - 0.5) * 3)),
+          roi: Math.max(250, Math.min(400, prev.roi + (Math.random() - 0.5) * 20))
         }));
-      }, 4000);
+      }, 1000);
 
       return () => clearInterval(interval);
     }, []);
@@ -274,34 +277,34 @@ const SEOServicesPage = () => {
             <div className="pt-10 px-4 h-full bg-gradient-to-br from-gray-50 to-blue-50 relative">
               <div className="flex justify-between items-center mb-6 text-xs text-gray-800">
                 <div className="flex items-center gap-1">
-                  <span className="font-semibold">SEO Dashboard</span>
+                  <span className="font-semibold">Affiliate Dashboard</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="flex items-center gap-1">
                     <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                    <span className="text-xs text-green-600 font-medium">Optimizing</span>
+                    <span className="text-xs text-green-600 font-medium">Active</span>
                   </div>
                 </div>
               </div>
               
               <div className="space-y-4 h-full pb-20 overflow-hidden">
                 {/* Main Metric Card */}
-                <div className={`bg-gradient-to-r ${metrics[currentMetric].color} p-4 rounded-2xl text-white shadow-xl overflow-hidden relative`}>
+                <div className={`bg-gradient-to-r ${dashboardMetrics[currentMetric].color} p-4 rounded-2xl text-white shadow-xl overflow-hidden relative`}>
                   <div className="absolute -top-10 -right-10 w-32 h-32 bg-white/10 rounded-full"></div>
                   <div className="absolute -bottom-5 -left-5 w-20 h-20 bg-white/5 rounded-full"></div>
                   <div className="relative z-10">
                     <div className="flex items-center gap-3 mb-3">
                       <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                        {metrics[currentMetric].icon}
+                        {dashboardMetrics[currentMetric].icon}
                       </div>
                       <div>
-                        <h3 className="font-bold text-base">{metrics[currentMetric].title}</h3>
+                        <h3 className="font-bold text-base">{dashboardMetrics[currentMetric].title}</h3>
                         <p className="text-xs text-white/70">Current Performance</p>
                       </div>
                     </div>
                     <div className="flex items-end gap-2">
-                      <div className="text-3xl font-bold">{Math.round(metrics[currentMetric].value)}%</div>
-                      <div className="text-sm bg-white/20 px-2 py-1 rounded-full">{metrics[currentMetric].change}</div>
+                      <div className="text-3xl font-bold">{dashboardMetrics[currentMetric].value}{dashboardMetrics[currentMetric].title === 'ROI' ? '%' : dashboardMetrics[currentMetric].title === 'Commission Earned' ? 'K' : '%'}</div>
+                      <div className="text-sm bg-white/20 px-2 py-1 rounded-full">{dashboardMetrics[currentMetric].change}</div>
                     </div>
                   </div>
                 </div>
@@ -310,30 +313,30 @@ const SEOServicesPage = () => {
                 <div className="grid grid-cols-2 gap-3">
                   <div className="bg-white p-3 rounded-xl shadow-lg">
                     <div className="flex items-center gap-2 mb-2">
-                      <Search size={16} className="text-blue-600" />
-                      <span className="text-xs font-medium text-gray-800">Keywords</span>
+                      <UserPlus size={16} className="text-blue-600" />
+                      <span className="text-xs font-medium text-gray-800">Affiliates</span>
                     </div>
-                    <div className="text-xl font-bold text-gray-800">247</div>
-                    <div className="text-xs text-green-600">+12 this month</div>
+                    <div className="text-xl font-bold text-gray-800">87</div>
+                    <div className="text-xs text-green-600">+15 this month</div>
                   </div>
                   <div className="bg-white p-3 rounded-xl shadow-lg">
                     <div className="flex items-center gap-2 mb-2">
-                      <Eye size={16} className="text-purple-600" />
-                      <span className="text-xs font-medium text-gray-800">Visibility</span>
+                      <DollarSign size={16} className="text-purple-600" />
+                      <span className="text-xs font-medium text-gray-800">Revenue</span>
                     </div>
-                    <div className="text-xl font-bold text-gray-800">85%</div>
-                    <div className="text-xs text-green-600">+8% improved</div>
+                    <div className="text-xl font-bold text-gray-800">$42K</div>
+                    <div className="text-xs text-green-600">+18% growth</div>
                   </div>
                 </div>
 
                 {/* Progress Bars */}
                 <div className="bg-white p-4 rounded-2xl shadow-lg">
-                  <h4 className="font-semibold text-sm text-gray-800 mb-3">SEO Health Score</h4>
+                  <h4 className="font-semibold text-sm text-gray-800 mb-3">Program Health</h4>
                   <div className="space-y-3">
                     {[
-                      { label: "Technical SEO", value: 92, color: "bg-green-500" },
-                      { label: "Content Quality", value: 88, color: "bg-blue-500" },
-                      { label: "Backlink Profile", value: 76, color: "bg-purple-500" }
+                      { label: "Affiliate Activity", value: 78, color: "bg-green-500" },
+                      { label: "Conversion Rate", value: 65, color: "bg-blue-500" },
+                      { label: "Top Performers", value: 42, color: "bg-purple-500" }
                     ].map((item, index) => (
                       <div key={index}>
                         <div className="flex justify-between text-xs mb-1">
@@ -358,8 +361,8 @@ const SEOServicesPage = () => {
                   <div className="flex justify-around items-center">
                     {[
                       { icon: <BarChart3 size={20} />, active: true },
-                      { icon: <Search size={20} />, active: false },
-                      { icon: <Target size={20} />, active: false },
+                      { icon: <DollarSign size={20} />, active: false },
+                      { icon: <UserPlus size={20} />, active: false },
                       { icon: <Settings size={20} />, active: false }
                     ].map((item, index) => (
                       <div key={index} className="relative">
@@ -413,82 +416,82 @@ const SEOServicesPage = () => {
           {/* Text Content */}
           <div className="w-full lg:w-[55%] text-center lg:text-left">
             <div className="inline-block bg-[#dcd4ff] text-black px-4 py-2 rounded-full text-sm font-semibold mb-6 shadow-[2px_2px_0px_#000]">
-              🚀 SEARCH ENGINE OPTIMIZATION
+              🚀 PERFORMANCE MARKETING
             </div>
             
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
-              Boost Your Website's
+              Grow Your Revenue With
               <br />
-              <span className="text-purple-600">Search Rankings</span>
+              <span className="text-purple-600">Affiliate Marketing</span>
             </h1>
             
             <p className="text-lg sm:text-xl text-gray-700 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              Drive consistent, high-quality organic traffic with targeted keyword strategies, technical optimization, and content excellence that converts visitors into customers.
+              Leverage performance-based marketing to drive sales through affiliate partnerships, paying only for actual results while expanding your reach exponentially.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
               <button className="uppercase font-semibold bg-[#dcd4ff] text-black px-8 py-4 rounded-full transition-all duration-300 shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000] active:translate-x-0 active:translate-y-0 active:shadow-[2px_2px_0px_#000]">
-                Get SEO Audit
+                Get Free Strategy
               </button>
               <button className="uppercase font-semibold bg-white text-black px-8 py-4 rounded-full border-2 border-black transition-all duration-300 hover:bg-gray-50">
-                View SEO Plans
+                View Pricing
               </button>
             </div>
             
             {/* Quick Stats */}
             <div className="flex flex-wrap gap-8 justify-center lg:justify-start">
               <div className="text-center lg:text-left">
+                <div className="text-2xl font-bold text-purple-600">5:1</div>
+                <div className="text-sm text-gray-600">Average ROI</div>
+              </div>
+              <div className="text-center lg:text-left">
                 <div className="text-2xl font-bold text-purple-600">300+</div>
-                <div className="text-sm text-gray-600">Keywords Ranked</div>
+                <div className="text-sm text-gray-600">Active Affiliates</div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-2xl font-bold text-purple-600">450%</div>
-                <div className="text-sm text-gray-600">Avg Traffic Growth</div>
-              </div>
-              <div className="text-center lg:text-left">
-                <div className="text-2xl font-bold text-purple-600">50+</div>
-                <div className="text-sm text-gray-600">Success Stories</div>
+                <div className="text-2xl font-bold text-purple-600">$2M+</div>
+                <div className="text-sm text-gray-600">Revenue Generated</div>
               </div>
             </div>
           </div>
           
-          {/* SEO Dashboard */}
+          {/* Affiliate Dashboard */}
           <div className="w-full lg:w-[45%] flex justify-center items-center mt-12 lg:mt-0">
-            <SEODashboard />
+            <AffiliateDashboard />
           </div>
         </div>
       </div>
 
-      {/* About SEO Services */}
+      {/* About Affiliate Marketing */}
       <div className="py-24 bg-white">
         <div className="w-full lg:w-[85%] mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <div>
                 <h2 className="text-4xl sm:text-5xl font-bold text-black mb-6">
-                  Why SEO Matters for Your Business
+                  Why Affiliate Marketing Works
                 </h2>
                 <p className="text-xl text-gray-700 leading-relaxed">
-                  Search Engine Optimization isn't just about rankings—it's about connecting your business with customers who are actively searching for your products or services. Our data-driven approach ensures sustainable growth in organic visibility and qualified traffic.
+                  Affiliate marketing is one of the most cost-effective ways to grow your business. You pay only for actual sales, while leveraging the audiences and credibility of established publishers, bloggers, and influencers in your niche.
                 </p>
               </div>
               
               <div className="space-y-6">
                 {[
                   {
-                    icon: <TrendingUp size={24} className="text-purple-600" />,
-                    title: "Increased Organic Traffic",
-                    description: "Drive 3-5x more qualified visitors to your website through strategic keyword targeting and content optimization."
+                    icon: <DollarSign size={24} className="text-purple-600" />,
+                    title: "Performance-Based",
+                    description: "Pay only for actual sales or leads, making it one of the lowest-risk marketing channels with measurable ROI."
                   },
                   {
-                    icon: <Target size={24} className="text-purple-600" />,
-                    title: "Better Conversion Rates",
-                    description: "Organic traffic converts 8x better than paid advertising because users are actively searching for solutions."
+                    icon: <UserPlus size={24} className="text-purple-600" />,
+                    title: "Expanded Reach",
+                    description: "Tap into established audiences of affiliates who have already built trust with your potential customers."
                   },
                   {
-                    icon: <Award size={24} className="text-purple-600" />,
-                    title: "Long-term ROI",
-                    description: "Unlike paid ads, SEO builds lasting value that continues to generate traffic and leads for years to come."
+                    icon: <Repeat2 size={24} className="text-purple-600" />,
+                    title: "Scalable Growth",
+                    description: "As you add more affiliates, your marketing reach grows exponentially without proportional increases in costs."
                   }
                 ].map((benefit, index) => (
                   <div key={index} className="flex items-start gap-4 group cursor-pointer">
@@ -509,18 +512,18 @@ const SEOServicesPage = () => {
                 <div className="space-y-6">
                   <div className="text-center">
                     <div className="w-16 h-16 bg-[#dcd4ff] rounded-full flex items-center justify-center mx-auto mb-4 shadow-[4px_4px_0px_#000]">
-                      <Search size={32} className="text-purple-600" />
+                      <DollarSign size={32} className="text-purple-600" />
                     </div>
-                    <h3 className="text-2xl font-bold text-black mb-2">SEO Success Formula</h3>
-                    <p className="text-gray-700">Our proven methodology for search engine domination</p>
+                    <h3 className="text-2xl font-bold text-black mb-2">Affiliate Success Formula</h3>
+                    <p className="text-gray-700">Our proven methodology for affiliate program growth</p>
                   </div>
                   
                   <div className="grid grid-cols-2 gap-4">
                     {[
-                      { label: "Keyword Research", percentage: "92%" },
-                      { label: "Technical SEO", percentage: "88%" },
-                      { label: "Content Strategy", percentage: "95%" },
-                      { label: "Link Building", percentage: "85%" }
+                      { label: "Program Setup", percentage: "95%" },
+                      { label: "Affiliate Recruitment", percentage: "88%" },
+                      { label: "Promotion Strategy", percentage: "92%" },
+                      { label: "ROI Optimization", percentage: "85%" }
                     ].map((item, index) => (
                       <div key={index} className="bg-white p-4 rounded-xl shadow-lg">
                         <div className="text-center">
@@ -550,10 +553,10 @@ const SEOServicesPage = () => {
         <div className="w-full lg:w-[85%] mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold text-black mb-6">
-              Our SEO Expertise
+              Our Affiliate Expertise
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Comprehensive SEO services that cover every aspect of search engine optimization, from technical foundations to content strategy and link building.
+              Comprehensive affiliate marketing services that cover every aspect of program management, from setup and recruitment to optimization and scaling.
             </p>
           </div>
           
@@ -596,16 +599,16 @@ const SEOServicesPage = () => {
             <div className="relative">
               <div className="relative bg-white p-8 rounded-3xl border-2 border-black shadow-[12px_12px_0px_#000]">
                 <div className="text-center mb-6">
-                  <h3 className="text-2xl font-bold text-black mb-2">SEO Performance Metrics</h3>
-                  <p className="text-gray-600">Real-time optimization results</p>
+                  <h3 className="text-2xl font-bold text-black mb-2">Affiliate Performance Metrics</h3>
+                  <p className="text-gray-600">Real-time program performance</p>
                 </div>
                 
                 <div className="space-y-4">
                   {[
-                    { metric: "Search Visibility", value: 85, color: "bg-green-500", icon: <Eye size={16} /> },
-                    { metric: "Keyword Rankings", value: 72, color: "bg-blue-500", icon: <Target size={16} /> },
-                    { metric: "Page Speed Score", value: 94, color: "bg-purple-500", icon: <Zap size={16} /> },
-                    { metric: "Mobile Optimization", value: 96, color: "bg-orange-500", icon: <Smartphone size={16} /> }
+                    { metric: "Active Affiliates", value: 78, color: "bg-green-500", icon: <UserPlus size={16} /> },
+                    { metric: "Conversion Rate", value: 65, color: "bg-blue-500", icon: <Percent size={16} /> },
+                    { metric: "Commission Payout", value: 42, color: "bg-purple-500", icon: <DollarSign size={16} /> },
+                    { metric: "Program ROI", value: 320, color: "bg-orange-500", icon: <Repeat2 size={16} /> }
                   ].map((item, index) => (
                     <div key={index} className="flex items-center gap-3">
                       <div className="w-8 h-8 bg-[#dcd4ff] rounded-lg flex items-center justify-center">
@@ -614,12 +617,12 @@ const SEOServicesPage = () => {
                       <div className="flex-1">
                         <div className="flex justify-between items-center mb-1">
                           <span className="text-sm font-medium text-gray-800">{item.metric}</span>
-                          <span className="text-sm font-bold text-gray-800">{item.value}%</span>
+                          <span className="text-sm font-bold text-gray-800">{item.value}{index === 3 ? '%' : ''}</span>
                         </div>
                         <div className="w-full bg-gray-200 rounded-full h-2">
                           <div 
                             className={`${item.color} h-2 rounded-full transition-all duration-1000`}
-                            style={{width: `${item.value}%`}}
+                            style={{width: `${Math.min(100, item.value)}%`}}
                           ></div>
                         </div>
                       </div>
@@ -630,7 +633,7 @@ const SEOServicesPage = () => {
               
               {/* Floating Analytics Icons */}
               <div className="absolute -top-6 -right-6 w-12 h-12 bg-blue-300 rounded-full flex items-center justify-center shadow-lg animate-float1">
-                <BarChart3 size={20} className="text-blue-700" />
+                <BarChart2 size={20} className="text-blue-700" />
               </div>
               <div className="absolute -bottom-6 -left-6 w-10 h-10 bg-green-300 rounded-full flex items-center justify-center shadow-lg animate-float2">
                 <TrendingUp size={16} className="text-green-700" />
@@ -658,10 +661,10 @@ const SEOServicesPage = () => {
         <div className="w-full lg:w-[85%] mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold text-black mb-6">
-              SEO Success Stories
+              Affiliate Success Stories
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Real results from businesses that transformed their online presence with our strategic SEO solutions and data-driven optimization approach.
+              Real results from businesses that transformed their revenue streams with our strategic affiliate marketing solutions and performance-based approach.
             </p>
           </div>
           
@@ -695,8 +698,8 @@ const SEOServicesPage = () => {
                     
                     {/* Main Metric */}
                     <div className="absolute bottom-4 right-4 bg-black/80 text-white px-4 py-2 rounded-full">
-                      <div className="text-lg font-bold text-green-400">{project.metrics.trafficIncrease}</div>
-                      <div className="text-xs">Traffic Growth</div>
+                      <div className="text-lg font-bold text-green-400">{project.metrics.salesGenerated}</div>
+                      <div className="text-xs">Revenue Generated</div>
                     </div>
                   </div>
                   
@@ -710,8 +713,8 @@ const SEOServicesPage = () => {
                     {/* Metrics Grid */}
                     <div className="grid grid-cols-2 gap-4 pt-4 border-t border-gray-200">
                       <div className="text-center">
-                        <div className="text-lg font-bold text-purple-600">{project.metrics.revenueGrowth}</div>
-                        <div className="text-xs text-gray-600">Revenue Growth</div>
+                        <div className="text-lg font-bold text-purple-600">{project.metrics.roi}</div>
+                        <div className="text-xs text-gray-600">ROI</div>
                       </div>
                       <div className="text-center">
                         <div className="text-lg font-bold text-blue-600">{project.metrics.timeframe}</div>
@@ -760,29 +763,29 @@ const SEOServicesPage = () => {
           <div className="text-center mt-16">
             <div className="inline-block bg-gradient-to-r from-purple-100 to-blue-100 p-8 rounded-3xl border-2 border-black shadow-[8px_8px_0px_#000]">
               <h3 className="text-2xl font-bold text-black mb-4">Ready to Join Our Success Stories?</h3>
-              <p className="text-gray-700 mb-6 max-w-md mx-auto">Every business is unique. Let's create a custom SEO strategy that delivers results for your specific industry and goals.</p>
+              <p className="text-gray-700 mb-6 max-w-md mx-auto">Every business is unique. Let's create a custom affiliate strategy that delivers results for your specific products and goals.</p>
               <button className="bg-[#dcd4ff] text-black px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000]">
-                Start Your SEO Journey
+                Start Your Affiliate Journey
               </button>
             </div>
           </div>
         </div>
       </div>
 
-      {/* SEO Tools & Tech Stack */}
+      {/* Tools & Tech Stack */}
       <div className="py-24 bg-gray-50">
         <div className="w-full lg:w-[85%] mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold text-black mb-6">
-              Our SEO Toolkit
+              Our Affiliate Toolkit
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              We leverage industry-leading SEO tools and technologies to deliver data-driven insights, comprehensive analysis, and measurable optimization results.
+              We leverage industry-leading affiliate platforms and technologies to deliver measurable results, comprehensive tracking, and optimized performance.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {seoTools.map((tool, index) => (
+            {tools.map((tool, index) => (
               <div key={index} className="group">
                 <div className="bg-white p-6 rounded-2xl border-2 border-black shadow-[6px_6px_0px_#000] transition-all duration-300 hover:shadow-[10px_10px_0px_#000] hover:-translate-x-1 hover:-translate-y-1">
                   <div className="flex items-center gap-4 mb-4">
@@ -814,20 +817,20 @@ const SEOServicesPage = () => {
           {/* Additional Tools Section */}
           <div className="mt-16 bg-[#dcd4ff] p-8 rounded-3xl border-2 border-black shadow-[8px_8px_0px_#000]">
             <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-black mb-4">Advanced SEO Technologies</h3>
-              <p className="text-gray-700">Cutting-edge tools for comprehensive SEO analysis and optimization</p>
+              <h3 className="text-2xl font-bold text-black mb-4">Advanced Affiliate Technologies</h3>
+              <p className="text-gray-700">Cutting-edge tools for comprehensive affiliate program management</p>
             </div>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {[
-                { name: "Schema Markup", icon: "🏷️" },
-                { name: "Core Web Vitals", icon: "⚡" },
-                { name: "Local SEO", icon: "📍" },
-                { name: "E-A-T Optimization", icon: "🎯" },
-                { name: "Voice Search", icon: "🎤" },
-                { name: "AI Content", icon: "🤖" },
-                { name: "Mobile-First", icon: "📱" },
-                { name: "Analytics 4", icon: "📊" }
+                { name: "Conversion Tracking", icon: "📊" },
+                { name: "Cookie Tracking", icon: "🍪" },
+                { name: "Multi-Touch", icon: "✋" },
+                { name: "Fraud Detection", icon: "🕵️" },
+                { name: "Recurring Commissions", icon: "🔄" },
+                { name: "Performance Analytics", icon: "📈" },
+                { name: "Automated Payouts", icon: "💸" },
+                { name: "Affiliate Portal", icon: "🚪" }
               ].map((tech, index) => (
                 <div key={index} className="text-center p-4 bg-white rounded-xl shadow-[4px_4px_0px_#000] hover:shadow-[6px_6px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300">
                   <div className="text-2xl mb-2">{tech.icon}</div>
@@ -847,7 +850,7 @@ const SEOServicesPage = () => {
               What Our Clients Say
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Real testimonials from businesses that have experienced transformative growth through our SEO strategies and optimization expertise.
+              Real testimonials from businesses that have experienced transformative growth through our affiliate marketing strategies and program management.
             </p>
           </div>
           
@@ -945,7 +948,7 @@ const SEOServicesPage = () => {
               Frequently Asked Questions
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Get answers to common questions about SEO services, strategies, and what you can expect from our optimization process.
+              Get answers to common questions about affiliate marketing, program setup, and what you can expect from our performance-based approach.
             </p>
           </div>
           
@@ -984,7 +987,7 @@ const SEOServicesPage = () => {
             <div className="text-center mt-12">
               <div className="inline-block bg-gradient-to-r from-purple-100 to-blue-100 p-6 rounded-2xl border-2 border-black shadow-[6px_6px_0px_#000]">
                 <h3 className="text-xl font-bold text-black mb-3">Still Have Questions?</h3>
-                <p className="text-gray-700 mb-4">Our SEO experts are here to help you understand how we can improve your search rankings.</p>
+                <p className="text-gray-700 mb-4">Our affiliate marketing experts are here to help you understand how we can grow your revenue.</p>
                 <button className="bg-[#dcd4ff] text-black px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-[3px_3px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[5px_5px_0px_#000]">
                   Schedule Consultation
                 </button>
@@ -999,18 +1002,18 @@ const SEOServicesPage = () => {
         <div className="w-full lg:w-[85%] mx-auto px-4 sm:px-6">
           <div className="text-center">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-              Ready to Dominate Search Results?
+              Ready to Scale Your Revenue?
             </h2>
             <p className="text-lg text-purple-100 mb-8 max-w-3xl mx-auto">
-              Stop losing potential customers to competitors. Our proven SEO strategies will boost your search rankings, increase organic traffic, and drive more qualified leads to your business.
+              Stop leaving money on the table. Our proven affiliate strategies will connect you with high-quality partners, drive more sales, and grow your business with performance-based marketing.
             </p>
             
             {/* Key Benefits */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto">
               {[
-                { icon: "🚀", title: "Boost Rankings", description: "Get found on page 1" },
-                { icon: "📈", title: "Increase Traffic", description: "3-5x more organic visitors" },
-                { icon: "💰", title: "Drive Revenue", description: "Higher converting traffic" }
+                { icon: "🚀", title: "Performance-Based", description: "Pay only for results" },
+                { icon: "📈", title: "Increased Sales", description: "3-5x more revenue" },
+                { icon: "💰", title: "Higher ROI", description: "5:1 average return" }
               ].map((benefit, index) => (
                 <div key={index} className="text-center p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
                   <div className="text-4xl mb-3">{benefit.icon}</div>
@@ -1022,10 +1025,10 @@ const SEOServicesPage = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-white text-purple-600 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:bg-purple-50 hover:shadow-lg text-lg">
-                Get Free SEO Audit
+                Get Free Strategy
               </button>
               <button className="bg-transparent text-white px-8 py-4 rounded-full border-2 border-white font-semibold transition-all duration-300 hover:bg-white/10 text-lg">
-                View SEO Packages
+                View Pricing
               </button>
             </div>
             
@@ -1037,11 +1040,11 @@ const SEOServicesPage = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Users size={20} className="text-blue-400" />
-                <span className="text-purple-100">500+ Happy Clients</span>
+                <span className="text-purple-100">200+ Happy Clients</span>
               </div>
               <div className="flex items-center gap-2">
                 <Star size={20} className="text-yellow-400" />
-                <span className="text-purple-100">4.9/5 Client Rating</span>
+                <span className="text-purple-100">4.8/5 Client Rating</span>
               </div>
             </div>
           </div>
@@ -1051,4 +1054,4 @@ const SEOServicesPage = () => {
   );
 };
 
-export default SEOServicesPage;
+export default AffiliateMarketingPage;

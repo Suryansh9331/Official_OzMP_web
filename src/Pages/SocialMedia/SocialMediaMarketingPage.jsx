@@ -4,241 +4,244 @@ import {
   CheckCircle, ArrowRight, Users, Award, Lightbulb, Monitor,
   FileText, Settings, Smartphone, Gauge, Star, Trophy,
   PieChart, LineChart, Activity, Layers, Code, Link,
-  MousePointer, Calendar, Clock, MapPin, Heart, ThumbsUp
+  MousePointer, Calendar, Clock, MapPin, Heart, ThumbsUp,
+  Instagram, Facebook, Twitter, Youtube, Linkedin, Share2,
+  MessageCircle, Hash, Image, Video, Smile, UserPlus,
+  Bell, Mail, ThumbsUp as Like, Bookmark, Send
 } from "lucide-react";
 
-const SEOServicesPage = () => {
+const SocialMediaMarketingPage = () => {
   const [activeExpertise, setActiveExpertise] = useState(0);
   const [hoveredPortfolio, setHoveredPortfolio] = useState(null);
   const [activeTestimonial, setActiveTestimonial] = useState(0);
   const [activeFaq, setActiveFaq] = useState(0);
-  const [seoMetrics, setSeoMetrics] = useState({
-    organicTraffic: 85,
-    keywordRankings: 72,
-    clickThroughRate: 68,
-    conversionRate: 45
+  const [socialMetrics, setSocialMetrics] = useState({
+    engagementRate: 78,
+    followerGrowth: 65,
+    clickThroughRate: 52,
+    conversionRate: 38
   });
 
   const expertiseAreas = [
     {
-      icon: <Search size={40} />,
-      title: "Keyword Research & Strategy",
-      description: "Comprehensive keyword analysis to identify high-value search terms that drive qualified traffic and conversions for your business.",
-      benefits: ["Competitor keyword analysis", "Search volume research", "Long-tail keyword discovery", "Intent-based targeting"]
+      icon: <Instagram size={40} />,
+      title: "Social Media Strategy",
+      description: "Comprehensive social media strategies tailored to your brand's goals, audience, and industry trends.",
+      benefits: ["Platform-specific strategies", "Content calendar planning", "Audience targeting", "Competitor analysis"]
     },
     {
-      icon: <Code size={40} />,
-      title: "Technical SEO",
-      description: "Advanced technical optimization including site speed, mobile responsiveness, schema markup, and crawlability improvements.",
-      benefits: ["Site speed optimization", "Mobile-first indexing", "Schema markup implementation", "XML sitemap optimization"]
+      icon: <Image size={40} />,
+      title: "Content Creation",
+      description: "Stunning visuals and compelling copy that captures attention and communicates your brand message effectively.",
+      benefits: ["Graphic design", "Video production", "Copywriting", "Branded content"]
     },
     {
-      icon: <FileText size={40} />,
-      title: "Content Optimization",
-      description: "Strategic content creation and optimization that engages users while satisfying search engine algorithms and ranking factors.",
-      benefits: ["Content gap analysis", "On-page optimization", "Meta tag optimization", "Internal linking strategy"]
+      icon: <TrendingUp size={40} />,
+      title: "Community Management",
+      description: "Building and nurturing your online community through engagement, conversations, and relationship building.",
+      benefits: ["Comment moderation", "Direct messaging", "Engagement strategies", "Brand advocacy"]
     },
     {
-      icon: <Link size={40} />,
-      title: "Link Building",
-      description: "High-quality backlink acquisition through ethical white-hat techniques that build domain authority and search rankings.",
-      benefits: ["Authority link building", "Guest posting campaigns", "Broken link recovery", "Local citation building"]
+      icon: <BarChart3 size={40} />,
+      title: "Paid Social Advertising",
+      description: "Targeted ad campaigns that reach your ideal customers and drive measurable results across social platforms.",
+      benefits: ["Audience targeting", "Ad creative development", "Campaign management", "Performance optimization"]
     }
   ];
 
-  const portfolio = [
+    const portfolio = [
     {
       id: 1,
-      title: "E-commerce Fashion Store",
+      title: "Fashion Brand Campaign",
       category: "Retail & E-commerce",
-      description: "Increased organic traffic by 340% and revenue by 280% in 8 months",
+      description: "Increased engagement by 420% and sales by 350% through Instagram strategy",
       metrics: {
-        trafficIncrease: "340%",
-        revenueGrowth: "280%",
-        timeframe: "8 months",
-        rankings: "150+ keywords in top 10"
+        engagementIncrease: "420%",
+        revenueGrowth: "350%",
+        timeframe: "6 months",
+        followers: "45K new followers"
       },
-      image: "https://images.squarespace-cdn.com/content/v1/5f0f2f1bd47e182f22a3bd84/1614204340871-F8G9HCTNA3NLWYJHGFVA/seo_for_ecommerce.jpg",
-      tags: ["E-commerce SEO", "Local SEO", "Content Marketing"]
+      image: "https://img.freepik.com/premium-psd/top-fashion-banners-enhance-your-brands-visual-appeal_839034-944.jpg",
+      tags: ["Instagram", "Influencer Collabs", "Content Creation"]
     },
     {
       id: 2,
-      title: "Healthcare Clinic Chain",
-      category: "Healthcare & Medical",
-      description: "Improved local search visibility resulting in 250% more appointment bookings",
+      title: "Tech Startup Launch",
+      category: "Technology",
+      description: "Generated 5,000 leads and 200+ signups through LinkedIn and Twitter campaigns",
       metrics: {
-        trafficIncrease: "180%",
-        revenueGrowth: "250%",
-        timeframe: "6 months",
-        rankings: "95+ local keywords ranking #1"
+        engagementIncrease: "380%",
+        leadGrowth: "5,000",
+        timeframe: "3 months",
+        followers: "12K new followers"
       },
-      image: "https://digitalismedical.com/wp-content/uploads/2020/03/Healthcare-SEO.jpg",
-      tags: ["Local SEO", "Medical SEO", "Reputation Management"]
+      image: "https://img.freepik.com/free-psd/start-up-business-concept-banner-template_23-2148806580.jpg",
+      tags: ["LinkedIn", "Twitter", "Lead Generation"]
     },
     {
       id: 3,
-      title: "SaaS Technology Platform",
-      category: "Technology & Software",
-      description: "Achieved 400% growth in qualified leads through strategic content SEO",
+      title: "Restaurant Chain Promotion",
+      category: "Food & Beverage",
+      description: "Drove 150% more foot traffic and 80% increase in online orders through Facebook campaigns",
       metrics: {
-        trafficIncrease: "420%",
-        revenueGrowth: "400%",
-        timeframe: "12 months",
-        rankings: "200+ technical keywords ranking"
+        engagementIncrease: "290%",
+        revenueGrowth: "80%",
+        timeframe: "4 months",
+        followers: "28K new followers"
       },
-      image: "https://www.pagetraffic.in/wp-content/uploads/2023/10/SEO-for-SaaS.jpg",
-      tags: ["Technical SEO", "Content Strategy", "Lead Generation"]
+      image: "https://img.freepik.com/free-psd/modern-banner-breakfast-restaurant_23-2148351348.jpg",
+      tags: ["Facebook", "Local Marketing", "Promotions"]
     },
     {
       id: 4,
-      title: "Real Estate Agency",
-      category: "Real Estate & Property",
-      description: "Dominated local search results with 300% increase in property inquiries",
+      title: "Fitness App Growth",
+      category: "Health & Wellness",
+      description: "Achieved 600% growth in app downloads through TikTok and YouTube content",
       metrics: {
-        trafficIncrease: "290%",
-        revenueGrowth: "300%",
-        timeframe: "10 months",
-        rankings: "120+ location-based keywords"
+        engagementIncrease: "550%",
+        downloadGrowth: "600%",
+        timeframe: "8 months",
+        followers: "95K new followers"
       },
-      image: "https://ezranking.s3.eu-west-2.amazonaws.com/blog/wp-content/uploads/2022/12/07115334/SEO-For-Real-Estate.jpg",
-      tags: ["Local SEO", "Real Estate SEO", "Google My Business"]
+      image: "https://assets.weforum.org/editor/oivngYtaavLuKdG_6ul2G0E_rRoZvWm5uGuEgSyf8jY.jpg",
+      tags: ["TikTok", "YouTube", "Viral Content"]
     }
   ];
 
-  const seoTools = [
+  const socialTools = [
     {
-      name: "Google Analytics",
-      category: "Analytics & Tracking",
-      description: "Advanced traffic analysis and user behavior insights",
-      icon: "📊",
-      color: "from-blue-500 to-purple-600"
-    },
-    {
-      name: "SEMrush",
-      category: "Keyword Research",
-      description: "Comprehensive keyword and competitor analysis",
-      icon: "🔍",
+      name: "Hootsuite",
+      category: "Social Management",
+      description: "Comprehensive social media scheduling and monitoring",
+      icon: "🦉",
       color: "from-orange-500 to-red-600"
     },
     {
-      name: "Ahrefs",
-      category: "Backlink Analysis",
-      description: "Professional backlink research and monitoring",
-      icon: "🔗",
-      color: "from-green-500 to-blue-600"
+      name: "Canva",
+      category: "Content Creation",
+      description: "Professional graphic design for social media",
+      icon: "🎨",
+      color: "from-blue-500 to-teal-600"
     },
     {
-      name: "Screaming Frog",
-      category: "Technical SEO",
-      description: "Website crawling and technical audit tool",
-      icon: "🐸",
-      color: "from-purple-500 to-pink-600"
+      name: "Sprout Social",
+      category: "Analytics",
+      description: "Advanced social media analytics and reporting",
+      icon: "🌱",
+      color: "from-green-500 to-emerald-600"
     },
     {
-      name: "Google Search Console",
-      category: "Performance Monitoring",
-      description: "Search performance and indexing insights",
-      icon: "🎯",
-      color: "from-cyan-500 to-blue-600"
+      name: "Adobe Premiere",
+      category: "Video Editing",
+      description: "Professional video editing for social content",
+      icon: "🎬",
+      color: "from-purple-500 to-blue-600"
     },
     {
-      name: "PageSpeed Insights",
-      category: "Performance Optimization",
-      description: "Core Web Vitals and speed optimization",
-      icon: "⚡",
-      color: "from-yellow-500 to-orange-600"
+      name: "Facebook Ads Manager",
+      category: "Advertising",
+      description: "Powerful ad creation and targeting tools",
+      icon: "📊",
+      color: "from-blue-600 to-indigo-600"
+    },
+    {
+      name: "Later",
+      category: "Instagram Scheduling",
+      description: "Visual content calendar for Instagram",
+      icon: "⏱️",
+      color: "from-pink-500 to-red-600"
     }
   ];
 
-    const testimonials = [
+  const testimonials = [
     {
-      name: "Sarah Mitchell",
-      company: "TechStart Solutions",
+      name: "Jessica Williams",
+      company: "Bella Fashion",
       position: "Marketing Director",
-      quote: "Our organic traffic increased by 350% in just 6 months. The ROI from SEO has been incredible - we're getting 5x more qualified leads.",
+      quote: "Our Instagram engagement increased by 400% in just 4 months. The creative content and strategic posting schedule transformed our social presence.",
       rating: 5,
-      image: "https://m.media-amazon.com/images/S/amzn-author-media-prod/nbgv9ibf9u2f0bs3os7du4lh3t.jpg",
-      results: "350% traffic increase"
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&crop=face",
+      results: "400% engagement growth"
     },
     {
-      name: "Michael Chen",
-      company: "Urban Fitness Chain",
+      name: "David Kim",
+      company: "TechNova Solutions",
       position: "CEO",
-      quote: "They transformed our local SEO completely. We went from page 3 to ranking #1 for all our target keywords. Membership sign-ups doubled.",
+      quote: "The LinkedIn strategy brought us 3x more qualified leads than our previous marketing efforts. The content resonated perfectly with our B2B audience.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
-      results: "200% membership growth"
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop&crop=face",
+      results: "3x more qualified leads"
     },
     {
-      name: "Emily Rodriguez",
-      company: "Boutique Fashion Store",
+      name: "Maria Rodriguez",
+      company: "Urban Eats",
       position: "Owner",
-      quote: "The content strategy they developed not only improved our rankings but also increased our average order value by 40%. Amazing results!",
+      quote: "Our TikTok videos went viral, bringing in thousands of new customers. The team understood exactly how to make our food look irresistible on camera.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
-      results: "40% AOV increase"
+      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face",
+      results: "Viral TikTok campaign"
     }
   ];
 
   const faqs = [
     {
-      question: "How long does it take to see SEO results?",
-      answer: "SEO is a long-term strategy, and results typically begin showing within 3-6 months. However, some improvements like technical fixes and content optimization can show faster results. Full SEO benefits usually manifest within 6-12 months with consistent effort."
+      question: "How long does it take to see results from social media marketing?",
+      answer: "Initial engagement improvements often appear within 4-8 weeks, while significant growth and conversion results typically manifest in 3-6 months. Consistent, high-quality content is key to building momentum."
     },
     {
-      question: "What's the difference between organic and paid search?",
-      answer: "Organic search results appear naturally based on relevance and SEO optimization, while paid search results are advertisements. Organic traffic is 'free' but requires time and effort to build, while paid search provides immediate visibility but requires ongoing ad spend."
+      question: "Which social platforms should my business be on?",
+      answer: "The ideal platforms depend on your target audience and business goals. We analyze your audience demographics and industry trends to recommend the most effective platforms for your specific needs."
     },
     {
-      question: "Do you guarantee first page rankings?",
-      answer: "While we can't guarantee specific rankings (no ethical SEO company can), we focus on improving your overall search visibility, organic traffic, and conversions. Our data-driven approach consistently delivers measurable improvements in search performance."
+      question: "How do you measure social media success?",
+      answer: "We track metrics like engagement rate, follower growth, website clicks, lead generation, and conversion rates. Our reports focus on ROI and align with your specific business objectives."
     },
     {
-      question: "How do you measure SEO success?",
-      answer: "We track multiple metrics including organic traffic growth, keyword rankings, click-through rates, conversion rates, and ultimately ROI. We provide detailed monthly reports showing progress across all key performance indicators."
+      question: "What's included in your social media services?",
+      answer: "Our comprehensive services include strategy development, content creation, community management, advertising campaigns, influencer partnerships, and detailed performance analytics."
     },
     {
-      question: "Is SEO worth it for small businesses?",
-      answer: "Absolutely! SEO is especially valuable for small businesses as it levels the playing field with larger competitors. Local SEO can help small businesses dominate their geographic area and attract customers who are ready to buy."
+      question: "How often should we post on social media?",
+      answer: "Optimal posting frequency varies by platform and audience. We create customized content calendars that balance visibility with quality, typically ranging from 3-5 posts per week on LinkedIn to 1-2 posts daily on Instagram."
     },
     {
-      question: "What's included in your SEO services?",
-      answer: "Our comprehensive SEO services include keyword research, technical SEO audits, on-page optimization, content strategy, link building, local SEO (if applicable), analytics setup, and monthly performance reporting."
+      question: "Do you manage social media advertising?",
+      answer: "Yes, we create and manage targeted ad campaigns across all major platforms, including Facebook, Instagram, LinkedIn, Twitter, and TikTok, with continuous optimization for maximum ROI."
     }
   ];
 
-  // SEO Dashboard Component
-  const SEODashboard = () => {
+  // Social Dashboard Component
+  const SocialDashboard = () => {
     const [currentMetric, setCurrentMetric] = useState(0);
     
     const metrics = [
       {
-        title: "Organic Traffic",
-        value: seoMetrics.organicTraffic,
-        change: "+45%",
-        icon: <TrendingUp size={16} />,
-        color: "from-green-500 to-emerald-600"
+        title: "Engagement Rate",
+        value: socialMetrics.engagementRate,
+        change: "+32%",
+        icon: <Heart size={16} />,
+        color: "from-pink-500 to-red-600"
       },
       {
-        title: "Keyword Rankings",
-        value: seoMetrics.keywordRankings,
-        change: "+23%",
-        icon: <Target size={16} />,
+        title: "Follower Growth",
+        value: socialMetrics.followerGrowth,
+        change: "+28%",
+        icon: <UserPlus size={16} />,
         color: "from-blue-500 to-cyan-600"
       },
       {
         title: "Click-Through Rate",
-        value: seoMetrics.clickThroughRate,
-        change: "+18%",
+        value: socialMetrics.clickThroughRate,
+        change: "+15%",
         icon: <MousePointer size={16} />,
-        color: "from-purple-500 to-pink-600"
+        color: "from-purple-500 to-purple-600"
       },
       {
         title: "Conversion Rate",
-        value: seoMetrics.conversionRate,
-        change: "+32%",
+        value: socialMetrics.conversionRate,
+        change: "+22%",
         icon: <Trophy size={16} />,
-        color: "from-orange-500 to-red-600"
+        color: "from-yellow-500 to-orange-600"
       }
     ];
 
@@ -247,11 +250,11 @@ const SEOServicesPage = () => {
         setCurrentMetric(prev => (prev + 1) % metrics.length);
         
         // Animate metrics
-        setSeoMetrics(prev => ({
-          organicTraffic: Math.max(70, Math.min(95, prev.organicTraffic + (Math.random() - 0.5) * 5)),
-          keywordRankings: Math.max(60, Math.min(85, prev.keywordRankings + (Math.random() - 0.5) * 4)),
-          clickThroughRate: Math.max(55, Math.min(80, prev.clickThroughRate + (Math.random() - 0.5) * 3)),
-          conversionRate: Math.max(35, Math.min(60, prev.conversionRate + (Math.random() - 0.5) * 3))
+        setSocialMetrics(prev => ({
+          engagementRate: Math.max(70, Math.min(90, prev.engagementRate + (Math.random() - 0.5) * 5)),
+          followerGrowth: Math.max(55, Math.min(80, prev.followerGrowth + (Math.random() - 0.5) * 4)),
+          clickThroughRate: Math.max(45, Math.min(65, prev.clickThroughRate + (Math.random() - 0.5) * 3)),
+          conversionRate: Math.max(30, Math.min(50, prev.conversionRate + (Math.random() - 0.5) * 3))
         }));
       }, 4000);
 
@@ -260,7 +263,7 @@ const SEOServicesPage = () => {
 
     return (
       <div className="relative">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-400/20 to-blue-600/20 rounded-[3rem] blur-xl scale-110"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-pink-400/20 to-blue-600/20 rounded-[3rem] blur-xl scale-110"></div>
         
         <div className="relative w-72 h-[580px] bg-gradient-to-b from-gray-800 to-black rounded-[3rem] p-2 shadow-2xl">
           <div className="w-full h-full bg-black rounded-[2.5rem] overflow-hidden relative">
@@ -271,15 +274,15 @@ const SEOServicesPage = () => {
               </div>
             </div>
             
-            <div className="pt-10 px-4 h-full bg-gradient-to-br from-gray-50 to-blue-50 relative">
+            <div className="pt-10 px-4 h-full bg-gradient-to-br from-gray-50 to-pink-50 relative">
               <div className="flex justify-between items-center mb-6 text-xs text-gray-800">
                 <div className="flex items-center gap-1">
-                  <span className="font-semibold">SEO Dashboard</span>
+                  <span className="font-semibold">Social Dashboard</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="flex items-center gap-1">
                     <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                    <span className="text-xs text-green-600 font-medium">Optimizing</span>
+                    <span className="text-xs text-green-600 font-medium">Active</span>
                   </div>
                 </div>
               </div>
@@ -310,30 +313,30 @@ const SEOServicesPage = () => {
                 <div className="grid grid-cols-2 gap-3">
                   <div className="bg-white p-3 rounded-xl shadow-lg">
                     <div className="flex items-center gap-2 mb-2">
-                      <Search size={16} className="text-blue-600" />
-                      <span className="text-xs font-medium text-gray-800">Keywords</span>
+                      <Users size={16} className="text-purple-600" />
+                      <span className="text-xs font-medium text-gray-800">Followers</span>
                     </div>
-                    <div className="text-xl font-bold text-gray-800">247</div>
-                    <div className="text-xs text-green-600">+12 this month</div>
+                    <div className="text-xl font-bold text-gray-800">45.8K</div>
+                    <div className="text-xs text-green-600">+1.2K this month</div>
                   </div>
                   <div className="bg-white p-3 rounded-xl shadow-lg">
                     <div className="flex items-center gap-2 mb-2">
-                      <Eye size={16} className="text-purple-600" />
-                      <span className="text-xs font-medium text-gray-800">Visibility</span>
+                      <MessageCircle size={16} className="text-blue-600" />
+                      <span className="text-xs font-medium text-gray-800">Engagement</span>
                     </div>
-                    <div className="text-xl font-bold text-gray-800">85%</div>
-                    <div className="text-xs text-green-600">+8% improved</div>
+                    <div className="text-xl font-bold text-gray-800">1.4K</div>
+                    <div className="text-xs text-green-600">+28% improved</div>
                   </div>
                 </div>
 
                 {/* Progress Bars */}
                 <div className="bg-white p-4 rounded-2xl shadow-lg">
-                  <h4 className="font-semibold text-sm text-gray-800 mb-3">SEO Health Score</h4>
+                  <h4 className="font-semibold text-sm text-gray-800 mb-3">Platform Performance</h4>
                   <div className="space-y-3">
                     {[
-                      { label: "Technical SEO", value: 92, color: "bg-green-500" },
-                      { label: "Content Quality", value: 88, color: "bg-blue-500" },
-                      { label: "Backlink Profile", value: 76, color: "bg-purple-500" }
+                      { label: "Instagram", value: 88, color: "bg-pink-500" },
+                      { label: "Facebook", value: 76, color: "bg-blue-500" },
+                      { label: "LinkedIn", value: 82, color: "bg-indigo-500" }
                     ].map((item, index) => (
                       <div key={index}>
                         <div className="flex justify-between text-xs mb-1">
@@ -358,13 +361,13 @@ const SEOServicesPage = () => {
                   <div className="flex justify-around items-center">
                     {[
                       { icon: <BarChart3 size={20} />, active: true },
-                      { icon: <Search size={20} />, active: false },
-                      { icon: <Target size={20} />, active: false },
+                      { icon: <Instagram size={20} />, active: false },
+                      { icon: <Facebook size={20} />, active: false },
                       { icon: <Settings size={20} />, active: false }
                     ].map((item, index) => (
                       <div key={index} className="relative">
                         <div className={`p-2 rounded-xl transition-all duration-300 ${
-                          item.active ? 'bg-purple-500 text-white shadow-lg' : 'text-gray-600'
+                          item.active ? 'bg-pink-500 text-white shadow-lg' : 'text-gray-600'
                         }`}>
                           {item.icon}
                         </div>
@@ -401,7 +404,7 @@ const SEOServicesPage = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center relative overflow-hidden">
+      <div className="min-h-screen bg-gradient-to-br from-pink-50 to-blue-50 flex items-center justify-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute inset-0" style={{
             backgroundImage: `radial-gradient(circle at 25px 25px, rgba(156, 146, 172, 0.1) 2px, transparent 2px)`,
@@ -413,63 +416,63 @@ const SEOServicesPage = () => {
           {/* Text Content */}
           <div className="w-full lg:w-[55%] text-center lg:text-left">
             <div className="inline-block bg-[#dcd4ff] text-black px-4 py-2 rounded-full text-sm font-semibold mb-6 shadow-[2px_2px_0px_#000]">
-              🚀 SEARCH ENGINE OPTIMIZATION
+              🚀 SOCIAL MEDIA MARKETING
             </div>
             
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
-              Boost Your Website's
+              Designs That
               <br />
-              <span className="text-purple-600">Search Rankings</span>
+              <span className="text-purple-600">Communicate & Convert</span>
             </h1>
             
             <p className="text-lg sm:text-xl text-gray-700 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              Drive consistent, high-quality organic traffic with targeted keyword strategies, technical optimization, and content excellence that converts visitors into customers.
+              We create stunning visuals and intuitive interfaces that reflect your brand and enhance user engagement across all social platforms.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
               <button className="uppercase font-semibold bg-[#dcd4ff] text-black px-8 py-4 rounded-full transition-all duration-300 shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000] active:translate-x-0 active:translate-y-0 active:shadow-[2px_2px_0px_#000]">
-                Get SEO Audit
+                Get Free Strategy
               </button>
               <button className="uppercase font-semibold bg-white text-black px-8 py-4 rounded-full border-2 border-black transition-all duration-300 hover:bg-gray-50">
-                View SEO Plans
+                View Our Work
               </button>
             </div>
             
             {/* Quick Stats */}
             <div className="flex flex-wrap gap-8 justify-center lg:justify-start">
               <div className="text-center lg:text-left">
-                <div className="text-2xl font-bold text-purple-600">300+</div>
-                <div className="text-sm text-gray-600">Keywords Ranked</div>
+                <div className="text-2xl font-bold text-purple-600">400%</div>
+                <div className="text-sm text-gray-600">Avg Engagement Growth</div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-2xl font-bold text-purple-600">450%</div>
-                <div className="text-sm text-gray-600">Avg Traffic Growth</div>
+                <div className="text-2xl font-bold text-purple-600">1M+</div>
+                <div className="text-sm text-gray-600">Followers Gained</div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-2xl font-bold text-purple-600">50+</div>
-                <div className="text-sm text-gray-600">Success Stories</div>
+                <div className="text-2xl font-bold text-purple-600">80+</div>
+                <div className="text-sm text-gray-600">Successful Campaigns</div>
               </div>
             </div>
           </div>
           
-          {/* SEO Dashboard */}
+          {/* Social Dashboard */}
           <div className="w-full lg:w-[45%] flex justify-center items-center mt-12 lg:mt-0">
-            <SEODashboard />
+            <SocialDashboard />
           </div>
         </div>
       </div>
 
-      {/* About SEO Services */}
+      {/* About Social Media Services */}
       <div className="py-24 bg-white">
         <div className="w-full lg:w-[85%] mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <div>
                 <h2 className="text-4xl sm:text-5xl font-bold text-black mb-6">
-                  Why SEO Matters for Your Business
+                  Why Social Media Marketing Matters
                 </h2>
                 <p className="text-xl text-gray-700 leading-relaxed">
-                  Search Engine Optimization isn't just about rankings—it's about connecting your business with customers who are actively searching for your products or services. Our data-driven approach ensures sustainable growth in organic visibility and qualified traffic.
+                  Social media isn't just about posting content—it's about building relationships, establishing brand authority, and driving meaningful engagement that converts to business results. Our strategic approach ensures your brand stands out in crowded social feeds.
                 </p>
               </div>
               
@@ -477,18 +480,18 @@ const SEOServicesPage = () => {
                 {[
                   {
                     icon: <TrendingUp size={24} className="text-purple-600" />,
-                    title: "Increased Organic Traffic",
-                    description: "Drive 3-5x more qualified visitors to your website through strategic keyword targeting and content optimization."
+                    title: "Increased Brand Awareness",
+                    description: "Expand your reach and visibility with content designed to be shared, liked, and remembered."
                   },
                   {
                     icon: <Target size={24} className="text-purple-600" />,
-                    title: "Better Conversion Rates",
-                    description: "Organic traffic converts 8x better than paid advertising because users are actively searching for solutions."
+                    title: "Higher Engagement Rates",
+                    description: "Build meaningful connections with your audience through interactive, valuable content."
                   },
                   {
                     icon: <Award size={24} className="text-purple-600" />,
-                    title: "Long-term ROI",
-                    description: "Unlike paid ads, SEO builds lasting value that continues to generate traffic and leads for years to come."
+                    title: "Cost-Effective Advertising",
+                    description: "Social ads offer precise targeting at a fraction of traditional advertising costs."
                   }
                 ].map((benefit, index) => (
                   <div key={index} className="flex items-start gap-4 group cursor-pointer">
@@ -505,22 +508,22 @@ const SEOServicesPage = () => {
             </div>
             
             <div className="relative">
-              <div className="relative bg-gradient-to-br from-purple-100 to-blue-100 p-8 rounded-3xl border-2 border-black shadow-[12px_12px_0px_#000]">
+              <div className="relative bg-gradient-to-br from-pink-100 to-blue-100 p-8 rounded-3xl border-2 border-black shadow-[12px_12px_0px_#000]">
                 <div className="space-y-6">
                   <div className="text-center">
                     <div className="w-16 h-16 bg-[#dcd4ff] rounded-full flex items-center justify-center mx-auto mb-4 shadow-[4px_4px_0px_#000]">
-                      <Search size={32} className="text-purple-600" />
+                      <Share2 size={32} className="text-purple-600" />
                     </div>
-                    <h3 className="text-2xl font-bold text-black mb-2">SEO Success Formula</h3>
-                    <p className="text-gray-700">Our proven methodology for search engine domination</p>
+                    <h3 className="text-2xl font-bold text-black mb-2">Social Media Success Formula</h3>
+                    <p className="text-gray-700">Our proven methodology for social media growth</p>
                   </div>
                   
                   <div className="grid grid-cols-2 gap-4">
                     {[
-                      { label: "Keyword Research", percentage: "92%" },
-                      { label: "Technical SEO", percentage: "88%" },
                       { label: "Content Strategy", percentage: "95%" },
-                      { label: "Link Building", percentage: "85%" }
+                      { label: "Community Growth", percentage: "88%" },
+                      { label: "Engagement Rate", percentage: "92%" },
+                      { label: "Ad Performance", percentage: "85%" }
                     ].map((item, index) => (
                       <div key={index} className="bg-white p-4 rounded-xl shadow-lg">
                         <div className="text-center">
@@ -546,14 +549,14 @@ const SEOServicesPage = () => {
       </div>
 
       {/* Our Expertise */}
-      <div className="py-24 bg-gradient-to-br from-gray-50 to-purple-50">
+      <div className="py-24 bg-gradient-to-br from-pink-50 to-blue-50">
         <div className="w-full lg:w-[85%] mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold text-black mb-6">
-              Our SEO Expertise
+              Our Social Media Expertise
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Comprehensive SEO services that cover every aspect of search engine optimization, from technical foundations to content strategy and link building.
+              Comprehensive social media services that cover strategy, content creation, community management, and paid advertising across all major platforms.
             </p>
           </div>
           
@@ -596,16 +599,16 @@ const SEOServicesPage = () => {
             <div className="relative">
               <div className="relative bg-white p-8 rounded-3xl border-2 border-black shadow-[12px_12px_0px_#000]">
                 <div className="text-center mb-6">
-                  <h3 className="text-2xl font-bold text-black mb-2">SEO Performance Metrics</h3>
-                  <p className="text-gray-600">Real-time optimization results</p>
+                  <h3 className="text-2xl font-bold text-black mb-2">Social Media Performance</h3>
+                  <p className="text-gray-600">Real-time engagement metrics</p>
                 </div>
                 
                 <div className="space-y-4">
                   {[
-                    { metric: "Search Visibility", value: 85, color: "bg-green-500", icon: <Eye size={16} /> },
-                    { metric: "Keyword Rankings", value: 72, color: "bg-blue-500", icon: <Target size={16} /> },
-                    { metric: "Page Speed Score", value: 94, color: "bg-purple-500", icon: <Zap size={16} /> },
-                    { metric: "Mobile Optimization", value: 96, color: "bg-orange-500", icon: <Smartphone size={16} /> }
+                    { metric: "Engagement Rate", value: 78, color: "bg-pink-500", icon: <Heart size={16} /> },
+                    { metric: "Follower Growth", value: 65, color: "bg-blue-500", icon: <UserPlus size={16} /> },
+                    { metric: "Content Reach", value: 84, color: "bg-purple-500", icon: <Globe size={16} /> },
+                    { metric: "Response Time", value: 92, color: "bg-green-500", icon: <MessageCircle size={16} /> }
                   ].map((item, index) => (
                     <div key={index} className="flex items-center gap-3">
                       <div className="w-8 h-8 bg-[#dcd4ff] rounded-lg flex items-center justify-center">
@@ -658,10 +661,10 @@ const SEOServicesPage = () => {
         <div className="w-full lg:w-[85%] mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold text-black mb-6">
-              SEO Success Stories
+              Social Media Success Stories
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Real results from businesses that transformed their online presence with our strategic SEO solutions and data-driven optimization approach.
+              Real results from businesses that transformed their social presence with our strategic content and data-driven approach.
             </p>
           </div>
           
@@ -695,8 +698,8 @@ const SEOServicesPage = () => {
                     
                     {/* Main Metric */}
                     <div className="absolute bottom-4 right-4 bg-black/80 text-white px-4 py-2 rounded-full">
-                      <div className="text-lg font-bold text-green-400">{project.metrics.trafficIncrease}</div>
-                      <div className="text-xs">Traffic Growth</div>
+                      <div className="text-lg font-bold text-green-400">{project.metrics.engagementIncrease}</div>
+                      <div className="text-xs">Engagement Growth</div>
                     </div>
                   </div>
                   
@@ -707,11 +710,14 @@ const SEOServicesPage = () => {
                       <p className="text-gray-700">{project.description}</p>
                     </div>
                     
-                    {/* Metrics Grid */}
+                                        {/* Metrics Grid */}
                     <div className="grid grid-cols-2 gap-4 pt-4 border-t border-gray-200">
                       <div className="text-center">
-                        <div className="text-lg font-bold text-purple-600">{project.metrics.revenueGrowth}</div>
-                        <div className="text-xs text-gray-600">Revenue Growth</div>
+                        <div className="text-lg font-bold text-purple-600">{project.metrics.revenueGrowth || project.metrics.leadGrowth || project.metrics.downloadGrowth}</div>
+                        <div className="text-xs text-gray-600">
+                          {project.metrics.revenueGrowth ? 'Revenue Growth' : 
+                           project.metrics.leadGrowth ? 'Leads Generated' : 'Download Growth'}
+                        </div>
                       </div>
                       <div className="text-center">
                         <div className="text-lg font-bold text-blue-600">{project.metrics.timeframe}</div>
@@ -758,31 +764,31 @@ const SEOServicesPage = () => {
           
           {/* Portfolio CTA */}
           <div className="text-center mt-16">
-            <div className="inline-block bg-gradient-to-r from-purple-100 to-blue-100 p-8 rounded-3xl border-2 border-black shadow-[8px_8px_0px_#000]">
-              <h3 className="text-2xl font-bold text-black mb-4">Ready to Join Our Success Stories?</h3>
-              <p className="text-gray-700 mb-6 max-w-md mx-auto">Every business is unique. Let's create a custom SEO strategy that delivers results for your specific industry and goals.</p>
+            <div className="inline-block bg-gradient-to-r from-pink-100 to-blue-100 p-8 rounded-3xl border-2 border-black shadow-[8px_8px_0px_#000]">
+              <h3 className="text-2xl font-bold text-black mb-4">Ready to Transform Your Social Presence?</h3>
+              <p className="text-gray-700 mb-6 max-w-md mx-auto">Every brand is unique. Let's create a custom social media strategy that delivers results for your specific audience and goals.</p>
               <button className="bg-[#dcd4ff] text-black px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000]">
-                Start Your SEO Journey
+                Start Your Social Journey
               </button>
             </div>
           </div>
         </div>
       </div>
 
-      {/* SEO Tools & Tech Stack */}
+      {/* Social Tools & Tech Stack */}
       <div className="py-24 bg-gray-50">
         <div className="w-full lg:w-[85%] mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold text-black mb-6">
-              Our SEO Toolkit
+              Our Social Media Toolkit
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              We leverage industry-leading SEO tools and technologies to deliver data-driven insights, comprehensive analysis, and measurable optimization results.
+              We leverage industry-leading social media tools and technologies to create stunning content, manage campaigns, and analyze performance.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {seoTools.map((tool, index) => (
+            {socialTools.map((tool, index) => (
               <div key={index} className="group">
                 <div className="bg-white p-6 rounded-2xl border-2 border-black shadow-[6px_6px_0px_#000] transition-all duration-300 hover:shadow-[10px_10px_0px_#000] hover:-translate-x-1 hover:-translate-y-1">
                   <div className="flex items-center gap-4 mb-4">
@@ -814,20 +820,20 @@ const SEOServicesPage = () => {
           {/* Additional Tools Section */}
           <div className="mt-16 bg-[#dcd4ff] p-8 rounded-3xl border-2 border-black shadow-[8px_8px_0px_#000]">
             <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-black mb-4">Advanced SEO Technologies</h3>
-              <p className="text-gray-700">Cutting-edge tools for comprehensive SEO analysis and optimization</p>
+              <h3 className="text-2xl font-bold text-black mb-4">Advanced Social Technologies</h3>
+              <p className="text-gray-700">Cutting-edge tools for comprehensive social media management</p>
             </div>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {[
-                { name: "Schema Markup", icon: "🏷️" },
-                { name: "Core Web Vitals", icon: "⚡" },
-                { name: "Local SEO", icon: "📍" },
-                { name: "E-A-T Optimization", icon: "🎯" },
-                { name: "Voice Search", icon: "🎤" },
-                { name: "AI Content", icon: "🤖" },
-                { name: "Mobile-First", icon: "📱" },
-                { name: "Analytics 4", icon: "📊" }
+                { name: "Influencer Marketing", icon: "🌟" },
+                { name: "Social Listening", icon: "👂" },
+                { name: "User-Generated Content", icon: "📸" },
+                { name: "Community Building", icon: "👥" },
+                { name: "Live Streaming", icon: "🎥" },
+                { name: "Chatbots", icon: "🤖" },
+                { name: "AR Filters", icon: "👓" },
+                { name: "Social Commerce", icon: "🛒" }
               ].map((tech, index) => (
                 <div key={index} className="text-center p-4 bg-white rounded-xl shadow-[4px_4px_0px_#000] hover:shadow-[6px_6px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300">
                   <div className="text-2xl mb-2">{tech.icon}</div>
@@ -840,14 +846,14 @@ const SEOServicesPage = () => {
       </div>
 
       {/* Client Testimonials */}
-      <div className="py-24 bg-gradient-to-br from-purple-50 to-blue-50">
+      <div className="py-24 bg-gradient-to-br from-pink-50 to-blue-50">
         <div className="w-full lg:w-[85%] mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold text-black mb-6">
               What Our Clients Say
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Real testimonials from businesses that have experienced transformative growth through our SEO strategies and optimization expertise.
+              Real testimonials from businesses that have experienced transformative growth through our social media strategies and content expertise.
             </p>
           </div>
           
@@ -945,7 +951,7 @@ const SEOServicesPage = () => {
               Frequently Asked Questions
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Get answers to common questions about SEO services, strategies, and what you can expect from our optimization process.
+              Get answers to common questions about social media marketing, content strategy, and what you can expect from our services.
             </p>
           </div>
           
@@ -982,9 +988,9 @@ const SEOServicesPage = () => {
             
             {/* FAQ CTA */}
             <div className="text-center mt-12">
-              <div className="inline-block bg-gradient-to-r from-purple-100 to-blue-100 p-6 rounded-2xl border-2 border-black shadow-[6px_6px_0px_#000]">
+              <div className="inline-block bg-gradient-to-r from-pink-100 to-blue-100 p-6 rounded-2xl border-2 border-black shadow-[6px_6px_0px_#000]">
                 <h3 className="text-xl font-bold text-black mb-3">Still Have Questions?</h3>
-                <p className="text-gray-700 mb-4">Our SEO experts are here to help you understand how we can improve your search rankings.</p>
+                <p className="text-gray-700 mb-4">Our social media experts are here to help you understand how we can grow your online presence.</p>
                 <button className="bg-[#dcd4ff] text-black px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-[3px_3px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[5px_5px_0px_#000]">
                   Schedule Consultation
                 </button>
@@ -999,33 +1005,33 @@ const SEOServicesPage = () => {
         <div className="w-full lg:w-[85%] mx-auto px-4 sm:px-6">
           <div className="text-center">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-              Ready to Dominate Search Results?
+              Ready to Dominate Social Media?
             </h2>
-            <p className="text-lg text-purple-100 mb-8 max-w-3xl mx-auto">
-              Stop losing potential customers to competitors. Our proven SEO strategies will boost your search rankings, increase organic traffic, and drive more qualified leads to your business.
+            <p className="text-lg text-pink-100 mb-8 max-w-3xl mx-auto">
+              Stop losing potential customers to competitors. Our proven social media strategies will boost your engagement, grow your audience, and drive more conversions.
             </p>
             
             {/* Key Benefits */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto">
               {[
-                { icon: "🚀", title: "Boost Rankings", description: "Get found on page 1" },
-                { icon: "📈", title: "Increase Traffic", description: "3-5x more organic visitors" },
-                { icon: "💰", title: "Drive Revenue", description: "Higher converting traffic" }
+                { icon: "🚀", title: "Boost Engagement", description: "Higher likes, shares & comments" },
+                { icon: "📈", title: "Grow Followers", description: "Quality audience growth" },
+                { icon: "💰", title: "Drive Sales", description: "Convert followers to customers" }
               ].map((benefit, index) => (
                 <div key={index} className="text-center p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
                   <div className="text-4xl mb-3">{benefit.icon}</div>
                   <h3 className="text-xl font-bold mb-2">{benefit.title}</h3>
-                  <p className="text-purple-100">{benefit.description}</p>
+                  <p className="text-pink-100">{benefit.description}</p>
                 </div>
               ))}
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-purple-600 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:bg-purple-50 hover:shadow-lg text-lg">
-                Get Free SEO Audit
+              <button className="bg-white text-purple-600 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:bg-pink-50 hover:shadow-lg text-lg">
+                Get Free Strategy Call
               </button>
               <button className="bg-transparent text-white px-8 py-4 rounded-full border-2 border-white font-semibold transition-all duration-300 hover:bg-white/10 text-lg">
-                View SEO Packages
+                View Social Packages
               </button>
             </div>
             
@@ -1033,15 +1039,15 @@ const SEOServicesPage = () => {
             <div className="flex flex-wrap justify-center items-center gap-8 mt-12 pt-8 border-t border-white/20">
               <div className="flex items-center gap-2">
                 <Trophy size={20} className="text-yellow-400" />
-                <span className="text-purple-100">Award-Winning Agency</span>
+                <span className="text-pink-100">Award-Winning Agency</span>
               </div>
               <div className="flex items-center gap-2">
                 <Users size={20} className="text-blue-400" />
-                <span className="text-purple-100">500+ Happy Clients</span>
+                <span className="text-pink-100">300+ Happy Clients</span>
               </div>
               <div className="flex items-center gap-2">
                 <Star size={20} className="text-yellow-400" />
-                <span className="text-purple-100">4.9/5 Client Rating</span>
+                <span className="text-pink-100">4.8/5 Client Rating</span>
               </div>
             </div>
           </div>
@@ -1051,4 +1057,4 @@ const SEOServicesPage = () => {
   );
 };
 
-export default SEOServicesPage;
+export default SocialMediaMarketingPage;

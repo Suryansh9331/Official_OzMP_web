@@ -136,7 +136,7 @@ const TechSupportAMCPage = () => {
             description: "HIPAA-compliant IT support with 99.9% uptime guarantee",
             projects: "150+ Clients",
             color: "bg-blue-100 hover:bg-blue-200",
-            image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=600&fit=crop"
+            image: "https://multipurposethemes.com/wp-content/uploads/2024/09/Medical-feature.jpg"
         },
         { 
             name: "Finance", 
@@ -144,7 +144,7 @@ const TechSupportAMCPage = () => {
             description: "Secure financial IT systems with regulatory compliance support",
             projects: "200+ Clients",
             color: "bg-green-100 hover:bg-green-200",
-            image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=600&fit=crop"
+            image: "https://static.vecteezy.com/system/resources/previews/012/797/473/non_2x/financial-audit-landing-page-website-flat-template-vector.jpg"
         },
         { 
             name: "Education", 
@@ -152,7 +152,7 @@ const TechSupportAMCPage = () => {
             description: "Reliable IT support for schools and educational institutions",
             projects: "120+ Clients",
             color: "bg-purple-100 hover:bg-purple-200",
-            image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop"
+            image: "https://static.agentestudio.com/uploads/ckeditor/pictures/2493/content_CHS_project.png"
         },
         { 
             name: "Manufacturing", 
@@ -160,7 +160,7 @@ const TechSupportAMCPage = () => {
             description: "Industrial IT support with minimal downtime and maximum efficiency",
             projects: "180+ Clients",
             color: "bg-orange-100 hover:bg-orange-200",
-            image: "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=800&h=600&fit=crop"
+            image: "https://www.dbswebsite.com/uploads/Factory-Website-Examples-Hero-Image-min.png"
         },
         { 
             name: "Retail", 
@@ -168,7 +168,7 @@ const TechSupportAMCPage = () => {
             description: "POS and e-commerce IT support with 24/7 availability",
             projects: "300+ Clients",
             color: "bg-pink-100 hover:bg-pink-200",
-            image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop"
+            image: "https://img1.wsimg.com/cdnassets/transform/777d2c5b-ef8d-45b1-96be-3e898a8dc94a/Mrq"
         },
         { 
             name: "Legal", 
@@ -176,7 +176,7 @@ const TechSupportAMCPage = () => {
             description: "Confidential IT support with data security and compliance focus",
             projects: "90+ Clients",
             color: "bg-indigo-100 hover:bg-indigo-200",
-            image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop"
+            image: "https://htmlburger.com/blog/wp-content/uploads/2024/02/15-best-lawyer-websites.jpg"
         }
     ];
 
