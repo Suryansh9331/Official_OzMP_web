@@ -48,7 +48,7 @@ const AffiliateMarketingPage = () => {
     }
   ];
 
-  const portfolio = [
+    const portfolio = [
     {
       id: 1,
       title: "Fitness Supplement Brand",
@@ -60,7 +60,7 @@ const AffiliateMarketingPage = () => {
         timeframe: "6 months",
         affiliates: "50+ active affiliates"
       },
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=300&fit=crop",
+      image: "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcbwZbQbk1EeJtoMJUt9hPvXXJWrs4fYx0cUMtBHX27HDdl6CgcduC5l8Z-eekhRfGkjvKr5x6mlyiNVYZR97fq4x8yuomnHvdzrfuQJPMQJ69J375A4TJm1oAKuMqoIT-EvZOtVQ?key=vgprQL_b5nTWppnMFEQEmQ",
       tags: ["Supplement niche", "Influencer marketing", "Email campaigns"]
     },
     {
@@ -74,7 +74,7 @@ const AffiliateMarketingPage = () => {
         timeframe: "4 months",
         affiliates: "30+ tech affiliates"
       },
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlDJbrT2YxJXjbU2QOSLQBkdj9_LqdoUfbCw&s",
       tags: ["SaaS marketing", "Recurring commissions", "Tech influencers"]
     },
     {
@@ -88,7 +88,7 @@ const AffiliateMarketingPage = () => {
         timeframe: "8 months",
         affiliates: "75+ fashion affiliates"
       },
-      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500&h=300&fit=crop",
+      image: "https://ahkr.b-cdn.net/wp-content/uploads/2022/08/fashion-affiliate-featured.jpg",
       tags: ["Fashion bloggers", "Seasonal promotions", "Social commerce"]
     },
     {
@@ -102,10 +102,11 @@ const AffiliateMarketingPage = () => {
         timeframe: "5 months",
         affiliates: "40+ education affiliates"
       },
-      image: "https://images.unsplash.com/photo-1542621334-a254cf47733d?w=500&h=300&fit=crop",
+      image: "https://www.proideators.com/wp-content/uploads/2019/01/Affiliate-Marketing-Proideators.jpg",
       tags: ["Course promotion", "Webinar strategy", "Email funnels"]
     }
   ];
+
 
   const tools = [
     {
