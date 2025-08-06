@@ -22,7 +22,7 @@ import TechSupportAMCPage from "../Pages/TechSupport/TechSupportAMCPage";
 import HostingServerManagement from "../Pages/HostingServerManagement/HostingServerManagementPage";
 import SEOServicesPage from "../Pages/SEOService/SEOServicesPage";
 import ITPage from "../Pages/IT/ITPage";
-import Blog from "../Pages/Blog/Blog";
+// import Blog from "../Pages/Blog/Blog";
 import ProjectDetails from "../Pages/Project/Project";
 import Inspirewall from "../Pages/Project/p1";
 import ShopEase from "../Pages/Project/p2";
@@ -88,10 +88,10 @@ const AppRoutes = () => {
         {/* <Route path="/it-services/hosting-and-server" element={</>} />
         <Route path="/it-services/techsupport-amc-services" element={<OurTeam/>} /> */}
 
-        <Route
+        {/* <Route
           path="/blogs"
           element={<Blog />}
-        />
+        /> */}
         <Route
           path="/projects-details"
           element={<ProjectDetails />}
