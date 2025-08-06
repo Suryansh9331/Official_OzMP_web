@@ -60,7 +60,7 @@ const AffiliateMarketingPage = () => {
         timeframe: "6 months",
         affiliates: "50+ active affiliates"
       },
-      image: "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcbwZbQbk1EeJtoMJUt9hPvXXJWrs4fYx0cUMtBHX27HDdl6CgcduC5l8Z-eekhRfGkjvKr5x6mlyiNVYZR97fq4x8yuomnHvdzrfuQJPMQJ69J375A4TJm1oAKuMqoIT-EvZOtVQ?key=vgprQL_b5nTWppnMFEQEmQ",
+      image: "https://asset7.ckassets.com/blog/wp-content/uploads/sites/6/2024/07/retailer-hyugalife.jpg",
       tags: ["Supplement niche", "Influencer marketing", "Email campaigns"]
     },
     {
