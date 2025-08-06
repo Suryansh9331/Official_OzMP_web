@@ -370,137 +370,147 @@ const EmailMarketingPage = () => {
   };
 
   // Interactive Line Chart Component
-  const InteractiveLineChart = ({ data }) => {
-    const maxValue = Math.max(...data.map(d => Math.max(d.openRate, d.clickRate, d.conversionRate))) + 10;
+    const InteractiveLineChart = ({ data }) => {
     const height = 200;
-    const width = 400;
     const padding = 40;
-    
+  
+    const [width, setWidth] = React.useState(400);
+    const svgRef = React.useRef(null);
+  
+    React.useEffect(() => {
+      const updateWidth = () => {
+        if (svgRef.current) {
+          const parentWidth = svgRef.current.parentElement.offsetWidth;
+          setWidth(parentWidth < 400 ? parentWidth : 400);
+        }
+      };
+      updateWidth();
+      window.addEventListener("resize", updateWidth);
+      return () => window.removeEventListener("resize", updateWidth);
+    }, []);
+  
+    const maxValue = Math.max(...data.map(d => Math.max(d.openRate, d.clickRate, d.conversionRate))) + 10;
+  
     const getY = (value) => height - padding - (value / maxValue) * (height - padding * 2);
     const getX = (index) => padding + (index / (data.length - 1)) * (width - padding * 2);
-    
-    const createPath = (dataKey) => {
-      return data.map((point, i) => {
+  
+    const createPath = (dataKey) =>
+      data.map((point, i) => {
         const x = getX(i);
         const y = getY(point[dataKey]);
         return `${i === 0 ? 'M' : 'L'}${x},${y}`;
       }).join(' ');
-    };
-    
+  
     const openPath = createPath('openRate');
     const clickPath = createPath('clickRate');
     const conversionPath = createPath('conversionRate');
-    
+  
     return (
-      <div className="relative">
-        <svg width={width} height={height} className="mx-auto">
-          {/* Grid lines */}
+      <div className="w-full max-w-[420px] mx-auto px-4">
+        <svg ref={svgRef} width={width} height={height} className="mx-auto">
           {[0, 25, 50, 75].map((value, i) => (
-            <g key={`grid-${i}`}>
-              <line 
-                x1={padding} 
-                y1={getY(value)} 
-                x2={width - padding} 
-                y2={getY(value)} 
-                stroke="#e5e7eb" 
-                strokeWidth="1" 
-              />
+              <g key={`grid-${i}`}>
+                <line 
+                  x1={padding} 
+                  y1={getY(value)} 
+                  x2={width - padding} 
+                  y2={getY(value)} 
+                  stroke="#e5e7eb" 
+                  strokeWidth="1" 
+                />
+                <text 
+                  x={padding - 10} 
+                  y={getY(value) + 4} 
+                  textAnchor="end" 
+                  fill="#6b7280" 
+                  fontSize="10"
+                >
+                  {value}%
+                </text>
+              </g>
+            ))}
+            
+            {/* X-axis labels */}
+            {data.map((point, i) => (
               <text 
-                x={padding - 10} 
-                y={getY(value) + 4} 
-                textAnchor="end" 
+                key={`label-${i}`}
+                x={getX(i)} 
+                y={height - padding + 15} 
+                textAnchor="middle" 
                 fill="#6b7280" 
                 fontSize="10"
               >
-                {value}%
+                {point.month}
               </text>
-            </g>
-          ))}
-          
-          {/* X-axis labels */}
-          {data.map((point, i) => (
-            <text 
-              key={`label-${i}`}
-              x={getX(i)} 
-              y={height - padding + 15} 
-              textAnchor="middle" 
-              fill="#6b7280" 
-              fontSize="10"
-            >
-              {point.month}
-            </text>
-          ))}
-          
-          {/* Open Rate Line */}
-          <path 
-            d={openPath} 
-            fill="none" 
-            stroke="#3b82f6" 
-            strokeWidth="3" 
-            strokeLinecap="round"
-          />
-          {data.map((point, i) => (
-            <circle 
-              key={`open-${i}`}
-              cx={getX(i)} 
-              cy={getY(point.openRate)} 
-              r="4" 
-              fill="#3b82f6" 
+            ))}
+            
+            {/* Open Rate Line */}
+            <path 
+              d={openPath} 
+              fill="none" 
+              stroke="#3b82f6" 
+              strokeWidth="3" 
+              strokeLinecap="round"
             />
-          ))}
-          
-          {/* Click Rate Line */}
-          <path 
-            d={clickPath} 
-            fill="none" 
-            stroke="#8b5cf6" 
-            strokeWidth="3" 
-            strokeLinecap="round"
-          />
-          {data.map((point, i) => (
-            <circle 
-              key={`click-${i}`}
-              cx={getX(i)} 
-              cy={getY(point.clickRate)} 
-              r="4" 
-              fill="#8b5cf6" 
+            {data.map((point, i) => (
+              <circle 
+                key={`open-${i}`}
+                cx={getX(i)} 
+                cy={getY(point.openRate)} 
+                r="4" 
+                fill="#3b82f6" 
+              />
+            ))}
+            
+            {/* Click Rate Line */}
+            <path 
+              d={clickPath} 
+              fill="none" 
+              stroke="#8b5cf6" 
+              strokeWidth="3" 
+              strokeLinecap="round"
             />
-          ))}
-          
-          {/* Conversion Rate Line */}
-          <path 
-            d={conversionPath} 
-            fill="none" 
-            stroke="#10b981" 
-            strokeWidth="3" 
-            strokeLinecap="round"
-          />
-          {data.map((point, i) => (
-            <circle 
-              key={`conversion-${i}`}
-              cx={getX(i)} 
-              cy={getY(point.conversionRate)} 
-              r="4" 
-              fill="#10b981" 
+            {data.map((point, i) => (
+              <circle 
+                key={`click-${i}`}
+                cx={getX(i)} 
+                cy={getY(point.clickRate)} 
+                r="4" 
+                fill="#8b5cf6" 
+              />
+            ))}
+            
+            {/* Conversion Rate Line */}
+            <path 
+              d={conversionPath} 
+              fill="none" 
+              stroke="#10b981" 
+              strokeWidth="3" 
+              strokeLinecap="round"
             />
-          ))}
-        </svg>
-        
-        {/* Legend */}
-        <div className="flex justify-center gap-6 mt-4">
+            {data.map((point, i) => (
+              <circle 
+                key={`conversion-${i}`}
+                cx={getX(i)} 
+                cy={getY(point.conversionRate)} 
+                r="4" 
+                fill="#10b981" 
+              />
+            ))}      </svg>
+  
+        <div className="flex flex-wrap justify-center gap-4 mt-4">
           <div className="flex items-center gap-2">
-            <div className="w-3 h-3 rounded-full bg-blue-500"></div>
-            <span className="text-xs text-gray-700">Open Rate</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-3 h-3 rounded-full bg-purple-500"></div>
-            <span className="text-xs text-gray-700">Click Rate</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-3 h-3 rounded-full bg-green-500"></div>
-            <span className="text-xs text-gray-700">Conversion Rate</span>
-          </div>
-        </div>
+              <div className="w-3 h-3 rounded-full bg-blue-500"></div>
+              <span className="text-xs text-gray-700">Open Rate</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-3 h-3 rounded-full bg-purple-500"></div>
+              <span className="text-xs text-gray-700">Click Rate</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-3 h-3 rounded-full bg-green-500"></div>
+              <span className="text-xs text-gray-700">Conversion Rate</span>
+            </div>      </div>
       </div>
     );
   };
