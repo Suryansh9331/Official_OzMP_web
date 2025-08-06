@@ -36,7 +36,7 @@ const DigitalMarketing = () => {
           ]}
           buttonText="Read More"
           buttonColor="#DBD2FF"
-          path="/services/seo-services"
+          path="/services/marketing/seo-services"
         />
         <RightServiceSection
           image={S2}
@@ -50,6 +50,7 @@ const DigitalMarketing = () => {
           ]}
           buttonText="Read More"
           buttonColor="#DBD2FF"
+          path="/services/marketing/social-media-marketing"
         />
 
         <LeftServiceSection
@@ -64,6 +65,7 @@ const DigitalMarketing = () => {
           ]}
           buttonText="Read More"
           buttonColor="#DBD2FF"
+          path="/services/marketing/email-marketing"
         />
 
         <RightServiceSection
@@ -78,6 +80,7 @@ const DigitalMarketing = () => {
           ]}
           buttonText="Read More"
           buttonColor="#DBD2FF"
+          path="/services/marketing/content-marketing"
         />
 
         <LeftServiceSection
@@ -92,6 +95,7 @@ const DigitalMarketing = () => {
           ]}
           buttonText="Read More"
           buttonColor="#DBD2FF"
+          path="/services/marketing/affiliate-marketing"
         />
       </section>
       <WhatWeDo />
