@@ -48,7 +48,7 @@ const ContentMarketingPage = () => {
     }
   ];
 
-  const portfolio = [
+    const portfolio = [
     {
       id: 1,
       title: "E-commerce Fashion Store",
@@ -60,7 +60,7 @@ const ContentMarketingPage = () => {
         timeframe: "8 months",
         rankings: "150+ keywords in top 10"
       },
-      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500&h=300&fit=crop",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4rtB6dgpGMc05ir8xYc-8pa_J_RwSgTbXgQ&s",
       tags: ["E-commerce SEO", "Local SEO", "Content Marketing"]
     },
     {
@@ -74,7 +74,7 @@ const ContentMarketingPage = () => {
         timeframe: "6 months",
         rankings: "95+ local keywords ranking #1"
       },
-      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500&h=300&fit=crop",
+      image: "https://www.slideegg.com/image/multi-slide/70552/100429-healthcare-marketing-05.png",
       tags: ["Local SEO", "Medical SEO", "Reputation Management"]
     },
     {
@@ -88,7 +88,7 @@ const ContentMarketingPage = () => {
         timeframe: "12 months",
         rankings: "200+ technical keywords ranking"
       },
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaor3cqHzxxabUzytEgXV-YxJd9tz_aNtBUg&s",
       tags: ["Technical SEO", "Content Strategy", "Lead Generation"]
     },
     {
@@ -102,7 +102,7 @@ const ContentMarketingPage = () => {
         timeframe: "10 months",
         rankings: "120+ location-based keywords"
       },
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=500&h=300&fit=crop",
+      image: "https://narrato.io/blog/wp-content/uploads/2025/06/78529d9983ab71827d560681514409f4_15_08_12_30_06_2025.png",
       tags: ["Local SEO", "Real Estate SEO", "Google My Business"]
     }
   ];
