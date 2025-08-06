@@ -36,6 +36,7 @@ const DigitalMarketing = () => {
           ]}
           buttonText="Read More"
           buttonColor="#DBD2FF"
+          path="/services/seo-services"
         />
         <RightServiceSection
           image={S2}
