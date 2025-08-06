@@ -98,6 +98,8 @@
 // export default BlogCardList;
 
 import b1 from "../../assets/images/Blog1.png"
+import b2 from "../../assets/images/Blog2.png"
+import b3 from "../../assets/images/Blog3.png"
 
 import React from "react";
 import { Calendar, User, Folder } from "lucide-react";
@@ -115,7 +117,7 @@ const blogs = [
   },
   {
     id: 2,
-    image: "yourImage2.png",
+    image: b2,
     title: "Mastering Digital Marketing in a Data-Driven World",
     description:
       "We help brands thrive online through performance-focused strategies that blend creativity with analytics.",
@@ -125,7 +127,7 @@ const blogs = [
   },
   {
     id: 3,
-    image: "yourImage3.png",
+    image: b3,
     title: "Designing Seamless UX for Higher Conversions",
     description:
       "Explore our human-centered design approach to building intuitive digital products that maximize user engagement.",
@@ -152,7 +154,7 @@ const BlogList = () => {
           </div>
 
           <div className="md:w-1/2 lg:w-full w-full p-10 flex flex-col justify-center">
-            <div className="flex items-center text-sm text-gray-500 gap-6 mb-3">
+            <div className="flex items-center text-sm text-gray-500 gap-6 mb-3 w-auto py-2 px-2 rounded-xl  border-2 border-purple-400 ">
               <span className="flex items-center gap-1">
                 <Calendar className="w-4 h-4" />
                 {blog.date}
@@ -167,7 +169,7 @@ const BlogList = () => {
               </span>
             </div>
 
-            <h2 className="text-2xl font-bold font-[Outfit] text-gray-800 mb-2">
+            <h2 className="text-2xl font-bold font-[Outfit] text-gray-800 mb-4 mt-2">
               {blog.title}
             </h2>
 
@@ -175,7 +177,7 @@ const BlogList = () => {
               {blog.description}
             </p>
 
-            <button className="mt-auto w-fit px-5 py-2 bg-[#DBD2FF] text-black font-semibold rounded-full text-sm font-[Poppins] hover:scale-105 transition-all">
+            <button className="mt-6 w-fit px-6 py-2 bg-[#DBD2FF] text-black font-medium shadow-[4px_4px_0px_rgb(0,0,0,0.6)] rounded-full text-sm font-[Poppins] hover:scale-105 transition-all">
               Read More
             </button>
           </div>

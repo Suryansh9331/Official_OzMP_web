@@ -12,7 +12,7 @@ const Blog = () => {
   return (
     <div className="min-h-screen">
       <HeroBanner />
-      <div className="max-w-7xl mx-auto px-4 py-10">
+      <div className="max-w-full mx-auto px-18 py-10">
         <div className="flex flex-col lg:flex-row gap-8">
           <div className="w-full lg:w-3/4">
             <BlogCardList />

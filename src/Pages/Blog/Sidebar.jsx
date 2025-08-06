@@ -144,25 +144,28 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Instagram, Facebook, Twitter } from "lucide-react";
 import { FaPinterest } from "react-icons/fa"; // Pinterest from react-icons
+import b4 from "../../assets/images/Blog4.jpg"
+import b5 from "../../assets/images/Blog5.jpg"
+import b6 from "../../assets/images/Blog6.jpg"
 
 const SidebarWidget = () => {
   const posts = [
     {
       date: "October 19, 2024",
       title: "Inspiring Brands is the a Empowering Stories",
-      img: "https://via.placeholder.com/60x60",
+      img: b4,
       path: "/blog/inspiring-brands",
     },
     {
       date: "October 19, 2024",
       title: "Empowering Your the Creative Journey",
-      img: "https://via.placeholder.com/60x60",
+      img: b5,
       path: "/blog/creative-journey",
     },
     {
       date: "October 19, 2024",
       title: "Creative Excellence the Beyond Boundaries",
-      img: "https://via.placeholder.com/60x60",
+      img: b6,
       path: "/blog/beyond-boundaries",
     },
   ];
@@ -183,20 +186,20 @@ const SidebarWidget = () => {
   ];
 
   return (
-    <div className="w-full lg:w-1/4 px-4 space-y-6 lg:sticky top-28">
+    <div className="w-full lg:w-[30%] px-2 space-y-6 lg:sticky top-28 py-8">
       {/* Popular Posts */}
       <div
         className="bg-white rounded-xl shadow p-5 border-l-4"
         style={{ borderColor: "#A039E4" }}
       >
-        <h2 className="font-outfit text-lg font-semibold mb-4">Popular Post</h2>
-        <div className="space-y-4">
+        <h2 className="font-outfit text-lg font-semibold mb-4">Popular Blogs</h2>
+        <div className="space-y-6">
           {posts.map((post, idx) => (
             <Link to={post.path} key={idx} className="flex gap-3 group">
               <img
                 src={post.img}
                 alt="Post Thumbnail"
-                className="w-14 h-14 rounded-md object-cover"
+                className="w-18 h-18 rounded-md object-cover"
               />
               <div>
                 <p className="text-sm text-gray-400 font-poppins">
