@@ -160,13 +160,13 @@ const SidebarWidget = () => {
       date: "October 19, 2024",
       title: "Empowering Your the Creative Journey",
       img: b5,
-      path: "/blog/creative-journey",
+      path: "/blogs/blog-article-5",
     },
     {
       date: "October 19, 2024",
       title: "Creative Excellence the Beyond Boundaries",
       img: b6,
-      path: "/blog/beyond-boundaries",
+      path: "/blogs/blog-article-6",
     },
   ];
 

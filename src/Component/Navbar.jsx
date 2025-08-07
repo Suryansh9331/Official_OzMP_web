@@ -576,13 +576,6 @@ const navLinks = [
     items: [
       { name: "IT", route: "/it-services" },
       {
-        name: "Design",
-        subItems: [
-          { name: "UI/UX", route: "/it-services/graphics-uiux-developement" },
-          { name: "Branding", route: "/services/design/branding" },
-        ],
-      },
-      {
         name: "Development",
         subItems: [
           { name: "Web", route: "/it-services/website-developement" },
@@ -606,7 +599,38 @@ const navLinks = [
           },
         ],
       },
-      { name: "Marketing", route: "/services-digital-marketing" },
+      {
+        name: "Digital Campaigns",
+        subItems: [
+          { name: "Web", route: "/it-services/website-developement" },
+          {
+            name: "Mobile App",
+            route: "/it-services/mobile-application-developement",
+          },
+          { name: "Software", route: "/it-services/software-developement" },
+          {
+            name: "Graphics UI/UX",
+            route: "/it-services/graphics-uiux-developement",
+          },
+          { name: "E-commerce", route: "/it-services/e-commerce-solution" },
+          {
+            name: "Hosting & Server",
+            route: "/it-services/hosting-server-management",
+          },
+          {
+            name: "Tech Support & AMC",
+            route: "/it-services/tech-support-sollution",
+          },
+        ],
+      },
+      { name: "Marketing ", route: "/services-digital-marketing" },
+      {
+        name: "Design",
+        subItems: [
+          { name: "UI/UX", route: "/it-services/graphics-uiux-developement" },
+          { name: "Branding", route: "/services/design/branding" },
+        ],
+      },
     ],
   },
   {
@@ -617,12 +641,30 @@ const navLinks = [
       {
         name: "Recent Work",
         subItems: [
-          { name: "Healthcare SaaS Platform", route: "/projects-details/inspirewall-mentalhealth-saas-platform" },
-          { name: "E-commerce", route: "/projects-details/shopease-e-commerce-web-app" },
-          { name: "Digital Marketing Dashboard", route: "/projects-details/leadboost-digital-marketing-dashboard" },
-          { name: "EduTrack-LMS", route: "/projects-details/edu-track-learning-management-system" },
-          { name: "FitNation- Mobile App", route: "/projects-details/fitnation-fitness-and-nutrition-app" },
-          { name: "RentRoam- Real State Platform", route: "/projects-details/rentroam-real-state-rental-platofrm" },
+          {
+            name: "Healthcare SaaS Platform",
+            route: "/projects-details/inspirewall-mentalhealth-saas-platform",
+          },
+          {
+            name: "E-commerce",
+            route: "/projects-details/shopease-e-commerce-web-app",
+          },
+          {
+            name: "Digital Marketing Dashboard",
+            route: "/projects-details/leadboost-digital-marketing-dashboard",
+          },
+          {
+            name: "EduTrack-LMS",
+            route: "/projects-details/edu-track-learning-management-system",
+          },
+          {
+            name: "FitNation- Mobile App",
+            route: "/projects-details/fitnation-fitness-and-nutrition-app",
+          },
+          {
+            name: "RentRoam- Real State Platform",
+            route: "/projects-details/rentroam-real-state-rental-platofrm",
+          },
         ],
       },
     ],
@@ -660,13 +702,21 @@ const navLinks = [
     label: "Blogs",
     dropdown: true,
     items: [
-      { name: "Blog", route: "/blogs" },
-      { name: "Blog1", route: "/blogs" },
-      { name: "Blog2", route: "/blogs" },
-      { name: "Blog3", route: "/blogs" },
-      { name: "Blog4", route: "/blogs" },
-      { name: "Blog5", route: "/blogs" },
-      { name: "Blog6", route: "/blogs" },
+      { name: " All Blog", route: "/blogs" },
+      {
+        name: "Recent Blogs",
+        subItems: [
+          { name: "IT Tips Blog", route: "/blogs/blog-article-1" },
+          {
+            name: "Mastering Digital Marketing ",
+            route: "/blogs/blog-article-2",
+          },
+          { name: "Designing UI  ", route: "/blogs/blog-article-3" },
+          { name: "Inspiring Brands  ", route: "/blogs/blog-article-4" },
+          { name: "Creative Journey", route: "/blogs/blog-article-5" },
+          { name: "Creative Excellence", route: "/blogs/blog-article-6" },
+        ],
+      },
     ],
   },
 ];

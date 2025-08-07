@@ -42,6 +42,8 @@ import Blog1 from "../Pages/Blog/BlogsPages/Blog1";
 import Blog2 from "../Pages/Blog/BlogsPages/Blog2";
 import Blog3 from "../Pages/Blog/BlogsPages/Blog3";
 import Blog4 from "../Pages/Blog/BlogsPages/Blog4";
+import Blog5 from "../Pages/Blog/BlogsPages/Blog5";
+import Blog6 from "../Pages/Blog/BlogsPages/Blog6";
 const AppRoutes = () => {
   return (
     <div>
@@ -135,21 +137,14 @@ const AppRoutes = () => {
           element={<Blog4 />}
         />
         <Route
-          path="/blogs/blog-article-2"
-          element={<Blog2 />}
+          path="/blogs/blog-article-5"
+          element={<Blog5 />}
         />
         <Route
-          path="/blogs/blog-article-2"
-          element={<Blog2 />}
+          path="/blogs/blog-article-6"
+          element={<Blog6 />}
         />
-        <Route
-          path="/blogs/blog-article-2"
-          element={<Blog2 />}
-        />
-        <Route
-          path="/blogs/blog-article-2"
-          element={<Blog2 />}
-        />
+       
         <Route
           path="/projects-details"
           element={<ProjectDetails />}
