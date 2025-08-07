@@ -1,7 +1,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import { CheckCircle } from "lucide-react";
-
+import { Link } from "react-router-dom";
 const OZMediaSection = () => {
   const sectionRef = useRef(null);
   const leftContentRef = useRef(null);
@@ -145,9 +145,11 @@ const OZMediaSection = () => {
                 Loved by 256 companies
               </span>
             </div>
+          <Link to ="/about-us"> 
             <button className="border border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-[#1E1C21] transition-all duration-300 text-sm font-medium tracking-wide">
               LEARN MORE
             </button>
+          </Link>
           </div>
         </div>
 

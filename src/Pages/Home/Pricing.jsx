@@ -21,7 +21,7 @@ const cardData = [
       bgColor: "bg-[#DBD2FE]",
       hoverColor: "hover:bg-[#c3ebd8]",
       textColor: "text-black",
-      link: "/pricing/starter",
+      link: "/contact-us",
     },
   },
   {
@@ -42,7 +42,7 @@ const cardData = [
       bgColor: "bg-white",
       hoverColor: "hover:bg-[#c3ebd8]",
       textColor: "text-black",
-      link: "/pricing/growth",
+      link: "/contact-us",
     },
   },
   {
@@ -63,7 +63,7 @@ const cardData = [
       bgColor: "bg-[#DBD2FE]",
       hoverColor: "hover:bg-[#c3ebd8]",
       textColor: "text-black",
-      link: "/pricing/enterprise",
+      link: "/contact-us",
     },
   },
 ];
@@ -107,7 +107,7 @@ const PricingSection = () => {
             </div>
 
             <Link
-              href={card.button.link}
+              to={card.button.link}
               className={`${card.button.bgColor} ${card.button.hoverColor} ${card.button.textColor} text-sm font-semibold py-2 px-4 shadow-[2px_2px_0px_#000] rounded-full mt-4 inline-block text-center transition-all`}
             >
               {card.button.text}

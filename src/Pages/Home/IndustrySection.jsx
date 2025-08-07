@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { CheckCircle } from "lucide-react";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import img from "../../assets/images/techimage.png"
 const industries = [
   "E-Commerce & Retail",
@@ -59,14 +60,16 @@ const IndustrySection = () => {
             ))}
           </div>
 
+         <Link  to = "/it-services">
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
-            className="mt-12 px-6 py-3 bg-[#DBD2FF] text-black rounded-full text-sm font-semibold  transition-all hover:bg-purple-300 shadow-[4px_4px_0px_#000]"
+            className="mt-12 px-6 py-3 bg-[#DBD2FF] text-black cursor-pointer rounded-full text-sm font-semibold  transition-all hover:bg-purple-300 shadow-[4px_4px_0px_#000]"
             style={{ fontFamily: "Outfit" }}
           >
             DISCOVER INDUSTRY SOLUTIONS
           </motion.button>
+          </Link>
         </motion.div>
 
         {/* Right Image Section */}

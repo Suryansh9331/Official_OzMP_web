@@ -1,7 +1,7 @@
 // InsightsSection.jsx
 import React from "react";
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 const cardData = [
   {
     title: "Most popular design systems to learn from in 2022",
@@ -70,9 +70,11 @@ const InsightsSection = () => {
               <p className="font-poppins text-md font-semibold text-blue-600">
                 {card.category}
               </p>
-              <button className="mt-2 px-6 py-2  bg-purple-100 text-sm font-medium text-gray-900 rounded-full hover:bg-purple-200 shadow-[3px_3px_0px_#000] font-poppins">
+           <Link  to ="/blogs">              <button className="mt-2 px-6 py-2  cursor-pointer bg-purple-100 text-sm font-medium text-gray-900 rounded-full hover:bg-purple-200 shadow-[3px_3px_0px_#000] font-poppins">
                 VISIT OUR BLOG
               </button>
+           </Link>
+
             </div>
           </motion.div>
         ))}

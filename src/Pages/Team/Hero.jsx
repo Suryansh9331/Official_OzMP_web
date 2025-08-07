@@ -40,7 +40,7 @@
 //       mt-10
 //       md:py-20
 //       py-10
-//       text-center 
+//       text-center
 //       lg:text-left
 //     `}
 //   >
@@ -75,13 +75,10 @@
 
 // export default HeroBanner;
 
-
-
-
 import React from "react";
 import { motion } from "framer-motion";
 import bg from "../../assets/images/bg.png";
-
+import { Link } from "react-router-dom";
 const HeroBanner = () => {
   return (
     <>
@@ -127,23 +124,26 @@ const HeroContent = () => (
       className="text-base lg:text-lg md:text-lg mt-4 text-gray-800"
       style={{ fontFamily: "Inter, sans-serif" }}
     >
-      Our team is a blend of creative thinkers, strategic planners, and tech innovators.
-      Together, we fuel growth, build brands, and shape the future of digital marketing.
+      Our team is a blend of creative thinkers, strategic planners, and tech
+      innovators. Together, we fuel growth, build brands, and shape the future
+      of digital marketing.
     </p>
 
-    <button
-      className="md:mt-10 mt-8 px-6 py-2 rounded-full font-medium shadow-md text-sm"
-      style={{
-        backgroundColor: "#DBD2FF",
-        fontFamily: "Inter, sans-serif",
-        boxShadow: "4px 4px 0px #000",
-      }}
-    >
-      LET’S CONNECT
-    </button>
+    <Link  to ="/contact-us">
+      {" "}
+      <button
+        className="md:mt-10 mt-8 px-6 py-2   cursor-pointer rounded-full font-medium shadow-md text-sm"
+        style={{
+          backgroundColor: "#DBD2FF",
+          fontFamily: "Inter, sans-serif",
+          boxShadow: "4px 4px 0px #000",
+        }}
+      >
+        LET’S CONNECT
+      </button>
+      \
+    </Link>
   </motion.div>
 );
 
 export default HeroBanner;
-
-

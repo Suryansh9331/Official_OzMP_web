@@ -59,6 +59,7 @@
 
 import React from "react";
 import bgImage4 from "../../assets/images/parallax4.png"; 
+import { Link } from "react-router-dom";
 
 export default function ParallaxSection() {
   return (
@@ -88,7 +89,7 @@ export default function ParallaxSection() {
           business through performance-driven marketing and cutting-edge
           technology.
         </p>
-        <button
+        <Link to ="/contact-us"
           className="px-6 ml-8 mt-4  py-3 rounded-full text-sm font-medium shadow-[4px_4px_0px_#000]"
           style={{
             backgroundColor: "#DBD2FE",
@@ -97,7 +98,7 @@ export default function ParallaxSection() {
           }}
         >
           BOOK YOUR FREE STRATEGY SESSION
-        </button>
+        </Link>
       </div>
     </section>
   );

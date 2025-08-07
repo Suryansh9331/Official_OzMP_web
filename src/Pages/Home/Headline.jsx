@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-
+import { Link } from "react-router-dom";
 const AnimatedHeadingSection = () => {
   const sectionRef = useRef(null);
   const indexRef = useRef(0); // ✅ this holds typing progress correctly
@@ -63,12 +63,18 @@ const AnimatedHeadingSection = () => {
       </h1>
 
       <div className="md:mt-14 mt-8 flex flex-col sm:flex-row md:gap-14 gap-6">
+      <Link  to ="/projects-details">
         <button className="uppercase font-outfit font-semibold hover:cursor-pointer bg-[#dcd4ff] text-black px-5 sm:px-6 py-3 rounded-full shadow-lg transition-transform duration-300 hover:shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1">
           Our Impact in Action
         </button>
+       </Link>
+     
+     <Link  to = "/contact-us">
         <button className="uppercase font-outfit font-semibold hover:cursor-pointer border border-black px-8 sm:px-8 py-3 rounded-full transition-transform duration-300 hover:shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1">
           Plan With Us – No Cost
         </button>
+    </Link>
+
       </div>
     </section>
   );

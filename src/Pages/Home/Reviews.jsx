@@ -48,7 +48,7 @@ const StatsSection = () => {
   const [values, setValues] = useState({ value1: 0, value2: 0, value3: 0 });
   const sectionRef = useRef(null);
 
-  const targetValues = { value1: 10000, value2: 99, value3: 543 };
+  const targetValues = { value1: 5000, value2: 79, value3: 50 };
   const duration = 2000; // Animation duration in ms
 
   useEffect(() => {
@@ -100,7 +100,7 @@ const StatsSection = () => {
   };
 
   const formatNumber = (num) => {
-    if (num === 10000) return "10k";
+    if (num === 10000) return "5k";
     return num.toString();
   };
  const [hovered, setHovered] = useState(false);
@@ -117,40 +117,40 @@ const StatsSection = () => {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <div className="max-w-6xl mx-auto flex flex-col gap-8 items-center justify-between md:flex-row md:gap-0 text-black">
-        {/* Stat 1 */}
-        <div className="flex items-center lg:gap-4 md:gap-1 sm:gap-4 gap-4 text-center md:text-left md:flex-col lg:flex-row flex-row">
-          <h2 className="lg:text-5xl  font-bold font-satoshi md:text-4xl text-5xl ">
-            {formatNumber(values.value1)}
-          </h2>
-          <div className="lg:text-left md:text-center text-left">
-            <p className="text-md font-semibold font-satoshi">Daily Users</p>
-            <p className="text-sm font-satoshi">Lorem Ipsum Dolor Sit Amet</p>
-          </div>
-        </div>
+    <div className="max-w-6xl mx-auto flex flex-col gap-8 items-center justify-between md:flex-row md:gap-0 text-black">
+  {/* Stat 1 */}
+  <div className="flex items-center lg:gap-4 md:gap-1 sm:gap-4 gap-4 text-center md:text-left md:flex-col lg:flex-row flex-row">
+    <h2 className="lg:text-5xl font-bold font-satoshi md:text-4xl text-5xl">
+      {formatNumber(values.value1)}
+    </h2>
+    <div className="lg:text-left md:text-center text-left">
+      <p className="text-md font-semibold font-satoshi">Daily Users</p>
+      <p className="text-sm font-satoshi">Engaging with our platforms every day</p>
+    </div>
+  </div>
 
-        {/* Stat 2 */}
-        <div className="flex items-center lg:gap-4 md:gap-1 sm:gap-4 gap-4 text-center md:text-left md:flex-col lg:flex-row flex-row">
-          <h2 className="lg:text-5xl font-bold font-satoshi  md:text-4xl text-5xl">
-            {values.value2}%
-          </h2>
-          <div className="lg:text-left md:text-center text-left">
-            <p className="text-md font-semibold font-satoshi">Downloads</p>
-            <p className="text-sm font-satoshi">Lorem Ipsum Dolor Sit Amet</p>
-          </div>
-        </div>
+  {/* Stat 2 */}
+  <div className="flex items-center lg:gap-4 md:gap-1 sm:gap-4 gap-4 text-center md:text-left md:flex-col lg:flex-row flex-row">
+    <h2 className="lg:text-5xl font-bold font-satoshi md:text-4xl text-5xl">
+      {values.value2}%
+    </h2>
+    <div className="lg:text-left md:text-center text-left">
+      <p className="text-md font-semibold font-satoshi">Accuracy</p>
+      <p className="text-sm font-satoshi">Across all major digital platforms</p>
+    </div>
+  </div>
 
-        {/* Stat 3 */}
-        <div className="flex items-center lg:gap-4 md:gap-1 sm:gap-4 gap-4 text-center md:text-left md:flex-col lg:flex-row flex-row">
-          <h2 className="lg:text-5xl font-bold font-satoshi  md:text-4xl text-5xl">
-            {values.value3}
-          </h2>
-          <div className="lg:text-left md:text-center text-left">
-            <p className="text-md font-semibold font-satoshi">Projects</p>
-            <p className="text-sm font-satoshi">Lorem Ipsum Dolor Sit Amet</p>
-          </div>
-        </div>
-      </div>
+  {/* Stat 3 */}
+  <div className="flex items-center lg:gap-4 md:gap-1 sm:gap-4 gap-4 text-center md:text-left md:flex-col lg:flex-row flex-row">
+    <h2 className="lg:text-5xl font-bold font-satoshi md:text-4xl text-5xl">
+      {values.value3}
+    </h2>
+    <div className="lg:text-left md:text-center text-left">
+      <p className="text-md font-semibold font-satoshi">Projects</p>
+      <p className="text-sm font-satoshi">Successfully delivered IT solutions</p>
+    </div>
+  </div>
+</div>
     </div>
   );
 };

@@ -1,5 +1,3 @@
-
-
 // import React from "react";
 // import { motion } from "framer-motion";
 // import video from "../../assets/Video/About.mp4";
@@ -60,11 +58,10 @@
 
 // export default Hero;
 
-
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import v2 from "../../assets/Video/v2.mp4";
-
+import { Link } from "react-router-dom";
 const textVariants = {
   hidden: { opacity: 0, y: 40 },
   visible: (i) => ({
@@ -116,19 +113,22 @@ const Hero = () => {
           custom={2}
           className="text-sm font-medium text-gray-600 font-[Inter] max-w-md"
         >
-          We are OZ Media — a hybrid digital force blending high-impact marketing
-          with high-performance development.
+          We are OZ Media — a hybrid digital force blending high-impact
+          marketing with high-performance development.
         </motion.p>
-
-        <motion.button
-          variants={textVariants}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          custom={3}
-          className="mt-6 bg-black text-white px-6 py-3 rounded-full shadow-lg hover:bg-gray-800 font-[Inter] text-sm"
-        >
-          LET’S CONNECT
-        </motion.button>
+        <Link  to = "/contact-us">
+          {" "}
+          <motion.button
+            variants={textVariants}
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
+            custom={3}
+            className="mt-6 bg-black text-white px-6 py-3   cursor-pointer rounded-full shadow-lg hover:bg-gray-800 font-[Inter] text-sm"
+          >
+            LET’S CONNECT
+          </motion.button>
+          \
+        </Link>
       </div>
 
       {/* RIGHT VIDEO FRAME */}

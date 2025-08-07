@@ -114,7 +114,7 @@
 
 // export default OurApproach;
 
-
+import { Link } from 'react-router-dom';
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
 
@@ -184,9 +184,11 @@ const OurApproach = () => {
             Integrated and Impact-Driven Tailored to meet your business objectives through creativity,
             strategy, and cutting-edge technology.
           </p>
-          <button className="bg-[#E4DDFF] px-8 py-3 rounded-full font-normal text-sm hover:shadow-[4px_4px_0px_#000] hover:cursor-po transition">
+        <Link  to ="/it-services">
+          <button className="bg-[#E4DDFF]  cursor-pointer px-8 py-3 rounded-full font-normal text-sm hover:shadow-[4px_4px_0px_#000] hover:cursor-po transition">
             VIEW ALL
           </button>
+        </Link>
         </div>
 
         {/* Right Side Scrollable Cards */}

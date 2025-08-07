@@ -118,7 +118,7 @@ import { Link } from "react-router-dom"; // ✅ Import Link
 const servicesData = [
   {
     title: "Digital Marketing Services",
-    link: "/services/digital-marketing", // ✅ Specific route
+    link: "/services-digital-marketing", // ✅ Specific route
     points: [
       "Social Media Marketing (Facebook, Instagram, LinkedIn, YouTube)",
       "SEO – Search Engine Optimization",
@@ -131,7 +131,7 @@ const servicesData = [
   },
   {
     title: "Analytics & Strategy Services",
-    link: "/services/analytics-strategy", // ✅ Specific route
+    link: "/projects-details", // ✅ Specific route
     points: [
       "Data Analytics & Business Intelligence",
       "Digital Strategy & Consulting",
@@ -144,7 +144,7 @@ const servicesData = [
   },
   {
     title: "IT & Technology Solutions",
-    link: "/services/it-technology", // ✅ Specific route
+    link: "/it-services", // ✅ Specific route
     points: [
       "Website Design & Development",
       "E-Commerce Development",
