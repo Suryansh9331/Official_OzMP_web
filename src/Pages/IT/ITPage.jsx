@@ -147,7 +147,7 @@ const ITPage = () => {
         <div>
             {/* Main container Hero Section */}
             <div
-                className="min-h-screen bg-cover bg-center flex justify-center flex-col lg:flex-row relative"
+                className="min-h-screen bg-cover bg-center flex justify-center flex-col lg:flex-row relative overflow-hidden"
                 style={{ backgroundImage: `url(${HeroImg})` }}
             >
                 {/* Content wrapper */}
