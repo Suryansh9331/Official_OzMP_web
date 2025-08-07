@@ -8,6 +8,8 @@ import {
   Store, Smartphone, Monitor, Tag, Percent, Gift
 } from "lucide-react";
 
+import { Link } from 'react-router-dom';
+
 const ECommerceDevelopmentPage = () => {
     const [activeFeature, setActiveFeature] = useState(0);
     const [hoveredTech, setHoveredTech] = useState(null);
@@ -348,9 +350,11 @@ const ECommerceDevelopmentPage = () => {
                                         </div>
                                         <div className="text-right">
                                             <div className="text-xs text-gray-500">Sold: {product.sales}</div>
+                                           <Link  to ="/contact-us">   
                                             <button className="mt-1 bg-purple-500 text-white px-3 py-1 rounded-full text-xs hover:bg-purple-600 transition-colors">
                                                 Edit
                                             </button>
+                         </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -749,12 +753,17 @@ const ECommerceDevelopmentPage = () => {
                         </p>
                         
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
-                            <button className="uppercase font-semibold bg-[#dcd4ff] text-black px-8 py-4 rounded-full transition-all duration-300 shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000] active:translate-x-0 active:translate-y-0 active:shadow-[2px_2px_0px_#000]">
+                          
+                          <Link  to ="/contact-us">   
+                            <button className="uppercase cursor-pointer font-semibold bg-[#dcd4ff] text-black px-8 py-4 rounded-full transition-all duration-300 shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000] active:translate-x-0 active:translate-y-0 active:shadow-[2px_2px_0px_#000]">
                                 Start Your Store
                             </button>
-                            <button className="uppercase font-semibold bg-white text-black px-8 py-4 rounded-full border-2 border-black transition-all duration-300 hover:bg-gray-50">
-                                View Store Examples
+                     </Link>
+                           <Link  to ="/projects-details/shopease-e-commerce-web-app">   
+                            <button className="uppercase cursor-pointer font-semibold bg-white text-black px-8 py-4 rounded-full border-2 border-black transition-all duration-300 hover:bg-gray-50">
+                                View Store Example
                             </button>
+                        </Link>
                         </div>
                         
                         {/* Quick Stats */}
@@ -979,9 +988,11 @@ const ECommerceDevelopmentPage = () => {
                         <div className="inline-block bg-gradient-to-r from-purple-100 to-blue-100 p-8 rounded-3xl border-2 border-black shadow-[8px_8px_0px_#000]">
                             <h3 className="text-2xl font-bold text-black mb-4">Need a Custom E-Commerce Solution?</h3>
                             <p className="text-gray-700 mb-6 max-w-md mx-auto">Every business has unique requirements. Let's discuss how we can create the perfect online store for your specific industry needs.</p>
+                           <Link  to ="/contact-us">   
                             <button className="bg-[#dcd4ff] text-black px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000]">
                                 Discuss Your Store
                             </button>
+                       </Link>
                         </div>
                     </div>
                 </div>
@@ -1110,10 +1121,12 @@ const ECommerceDevelopmentPage = () => {
                         <div className="bg-[#dcd4ff] text-black px-8 py-9 rounded-tr-[10px] rounded-bl-[10px] transition-all duration-300 shadow-[8px_8px_0px_#000] border border-black">
                             <h3 className="text-2xl font-bold mb-4">Ready to Launch Your E-Commerce Store?</h3>
                             <p className="mb-6 text-black">Let's create an online store that converts visitors into customers and drives your business growth!</p>
-                            <button className="uppercase font-semibold bg-[#dcd4ff] text-black px-8 py-4 rounded-full transition-all duration-300 active:translate-x-0 active:translate-y-0 border-2 border-black hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000]">
+                           <Link  to ="/contact-us">   
+                            <button className="uppercase cursor-pointer font-semibold bg-[#dcd4ff] text-black px-8 py-4 rounded-full transition-all duration-300 active:translate-x-0 active:translate-y-0 border-2 border-black hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000]">
                                 Start Store Development
                             </button>
-                        </div>
+                         </Link></
+                        div>
                     </div>
                 </div>
             </div>
@@ -1249,12 +1262,16 @@ const ECommerceDevelopmentPage = () => {
                                 Whether you need a custom e-commerce solution, Shopify store, or multi-vendor marketplace, our team is ready to create a high-converting online store that drives sales and grows your business.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <button className="bg-white text-purple-600 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:bg-purple-50 hover:shadow-lg">
-                                    Start Store Development
+                               <Link  to ="/our-teams">   
+                                <button className="cursor-pointer bg-white text-purple-600 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:bg-purple-50 hover:shadow-lg">
+                                    Our Teams
                                 </button>
-                                <button className="bg-transparent text-white px-8 py-4 rounded-full border-2 border-white font-semibold transition-all duration-300 hover:bg-white/10">
-                                    View Store Examples
+                                </Link>
+                               <Link  to ="//projects-details/shopease-e-commerce-web-app">   
+                                <button className=" cursor-pointer bg-transparent text-white px-8 py-4 rounded-full border-2 border-white font-semibold transition-all duration-300 hover:bg-white/10">
+                                    See Examples
                                 </button>
+                            </Link>
                             </div>
                         </div>
                         <div className="lg:w-1/2 flex justify-center">
