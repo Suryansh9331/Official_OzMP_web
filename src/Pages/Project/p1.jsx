@@ -7,7 +7,7 @@ const Inspirewall = () => {
   return (
     <div className="font-poppins text-black bg-white">
       {/* Hero Section */}
-      <section className="relative w-full h-[80vh]  overflow-hidden">
+      <section className="relative w-full h-[85vh] lg:h-[95vh]  overflow-hidden">
         <img
           src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=1200&q=80"
           alt="InspireWell Hero"

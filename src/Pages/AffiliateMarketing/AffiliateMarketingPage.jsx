@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+
+import { Link } from 'react-router-dom';
 import { 
   Search, TrendingUp, Target, BarChart3, Globe, Eye, Zap, 
   CheckCircle, ArrowRight, Users, Award, Lightbulb, Monitor,
   FileText, Settings, Smartphone, Gauge, Star, Trophy,
-  PieChart, LineChart, Activity, Layers, Code, Link,
+  PieChart, LineChart, Activity, Layers, Code, 
   MousePointer, Calendar, Clock, MapPin, Heart, ThumbsUp,
   DollarSign, ShoppingCart, Share2, Percent, ClipboardList,
   UserPlus, CreditCard, Repeat2, Gift, Tag, BarChart2
@@ -430,12 +432,16 @@ const AffiliateMarketingPage = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
-              <button className="uppercase font-semibold bg-[#dcd4ff] text-black px-8 py-4 rounded-full transition-all duration-300 shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000] active:translate-x-0 active:translate-y-0 active:shadow-[2px_2px_0px_#000]">
+             <Link  to ="/blogs/blog-article-2">   
+              <button className="cursor-pointer uppercase font-semibold bg-[#dcd4ff] text-black px-8 py-4 rounded-full transition-all duration-300 shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000] active:translate-x-0 active:translate-y-0 active:shadow-[2px_2px_0px_#000]">
                 Get Free Strategy
               </button>
-              <button className="uppercase font-semibold bg-white text-black px-8 py-4 rounded-full border-2 border-black transition-all duration-300 hover:bg-gray-50">
+             </Link>
+             <Link  to ="/contact-us">   
+              <button className="cursor-pointer uppercase font-semibold bg-white text-black px-8 py-4 rounded-full border-2 border-black transition-all duration-300 hover:bg-gray-50">
                 View Pricing
               </button>
+             </Link>
             </div>
             
             {/* Quick Stats */}
@@ -764,9 +770,11 @@ const AffiliateMarketingPage = () => {
             <div className="inline-block bg-gradient-to-r from-purple-100 to-blue-100 p-8 rounded-3xl border-2 border-black shadow-[8px_8px_0px_#000]">
               <h3 className="text-2xl font-bold text-black mb-4">Ready to Join Our Success Stories?</h3>
               <p className="text-gray-700 mb-6 max-w-md mx-auto">Every business is unique. Let's create a custom affiliate strategy that delivers results for your specific products and goals.</p>
-              <button className="bg-[#dcd4ff] text-black px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000]">
+             <Link  to ="/contact-us">   
+              <button className="cursor-pointer bg-[#dcd4ff] text-black px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000]">
                 Start Your Affiliate Journey
               </button>
+             </Link>
             </div>
           </div>
         </div>
@@ -988,9 +996,11 @@ const AffiliateMarketingPage = () => {
               <div className="inline-block bg-gradient-to-r from-purple-100 to-blue-100 p-6 rounded-2xl border-2 border-black shadow-[6px_6px_0px_#000]">
                 <h3 className="text-xl font-bold text-black mb-3">Still Have Questions?</h3>
                 <p className="text-gray-700 mb-4">Our affiliate marketing experts are here to help you understand how we can grow your revenue.</p>
-                <button className="bg-[#dcd4ff] text-black px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-[3px_3px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[5px_5px_0px_#000]">
+               <Link  to ="/contact-us">   
+                <button className="cursor-pointer bg-[#dcd4ff] text-black px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-[3px_3px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[5px_5px_0px_#000]">
                   Schedule Consultation
                 </button>
+               </Link>
               </div>
             </div>
           </div>
@@ -1024,12 +1034,16 @@ const AffiliateMarketingPage = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-purple-600 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:bg-purple-50 hover:shadow-lg text-lg">
+             <Link  to ="/contact-us">   
+              <button className="cursor-pointer bg-white text-purple-600 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:bg-purple-50 hover:shadow-lg text-lg">
                 Get Free Strategy
               </button>
-              <button className="bg-transparent text-white px-8 py-4 rounded-full border-2 border-white font-semibold transition-all duration-300 hover:bg-white/10 text-lg">
-                View Pricing
+             </Link>
+             <Link  to ="/about-us">   
+              <button className="cursor-pointer bg-transparent text-white px-8 py-4 rounded-full border-2 border-white font-semibold transition-all duration-300 hover:bg-white/10 text-lg">
+                Know More
               </button>
+             </Link>
             </div>
             
             {/* Trust Indicators */}

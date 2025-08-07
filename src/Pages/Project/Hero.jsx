@@ -51,7 +51,7 @@ const HeroBanner = () => {
   }, []);
 
   return (
-    <section className="relative w-full h-[80vh] overflow-hidden text-white text-center flex justify-center items-center font-poppins">
+    <section className="relative w-full h-[90vh] lg:h-[95vh] overflow-hidden text-white text-center flex justify-center items-center font-poppins">
       {/* Background Slide Transition */}
       <div className="absolute inset-0 w-full h-full z-0">
         <AnimatePresence custom={direction} mode="wait">

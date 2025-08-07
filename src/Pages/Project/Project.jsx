@@ -212,6 +212,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import HeroBanner from "./Hero";
 import { FaCogs, FaRunning, FaHeadset } from "react-icons/fa";
+import TestimonialSlider from "../../Component/Testimonial";
 
 const projects = [
   {
@@ -283,7 +284,7 @@ const ProjectDetails = () => {
       <HeroBanner />
 
       {/* Projects */}
-      <section className="px-4 md:px-16 py-24 bg-[#DBD2FF]">
+      <section className="px-4 lg:px-16 md:px-6 py-24 bg-[#DBD2FF]">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -404,6 +405,7 @@ const ProjectDetails = () => {
           </a>
         </motion.div>
       </section>
+      <TestimonialSlider/>
     </div>
   );
 };

@@ -32,7 +32,7 @@ const ProjectDetails = ({
 }) => {
   return (
     <div className="font-poppins text-black bg-white">
-      <section className="relative w-full h-[80vh] overflow-hidden">
+      <section className="relative w-full h-[85vh] lg:h-[95vh] overflow-hidden">
         <img
           src={image}
           alt={title}
