@@ -14,12 +14,13 @@ import {
   CheckCircle,
 } from "lucide-react";
 import { motion } from "framer-motion";
-import b1 from "../../../assets/images/Blog1.png"
+import b1 from "../../../assets/images/Blog1.png";
 
 const Blog1 = () => {
   const blog = {
     image: b1, // Replace with actual image
-    title: "🚀 Empowering the Future: IT & Marketing Solutions for the Digital Age",
+    title:
+      "🚀 Empowering the Future: IT & Marketing Solutions for the Digital Age",
     subheading:
       "In a world powered by technology, businesses must evolve through intelligent infrastructure, digital strategies, and scalable innovation.",
     date: "August 7, 2025",
@@ -182,7 +183,9 @@ const Blog1 = () => {
           Wrapping Up
         </h2>
         <p>
-          Innovation is the heartbeat of progress. Whether you're launching a new product, revamping your infrastructure, or optimizing your digital presence — it all starts with the right partner.
+          Innovation is the heartbeat of progress. Whether you're launching a
+          new product, revamping your infrastructure, or optimizing your digital
+          presence — it all starts with the right partner.
         </p>
         <p className="mt-3 italic text-sm text-gray-600">
           Let us help you shape the future of your business. 💡
@@ -190,13 +193,21 @@ const Blog1 = () => {
       </motion.div>
 
       {/* CTA */}
-      <div className="mt-10">
-      <Link to ="/blogs">
-        <button className="px-6 py-2 bg-[#DBD2FF] text-black font-semibold rounded-full font-[Poppins] hover:scale-105 transition">
-          ⬅️ Back to All Blogs
-        </button>
-      
-      </Link>
+      <div className="mt-10 flex items-center justify-between flex-wrap gap-4">
+        {/* Back Button */}
+       <Link to="/blogs">
+          <button className="px-6 py-2 cursor-pointer bg-[#DBD2FF] text-black font-semibold rounded-full font-[Poppins] hover:scale-105 transition">
+            ⬅️ Back to All Blogs
+          </button>
+        </Link>
+
+
+        {/* Contact Us Button */}
+        <Link to="/contact-us">
+          <button className="px-6 py-2  cursor-pointer bg-[#DBD2FF] text-black font-semibold rounded-full font-[Poppins] hover:scale-105 transition">
+            Contact Us ➡️
+          </button>
+        </Link>
       </div>
     </div>
   );

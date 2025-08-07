@@ -82,7 +82,7 @@ const Cards = () => {
             </ul>
 
             <Link to="/contact-us">
-              <button className="mt-2 px-4 py-2 bg-[#DBD2FF] text-black font-poppins rounded-md hover:bg-purple-200 transition-all duration-300">
+              <button className="mt-2 cursor-pointer px-4 py-2 bg-[#DBD2FF] text-black font-poppins rounded-md hover:bg-purple-200 transition-all duration-300">
                 Connect with Us
               </button>
             </Link>

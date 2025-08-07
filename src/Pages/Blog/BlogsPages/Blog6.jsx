@@ -261,10 +261,19 @@ const Blog6 = () => {
       </motion.div>
 
       {/* CTA */}
-      <div className="mt-10">
-        <Link to="/blogs">
+        <div className="mt-10 flex items-center justify-between flex-wrap gap-4">
+        {/* Back Button */}
+       <Link to="/blogs">
           <button className="px-6 py-2 cursor-pointer bg-[#DBD2FF] text-black font-semibold rounded-full font-[Poppins] hover:scale-105 transition">
             ⬅️ Back to All Blogs
+          </button>
+        </Link>
+
+
+        {/* Contact Us Button */}
+        <Link to="/contact-us">
+          <button className="px-6 py-2  cursor-pointer bg-[#DBD2FF] text-black font-semibold rounded-full font-[Poppins] hover:scale-105 transition">
+            Contact Us ➡️
           </button>
         </Link>
       </div>

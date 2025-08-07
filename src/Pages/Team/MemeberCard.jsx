@@ -1,6 +1,9 @@
 import React from "react";
 import { Share2 } from "lucide-react";
-
+import Surya from "../../assets/OurTeam/Suryansh.jpeg"
+import Atul from "../../assets/OurTeam/Atul.JPG"
+import Rajeev from "../../assets/OurTeam/Rajeev.JPG"
+import palak from "../../assets/OurTeam/Palak.JPG"
 const OurTeam = () => {
   const teamMembers = [
     {
@@ -27,8 +30,8 @@ const OurTeam = () => {
       name: "Rajeev Patel",
       role: "software",
       designation: "Developer",
-      image:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=500&fit=crop&crop=face",
+      image: Rajeev,
+        
       description:
         "Full-stack developer delivering scalable solutions with expertise in React, Node.js, and modern web technologies. Specialized in building high-performance applications.",
       socialLinks: ["facebook", "twitter", "instagram", "linkedin"],
@@ -37,8 +40,7 @@ const OurTeam = () => {
       name: "Palak Tiwari",
       role: "software",
       designation: "Developer",
-      image:
-        "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=500&fit=crop&crop=face",
+      image: palak,
       description:
         "Senior developer focused on creating robust backend architectures and seamless API integrations. Expert in database design and cloud deployment solutions.",
       socialLinks: ["facebook", "twitter", "instagram", "linkedin"],
@@ -47,8 +49,7 @@ const OurTeam = () => {
       name: "Atul kumar Rawat",
       role: "UI/Ux",
       designation: "designer",
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=face",
+      image: Atul,
       description:
         "Expert UI/UX designer crafting intuitive digital experiences with deep expertise in user-centered design, wireframing, and interactive prototyping for web and mobile platforms.",
       socialLinks: ["facebook", "twitter", "instagram", "linkedin"],
@@ -58,8 +59,7 @@ const OurTeam = () => {
       name: "Suryansh Mishra",
       role: "software",
       designation: "Developer",
-      image:
-        "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=400&h=500&fit=crop&crop=face",
+      image: Surya,
       description:
         "Mobile app specialist creating advanced cross-platform applications. Also expert in Web technology Like MERN stack , Laravel , Django .Focus To deliver Scalable robust and reliable application  .",
       socialLinks: ["facebook", "twitter", "instagram", "linkedin"],
