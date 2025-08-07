@@ -602,25 +602,22 @@ const navLinks = [
       {
         name: "Digital Campaigns",
         subItems: [
-          { name: "Web", route: "/it-services/website-developement" },
+          { name: "SEO Services", route: "/services/marketing/seo-services" },
           {
-            name: "Mobile App",
-            route: "/it-services/mobile-application-developement",
+            name: "Affliate Marketing",
+            route: "/services/marketing/affiliate-marketing",
           },
           { name: "Software", route: "/it-services/software-developement" },
           {
-            name: "Graphics UI/UX",
-            route: "/it-services/graphics-uiux-developement",
+            name: "Content Marketing",
+            route: "/services/marketing/content-marketing",
           },
-          { name: "E-commerce", route: "/it-services/e-commerce-solution" },
+          { name: "Email Marketing", route: "/services/marketing/email-marketing" },
           {
-            name: "Hosting & Server",
-            route: "/it-services/hosting-server-management",
+            name: "Social Media Marketing",
+            route: "/services/marketing/social-media-marketing",
           },
-          {
-            name: "Tech Support & AMC",
-            route: "/it-services/tech-support-sollution",
-          },
+        
         ],
       },
       { name: "Marketing ", route: "/services-digital-marketing" },
@@ -628,7 +625,7 @@ const navLinks = [
         name: "Design",
         subItems: [
           { name: "UI/UX", route: "/it-services/graphics-uiux-developement" },
-          { name: "Branding", route: "/services/design/branding" },
+          { name: "Branding", route: "/blogs/blog-article-4" },
         ],
       },
     ],
@@ -669,32 +666,33 @@ const navLinks = [
       },
     ],
   },
-  {
-    label: "Industries",
-    dropdown: true,
-    items: [
-      { name: "Healthcare", route: "/industries/healthcare" },
-      {
-        name: "Finance",
-        subItems: [
-          { name: "Banking", route: "/industries/finance/banking" },
-          { name: "Insurance", route: "/industries/finance/insurance" },
-        ],
-      },
-      { name: "Retail", route: "/industries/retail" },
-    ],
-  },
+  // {
+  //   label: "Industries",
+  //   dropdown: true,
+  //   items: [
+  //     { name: "Healthcare", route: "/industries/healthcare" },
+  //     {
+  //       name: "Finance",
+  //       subItems: [
+  //         { name: "Banking", route: "/industries/finance/banking" },
+  //         { name: "Insurance", route: "/industries/finance/insurance" },
+  //       ],
+  //     },
+  //     { name: "Retail", route: "/industries/retail" },
+  //   ],
+  // },
   {
     label: "Careers",
     dropdown: true,
     items: [
       { name: "Carrier Options", route: "/careers/future-options-we-have" },
       {
-        name: "Culture",
-        subItems: [
-          { name: "Work Life", route: "/careers/culture/work-life" },
-          { name: "Growth", route: "/careers/culture/growth" },
-        ],
+        name: "Grow With Us",route: "/contact-us"
+       
+      },
+      {
+        name: "24X7 Tech help ",route: "/it-services/tech-support-sollution"
+       
       },
     ],
   },
