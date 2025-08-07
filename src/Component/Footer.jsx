@@ -24,6 +24,12 @@ import {
   Shield,
   HelpCircle,
   BookOpen,
+  Smartphone,
+  Server,
+  ShoppingCart,
+  Briefcase,
+  Settings,
+  Rocket,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -32,8 +38,33 @@ const footerSections = [
     title: "Services",
     links: [
       {
+        label: "IT solutions",
+        icon: Rocket,
+        to: "/services/digital-marketing",
+      },
+      {
         label: "Digital Marketing",
+        icon: Globe,
+        to: "/services/digital-marketing",
+      },
+      {
+        label: "Developement Services",
+        icon: Code,
+        to: "/services/digital-marketing",
+      },
+      {
+        label: "  Growth Compaigns ",
         icon: TrendingUp,
+        to: "/services/digital-marketing",
+      },
+      {
+        label: "UIUX Designing",
+        icon: Palette,
+        to: "/services/digital-marketing",
+      },
+      {
+        label: "App Developement",
+        icon: Smartphone,
         to: "/services/digital-marketing",
       },
       {
@@ -41,18 +72,6 @@ const footerSections = [
         icon: PenTool,
         to: "/services/content-creation",
       },
-      {
-        label: "Social Media Management",
-        icon: Users,
-        to: "/services/social-media",
-      },
-      { label: "SEO Optimization", icon: Search, to: "/services/seo" },
-      {
-        label: "Brand Strategy",
-        icon: Palette,
-        to: "/services/brand-strategy",
-      },
-      { label: "Web Development", icon: Code, to: "/services/web-development" },
     ],
   },
   {
@@ -60,43 +79,69 @@ const footerSections = [
     links: [
       { label: "About Us", icon: Globe, to: "/about-us" },
       { label: "Our Team", icon: Users, to: "/team" },
-      { label: "Careers", icon: Award, to: "/careers" },
+      { label: "Careers", icon: Briefcase, to: "/careers" },
       { label: "Portfolio", icon: Camera, to: "/portfolio" },
       { label: "Case Studies", icon: FileText, to: "/case-studies" },
-      { label: "Press Kit", icon: Download, to: "/press-kit" },
     ],
   },
   {
-    title: "Resources",
+    title: "IT Solutions ",
     links: [
-      { label: "Blog", icon: BookOpen, to: "/blog" },
-      { label: "Free Tools", icon: Code, to: "/tools" },
-      { label: "Templates", icon: FileText, to: "/templates" },
-      { label: "Guides & eBooks", icon: Download, to: "/guides" },
-      { label: "Webinars", icon: Video, to: "/webinars" },
-      { label: "Newsletter", icon: Mail, to: "/newsletter" },
+      { label: "Mobile Applications", icon: Smartphone, to: "/blog" },
+      { label: "Website Developement", icon: Code, to: "/tools" },
+      { label: "Software Developement", icon: FileText, to: "/templates" },
+      { label: "Graphics Designing", icon: Palette, to: "/guides" },
+      { label: "Hosting And Server ", icon: Server, to: "/webinars" },
+      { label: "E-commerce Solutions", icon: ShoppingCart, to: "/newsletter" },
+      { label: "Tech Support AMC", icon: Settings, to: "/newsletter" },
     ],
   },
-  //   {
-  //     title: "Solutions",
-  //     links: [
-  //       { label: "Analytics & Insights", icon: TrendingUp, to: "/solutions/analytics" },
-  //       { label: "Market Research", icon: Search, to: "/solutions/research" },
-  //       { label: "Creative Design", icon: Palette, to: "/solutions/design" },
-  //       { label: "Video Production", icon: Video, to: "/solutions/video" },
-  //       { label: "Podcast Services", icon: Headphones, to: "/solutions/podcast" },
-  //       { label: "Global Campaigns", icon: Globe, to: "/solutions/global" },
-  //     ],
-  //   },
+  {
+    title: "Digital Success Solutions",
+    links: [
+      { label: " Serach Enigine Optimization", icon: Search, to: "/support/help" },
+      { label: "E-mail Marketing", icon: Mail, to: "/support/contact" },
+      { label: "Content-marketing", icon: BookOpen, to: "/support/docs" },
+      { label: "Affliate Marketing", icon: Shield, to: "/support/security" },
+      { label: "Social Media Marketing", icon: Twitter, to: "/support/certifications" },
+    ],
+  },
+  {
+    title: "Blogs/ Articles",
+    links: [
+      { label: "All Blogs ", icon: FileText, to: "/blogs" },
+      { label: "Popular Blogs", icon: TrendingUp, to: "/blogs" },
+      { label: "IT Tips ", icon: BookOpen, to: "/support/docs" },
+      { label: "Mastering Digital Marketing", icon: Globe, to: "/support/security" },
+      { label: "Inspiring Brands", icon: Award, to: "/support/certifications" },
+      { label: "Creative Journey ", icon: PenTool, to: "/support/community" },
+      { label: "Creative Brands ", icon: Users, to: "/support/community" },
+    ],
+  },
+  {
+    title: "Career Opportunities",
+    links: [
+      { label: "Career Optiion ", icon: Briefcase, to: "/support/help" },
+      { label: "Grow with us ", icon: TrendingUp, to: "/support/contact" },
+    ],
+  },
+  {
+    title: "Domains/Community",
+    links: [
+      { label: "Oz Media Planet", icon: Globe, to: "/support/help" },
+      { label: "Oz Learning", icon: BookOpen, to: "/support/contact" },
+      { label: "Oz International", icon: Globe, to: "/support/docs" },
+      { label: "Community", icon: Users, to: "/support/community" },
+    ],
+  },
   {
     title: "Support",
     links: [
       { label: "Help Center", icon: HelpCircle, to: "/support/help" },
       { label: "Contact Support", icon: Mail, to: "/support/contact" },
-      { label: "Documentation", icon: BookOpen, to: "/support/docs" },
+      { label: "24x7 Customer Support", icon: Phone, to: "/support/docs" },
       { label: "Security", icon: Shield, to: "/support/security" },
-      { label: "Certifications", icon: Award, to: "/support/certifications" },
-      { label: "Community", icon: Users, to: "/support/community" },
+      { label: "Terms", icon: FileText, to: "/support/security" },
     ],
   },
 ];
@@ -110,7 +155,7 @@ const Footer = () => {
       <div className="absolute inset-0 opacity-5 bg-grid-pattern pointer-events-none z-0"></div>
       <div className="border-t border-gray-700 mt-12  mx-4 max-w-full"></div>
       <div className="relative z-10 w-full mx-auto px-6 lg:py-16 md:py-12 py-8 ">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 lg:gap-14 md:gap-20 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 lg:gap-12 md:gap-20 gap-10">
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <Link to="./">

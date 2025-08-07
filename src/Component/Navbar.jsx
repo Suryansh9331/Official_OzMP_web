@@ -607,7 +607,6 @@ const navLinks = [
             name: "Affliate Marketing",
             route: "/services/marketing/affiliate-marketing",
           },
-          { name: "Software", route: "/it-services/software-developement" },
           {
             name: "Content Marketing",
             route: "/services/marketing/content-marketing",
