@@ -70,7 +70,7 @@ const fadeInUp = {
 
 const OverviewSection = () => {
   return (
-    <section className="bg-[#DBD2FF] py-12 lg:py-16 px-4 lg:px-16 md:px-6 flex flex-col md:flex-row items-center justify-between gap-10">
+    <section className="bg-[#DBD2FF] py-16  lg:py-16 px-4 lg:px-16 md:px-6 flex flex-col md:flex-row items-center justify-between gap-10">
       {/* Left Image */}
       <motion.div
         className="w-full md:w-[45%]"

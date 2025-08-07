@@ -1556,11 +1556,11 @@ const navLinks = [
     label: "About Us",
     dropdown: true,
     items: [
+      { name: "Our Story", route: "/about-us" },
       {
         name: "Our Team",
         route: "our-team",
       },
-      { name: "Our Story", route: "/about-us" },
     ],
   },
   {
