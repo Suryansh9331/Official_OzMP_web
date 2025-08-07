@@ -15,7 +15,7 @@ const SecondSection = () => {
       icon: "/images/DMIcon2.png",
       title: "Smarter Marketing",
       subtitle: "Starts Here",
-      animation: "animate-spin",
+      animation: "animate-bounce",
     },
     {
       icon: "/images/DMIcon3.png",

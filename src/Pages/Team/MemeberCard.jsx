@@ -29,7 +29,7 @@ const OurTeam = () => {
     {
       name: "Rajeev Patel",
       role: "software",
-      designation: "Developer",
+      designation: "Full Stack Developer",
       image: Rajeev,
         
       description:
@@ -39,7 +39,7 @@ const OurTeam = () => {
     {
       name: "Palak Tiwari",
       role: "software",
-      designation: "Developer",
+      designation: " Full Stack Developer",
       image: palak,
       description:
         "Senior developer focused on creating robust backend architectures and seamless API integrations. Expert in database design and cloud deployment solutions.",
@@ -48,7 +48,7 @@ const OurTeam = () => {
     {
       name: "Atul kumar Rawat",
       role: "UI/Ux",
-      designation: "designer",
+      designation: " designer",
       image: Atul,
       description:
         "Expert UI/UX designer crafting intuitive digital experiences with deep expertise in user-centered design, wireframing, and interactive prototyping for web and mobile platforms.",
@@ -58,7 +58,7 @@ const OurTeam = () => {
     {
       name: "Suryansh Mishra",
       role: "software",
-      designation: "Developer",
+      designation: " Software Developer",
       image: Surya,
       description:
         "Mobile app specialist creating advanced cross-platform applications. Also expert in Web technology Like MERN stack , Laravel , Django .Focus To deliver Scalable robust and reliable application  .",

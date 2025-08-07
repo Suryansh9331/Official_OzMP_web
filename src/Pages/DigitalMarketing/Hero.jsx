@@ -7,7 +7,7 @@ const HeroBanner = () => {
     <>
       {/* Large Screen Version with BG */}
       <section
-        className="hidden lg:flex h-auto items-start bg-no-repeat bg-cover lg:py-20 md:py-16 py-12"
+        className="hidden lg:flex   h-[80vh] items-start bg-no-repeat bg-cover lg:py-20 md:py-16 py-12"
         style={{
           backgroundImage: `url(${bg})`,
           backgroundPosition: "right",
@@ -21,7 +21,7 @@ const HeroBanner = () => {
       </section>
 
       {/* Mobile/Tablet Version without BG */}
-      <section className="flex lg:hidden h-auto items-center px-4 justify-center bg-[#DBD2FF]/40">
+      <section className="flex lg:hidden h-[70vh] items-center px-4 justify-center bg-[#DBD2FF]/40">
         <HeroContent />
       </section>
     </>
