@@ -100,9 +100,9 @@ const footerSections = [
   {
     title: "Digital Success Solutions",
     links: [
-      { label: " Serach Enigine Optimization", icon: Search, to: "/services/marketing/seo-services" },
+      { label: " Serach Engine Optimization", icon: Search, to: "/services/marketing/seo-services" },
       { label: "E-mail Marketing", icon: Mail, to: "/services/marketing/email-marketing" },
-      { label: "Content-marketing", icon: BookOpen, to: "/services/marketing/content-marketing" },
+      { label: "Content marketing", icon: BookOpen, to: "/services/marketing/content-marketing" },
       { label: "Affliate Marketing", icon: Shield, to: "/services/marketing/affiliate-marketing" },
       { label: "Social Media Marketing", icon: Twitter, to: "/services/marketing/social-media-marketing" },
     ],

@@ -85,7 +85,7 @@ const Hero = () => {
   return (
     <div
       ref={ref}
-      className="bg-white h-auto flex flex-col-reverse md:flex-row items-center justify-between px-4 md:py-14 lg:py-0 lg:px-16 md:px-4 pb-6"
+      className="bg-white h-auto flex flex-col-reverse md:flex-row items-center justify-between px-4 md:py-14 lg:py-0 lg:px-16 md:px-4 pb-10"
     >
       {/* LEFT TEXT SIDE */}
       <div className="md:w-[50%] md:space-y-6 space-y-2">
