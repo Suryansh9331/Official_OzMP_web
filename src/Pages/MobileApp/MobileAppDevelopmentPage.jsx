@@ -7,7 +7,7 @@ import {
   MessageCircle, ShoppingCart, MapPin, Calendar, Search, Layers,
   Code, Database, Cloud, Lock, Brain, Workflow 
 } from "lucide-react";
-
+import { Link } from 'react-router-dom';
 
 
 const MobileAppDevelopmentPage = () => {
@@ -829,12 +829,17 @@ const PhoneInterface = () => {
                         </p>
                         
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
-                            <button className="uppercase font-semibold bg-[#dcd4ff] text-black px-8 py-4 rounded-full transition-all duration-300 shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000] active:translate-x-0 active:translate-y-0 active:shadow-[2px_2px_0px_#000]">
+                             <Link  to ="/contact-us">   
+                            <button className=" cursor-pointer uppercase font-semibold bg-[#dcd4ff] text-black px-8 py-4 rounded-full transition-all duration-300 shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000] active:translate-x-0 active:translate-y-0 active:shadow-[2px_2px_0px_#000]">
                                 Start Your App
                             </button>
-                            <button className="uppercase font-semibold bg-white text-black px-8 py-4 rounded-full border-2 border-black transition-all duration-300 hover:bg-gray-50">
+                             </Link>
+
+                           <Link  to ="/projects-details">      
+                            <button className=" cursor-pointer uppercase font-semibold bg-white text-black px-8 py-4 rounded-full border-2 border-black transition-all duration-300 hover:bg-gray-50">
                                 View App Portfolio
                             </button>
+                         </Link>
                         </div>
                         
                         {/* Quick Stats */}
@@ -1059,9 +1064,11 @@ const PhoneInterface = () => {
                         <div className="inline-block bg-gradient-to-r from-purple-100 to-blue-100 p-8 rounded-3xl border-2 border-black shadow-[8px_8px_0px_#000]">
                             <h3 className="text-2xl font-bold text-black mb-4">Don't See Your Industry?</h3>
                             <p className="text-gray-700 mb-6 max-w-md mx-auto">We develop mobile apps for all industries. Let's discuss how we can create the perfect app for your specific business needs.</p>
-                            <button className="bg-[#dcd4ff] text-black px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000]">
-                                Discuss Your App Idea
+                           <Link  to ="/projects-details">      
+                            <button className=" cursor-pointer bg-[#dcd4ff] text-black px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000]">
+                                See All Projects
                             </button>
+                         </Link>
                         </div>
                     </div>
                 </div>
@@ -1190,9 +1197,11 @@ const PhoneInterface = () => {
                         <div className="bg-[#dcd4ff] text-black px-8 py-9 rounded-tr-[10px] rounded-bl-[10px] transition-all duration-300 shadow-[8px_8px_0px_#000] border border-black">
                             <h3 className="text-2xl font-bold mb-4">Ready to Build Your Mobile App?</h3>
                             <p className="mb-6 text-black">Let's discuss your app idea and create something amazing that your users will love!</p>
-                            <button className="uppercase font-semibold bg-[#dcd4ff] text-black px-8 py-4 rounded-full transition-all duration-300 active:translate-x-0 active:translate-y-0 border-2 border-black hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000]">
+                        <Link  to ="/contact-us">   
+                            <button className=" cursor-pointer uppercase font-semibold bg-[#dcd4ff] text-black px-8 py-4 rounded-full transition-all duration-300 active:translate-x-0 active:translate-y-0 border-2 border-black hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000]">
                                 Start App Development
                             </button>
+                        </Link>
                         </div>
                     </div>
                 </div>
@@ -1329,12 +1338,16 @@ const PhoneInterface = () => {
                                 Whether you need a native iOS/Android app or a cross-platform solution, our team is ready to bring your mobile app vision to life with cutting-edge technology and user-centric design.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <button className="bg-white text-purple-600 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:bg-purple-50 hover:shadow-lg">
+                                  <Link  to ="/contact-us">   
+                                <button className=" cursor-pointer bg-white text-purple-600 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:bg-purple-50 hover:shadow-lg">
                                     Start App Development
                                 </button>
-                                <button className="bg-transparent text-white px-8 py-4 rounded-full border-2 border-white font-semibold transition-all duration-300 hover:bg-white/10">
-                                    View App Portfolio
+                                 </Link>
+                               <Link  to ="/our-team">      
+                                <button className=" cursor-pointer bg-transparent text-white px-8 py-4 rounded-full border-2 border-white font-semibold transition-all duration-300 hover:bg-white/10">
+                                    Meet Our Team
                                 </button>
+                             </Link>
                             </div>
                         </div>
                         <div className="lg:w-1/2 flex justify-center">

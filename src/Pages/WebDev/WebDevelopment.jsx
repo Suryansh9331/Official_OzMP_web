@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { CircleCheck, Code, Smartphone, Search, Zap, Globe, Users, BarChart3, Shield, Palette, Settings, MonitorPlay } from "lucide-react";
 import HeroImg from "../../assets/WebDevelopment/hero.png";
-
+import { Link } from "react-router-dom";
 import img1 from "../../assets/WebDevelopment/img1.png";
 
 import ReactLogo from "../../assets/WebDevelopment/react-logo.png";
@@ -172,12 +172,16 @@ const WebsiteDevelopmentPage = () => {
                         </p>
                         
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
-                            <button className="uppercase font-semibold bg-[#dcd4ff] text-black px-8 py-4 rounded-full transition-all duration-300 shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000] active:translate-x-0 active:translate-y-0 active:shadow-[2px_2px_0px_#000]">
+                           <Link to = "/contact-us">
+                            <button className="uppercase  cursor-pointer font-semibold bg-[#dcd4ff] text-black px-8 py-4 rounded-full transition-all duration-300 shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000] active:translate-x-0 active:translate-y-0 active:shadow-[2px_2px_0px_#000]">
                                 Get Started Today
                             </button>
-                            <button className="uppercase font-semibold bg-white text-black px-8 py-4 rounded-full border-2 border-black transition-all duration-300 hover:bg-gray-50">
+                           </Link>
+                            <Link to = "/about-us">
+                            <button className="uppercase cursor-pointer font-semibold bg-white text-black px-8 py-4 rounded-full border-2 border-black transition-all duration-300 hover:bg-gray-50">
                                 View Portfolio
                             </button>
+                       </Link>
                         </div>
                         
                         {/* Quick Stats */}
@@ -489,9 +493,11 @@ const WebsiteDevelopmentPage = () => {
                         <div className="bg-[#dcd4ff] text-black px-8 py-9 rounded-tr-[10px] rounded-bl-[10px] transition-all duration-300 shadow-[8px_8px_0px_#000] border border-black">
                             <h3 className="text-2xl font-bold mb-4">Ready to Start Your Project?</h3>
                             <p className="mb-6 text-black">Let's discuss your requirements and kick off your development journey today!</p>
-                            <button className="uppercase font-semibold bg-[#dcd4ff] text-black px-8 py-4 rounded-full transition-all duration-300 active:translate-x-0 active:translate-y-0 border-2 border-black hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000]">
+                        <Link  to = "/contact-us">  
+                            <button className="uppercase cursor-pointer font-semibold bg-[#dcd4ff] text-black px-8 py-4 rounded-full transition-all duration-300 active:translate-x-0 active:translate-y-0 border-2 border-black hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000]">
                                 Schedule a Consultation
                             </button>
+                        </Link>
                         </div>
                     </div>
                 </div>
@@ -530,9 +536,11 @@ const WebsiteDevelopmentPage = () => {
                     </div>
                     
                     <div className="text-center mt-12">
-                        <button className="uppercase font-semibold bg-[#dcd4ff] text-black px-8 py-4 rounded-full transition-all duration-300 shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000] active:translate-x-0 active:translate-y-0 active:shadow-[2px_2px_0px_#000]">
+                    <Link  to = "/projects-details">     
+                        <button className="uppercase cursor-pointer font-semibold bg-[#dcd4ff] text-black px-8 py-4 rounded-full transition-all duration-300 shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000] active:translate-x-0 active:translate-y-0 active:shadow-[2px_2px_0px_#000]">
                             View All Projects
                         </button>
+                    </Link>
                     </div>
                 </div>
             </div>
@@ -575,12 +583,16 @@ const WebsiteDevelopmentPage = () => {
                         Let's transform your vision into a powerful online presence that drives results and grows your business.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <button className="uppercase font-semibold bg-[#dcd4ff] text-black px-8 py-4 rounded-full transition-all duration-300 shadow-[4px_4px_0px_#333] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#333] active:translate-x-0 active:translate-y-0 active:shadow-[2px_2px_0px_#333]">
+                    <Link to = "/contact-us">      
+                        <button className="uppercase cursor-pointer font-semibold bg-[#dcd4ff] text-black px-8 py-4 rounded-full transition-all duration-300 shadow-[4px_4px_0px_#333] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#333] active:translate-x-0 active:translate-y-0 active:shadow-[2px_2px_0px_#333]">
                             Start Your Project
                         </button>
-                        <button className="uppercase font-semibold bg-transparent text-white px-8 py-4 rounded-full border-2 border-white transition-all duration-300 hover:bg-white hover:text-black">
+                           </Link>
+                      <Link to = "/contact-us">      
+                        <button className="uppercase cursor-pointer font-semibold bg-transparent text-white px-8 py-4 rounded-full border-2 border-white transition-all duration-300 hover:bg-white hover:text-black">
                             Schedule Consultation
                         </button>
+                    </Link>
                     </div>
                     
                     <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">

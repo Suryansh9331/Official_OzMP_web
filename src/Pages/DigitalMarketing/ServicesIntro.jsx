@@ -46,7 +46,7 @@ const ServiceIntro = () => {
   return (
     <section
       ref={ref}
-      className="min-h-[20vh] flex flex-col items-center justify-center px-2 text-center"
+      className="lg:min-h-[35vh] min-h-[30vh] flex flex-col items-center justify-center px-2 text-center"
     >
       <h2
         className="text-2xl md:text-4xl font-semibold  text-[#1C1A1F]"
