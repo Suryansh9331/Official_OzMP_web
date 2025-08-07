@@ -9,7 +9,7 @@ import {
   MessageCircle, Hash, Image, Video, Smile, UserPlus,
   Bell, Mail, ThumbsUp as Like, Bookmark, Send
 } from "lucide-react";
-import { Link } from 'lucide-react';
+import { Link } from 'react-router-dom';
 const SocialMediaMarketingPage = () => {
   const [activeExpertise, setActiveExpertise] = useState(0);
   const [hoveredPortfolio, setHoveredPortfolio] = useState(null);
