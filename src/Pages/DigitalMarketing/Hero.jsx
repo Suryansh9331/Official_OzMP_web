@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import bg from "../../assets/images/bg.png";
-
+import { Link } from "react-router-dom";
 const HeroBanner = () => {
   return (
     <>
@@ -59,9 +59,9 @@ const HeroContent = () => (
       Digital success isn’t just about being seen—it’s about making an impact. OZ Media
       Planet crafts powerful marketing strategies that drive engagement, growth, and results.
     </p>
-
+<Link to = "/contact-us">
     <button
-      className="md:mt-10 mt-8 px-6 py-2 rounded-full font-medium shadow-md text-sm"
+      className="md:mt-10 mt-8 px-6  cursor-pointer py-2 rounded-full font-medium shadow-md text-sm"
       style={{
         backgroundColor: "#DBD2FF",
         fontFamily: "Inter, sans-serif",
@@ -70,6 +70,7 @@ const HeroContent = () => (
     >
       LET’S CONNECT
     </button>
+    </Link>
   </motion.div>
 );
 

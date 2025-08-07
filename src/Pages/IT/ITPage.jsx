@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { CircleCheck } from "lucide-react";
-
+import { Link } from "react-router-dom";
 import HeroImg from "../../assets/ItPage/Hero-Background.png";
 import MobImg from "../../assets/ItPage/hero-mob.png";
 import SmartItImg from "../../assets/ItPage/SmartIT.png";
@@ -24,7 +24,7 @@ import serviceImg8 from "../../assets/ItPage/serviceImg8.png";
 
 const servicesData = [
     {
-        title: "Website Development",
+        title: "/it-services/website-developement",
         description:
             "Build a Strong Online Presence. We design and develop custom websites that not only look great but also perform exceptionally well across devices and platforms.",
         lists: [
@@ -33,7 +33,7 @@ const servicesData = [
             "SEO-optimized site architecture",
             "Performance-focused for fast loading and high engagement",
         ],
-        buttonRedirection: "#",
+        buttonRedirection: "",
         image: serviceImg1,
         imageAtRight: true,
     },
@@ -47,7 +47,7 @@ const servicesData = [
             "Secure and scalable backend infrastructure",
             "Dashboard-driven solutions ready for integration",
         ],
-        buttonRedirection: "#",
+        buttonRedirection: "/it-services/software-developement",
         image: serviceImg2,
         imageAtRight: false,
     },
@@ -61,7 +61,7 @@ const servicesData = [
             "SEO-optimized site architecture",
             "Performance-focused for fast loading and high engagement",
         ],
-        buttonRedirection: "#",
+        buttonRedirection: "/it-services/mobile-application-developement",
         image: serviceImg3,
         imageAtRight: true,
     },
@@ -75,7 +75,7 @@ const servicesData = [
             "Secure and scalable backend infrastructure",
             "Dashboard-driven solutions ready for integration",
         ],
-        buttonRedirection: "#",
+        buttonRedirection: "/it-services/graphics-uiux-developement",
         image: serviceImg4,
         imageAtRight: false,
     },
@@ -89,7 +89,7 @@ const servicesData = [
             "SEO-optimized site architecture",
             "Performance-focused for fast loading and high engagement",
         ],
-        buttonRedirection: "#",
+        buttonRedirection: "/it-services/api-developement",
         image: serviceImg5,
         imageAtRight: true,
     },
@@ -103,7 +103,7 @@ const servicesData = [
             "Razorpay, Stripe, PayPal payment integrations",
             "SEO and analytics for performance tracking",
         ],
-        buttonRedirection: "#",
+        buttonRedirection: "/it-services/e-commerce-solution",
         image: serviceImg6,
         imageAtRight: false,
     },
@@ -117,7 +117,7 @@ const servicesData = [
             "SEO-optimized site architecture",
             "Performance-focused for fast loading and high engagement",
         ],
-        buttonRedirection: "#",
+        buttonRedirection: "/it-services/hosting-server-management",
         image: serviceImg7,
         imageAtRight: true,
     },
@@ -131,7 +131,7 @@ const servicesData = [
             "Cybersecurity assessments and patching",
             "Monthly performance reports and technical audits",
         ],
-        buttonRedirection: "#",
+        buttonRedirection: "/it-services/tech-support-sollution",
         image: serviceImg8,
         imageAtRight: false,
     },
@@ -171,9 +171,11 @@ const ITPage = () => {
                                 <br className="hidden lg:block" />
                                 <span className="lg:hidden"> </span>designed for the future.
                             </p>
+                        <Link  to ="/contact-us">  
                             <button className="uppercase font-semibold hover:cursor-pointer bg-[#dcd4ff] text-black px-6 py-3 rounded-full transition-all duration-300 shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000] active:translate-x-0 active:translate-y-0 active:shadow-[2px_2px_0px_#000]">
                                 LET'S CONNECT
                             </button>
+                        </Link>
                         </div>
                     </div>
 
@@ -341,12 +343,12 @@ const ITPage = () => {
                         </li>
                     ))}
                 </ul>
-                <a
-                    href={service.buttonRedirection}
+                <Link
+                    to = {service.buttonRedirection}
                     className="uppercase font-semibold hover:cursor-pointer bg-[#dcd4ff] text-black px-6 py-3 rounded-full transition-all duration-300 shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000] active:translate-x-0 active:translate-y-0 active:shadow-[2px_2px_0px_#000]"
                 >
                     Read More
-                </a>
+                </Link>
             </div>
         </div>
     );
@@ -356,7 +358,7 @@ const ITPage = () => {
 
 
                     {/* Sixth Section */}
-                    <div className="py-24 px-4 sm:px-10 bg-white">
+                    {/* <div className="py-24 px-4 sm:px-10 bg-white">
                         <div className="max-w-full mx-auto text-center flex flex-col items-center">
                             <h2 className="text-4xl font-normal mb-6">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -371,7 +373,7 @@ const ITPage = () => {
                                 Let's Connect
                             </a>
                         </div>
-                    </div>
+                    </div> */}
 
                 </div>
             </div>

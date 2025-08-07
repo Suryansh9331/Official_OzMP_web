@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-
+import { Link } from "react-router-dom";
 const Headline = () => {
   const sectionRef = useRef(null);
   const indexRef = useRef(0);
@@ -64,9 +64,11 @@ const fullText =
       </h1>
 
       <div className="md:mt-14 mt-8 flex justify-center">
+     <Link  to ="/contact-us">  
         <button className="uppercase font-outfit font-semibold hover:cursor-pointer bg-[#dcd4ff] text-black px-8 sm:px-10 py-3 rounded-full shadow-lg transition-transform duration-300 hover:shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1">
           Let’s Connect
         </button>
+     </Link>
       </div>
     </section>
   );

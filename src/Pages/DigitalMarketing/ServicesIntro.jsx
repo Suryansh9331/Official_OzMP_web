@@ -2,30 +2,38 @@ import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
-// Typing animation hook
 const useTypewriter = (text, speed = 60, active = false) => {
   const [displayedText, setDisplayedText] = useState("");
+  const [hasTyped, setHasTyped] = useState(false);
 
   useEffect(() => {
     if (!active) {
       setDisplayedText(""); // Reset when out of view
+      setHasTyped(false);   // Allow typing again when back in view
       return;
     }
 
+    if (hasTyped) return; // Prevent retrigger
+
     let index = 0;
-    setDisplayedText(""); // Reset immediately before starting
+    setDisplayedText(""); // Clear text before starting
 
     const interval = setInterval(() => {
-      if (index <= text.length - 1) {
-        setDisplayedText((prev) => prev + text.charAt(index));
+      setDisplayedText((prev) => {
+        const nextChar = text.charAt(index);
         index++;
-      } else {
-        clearInterval(interval);
-      }
+
+        if (index > text.length) {
+          clearInterval(interval);
+          setHasTyped(true);
+        }
+
+        return prev + nextChar;
+      });
     }, speed);
 
     return () => clearInterval(interval);
-  }, [text, speed, active]);
+  }, [text, speed, active, hasTyped]);
 
   return displayedText;
 };

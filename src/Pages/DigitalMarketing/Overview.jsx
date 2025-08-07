@@ -20,9 +20,7 @@ const DigitalMarketingSection = () => {
         <p className="text-gray-700 text-base md:text-lg font-poppins mb-8">
           A Complete Suite Of Growth-Driven Marketing Solutions Designed To Build Your Brand, Attract Customers, And Boost ROI Across Digital Platforms.
         </p>
-        <button className="bg-[#D9D0FF] text-black px-6 border border-black font-['inter'] py-2 rounded-full shadow-xl hover:scale-105 transition">
-          READ MORE
-        </button>
+       
       </motion.div>
 
       {/* Right Section */}

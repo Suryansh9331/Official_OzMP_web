@@ -49,7 +49,7 @@
 // export default OverviewSection;
 
 
-
+import { Link } from "react-router-dom";
 
 import React from "react";
 import { motion } from "framer-motion";
@@ -140,7 +140,8 @@ const OverviewSection = () => {
         </motion.p>
 
         {/* Button */}
-        <motion.button
+        <Link to ="/our-team">
+                <motion.button
           className="text-sm lg:mt-8 px-6 py-2 rounded-full text-black font-medium hover:cursor-pointer hover:-translate-x-0.5 hover:-translate-y-0.5 transition-transform duration-300 shadow-[4px_4px_0px_#000]"
           style={{ backgroundColor: "white", fontFamily: "Inter, sans-serif" }}
           variants={fadeInUp}
@@ -151,6 +152,7 @@ const OverviewSection = () => {
         >
           VIEW MORE
         </motion.button>
+        </Link>
       </div>
     </section>
   );
