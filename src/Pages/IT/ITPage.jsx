@@ -24,7 +24,7 @@ import serviceImg8 from "../../assets/ItPage/serviceImg8.png";
 
 const servicesData = [
     {
-        title: "/it-services/website-developement",
+        title: "website-developement",
         description:
             "Build a Strong Online Presence. We design and develop custom websites that not only look great but also perform exceptionally well across devices and platforms.",
         lists: [
