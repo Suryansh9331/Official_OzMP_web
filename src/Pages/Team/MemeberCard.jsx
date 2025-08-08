@@ -48,7 +48,7 @@ const OurTeam = () => {
     {
       name: "Atul kumar Rawat",
       role: "UI/Ux",
-      designation: " designer",
+      designation: " UI/Ux designer",
       image: Atul,
       description:
         "Expert UI/UX designer crafting intuitive digital experiences with deep expertise in user-centered design, wireframing, and interactive prototyping for web and mobile platforms.",
