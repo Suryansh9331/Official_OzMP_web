@@ -302,7 +302,7 @@ const Footer = () => {
             <div className="flex flex-wrap gap-3 mt-4">
               {/* LinkedIn */}
               <a
-                href="https://www.linkedin.com/in/yourprofile" // <-- your LinkedIn link
+                href="https://www.linkedin.com/company/oz-media-planet-1/" // <-- your LinkedIn link
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-700/50 hover:bg-[#DBD2FE] rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-[#DBD2FE]/20"
@@ -315,7 +315,7 @@ const Footer = () => {
                 href="https://wa.me/7313676879" // <-- your WhatsApp number with country code
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-gray-700/50 hover:bg-green-500 rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-green-500/20"
+                className="w-10 h-10 bg-gray-700/50 hover:bg-[#DBD2FE] rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-green-500/20"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -332,7 +332,7 @@ const Footer = () => {
                 href=" https://www.instagram.com/ozmediaplanet?igsh=ZmczbzR1cGVtemty&utm_source=qr" // <-- your Instagram link
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-gray-700/50 hover:bg-pink-500 rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-pink-500/20"
+                className="w-10 h-10 bg-gray-700/50 hover:bg-[#DBD2FE] rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-pink-500/20"
               >
                 <Instagram className="w-5 h-5 text-gray-300 group-hover:text-white transition-colors duration-300" />
               </a>
@@ -340,7 +340,7 @@ const Footer = () => {
               {/* Phone */}
               <a
                 href="tel:+917313676879" // <-- your phone number
-                className="w-10 h-10 bg-gray-700/50 hover:bg-blue-500 rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20"
+                className="w-10 h-10 bg-gray-700/50 hover:bg-[#DBD2FE] rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20"
               >
                 <Phone className="w-5 h-5 text-gray-300 group-hover:text-white transition-colors duration-300" />
               </a>
