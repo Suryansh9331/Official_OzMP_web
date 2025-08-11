@@ -79,7 +79,11 @@ const footerSections = [
     links: [
       { label: "About Us", icon: Globe, to: "/about-us" },
       { label: "Our Team", icon: Users, to: "/our-team" },
-      { label: "Careers", icon: Briefcase, to: "/careers/future-options-we-have" },
+      {
+        label: "Careers",
+        icon: Briefcase,
+        to: "/careers/future-options-we-have",
+      },
       { label: "Portfolio", icon: Camera, to: "/about-us" },
       { label: "Case Studies", icon: FileText, to: "/projects-details" },
     ],
@@ -87,24 +91,76 @@ const footerSections = [
   {
     title: "IT Solutions ",
     links: [
-      { label: "Mobile Applications", icon: Smartphone, to: "/it-services/mobile-application-developement" },
-      { label: "Website Developement", icon: Code, to: "/it-services/website-developement" },
-      { label: "Software Developement", icon: FileText, to: "/it-services/software-developement" },
-      { label: "API Developement", icon: FileText, to: "/it-services/api-developement" },
-      { label: "Graphics Designing", icon: Palette, to: "/it-services/graphics-uiux-developement" },
-      { label: "Hosting And Server ", icon: Server, to: "/it-services/hosting-server-management" },
-      { label: "E-commerce Solutions", icon: ShoppingCart, to: "/it-services/e-commerce-solution" },
-      { label: "Tech Support AMC", icon: Settings, to: "/it-services/tech-support-sollution" },
+      {
+        label: "Mobile Applications",
+        icon: Smartphone,
+        to: "/it-services/mobile-application-developement",
+      },
+      {
+        label: "Website Developement",
+        icon: Code,
+        to: "/it-services/website-developement",
+      },
+      {
+        label: "Software Developement",
+        icon: FileText,
+        to: "/it-services/software-developement",
+      },
+      {
+        label: "API Developement",
+        icon: FileText,
+        to: "/it-services/api-developement",
+      },
+      {
+        label: "Graphics Designing",
+        icon: Palette,
+        to: "/it-services/graphics-uiux-developement",
+      },
+      {
+        label: "Hosting And Server ",
+        icon: Server,
+        to: "/it-services/hosting-server-management",
+      },
+      {
+        label: "E-commerce Solutions",
+        icon: ShoppingCart,
+        to: "/it-services/e-commerce-solution",
+      },
+      {
+        label: "Tech Support AMC",
+        icon: Settings,
+        to: "/it-services/tech-support-sollution",
+      },
     ],
   },
   {
     title: "Digital Success Solutions",
     links: [
-      { label: " Serach Engine Optimization", icon: Search, to: "/services/marketing/seo-services" },
-      { label: "E-mail Marketing", icon: Mail, to: "/services/marketing/email-marketing" },
-      { label: "Content marketing", icon: BookOpen, to: "/services/marketing/content-marketing" },
-      { label: "Affliate Marketing", icon: Shield, to: "/services/marketing/affiliate-marketing" },
-      { label: "Social Media Marketing", icon: Twitter, to: "/services/marketing/social-media-marketing" },
+      {
+        label: " Serach Engine Optimization",
+        icon: Search,
+        to: "/services/marketing/seo-services",
+      },
+      {
+        label: "E-mail Marketing",
+        icon: Mail,
+        to: "/services/marketing/email-marketing",
+      },
+      {
+        label: "Content marketing",
+        icon: BookOpen,
+        to: "/services/marketing/content-marketing",
+      },
+      {
+        label: "Affliate Marketing",
+        icon: Shield,
+        to: "/services/marketing/affiliate-marketing",
+      },
+      {
+        label: "Social Media Marketing",
+        icon: Twitter,
+        to: "/services/marketing/social-media-marketing",
+      },
     ],
   },
   {
@@ -113,16 +169,28 @@ const footerSections = [
       { label: "All Blogs ", icon: FileText, to: "/blogs" },
       { label: "Popular Blogs", icon: TrendingUp, to: "/blogs" },
       { label: "IT Tips ", icon: BookOpen, to: "/blogs/blog-article-1" },
-      { label: "Mastering Digital Marketing", icon: Globe, to: "/blogs/blog-article-2" },
+      {
+        label: "Mastering Digital Marketing",
+        icon: Globe,
+        to: "/blogs/blog-article-2",
+      },
       { label: "Inspiring Brands", icon: Award, to: "/blogs/blog-article-3" },
-      { label: "Creative Journey ", icon: PenTool, to: "/blogs/blog-article-4" },
+      {
+        label: "Creative Journey ",
+        icon: PenTool,
+        to: "/blogs/blog-article-4",
+      },
       { label: "Creative Brands ", icon: Users, to: "/blogs/blog-article-5" },
     ],
   },
   {
     title: "Career Opportunities",
     links: [
-      { label: "Career Optiion ", icon: Briefcase, to: "/careers/future-options-we-have" },
+      {
+        label: "Career Optiion ",
+        icon: Briefcase,
+        to: "/careers/future-options-we-have",
+      },
       { label: "Grow with us ", icon: TrendingUp, to: "/contact-us" },
     ],
   },
@@ -140,7 +208,11 @@ const footerSections = [
     links: [
       { label: "Help Center", icon: HelpCircle, to: "/contact" },
       { label: "Contact Support", icon: Mail, to: "/about-us" },
-      { label: "24x7 Customer Support", icon: Phone, to: "/it-services/tech-support-sollution" },
+      {
+        label: "24x7 Customer Support",
+        icon: Phone,
+        to: "/it-services/tech-support-sollution",
+      },
       { label: "Security", icon: Shield, to: "/privacy-policy" },
       { label: "Terms", icon: FileText, to: "/terms-and-condition" },
     ],
@@ -226,18 +298,60 @@ const Footer = () => {
             </div>
 
             {/* Socials */}
-            <div className="flex space-x-3">
-              {[Facebook, Twitter, Instagram, Linkedin, Youtube].map(
-                (Icon, idx) => (
-                  <a
-                    key={idx}
-                    href="#"
-                    className="w-10 h-10 bg-gray-700/50 hover:bg-[#DBD2FE] rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-[#DBD2FE]/20"
-                  >
-                    <Icon className="w-5 h-5 text-gray-300 group-hover:text-[#1C1A1F] transition-colors duration-300" />
-                  </a>
-                )
-              )}
+            {/* Socials */}
+            <div className="flex flex-wrap gap-3 mt-4">
+              {/* LinkedIn */}
+              <a
+                href="https://www.linkedin.com/in/yourprofile" // <-- your LinkedIn link
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-gray-700/50 hover:bg-[#DBD2FE] rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-[#DBD2FE]/20"
+              >
+                <Linkedin className="w-5 h-5 text-gray-300 group-hover:text-[#1C1A1F] transition-colors duration-300" />
+              </a>
+
+              {/* WhatsApp */}
+              <a
+                href="https://wa.me/919876543210" // <-- your WhatsApp number with country code
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-gray-700/50 hover:bg-green-500 rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-green-500/20"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-5 h-5 text-gray-300 group-hover:text-white transition-colors duration-300"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="M12 2C6.48 2 2 6.24 2 11.75c0 2.09.62 4.05 1.68 5.71L2 22l4.7-1.58A9.86 9.86 0 0012 21.5c5.52 0 10-4.24 10-9.75S17.52 2 12 2zm.05 17.29c-1.74 0-3.38-.51-4.78-1.48l-.34-.23-2.84.96.94-2.76-.23-.36A7.77 7.77 0 014.2 11.8c0-4.29 3.54-7.78 7.9-7.78 2.12 0 4.11.82 5.61 2.3a7.69 7.69 0 012.33 5.49c0 4.29-3.54 7.78-7.9 7.78z" />
+                </svg>
+              </a>
+
+              {/* Instagram */}
+              <a
+                href="https://www.instagram.com/yourprofile" // <-- your Instagram link
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-gray-700/50 hover:bg-pink-500 rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-pink-500/20"
+              >
+                <Instagram className="w-5 h-5 text-gray-300 group-hover:text-white transition-colors duration-300" />
+              </a>
+
+              {/* Phone */}
+              <a
+                href="tel:+919876543210" // <-- your phone number
+                className="w-10 h-10 bg-gray-700/50 hover:bg-blue-500 rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20"
+              >
+                <Phone className="w-5 h-5 text-gray-300 group-hover:text-white transition-colors duration-300" />
+              </a>
+
+              {/* Gmail */}
+              <a
+                href="mailto:youremail@gmail.com" // <-- your email
+                className="w-10 h-10 bg-gray-700/50 hover:bg-red-500 rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-red-500/20"
+              >
+                <Mail className="w-5 h-5 text-gray-300 group-hover:text-white transition-colors duration-300" />
+              </a>
             </div>
           </div>
 
