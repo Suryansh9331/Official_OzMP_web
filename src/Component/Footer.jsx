@@ -347,7 +347,7 @@ const Footer = () => {
 
               {/* Gmail */}
               <a
-                href="mailto:youremail@gmail.com" // <-- your email
+                href="mailto:infoozmediaplanet@gmail.com" // <-- your email
                 className="w-10 h-10 bg-gray-700/50 hover:bg-red-500 rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-red-500/20"
               >
                 <Mail className="w-5 h-5 text-gray-300 group-hover:text-white transition-colors duration-300" />
