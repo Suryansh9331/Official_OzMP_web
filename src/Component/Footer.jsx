@@ -329,7 +329,7 @@ const Footer = () => {
 
               {/* Instagram */}
               <a
-                href="https://www.instagram.com/yourprofile" // <-- your Instagram link
+                href=" https://www.instagram.com/ozmediaplanet?igsh=ZmczbzR1cGVtemty&utm_source=qr" // <-- your Instagram link
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-700/50 hover:bg-pink-500 rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-pink-500/20"
