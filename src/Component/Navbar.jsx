@@ -1549,6 +1549,7 @@ import { useEffect, useState } from "react";
 import { FaChevronDown, FaArrowRight } from "react-icons/fa";
 import { HiMenu, HiX } from "react-icons/hi";
 import { Link } from "react-router-dom";
+import { Mail } from "lucide-react";
 
 const navLinks = [
   { label: "Home", dropdown: false, route: "/" },
@@ -2016,7 +2017,7 @@ export default function Navbar() {
                 {/* Social Icons */}
 <div className="mt-12 flex justify-center gap-6">
   <a
-    href="https://www.instagram.com/"
+    href=" https://www.instagram.com/ozmediaplanet?igsh=ZmczbzR1cGVtemty&utm_source=qr"
     target="_blank"
     rel="noopener noreferrer"
     className="p-2 rounded-full bg-gray-100 hover:bg-purple-200 transition"
@@ -2024,7 +2025,7 @@ export default function Navbar() {
     <FaInstagram size={20} />
   </a>
   <a
-    href="https://www.linkedin.com/"
+    href="https://www.linkedin.com/company/oz-media-planet-1/"
     target="_blank"
     rel="noopener noreferrer"
     className="p-2 rounded-full bg-gray-100 hover:bg-purple-200 transition"
@@ -2032,7 +2033,7 @@ export default function Navbar() {
     <FaLinkedinIn size={20} />
   </a>
   <a
-    href="https://wa.me/XXXXXXXXXXX"
+    href="https://wa.me/7313676879"
     target="_blank"
     rel="noopener noreferrer"
     className="p-2 rounded-full bg-gray-100 hover:bg-purple-200 transition"
@@ -2040,12 +2041,12 @@ export default function Navbar() {
     <FaWhatsapp size={20} />
   </a>
   <a
-    href="https://www.facebook.com/"
+    href="mailto:infozmediaplanet@gmail.com "
     target="_blank"
     rel="noopener noreferrer"
     className="p-2 rounded-full bg-gray-100 hover:bg-purple-200 transition"
   >
-    <FaFacebookF size={20} />
+    <Mail size={20} />
   </a>
 </div>
 
