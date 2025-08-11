@@ -319,7 +319,7 @@ const Footer = () => {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5 text-gray-300 group-hover:text-white transition-colors duration-300"
+                  className="w-5 h-5 text-gray-300 group-hover:text-black transition-colors duration-300"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                 >
@@ -334,7 +334,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-700/50 hover:bg-[#DBD2FE] rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-pink-500/20"
               >
-                <Instagram className="w-5 h-5 text-gray-300 group-hover:text-white transition-colors duration-300" />
+                <Instagram className="w-5 h-5 text-gray-300 group-hover:text-[#1C1A1F] transition-colors duration-300" />
               </a>
 
               {/* Phone */}
@@ -342,15 +342,15 @@ const Footer = () => {
                 href="tel:+917313676879" // <-- your phone number
                 className="w-10 h-10 bg-gray-700/50 hover:bg-[#DBD2FE] rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20"
               >
-                <Phone className="w-5 h-5 text-gray-300 group-hover:text-white transition-colors duration-300" />
+                <Phone className="w-5 h-5 text-gray-300 group-hover:text-[#1C1A1F] transition-colors duration-300" />
               </a>
 
               {/* Gmail */}
               <a
                 href="mailto:infoozmediaplanet@gmail.com" // <-- your email
-                className="w-10 h-10 bg-gray-700/50 hover:bg-red-500 rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-red-500/20"
+                className="w-10 h-10 bg-gray-700/50 hover:bg-[#DBD2FE] rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-red-500/20"
               >
-                <Mail className="w-5 h-5 text-gray-300 group-hover:text-white transition-colors duration-300" />
+                <Mail className="w-5 h-5 text-gray-300 group-hover:text-[#1C1A1F] transition-colors duration-300" />
               </a>
             </div>
           </div>
