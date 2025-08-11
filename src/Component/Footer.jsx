@@ -339,7 +339,7 @@ const Footer = () => {
 
               {/* Phone */}
               <a
-                href="tel:+919876543210" // <-- your phone number
+                href="tel:+917313676879" // <-- your phone number
                 className="w-10 h-10 bg-gray-700/50 hover:bg-blue-500 rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20"
               >
                 <Phone className="w-5 h-5 text-gray-300 group-hover:text-white transition-colors duration-300" />
