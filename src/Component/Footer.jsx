@@ -312,7 +312,7 @@ const Footer = () => {
 
               {/* WhatsApp */}
               <a
-                href="https://wa.me/919876543210" // <-- your WhatsApp number with country code
+                href="https://wa.me/7313676879" // <-- your WhatsApp number with country code
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-700/50 hover:bg-green-500 rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-green-500/20"
