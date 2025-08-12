@@ -4,8 +4,7 @@ import Surya from "../../assets/OurTeam/Suryansh.jpeg"
 import Atul from "../../assets/OurTeam/Atul.JPG"
 import Rajeev from "../../assets/OurTeam/rajeev (2).jpg"
 import palak from "../../assets/OurTeam/palak.jpeg"
-import Avni from "../../assets/OurTeam/Avni1.jpg"
-import Avni2 from "../../assets/OurTeam/Avni2.jpg"
+import Avni from "../../assets/OurTeam/Avni3.jpg"
 const OurTeam = () => {
   const teamMembers = [
     {
