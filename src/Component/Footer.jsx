@@ -222,7 +222,7 @@ const footerSections = [
   {
     title: "Support",
     links: [
-      { label: "Help Center", icon: HelpCircle, to: "/contact" },
+      { label: "Help Center", icon: HelpCircle, to: "/contact-us" },
       { label: "Contact Support", icon: Mail, to: "/about-us" },
       {
         label: "24x7 Customer Support",
