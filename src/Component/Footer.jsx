@@ -197,12 +197,28 @@ const footerSections = [
   {
     title: "Domains/Community",
     links: [
-      { label: "Oz Media Planet", icon: Globe, to: "" },
-      { label: "Oz Learning", icon: BookOpen, to: "" },
-      { label: "Oz International", icon: Globe, to: "" },
-      { label: "Community", icon: Users, to: "" },
+      {
+        label: "Oz Media Planet",
+        icon: Globe,
+        to: "https://ozmediaplanet.com",
+        external: true,
+      },
+      {
+        label: "Oz Learning",
+        icon: BookOpen,
+        to: "https://ozlearning.org",
+        external: true,
+      },
+      {
+        label: "Oz International",
+        icon: Globe,
+        to: "https://ozinternational.com",
+        external: true,
+      },
+       // keep internal
     ],
   },
+
   {
     title: "Support",
     links: [
@@ -215,6 +231,7 @@ const footerSections = [
       },
       { label: "Security", icon: Shield, to: "/privacy-policy" },
       { label: "Terms", icon: FileText, to: "/terms-and-condition" },
+      { label: "community", icon: FileText, to: "/contact-us" },
     ],
   },
 ];
@@ -364,13 +381,25 @@ const Footer = () => {
               <ul className="space-y-3">
                 {section.links.map((link, i) => (
                   <li key={i}>
-                    <Link
-                      to={link.to}
-                      className="flex items-center text-gray-300 hover:text-[#DBD2FE] transition-all duration-300 group hover:translate-x-1"
-                    >
-                      <link.icon className="w-4 h-4 mr-2 opacity-60 group-hover:opacity-100 transition-opacity duration-300" />
-                      {link.label}
-                    </Link>
+                    {link.external ? (
+                      <a
+                        href={link.to}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center text-gray-300 hover:text-[#DBD2FE] transition-all duration-300 group hover:translate-x-1"
+                      >
+                        <link.icon className="w-4 h-4 mr-2 opacity-60 group-hover:opacity-100 transition-opacity duration-300" />
+                        {link.label}
+                      </a>
+                    ) : (
+                      <Link
+                        to={link.to}
+                        className="flex items-center text-gray-300 hover:text-[#DBD2FE] transition-all duration-300 group hover:translate-x-1"
+                      >
+                        <link.icon className="w-4 h-4 mr-2 opacity-60 group-hover:opacity-100 transition-opacity duration-300" />
+                        {link.label}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>

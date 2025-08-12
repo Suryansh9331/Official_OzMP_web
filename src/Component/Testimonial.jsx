@@ -206,7 +206,7 @@ const TestimonialSlider = () => {
       name: "Rohan Mehta",
       designation: "Founder",
       company: "Mehta Logistics",
-      image: "https://i.ibb.co/tXz7Ycc/indian-man1.jpg", // Indian man image
+      image: "https://images.unsplash.com/photo-1585846416120-3a7354ed7d39?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJ1c2luZXNzbWVufGVufDB8fDB8fHww", // Indian man image
       testimonial: `OZ Media Planet transformed our digital operations with a highly responsive and professional approach. They developed a streamlined, user-friendly corporate website along with a custom CRM system tailored to our logistics operations. The IT services they provided helped us eliminate paperwork, automate key processes like fleet tracking and order management, and improve operational efficiency by over 40%. Their after-support has been equally impressive, ensuring our digital systems evolve with our needs.`,
       rating: 5,
       
@@ -216,7 +216,7 @@ const TestimonialSlider = () => {
       name: "Neha Sharma",
       designation: "Marketing Head",
       company: "PureGlow Cosmetics",
-      image: "https://i.ibb.co/dLmdcJv/indian-woman1.jpg", // Indian woman image
+      image: "https://images.unsplash.com/photo-1551989745-347c28b620e5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHByb2Zlc3Npb25hbCUyMGxhZHl8ZW58MHx8MHx8fDA%3D", // Indian woman image
       testimonial: `Our partnership with OZ Media Planet resulted in a complete brand repositioning across digital platforms. Their team conceptualized and executed a comprehensive digital marketing strategy — from social media management to influencer collaborations and targeted paid advertising. Within three months, we observed a 75% increase in social media engagement and a 35% uplift in sales conversion through our e-commerce website. Their creative team delivered visually stunning content that resonated with our target audience.`,
       rating: 5,
     
@@ -226,7 +226,7 @@ const TestimonialSlider = () => {
       name: "Arjun Rao",
       designation: "Co-founder",
       company: "EventEase",
-      image: "https://i.ibb.co/yy3tDdm/indian-man2.jpg", // Indian man image
+      image: "https://images.unsplash.com/flagged/photo-1553642618-de0381320ff3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJ1c2luZXNzbWVufGVufDB8fDB8fHww", // Indian man image
       testimonial: `Working with OZ Media Planet on our event management app was a seamless experience. From the initial wireframes to the final deployment on both Android and iOS platforms, their team maintained clear communication and quick turnaround times. They not only developed a fully functional mobile application but also created a complementary event website and designed our brand identity from scratch. Thanks to their technical and creative support, our platform has become one of the top-rated local event discovery apps.`,
       rating: 5,
      

@@ -4,6 +4,8 @@ import Surya from "../../assets/OurTeam/Suryansh.jpeg"
 import Atul from "../../assets/OurTeam/Atul.JPG"
 import Rajeev from "../../assets/OurTeam/rajeev (2).jpg"
 import palak from "../../assets/OurTeam/palak.jpeg"
+import Avni from "../../assets/OurTeam/Avni1.jpg"
+import Avni2 from "../../assets/OurTeam/Avni2.jpg"
 const OurTeam = () => {
   const teamMembers = [
     {
@@ -11,7 +13,7 @@ const OurTeam = () => {
    
       designation: " Founder & CEO",
       image:
-        "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=500&fit=crop&crop=face",
+        Avni,
       description:
         "Visionary founder and CEO driving digital innovation and business transformation. Leading OZ Media Planet with strategic expertise in market positioning and growth.",
       socialLinks: ["facebook", "twitter", "instagram", "pinterest"],
