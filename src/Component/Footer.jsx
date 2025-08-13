@@ -215,7 +215,6 @@ const footerSections = [
         to: "https://ozinternational.com",
         external: true,
       },
-       // keep internal
     ],
   },
 

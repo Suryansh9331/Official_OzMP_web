@@ -1661,21 +1661,7 @@ const navLinks = [
       },
     ],
   },
-  // {
-  //   label: "Industries",
-  //   dropdown: true,
-  //   items: [
-  //     { name: "Healthcare", route: "/industries/healthcare" },
-  //     {
-  //       name: "Finance",
-  //       subItems: [
-  //         { name: "Banking", route: "/industries/finance/banking" },
-  //         { name: "Insurance", route: "/industries/finance/insurance" },
-  //       ],
-  //     },
-  //     { name: "Retail", route: "/industries/retail" },
-  //   ],
-  // },
+
   {
     label: "Careers",
     dropdown: true,
