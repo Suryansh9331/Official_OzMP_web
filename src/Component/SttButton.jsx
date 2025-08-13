@@ -4,7 +4,7 @@ import { ArrowUp } from "lucide-react"; // You can change icon if needed
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Show button only after scrolling below hero
+ 
   useEffect(() => {
     const toggleVisibility = () => {
       const heroHeight = document.querySelector("#hero")?.offsetHeight || 300;

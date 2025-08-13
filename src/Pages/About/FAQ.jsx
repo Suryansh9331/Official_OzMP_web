@@ -185,7 +185,6 @@ const FAQ = () => {
         <div className="bg-[#DBD2FE] rounded-3xl p-6 sm:p-8 lg:p-12">
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16">
-            {/* Left Section with Animated Heading */}
             <motion.div
               className="lg:pr-8"
               initial={{ opacity: 0, x: -40 }}
