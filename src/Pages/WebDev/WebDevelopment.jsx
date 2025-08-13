@@ -364,26 +364,7 @@ const WebsiteDevelopmentPage = () => {
             </div>
 
             <div className="relative">
-              {/* <div className="bg-gradient-to-br from-purple-400 to-blue-500 rounded-3xl p-8 shadow-2xl">
-                                <div className="bg-white rounded-2xl p-6 space-y-4">
-                                    <div className="flex items-center gap-3">
-                                        <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                                        <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                                        <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                                    </div>
-                                    <div className="space-y-3">
-                                        <div className="h-4 bg-gray-200 rounded w-3/4"></div>
-                                        <div className="h-4 bg-gray-200 rounded w-1/2"></div>
-                                        <div className="h-20 bg-gradient-to-br from-purple-100 to-blue-100 rounded"></div>
-                                        <div className="flex gap-2">
-                                            <div className="h-4 bg-purple-200 rounded flex-1"></div>
-                                            <div className="h-4 bg-blue-200 rounded flex-1"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> */}
-
-              {/* add image */}
+            
 
               <img
                 src={img1}
