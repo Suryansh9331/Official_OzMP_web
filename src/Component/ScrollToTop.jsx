@@ -6,7 +6,6 @@ const ScrollToTop = () => {
   const location = useLocation();
 
   useEffect(() => {
-    // Scroll to top on any location change (new or same route)
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [location.key]); // location.key ensures re-trigger even for same pathname
 
