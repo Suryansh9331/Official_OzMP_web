@@ -17,16 +17,7 @@ const OurTeam = () => {
         "Visionary founder and CEO driving digital innovation and business transformation. Leading OZ Media Planet with strategic expertise in market positioning and growth.",
       socialLinks: ["facebook", "twitter", "instagram", "pinterest"],
     },
-    // {
-    //   name: "Kajal Agrahari",
-    //   role: "HR",
-    //   designation: "",
-    //   image:
-    //     "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=500&fit=crop&crop=face",
-    //   description:
-    //     "HR Manager leading talent acquisition and employee engagement initiatives. Building high-performance teams and fostering organizational growth through strategic HR practices.",
-    //   socialLinks: ["facebook", "twitter", "instagram", "pinterest"],
-    // },
+   
     {
       name: "Rajeev Patel",
       role: "software",

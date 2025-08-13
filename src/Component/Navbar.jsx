@@ -1752,9 +1752,7 @@ export default function Navbar() {
               alt="Logo"
               className="md:h-12 md:w-12 h-8 w-8 rounded-lg bg-black"
             />
-            <span className="md:text-2xl text-xl  text-black font-['serif'] font-extrabold tracking-wide">
-              Oz Media
-            </span>
+           
           </div>
         </Link>
 
