@@ -20,7 +20,7 @@ import {
   Zap,
 } from "lucide-react";
 import { motion } from "framer-motion";
-import b1 from "../../../assets/images/Blog1.png"; // Replace with actual Blog 6 image
+import b1 from "../../../assets/images/blog6.jpg"; // Replace with actual Blog 6 image
 
 const Blog6 = () => {
   const blog = {

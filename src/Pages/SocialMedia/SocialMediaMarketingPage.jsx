@@ -744,21 +744,14 @@ const SocialMediaMarketingPage = () => {
                         <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
                         <span className="text-sm text-green-600 font-semibold">Case Study Available</span>
                       </div>
-                      <ArrowRight 
-                        size={20} 
-                        className={`text-purple-600 transition-transform duration-300 ${
-                          hoveredPortfolio === index ? "translate-x-1" : ""
-                        }`} 
-                      />
+                     
                     </div>
                   </div>
                   
                   {/* Hover Overlay */}
                   {hoveredPortfolio === index && (
                     <div className="absolute inset-0 bg-[#dcd4ff]/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <div className="bg-white px-6 py-3 rounded-full shadow-lg border-2 border-black font-semibold">
-                        View Case Study
-                      </div>
+                    
                     </div>
                   )}
                 </div>
