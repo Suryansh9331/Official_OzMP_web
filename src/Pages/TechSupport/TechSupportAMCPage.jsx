@@ -1061,7 +1061,7 @@ const TechSupportAMCPage = () => {
       </div>
 
       {/* Industries We Serve */}
-      <div className="py-24 bg-gradient-to-br from-gray-50 to-purple-50">
+      {/* <div className="py-24 bg-gradient-to-br from-gray-50 to-purple-50">
         <div className="w-full lg:w-[85%] mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold text-black mb-6">
@@ -1089,7 +1089,7 @@ const TechSupportAMCPage = () => {
                       : "shadow-[6px_6px_0px_#000]"
                   } bg-white border-2 border-black`}
                 >
-                  {/* Image Background */}
+                 
                   <div className="relative h-48 overflow-hidden">
                     <img
                       src={industry.image}
@@ -1098,18 +1098,18 @@ const TechSupportAMCPage = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
 
-                    {/* Floating Icon */}
+                  
                     <div className="absolute top-4 right-4 w-12 h-12 bg-[#dcd4ff] rounded-full flex items-center justify-center text-2xl shadow-lg border-2 border-black">
                       {industry.icon}
                     </div>
 
-                    {/* Client Count Badge */}
+                  
                     <div className="absolute bottom-4 left-4 bg-black/80 text-white px-3 py-1 rounded-full text-sm font-semibold">
                       {industry.projects}
                     </div>
                   </div>
 
-                  {/* Content */}
+                  
                   <div className="p-6 space-y-4">
                     <h3 className="text-2xl font-bold text-black">
                       {industry.name}
@@ -1118,7 +1118,7 @@ const TechSupportAMCPage = () => {
                       {industry.description}
                     </p>
 
-                    {/* Interactive Elements */}
+                   
                     <div className="flex items-center justify-between pt-4 border-t border-gray-200">
                       <div className="flex items-center gap-2">
                         <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
@@ -1135,7 +1135,7 @@ const TechSupportAMCPage = () => {
                     </div>
                   </div>
 
-                  {/* Hover Overlay */}
+                  
                   {hoveredIndustry === index && (
                     <div className="absolute inset-0 bg-[#dcd4ff]/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <div className="bg-white px-6 py-3 rounded-full shadow-lg border-2 border-black font-semibold">
@@ -1148,7 +1148,7 @@ const TechSupportAMCPage = () => {
             ))}
           </div>
 
-          {/* Call to Action */}
+         
           <div className="text-center mt-16">
             <div className="inline-block bg-gradient-to-r from-purple-100 to-blue-100 p-8 rounded-3xl border-2 border-black shadow-[8px_8px_0px_#000]">
               <h3 className="text-2xl font-bold text-black mb-4">
@@ -1167,7 +1167,7 @@ const TechSupportAMCPage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Support Channels */}
       <div className="py-24 bg-white">
