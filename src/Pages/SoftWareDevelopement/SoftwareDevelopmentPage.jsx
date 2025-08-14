@@ -268,38 +268,38 @@ const SoftwareDevelopmentPage = () => {
     },
   ];
 
-  const testimonials = [
-    {
-      name: "David Thompson",
-      company: "Manufacturing Corp",
-      quote:
-        "Their custom ERP solution transformed our entire operation. We've seen 40% improvement in efficiency.",
-      rating: 5,
-      position: "CTO",
-      image:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
-    },
-    {
-      name: "Lisa Chang",
-      company: "TechVenture Ltd",
-      quote:
-        "The SaaS platform they built scaled perfectly with our growth. Excellent architecture and support.",
-      rating: 5,
-      position: "CEO",
-      image:
-        "https://images.unsplash.com/photo-1494790108755-2616b332c3b7?w=100&h=100&fit=crop&crop=face",
-    },
-    {
-      name: "Robert Wilson",
-      company: "Healthcare Solutions",
-      quote:
-        "Secure, compliant, and user-friendly. Exactly what we needed for our healthcare management system.",
-      rating: 5,
-      position: "Director of IT",
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
-    },
-  ];
+  // const testimonials = [
+  //   {
+  //     name: "David Thompson",
+  //     company: "Manufacturing Corp",
+  //     quote:
+  //       "Their custom ERP solution transformed our entire operation. We've seen 40% improvement in efficiency.",
+  //     rating: 5,
+  //     position: "CTO",
+  //     image:
+  //       "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
+  //   },
+  //   {
+  //     name: "Lisa Chang",
+  //     company: "TechVenture Ltd",
+  //     quote:
+  //       "The SaaS platform they built scaled perfectly with our growth. Excellent architecture and support.",
+  //     rating: 5,
+  //     position: "CEO",
+  //     image:
+  //       "https://images.unsplash.com/photo-1494790108755-2616b332c3b7?w=100&h=100&fit=crop&crop=face",
+  //   },
+  //   {
+  //     name: "Robert Wilson",
+  //     company: "Healthcare Solutions",
+  //     quote:
+  //       "Secure, compliant, and user-friendly. Exactly what we needed for our healthcare management system.",
+  //     rating: 5,
+  //     position: "Director of IT",
+  //     image:
+  //       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
+  //   },
+  // ];
 
   return (
     <div className="min-h-screen overflow-hidden">
@@ -609,21 +609,14 @@ const SoftwareDevelopmentPage = () => {
                           Active Projects
                         </span>
                       </div>
-                      <ArrowRight
-                        size={20}
-                        className={`text-purple-600 transition-transform duration-300 ${
-                          hoveredIndustry === index ? "translate-x-1" : ""
-                        }`}
-                      />
+                    
                     </div>
                   </div>
 
                   {/* Hover Overlay */}
                   {hoveredIndustry === index && (
                     <div className="absolute inset-0 bg-[#dcd4ff]/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <div className="bg-white px-6 py-3 rounded-full shadow-lg border-2 border-black font-semibold">
-                        Explore Solutions
-                      </div>
+                     
                     </div>
                   )}
                 </div>
