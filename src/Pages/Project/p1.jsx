@@ -9,7 +9,7 @@ const Inspirewall = () => {
       {/* Hero Section */}
       <section className="relative w-full h-[85vh] lg:h-[95vh]  overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=1200&q=80"
+          src="https://plus.unsplash.com/premium_vector-1721748240138-affe61c71b15?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aWxsdXN0cmF0aW9uJTIwYnVzc2luZXNzJTIwJTIwaW1hZ2VzfGVufDB8fDB8fHww"
           alt="InspireWell Hero"
           className="w-full h-full object-cover brightness-50"
         />
