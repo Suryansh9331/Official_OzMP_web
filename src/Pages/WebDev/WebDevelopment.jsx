@@ -121,29 +121,31 @@ const WebsiteDevelopmentPage = () => {
     },
   ];
 
-  const portfolioItems = [
-    {
-      title: "E-Commerce Platform",
-      category: "Online Store",
-      description: "Modern e-commerce solution with payment integration",
-      image:
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
-    },
-    {
-      title: "Corporate Website",
-      category: "Business",
-      description: "Professional corporate presence with CMS",
-      image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
-    },
-    {
-      title: "Portfolio Website",
-      category: "Creative",
-      description: "Showcase platform for creative professionals",
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=300&fit=crop",
-    },
-  ];
+//portfolio showcase 
+
+  // const portfolioItems = [
+  //   {
+  //     title: "E-Commerce Platform",
+  //     category: "Online Store",
+  //     description: "Modern e-commerce solution with payment integration",
+  //     image:
+  //       "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
+  //   },
+  //   {
+  //     title: "Corporate Website",
+  //     category: "Business",
+  //     description: "Professional corporate presence with CMS",
+  //     image:
+  //       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
+  //   },
+  //   {
+  //     title: "Portfolio Website",
+  //     category: "Creative",
+  //     description: "Showcase platform for creative professionals",
+  //     image:
+  //       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=300&fit=crop",
+  //   },
+  // ];
 
   const testimonials = [
     {
@@ -562,7 +564,7 @@ const WebsiteDevelopmentPage = () => {
       </div>
 
       {/* Portfolio Showcase */}
-      <div className="py-24 bg-white">
+      {/* <div className="py-24 bg-white">
         <div className="w-full lg:w-[85%] mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold text-black mb-6">
@@ -603,7 +605,7 @@ const WebsiteDevelopmentPage = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Testimonials */}
       <div className="py-24 bg-gradient-to-br from-purple-50 to-blue-50">
