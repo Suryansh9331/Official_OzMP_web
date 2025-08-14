@@ -26,7 +26,7 @@ const Inspirewall = () => {
         </div>
       </section>
 
-      {/* Content Section */}
+     
       <section className="py-20 px-4 md:px-20 bg-white">
         <div className="transform transition-all duration-500 ease-out opacity-0 translate-y-4 animate-[fadeInUp_0.6s_0.4s_ease-out_forwards]">
           <h2 className="text-3xl font-[Archivo] mb-4 flex items-center gap-3">
