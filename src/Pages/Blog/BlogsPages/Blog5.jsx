@@ -232,8 +232,8 @@ import {
   Target,
   Heart,
 } from "lucide-react";
-import b5 from "../../../assets/images/Blog5.jpg";
-
+import b5 from "../../../assets/images/blog5.jpg";
+//import updated 
 const Blog5 = () => {
   return (
     <section className="w-full bg-[#F9F6FF] text-[#222] font-[Inter]">
