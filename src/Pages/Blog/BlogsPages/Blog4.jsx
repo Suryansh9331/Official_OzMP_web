@@ -149,7 +149,7 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 import b4 from "../../../assets/images/blog4.jpg";
-
+//ok 
 const Blog4 = () => {
   const blog = {
     image: b4,
