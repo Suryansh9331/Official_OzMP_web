@@ -1,12 +1,25 @@
 import React from "react";
 import ProjectDetails from "./CommonLayout";
-
+import sampleVideo from  "../../assets/Video/About.mp4"
+import HeroSection from "./CommonHero";
 const FitNation = () => {
   return (
-    <ProjectDetails
-      title="FitNation – Fitness and Nutrition App"
-      description="FitNation is a cross-platform fitness tracking app that provides personalized workout routines, meal plans, and progress insights. Includes user authentication, calendar scheduling, and goal tracking features."
-      image="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=600&auto=format&fit=crop&q=60"
+    <div> 
+       <HeroSection
+        heading={
+          <>
+         FitNation – Fitness and Nutrition App
+
+          </>
+        }
+        subheading="FitNation is a cross-platform fitness tracking app that provides personalized workout routines, meal plans, and progress insights. Includes user authentication, calendar scheduling, and goal tracking features."
+        description=""
+        buttonText="LET’S Build Together"
+        buttonLink="/contact-us"
+        videoSrc={sampleVideo}
+      />  
+       <ProjectDetails
+     
       tech={["React Native", "Firebase", "Node.js", "Expo", "Styled Components"]}
       overview="FitNation helps users maintain their fitness journey by offering smart recommendations, personalized plans, and real-time progress charts. Its cross-platform nature ensures accessibility across Android and iOS devices seamlessly."
       features={[
@@ -30,6 +43,8 @@ const FitNation = () => {
         "Offline mode for workout tracking without internet"
       ]}
     />
+    </div>
+
   );
 };
 

@@ -1,12 +1,27 @@
 import React from "react";
 import ProjectDetails from "./CommonLayout";
-
+import sampleVideo from  "../../assets/Video/About.mp4"
+import HeroSection from "./CommonHero";
 const ShopEase = () => {
   return (
+   <div>
+     <HeroSection
+        heading={
+          <>
+          ShopEase – E-commerce Web App
+
+          </>
+        }
+        subheading="A fast, scalable e-commerce platform supporting multi-vendor environments, dynamic inventory handling, and intelligent product recommendations — designed for modern shopping experiences.
+
+"
+        description=""
+        buttonText="LET’S Build Together"
+        buttonLink="/contact-us"
+        videoSrc={sampleVideo}
+      />
     <ProjectDetails
-      title="ShopEase – E-commerce Web App"
-      description="A fast, scalable e-commerce platform supporting multi-vendor environments, dynamic inventory handling, and intelligent product recommendations — designed for modern shopping experiences."
-      image="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80"
+     
       tech={["Next.js", "Node.js", "PostgreSQL", "Tailwind CSS"]}
       overview="ShopEase is an enterprise-grade e-commerce web application tailored to empower small businesses and online vendors. It enables streamlined product management, advanced search and filter systems, customer authentication, and automated order tracking — delivering a seamless retail experience to users and sellers."
       features={[
@@ -31,6 +46,7 @@ const ShopEase = () => {
         "Loyalty point and coupon management system"
       ]}
     />
+    </div>
   );
 };
 

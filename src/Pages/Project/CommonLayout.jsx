@@ -18,9 +18,7 @@ import {
 } from "react-icons/fa";
 
 const ProjectDetails = ({
-  title,
-  description,
-  image,
+ 
   tech,
   overview,
   features,
@@ -32,23 +30,7 @@ const ProjectDetails = ({
 }) => {
   return (
     <div className="font-poppins text-black bg-white">
-      <section className="relative w-full h-[85vh] lg:h-[95vh] overflow-hidden">
-        <img
-          src={image}
-          alt={title}
-          className="w-full h-full object-cover brightness-45"
-        />
-        <div className="absolute inset-0 flex items-center justify-center text-center px-4">
-          <div className="transform transition-all duration-700 ease-out opacity-0 translate-y-4 animate-[fadeInUp_0.8s_0.2s_ease-out_forwards]">
-            <h1 className="text-4xl md:text-5xl font-[Archivo] text-white font-bold mb-4 drop-shadow-lg">
-              {title}
-            </h1>
-            <p className="text-lg font-[Outfit] text-gray-100 max-w-3xl mx-auto">
-              {description}
-            </p>
-          </div>
-        </div>
-      </section>
+   
 
       <section className="py-20 px-4 md:px-20 bg-white">
         <div className="transform transition-all duration-500 ease-out opacity-0 translate-y-4 animate-[fadeInUp_0.6s_0.4s_ease-out_forwards]">

@@ -1,12 +1,24 @@
 import React from "react";
 import ProjectDetails from "./CommonLayout";
-
+import sampleVideo from  "../../assets/Video/About.mp4"
+import HeroSection from "./CommonHero";
 const EduTrack = () => {
   return (
+<div>
+     <HeroSection
+        heading={
+          <>
+         EduTrack – Learning Management System (LMS)
+
+          </>
+        }
+        subheading="EduTrack is a feature-rich LMS designed for universities and online education providers. It offers course management, real-time quizzes, student analytics, and progress tracking. Built to scale with performance in mind."
+        description=""
+        buttonText="LET’S Build Together"
+        buttonLink="/contact-us"
+        videoSrc={sampleVideo}
+      />
     <ProjectDetails
-      title="EduTrack – Learning Management System (LMS)"
-      description="EduTrack is a feature-rich LMS designed for universities and online education providers. It offers course management, real-time quizzes, student analytics, and progress tracking. Built to scale with performance in mind."
-      image="https://images.unsplash.com/photo-1625217527288-93919c99650a?w=600&auto=format&fit=crop&q=60"
       tech={["React", "Express.js", "MySQL", "Tailwind CSS", "Redux Toolkit"]}
       overview="EduTrack simplifies e-learning by offering an intuitive interface for both students and educators. It supports modular content delivery, automated assessments, and insightful progress analytics — all optimized for scalability and cross-platform support."
       features={[
@@ -30,6 +42,7 @@ const EduTrack = () => {
         "Multilingual support and accessibility improvements"
       ]}
     />
+    </div>
   );
 };
 
