@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectDetails from "./CommonLayout";
-import sampleVideo from  "../../assets/Video/About.mp4"
+import sampleVideo from  "../../assets/Video/Project4.mp4"
 import HeroSection from "./CommonHero";
 const EduTrack = () => {
   return (

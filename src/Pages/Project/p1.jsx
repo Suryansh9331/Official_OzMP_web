@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import React from "react";
 import HeroSection from "./CommonHero";
-import sampleVideo from  "../../assets/Video/About.mp4"
+import sampleVideo from  "../../assets/Video/Project1.mp4"
 import {
   FaCogs,
   FaRocket,
