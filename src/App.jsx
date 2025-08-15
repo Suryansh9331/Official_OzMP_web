@@ -8,7 +8,8 @@ const App = () => {
   return (
   
     <BrowserRouter>
-    <ScrollToTop/>
+    <ScrollToTop />
+      <AppRoutes />
       <AppRoutes />
     </BrowserRouter>
    
