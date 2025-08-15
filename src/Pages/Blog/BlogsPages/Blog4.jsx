@@ -148,7 +148,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { motion } from "framer-motion";
-import b4 from "../../../assets/images/Blog2.png";
+import b4 from "../../../assets/images/Blog4.jpg";
 //ok 
 const Blog4 = () => {
   const blog = {

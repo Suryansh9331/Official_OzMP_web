@@ -345,7 +345,7 @@ import {
   Palette,
 } from "lucide-react";
 import { motion } from "framer-motion";
-import b1 from "../../../assets/images/blog6.jpg";
+import b1 from "../../../assets/images/Blog6.jpg";
 
 const Blog6 = () => {
   const blog = {
