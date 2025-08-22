@@ -488,7 +488,6 @@ const SoftwareDevelopmentPage = () => {
                                     </button> */}
                 </div>
 
-                {/* Visual Side */}
                 <div className="flex-1">
                   <div className="relative group">
                     <div
