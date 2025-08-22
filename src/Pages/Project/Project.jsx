@@ -191,7 +191,7 @@
 //             performant applications that make an impact.
 //           </p>
 //           <a
-//             href="mailto:contact@ozmediaplanet.com"
+//             href="mailto:info@ozmediaplanet.com.com"
 //             className="bg-[#DBD2FF] hover:bg-purple-300 text-black px-6 py-3 rounded-full font-[Outfit] transition"
 //           >
 //             Let’s Connect
@@ -398,7 +398,7 @@ const ProjectDetails = () => {
             performant applications that make an impact.
           </p>
           <a
-            href="mailto:contact@ozmediaplanet.com"
+            href="mailto:info@ozmediaplanet.com.com"
             className="bg-[#DBD2FF] hover:bg-purple-300 text-black px-6 py-3 rounded-full font-[Outfit] transition"
           >
             Let’s Connect

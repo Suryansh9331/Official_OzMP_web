@@ -112,7 +112,7 @@
 //         >
 //           <div className="flex items-center gap-3">
 //             <FaEnvelope className="text-purple-600" />
-//             <span>contact@ozmediaplanet.com</span>
+//             <span>info@ozmediaplanet.com.com</span>
 //           </div>
 //           <div className="flex items-center gap-3">
 //             <FaPhoneAlt className="text-purple-600" />
@@ -356,10 +356,10 @@ const Contact = () => {
           <div className="flex items-center gap-3">
             <FaEnvelope className="text-purple-600" />
             <a
-              href="mailto:contact@ozmediaplanet.com"
+              href="mailto:info@ozmediaplanet.com.com"
               className="hover:text-purple-800"
             >
-              contact@ozmediaplanet.com
+              info@ozmediaplanet.com.com
             </a>
           </div>
           <div className="flex items-center gap-3">
@@ -495,7 +495,7 @@ const Contact = () => {
         className="fixed bottom-6 left-6 z-50 hidden md:block "
       >
         <a
-          href="mailto:contact@ozmediaplanet.com"
+          href="mailto:info@ozmediaplanet.com.com"
           className="flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-full shadow-lg md:animate-bounce  "
         >
           <FaEnvelope />

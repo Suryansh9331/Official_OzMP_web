@@ -1541,8 +1541,12 @@
 //   );
 // }
 
-
-import { FaInstagram, FaLinkedinIn, FaWhatsapp, FaFacebookF } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaLinkedinIn,
+  FaWhatsapp,
+  FaFacebookF,
+} from "react-icons/fa";
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -1738,7 +1742,6 @@ export default function Navbar() {
               alt="Logo"
               className="md:h-12 md:w-12 h-8 w-8 rounded-lg bg-black"
             />
-           
           </div>
         </Link>
 
@@ -1999,41 +2002,40 @@ export default function Navbar() {
                 </ul>
 
                 {/* Social Icons */}
-<div className="mt-12 flex justify-center gap-6">
-  <a
-    href=" https://www.instagram.com/ozmediaplanet?igsh=ZmczbzR1cGVtemty&utm_source=qr"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="p-2 rounded-full bg-gray-100 hover:bg-purple-200 transition"
-  >
-    <FaInstagram size={20} />
-  </a>
-  <a
-    href="https://www.linkedin.com/company/oz-media-planet-1/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="p-2 rounded-full bg-gray-100 hover:bg-purple-200 transition"
-  >
-    <FaLinkedinIn size={20} />
-  </a>
-  <a
-    href="https://wa.me/7313676879"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="p-2 rounded-full bg-gray-100 hover:bg-purple-200 transition"
-  >
-    <FaWhatsapp size={20} />
-  </a>
-  <a
-    href="mailto:infozmediaplanet@gmail.com "
-    target="_blank"
-    rel="noopener noreferrer"
-    className="p-2 rounded-full bg-gray-100 hover:bg-purple-200 transition"
-  >
-    <Mail size={20} />
-  </a>
-</div>
-
+                <div className="mt-12 flex justify-center gap-6">
+                  <a
+                    href=" https://www.instagram.com/ozmediaplanet?igsh=ZmczbzR1cGVtemty&utm_source=qr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-full bg-gray-100 hover:bg-purple-200 transition"
+                  >
+                    <FaInstagram size={20} />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/oz-media-planet-1/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-full bg-gray-100 hover:bg-purple-200 transition"
+                  >
+                    <FaLinkedinIn size={20} />
+                  </a>
+                  <a
+                    href="https://wa.me/9893361102"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-full bg-gray-100 hover:bg-purple-200 transition"
+                  >
+                    <FaWhatsapp size={20} />
+                  </a>
+                  <a
+                    href="mailto:info@ozmediaplanet.com "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-full bg-gray-100 hover:bg-purple-200 transition"
+                  >
+                    <Mail size={20} />
+                  </a>
+                </div>
               </div>
             </motion.div>
           </>
