@@ -264,51 +264,51 @@ const SocialMediaMarketingPage = lazy(() =>
 // ====== Group: Blogs ======
 const Blog = lazy(() =>
   import(
-    /* webpackChunkName: "blogs", webpackPrefetch: true */ "../Pages/Blog/Blog"
+    "../Pages/Blog/Blog"
   )
 );
 const Blog1 = lazy(() =>
-  import(/* webpackChunkName: "blogs" */ "../Pages/Blog/BlogsPages/Blog1")
+  import( "../Pages/Blog/BlogsPages/Blog1")
 );
 const Blog2 = lazy(() =>
-  import(/* webpackChunkName: "blogs" */ "../Pages/Blog/BlogsPages/Blog2")
+  import( "../Pages/Blog/BlogsPages/Blog2")
 );
 const Blog3 = lazy(() =>
-  import(/* webpackChunkName: "blogs" */ "../Pages/Blog/BlogsPages/Blog3")
+  import( "../Pages/Blog/BlogsPages/Blog3")
 );
 const Blog4 = lazy(() =>
-  import(/* webpackChunkName: "blogs" */ "../Pages/Blog/BlogsPages/Blog4")
+  import( "../Pages/Blog/BlogsPages/Blog4")
 );
 const Blog5 = lazy(() =>
-  import(/* webpackChunkName: "blogs" */ "../Pages/Blog/BlogsPages/Blog5")
+  import( "../Pages/Blog/BlogsPages/Blog5")
 );
 const Blog6 = lazy(() =>
-  import(/* webpackChunkName: "blogs" */ "../Pages/Blog/BlogsPages/Blog6")
+  import( "../Pages/Blog/BlogsPages/Blog6")
 );
 
 // ====== Group: Projects ======
 const ProjectDetails = lazy(() =>
   import(
-    /* webpackChunkName: "projects", webpackPrefetch: true */ "../Pages/Project/Project"
+     "../Pages/Project/Project"
   )
 );
 const Inspirewall = lazy(() =>
-  import(/* webpackChunkName: "projects" */ "../Pages/Project/p1")
+  import( "../Pages/Project/p1")
 );
 const ShopEase = lazy(() =>
-  import(/* webpackChunkName: "projects" */ "../Pages/Project/p2")
+  import( "../Pages/Project/p2")
 );
 const LeadBoost = lazy(() =>
-  import(/* webpackChunkName: "projects" */ "../Pages/Project/p3")
+  import( "../Pages/Project/p3")
 );
 const EduTrack = lazy(() =>
-  import(/* webpackChunkName: "projects" */ "../Pages/Project/P4")
+  import( "../Pages/Project/P4")
 );
 const FitNation = lazy(() =>
-  import(/* webpackChunkName: "projects" */ "../Pages/Project/p5")
+  import( "../Pages/Project/p5")
 );
 const RentRoam = lazy(() =>
-  import(/* webpackChunkName: "projects" */ "../Pages/Project/p6")
+  import( "../Pages/Project/p6")
 );
 
 // ====== Others ======
