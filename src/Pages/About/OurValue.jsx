@@ -13,37 +13,37 @@ import React from 'react';
 const ValuesSection = () => {
   const values = [
     {
-      iconSrc: icon1, // Replace with your icon path
+      iconSrc: icon1, 
       title: "Creative Excellence",
       description: "We deliver exceptional creative solutions that captivate audiences and drive meaningful engagement through innovative design and strategic thinking.",
       animation: "animate-float"
     },
     {
-      iconSrc: icon2, // Replace with your icon path
+      iconSrc: icon2, 
       title: "Seamless Integration",
       description: "Our solutions integrate flawlessly across all platforms and systems, ensuring smooth workflows and unified user experiences.",
       animation: "animate-spin-slow"
     },
     {
-      iconSrc: icon3, // Replace with your icon path
+      iconSrc: icon3, 
       title: "Innovation & Technology",
       description: "We leverage cutting-edge technologies and innovative approaches to solve complex challenges and create future-ready solutions.",
       animation: "animate-bounce-slow"
     },
     {
-      iconSrc: icon4, // Replace with your icon path
+      iconSrc: icon4, 
       title: "Effective Digital Strategy",
       description: "Our data-driven strategies are carefully crafted to maximize ROI and achieve your business objectives through targeted digital campaigns.",
       animation: "animate-rotate"
     },
     {
-      iconSrc: icon5, // Replace with your icon path
+      iconSrc: icon5, 
       title: "Scalability & Future-Readiness",
       description: "We build scalable solutions that grow with your business, ensuring long-term success and adaptability to changing market needs.",
       animation: "animate-spin-slow"
     },
     {
-      iconSrc: icon6, // Replace with your icon path
+      iconSrc: icon6, 
       title: "Data-Driven Growth",
       description: "We harness the power of analytics and insights to drive sustainable growth and make informed decisions that propel your business forward.",
       animation: "animate-pulse-slow"
