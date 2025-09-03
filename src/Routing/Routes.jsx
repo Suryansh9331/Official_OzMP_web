@@ -168,7 +168,6 @@
 import React, { Suspense, lazy, memo } from "react";
 import { Routes, Route } from "react-router-dom";
 
-// Memoized persistent components (always rendered)
 import NavbarComp from "../Component/Navbar";
 import FooterComp from "../Component/Footer";
 import ScrollBtnComp from "../Component/SttButton";
@@ -177,88 +176,88 @@ const Navbar = memo(NavbarComp);
 const Footer = memo(FooterComp);
 const ScrollToTopButton = memo(ScrollBtnComp);
 
-// ====== Home & Core Pages ======
+
 const Home = lazy(() =>
-  import(/* webpackPrefetch: true */ "../Pages/Home/Home")
+  import( "../Pages/Home/Home")
 );
 const About = lazy(() =>
-  import(/* webpackPrefetch: true */ "../Pages/About/About")
+  import( "../Pages/About/About")
 );
 const Contact = lazy(() =>
-  import(/* webpackPrefetch: true */ "../Pages/Contact/Contact")
+  import( "../Pages/Contact/Contact")
 );
 const OurTeam = lazy(() => import("../Pages/Team/Team"));
 
 // ====== Group: Services ======
 const DigitalMarketing = lazy(() =>
   import(
-    /* webpackChunkName: "services", webpackPrefetch: true */ "../Pages/DigitalMarketing/DigitalMarketing"
+     "../Pages/DigitalMarketing/DigitalMarketing"
   )
 );
 const ITPage = lazy(() =>
-  import(/* webpackChunkName: "services" */ "../Pages/IT/ITPage")
+  import( "../Pages/IT/ITPage")
 );
 const WebsiteDevelopmentPage = lazy(() =>
-  import(/* webpackChunkName: "services" */ "../Pages/WebDev/WebDevelopment")
+  import( "../Pages/WebDev/WebDevelopment")
 );
 const APIDevelopmentPage = lazy(() =>
   import(
-    /* webpackChunkName: "services" */ "../Pages/APIDevelopement/APIDevelopmentPage"
+     "../Pages/APIDevelopement/APIDevelopmentPage"
   )
 );
 const SoftwareDevelopmentPage = lazy(() =>
   import(
-    /* webpackChunkName: "services" */ "../Pages/SoftWareDevelopement/SoftwareDevelopmentPage"
+     "../Pages/SoftWareDevelopement/SoftwareDevelopmentPage"
   )
 );
 const MobileAppDevelopmentPage = lazy(() =>
   import(
-    /* webpackChunkName: "services" */ "../Pages/MobileApp/MobileAppDevelopmentPage"
+     "../Pages/MobileApp/MobileAppDevelopmentPage"
   )
 );
 const GraphicUIUXDesignPage = lazy(() =>
   import(
-    /* webpackChunkName: "services" */ "../Pages/GraphicUIUX/GraphicUIUXDesignPage"
+     "../Pages/GraphicUIUX/GraphicUIUXDesignPage"
   )
 );
 const ECommerceDevelopmentPage = lazy(() =>
   import(
-    /* webpackChunkName: "services" */ "../Pages/Ecommerce/ECommerceDevelopmentPage"
+     "../Pages/Ecommerce/ECommerceDevelopmentPage"
   )
 );
 const TechSupportAMCPage = lazy(() =>
   import(
-    /* webpackChunkName: "services" */ "../Pages/TechSupport/TechSupportAMCPage"
+     "../Pages/TechSupport/TechSupportAMCPage"
   )
 );
 const HostingServerManagement = lazy(() =>
   import(
-    /* webpackChunkName: "services" */ "../Pages/HostingServerManagement/HostingServerManagementPage"
+     "../Pages/HostingServerManagement/HostingServerManagementPage"
   )
 );
 const SEOServicesPage = lazy(() =>
   import(
-    /* webpackChunkName: "services" */ "../Pages/SEOService/SEOServicesPage"
+     "../Pages/SEOService/SEOServicesPage"
   )
 );
 const AffiliateMarketingPage = lazy(() =>
   import(
-    /* webpackChunkName: "services" */ "../Pages/AffiliateMarketing/AffiliateMarketingPage"
+     "../Pages/AffiliateMarketing/AffiliateMarketingPage"
   )
 );
 const ContentMarketingPage = lazy(() =>
   import(
-    /* webpackChunkName: "services" */ "../Pages/ContentMarketing/ContentMarketingPage"
+     "../Pages/ContentMarketing/ContentMarketingPage"
   )
 );
 const EmailMarketingPage = lazy(() =>
   import(
-    /* webpackChunkName: "services" */ "../Pages/EmailMarketing/EmailMarketingPage"
+     "../Pages/EmailMarketing/EmailMarketingPage"
   )
 );
 const SocialMediaMarketingPage = lazy(() =>
   import(
-    /* webpackChunkName: "services" */ "../Pages/SocialMedia/SocialMediaMarketingPage"
+     "../Pages/SocialMedia/SocialMediaMarketingPage"
   )
 );
 
