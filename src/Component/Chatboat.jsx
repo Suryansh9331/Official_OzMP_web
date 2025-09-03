@@ -90,7 +90,7 @@ const Chatboat = () => {
     };
 
     return (
-        <div className="fixed bottom-8 right-6 z-50">
+        <div className="fixed bottom-26 lg:bottom-18 lg:right-6 md:bottom-30 md:right-6 right-4 z-50">
             {/* Chatboat Icon */}
             <div 
                 className={`w-14 h-14 bg-[#dcd4ff] rounded-full flex items-center justify-center cursor-pointer shadow-[4px_4px_0px_#000] border-2 border-black transition-all duration-300 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000] ${isOpen ? 'scale-0' : 'scale-100'}`}

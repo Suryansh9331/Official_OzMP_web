@@ -8,7 +8,7 @@ const App = () => {
   return (
     <BrowserRouter>
     <Chatboat />
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />
       <AppRoutes />
     </BrowserRouter>
   );
