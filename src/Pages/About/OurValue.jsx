@@ -1,81 +1,12 @@
 
-import icon1 from "../../assets/images/Icon1.png"; // Creative Excellence
-import icon2 from "../../assets/images/Icon2.png"; // Seamless Integration
-import icon3 from "../../assets/images/Icon3.png"; // Innovation & Tech
-import icon4 from "../../assets/images/Icon4.png"; // Effective Strategy
-import icon5 from "../../assets/images/Icon5.png"; // Scalability
-import icon6 from "../../assets/images/Icon6.png"; // Data Driven
+import icon1 from "../../assets/images/Icon1.png"; 
+import icon2 from "../../assets/images/Icon2.png"; 
+import icon3 from "../../assets/images/Icon3.png";
+import icon4 from "../../assets/images/Icon4.png"; 
+import icon5 from "../../assets/images/Icon5.png"; 
+import icon6 from "../../assets/images/Icon6.png"; 
 
-// const values = [
-//   {
-//     icon: icon1,
-//     title: "Creative Excellence",
-//     desc: "We deliver standout ideas that shape bold and memorable experiences.",
-//     anim: "animate-bounce"
-//   },
-//   {
-//     icon: icon2,
-//     title: "Seamless Integration",
-//     desc: "Our solutions blend effortlessly into your workflows and systems.",
-//     anim: "animate-spin"
-//   },
-//   {
-//     icon: icon3,
-//     title: "Innovation & Technology",
-//     desc: "Cutting-edge tools and thinking drive everything we create.",
-//     anim: "animate-pulse"
-//   },
-//   {
-//     icon: icon4,
-//     title: "Effective Digital Strategy",
-//     desc: "We plan with precision and execute with purpose for long-term growth.",
-//     anim: "animate-wiggle"
-//   },
-//   {
-//     icon: icon5,
-//     title: "Scalability & Future-Readiness",
-//     desc: "Our architecture scales with your ambition and tech evolution.",
-//     anim: "animate-rotateY"
-//   },
-//   {
-//     icon: icon6,
-//     title: "Data-Driven Growth",
-//     desc: "We use analytics to empower your decisions and drive outcomes.",
-//     anim: "animate-bounce"
-//   },
-// ];
 
-// const ValuesSection = () => {
-//   return (
-//     <div className="bg-[#1E1C21] text-white py-16 px-6">
-//       <div className="text-center mb-12">
-//         <h2 className="text-4xl font-archivo font-bold">Our Values</h2>
-//         <p className="text-base font-poppins text-gray-300 mt-2 max-w-xl mx-auto">
-//           We believe in building with purpose, integrating smart technologies,
-//           and pushing boundaries to create exceptional experiences.
-//         </p>
-//       </div>
-
-//       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
-//         {values.map((value, index) => (
-//           <div key={index} className="text-center px-4">
-//             <img
-//               src={value.icon}
-//               alt={value.title}
-//               className={`mx-auto mb-4 w-12 h-12 ${value.anim} duration-1000`}
-//             />
-//             <h3 className="text-xl font-semibold font-poppins">{value.title}</h3>
-//             <p className="text-sm text-gray-400 mt-2 font-poppins">
-//               {value.desc}
-//             </p>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default ValuesSection;
 
 import React from 'react';
 
