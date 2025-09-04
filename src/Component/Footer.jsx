@@ -240,7 +240,7 @@ const Footer = () => {
 
   return (
     <footer className="relative bg-[#1C1A1F] text-white font-body overflow-hidden">
-      {/* <div className="absolute inset-0 opacity-5"> */}
+     
       <div className="absolute inset-0 opacity-5 bg-grid-pattern pointer-events-none z-0"></div>
       <div className="border-t border-gray-700 mt-12  mx-4 max-w-full"></div>
       <div className="relative z-10 w-full mx-auto px-6 lg:py-16 md:py-12 py-8 ">
@@ -340,7 +340,7 @@ const Footer = () => {
                 </svg>
               </a>
 
-              {/* Instagram */}
+            
               <a
                 href=" https://www.instagram.com/ozmediaplanet?igsh=ZmczbzR1cGVtemty&utm_source=qr" 
                 target="_blank"
@@ -350,7 +350,7 @@ const Footer = () => {
                 <Instagram className="w-5 h-5 text-gray-300 group-hover:text-[#1C1A1F] transition-colors duration-300" />
               </a>
 
-              {/* Phone */}
+              
               <a
                 href="tel:+919893361102" 
                 className="w-10 h-10 bg-gray-700/50 hover:bg-[#DBD2FE] rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20"
@@ -358,9 +358,9 @@ const Footer = () => {
                 <Phone className="w-5 h-5 text-gray-300 group-hover:text-[#1C1A1F] transition-colors duration-300" />
               </a>
 
-              {/* Gmail */}
+             
               <a
-                href="mailto:info@ozmediaplanet.com" // <-- your email
+                href="mailto:info@ozmediaplanet.com" 
                 className="w-10 h-10 bg-gray-700/50 hover:bg-[#DBD2FE] rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-red-500/20"
               >
                 <Mail className="w-5 h-5 text-gray-300 group-hover:text-[#1C1A1F] transition-colors duration-300" />
@@ -368,7 +368,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Dynamic Link Sections */}
+          
           {footerSections.map((section, idx) => (
             <div key={idx}>
               <h3 className="text-lg font-semibold mb-4 text-[#DBD2FE] font-heading">
