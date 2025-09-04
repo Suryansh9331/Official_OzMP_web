@@ -346,7 +346,7 @@ const Chatboat = () => {
           isOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"
         }`}
       >
-        {/* Header */}
+      
         <div className="bg-[#dcd4ff] p-4 rounded-t-2xl rounded-bl-2xl border-b-2 border-black flex justify-between items-center">
           <div className="flex items-center gap-2">
             <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
@@ -360,10 +360,10 @@ const Chatboat = () => {
           </button>
         </div>
 
-        {/* Content */}
+     
         <div className="h-[calc(100%-72px)] flex flex-col">
           {!isFormSubmitted ? (
-            // User Info Form
+           
             <div className="p-4 flex-1 overflow-y-auto">
               <h4 className="font-semibold text-black mb-4">
                 Let's get started!
@@ -423,7 +423,7 @@ const Chatboat = () => {
               </div>
             </div>
           ) : (
-            // Chat Interface
+          
             <>
               <div className="flex-1 p-4 overflow-y-auto space-y-4 min-h-0">
                 {messages.map((message) => (
@@ -454,7 +454,7 @@ const Chatboat = () => {
                 ))}
               </div>
 
-              {/* Message Input */}
+             
               <div className="p-4 border-t-2 border-gray-200 flex-shrink-0">
                 <div className="flex gap-2">
                   <input
