@@ -102,7 +102,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import icon from "../../assets/images/Icon.png";
 
-// Animation variants (switched sides)
 const rightSlide = {
   hidden: { opacity: 0, x: 50 },
   visible: {
