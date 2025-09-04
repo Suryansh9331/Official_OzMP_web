@@ -108,68 +108,6 @@ const AffiliateMarketingPage = () => {
     },
   ];
 
-  // const portfolio = [
-  //   {
-  //     id: 1,
-  //     title: "Fitness Supplement Brand",
-  //     category: "Health & Wellness",
-  //     description: "Generated $120,000 in affiliate sales in 6 months",
-  //     metrics: {
-  //       salesGenerated: "$120,000",
-  //       roi: "450%",
-  //       timeframe: "6 months",
-  //       affiliates: "50+ active affiliates",
-  //     },
-  //     image:
-  //       "https://asset7.ckassets.com/blog/wp-content/uploads/sites/6/2024/07/retailer-hyugalife.jpg",
-  //     tags: ["Supplement niche", "Influencer marketing", "Email campaigns"],
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "SaaS Productivity Tool",
-  //     category: "Software & Technology",
-  //     description: "Increased affiliate-driven signups by 300% in 4 months",
-  //     metrics: {
-  //       salesGenerated: "2,500+ signups",
-  //       roi: "380%",
-  //       timeframe: "4 months",
-  //       affiliates: "30+ tech affiliates",
-  //     },
-  //     image:
-  //       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlDJbrT2YxJXjbU2QOSLQBkdj9_LqdoUfbCw&s",
-  //     tags: ["SaaS marketing", "Recurring commissions", "Tech influencers"],
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "E-commerce Fashion Store",
-  //     category: "Retail & Apparel",
-  //     description: "Drove 40% of total revenue through affiliate program",
-  //     metrics: {
-  //       salesGenerated: "$280,000",
-  //       roi: "520%",
-  //       timeframe: "8 months",
-  //       affiliates: "75+ fashion affiliates",
-  //     },
-  //     image:
-  //       "https://ahkr.b-cdn.net/wp-content/uploads/2022/08/fashion-affiliate-featured.jpg",
-  //     tags: ["Fashion bloggers", "Seasonal promotions", "Social commerce"],
-  //   },
-  //   {
-  //     id: 4,
-  //     title: "Online Course Platform",
-  //     category: "Education & Training",
-  //     description: "Achieved 600% ROI on affiliate marketing spend",
-  //     metrics: {
-  //       salesGenerated: "$95,000",
-  //       roi: "600%",
-  //       timeframe: "5 months",
-  //       affiliates: "40+ education affiliates",
-  //     },
-  //     image:
-  //       "https://www.proideators.com/wp-content/uploads/2019/01/Affiliate-Marketing-Proideators.jpg",
-  //     tags: ["Course promotion", "Webinar strategy", "Email funnels"],
-  //   },
-  // ];
 
   const tools = [
     {

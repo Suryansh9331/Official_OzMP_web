@@ -313,12 +313,10 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Socials */}
-            {/* Socials */}
+           
             <div className="flex flex-wrap gap-3 mt-4">
-              {/* LinkedIn */}
               <a
-                href="https://www.linkedin.com/company/oz-media-planet-1/" // <-- your LinkedIn link
+                href="https://www.linkedin.com/company/oz-media-planet-1/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-700/50 hover:bg-[#DBD2FE] rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-[#DBD2FE]/20"
@@ -326,7 +324,7 @@ const Footer = () => {
                 <Linkedin className="w-5 h-5 text-gray-300 group-hover:text-[#1C1A1F] transition-colors duration-300" />
               </a>
 
-              {/* WhatsApp */}
+            
               <a
                 href="https://wa.me/9893361102" 
                 rel="noopener noreferrer"

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { ArrowUp } from "lucide-react"; // You can change icon if needed
+import { ArrowUp } from "lucide-react"; 
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
