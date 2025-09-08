@@ -1,7 +1,7 @@
 import React from "react";
 import { CheckCircle } from "lucide-react";
-import heroImage from "../../assets/images/section3.png"; // Your foreground image
-import bgPattern from "../../assets/images/bg.png"; // Background pattern image
+import heroImage from "../../assets/images/section3.png"; 
+import bgPattern from "../../assets/images/bg.png"; 
 import heroVideo from "../../assets/Video/Bgvideo.mp4";
 const HeroBanner = () => {
   return (

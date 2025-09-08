@@ -143,7 +143,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Instagram, Facebook, Twitter } from "lucide-react";
-import { FaPinterest } from "react-icons/fa"; // Pinterest from react-icons
+import { FaPinterest } from "react-icons/fa"; 
 import b4 from "../../assets/images/Blog4.jpg"
 import b5 from "../../assets/images/Blog5.jpg"
 import b6 from "../../assets/images/Blog6.jpg"
