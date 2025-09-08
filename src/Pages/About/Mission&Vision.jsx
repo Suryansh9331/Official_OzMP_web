@@ -25,7 +25,6 @@ const leftSlide = {
 export default function MissionVisionCards() {
   return (
     <div className="min-h-screen bg-gray-50 lg:px-18 lg:py-16 md:py-8 flex flex-col items-center justify-center md:gap-18 py-12 md:px-3 px-4 gap-10">
-      {/* Mission Card - Right Slide In */}
       <motion.div
         className="w-full flex justify-start"
         variants={rightSlide}
