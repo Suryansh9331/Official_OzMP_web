@@ -264,7 +264,7 @@ const Chatboat = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [messages, setMessages] = useState([]);
   const [inputMessage, setInputMessage] = useState("");
-  const [isTyping, setIsTyping] = useState(false); // typing animation flag
+  const [isTyping, setIsTyping] = useState(false); 
 
   const messagesEndRef = useRef(null);
 
