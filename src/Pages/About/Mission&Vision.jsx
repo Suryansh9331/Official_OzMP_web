@@ -70,7 +70,6 @@ export default function MissionVisionCards() {
         </div>
       </motion.div>
 
-      {/* Vision Card - Left Slide In */}
       <motion.div
         className="w-full flex justify-end"
         variants={leftSlide}
