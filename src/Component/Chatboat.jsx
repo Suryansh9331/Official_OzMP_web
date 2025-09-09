@@ -268,12 +268,10 @@ const Chatboat = () => {
 
   const messagesEndRef = useRef(null);
 
-  // Scroll to bottom whenever messages change
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, isTyping]);
 
-  // Initial bot message after form submission
   useEffect(() => {
     if (isFormSubmitted) {
       setMessages([
@@ -362,7 +360,6 @@ const Chatboat = () => {
 
   return (
     <div className="fixed bottom-26 lg:bottom-18 lg:right-6 md:bottom-30 md:right-6 right-4 z-50">
-      {/* Floating button */}
       <div
         className={`w-14 h-14 bg-[#dcd4ff] rounded-full flex items-center justify-center cursor-pointer shadow-[4px_4px_0px_#000] border-2 border-black transition-all duration-300 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000] ${
           isOpen ? "scale-0" : "scale-100"
@@ -372,13 +369,11 @@ const Chatboat = () => {
         <MessageCircle size={28} className="text-black" />
       </div>
 
-      {/* Chat window */}
       <div
         className={`absolute bottom-4 right-0 w-80 sm:w-96 h-[500px] bg-white rounded-t-2xl rounded-bl-2xl shadow-[8px_8px_0px_#000] border-2 border-black transition-all duration-300 transform origin-bottom-right ${
           isOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"
         }`}
       >
-        {/* Header */}
         <div className="bg-[#dcd4ff] p-4 rounded-t-2xl rounded-bl-2xl border-b-2 border-black flex justify-between items-center">
           <div className="flex items-center gap-2">
             <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
@@ -392,7 +387,6 @@ const Chatboat = () => {
           </button>
         </div>
 
-        {/* Body */}
         <div className="h-[calc(100%-72px)] flex flex-col">
           {!isFormSubmitted ? (
             // Initial form
