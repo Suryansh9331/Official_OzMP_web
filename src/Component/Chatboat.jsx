@@ -1,43 +1,6 @@
 
 
 
-// import React, { useState, useEffect } from "react";
-// import { MessageCircle, X, Send, User, Mail, Phone } from "lucide-react";
-
-// const Chatboat = () => {
-//   const [isOpen, setIsOpen] = useState(false);
-//   const [userInfo, setUserInfo] = useState({
-//     name: "",
-//     email: "",
-//     phone: "",
-//   });
-//   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-//   const [messages, setMessages] = useState([]);
-//   const [inputMessage, setInputMessage] = useState("");
-
-//   // Initial bot message after form submission
-//   useEffect(() => {
-//     if (isFormSubmitted) {
-//       setMessages([
-//         {
-//           id: 1,
-//           text: "Hi there! Thanks for providing your information. How can I help you with your design project today?",
-//           sender: "bot",
-//           timestamp: new Date(),
-//         },
-//       ]);
-//     }
-//   }, [isFormSubmitted]);
-
-//   const handleFormSubmit = (e) => {
-//     e.preventDefault();
-//     if (userInfo.name && userInfo.email && userInfo.phone) {
-//       setIsFormSubmitted(true);
-//     }
-//   };
-
-
-
 
 
 
