@@ -386,7 +386,7 @@ const Chatboat = () => {
           </div>
           <button
             onClick={() => setIsOpen(false)}
-            className="p-1 rounded-full hover:bg-black/10 transition-colors"
+            className="p-1 rounded-full hover:cursor-pointer hover:bg-black/10 transition-colors"
           >
             <X size={18} className="text-black" />
           </button>
