@@ -103,7 +103,6 @@ const Workwithus = () => {
             ))}
           </div>
 
-          {/* Right Side - Image */}
           <div className="flex justify-center">
             <div className="relative w-full max-w-lg">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
