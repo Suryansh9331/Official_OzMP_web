@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/images/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Arima:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="./src/index.css">
     <title>Oz Media</title>
   </head>
@@ -41,5 +41,27 @@
         src="https://q.quora.com/_/ad/ba8902fc9eb043d58b9700c76b13206d/pixel?tag=ViewContent&noscript=1"/>
     </noscript>
     <!-- End of Quora Pixel Code -->
+
+    <!-- Reddit Pixel -->
+    <script>
+      !function(w,d){
+        if(!w.rdt){
+          var p=w.rdt=function(){
+            p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)
+          };
+          p.callQueue=[];
+          var t=d.createElement("script");
+          t.src="https://www.redditstatic.com/ads/pixel.js";
+          t.async=!0;
+          var s=d.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(t,s)
+        }
+      }(window,document);
+      rdt('init','a2_hn2rg1fn4nc0');
+      rdt('track', 'PageVisit');
+    </script>
+    <!-- DO NOT MODIFY UNLESS TO REPLACE A USER IDENTIFIER -->
+    <!-- End Reddit Pixel -->
+
   </body>
 </html>
