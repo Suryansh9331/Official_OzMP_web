@@ -1,9 +1,3 @@
-
-
-
-
-
-
 // import React, { useState, useEffect, useRef } from "react";
 // import { MessageCircle, X, Send, User, Mail, Phone } from "lucide-react";
 
@@ -13,7 +7,7 @@
 //   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 //   const [messages, setMessages] = useState([]);
 //   const [inputMessage, setInputMessage] = useState("");
-//   const [isTyping, setIsTyping] = useState(false); 
+//   const [isTyping, setIsTyping] = useState(false);
 
 //   const messagesEndRef = useRef(null);
 
@@ -272,10 +266,6 @@
 
 // export default Chatboat;
 
-
-
-
-
 import React, { useState, useEffect, useRef } from "react";
 import { MessageCircle, X, Send, User, Mail, Phone } from "lucide-react";
 
@@ -334,22 +324,25 @@ const Chatboat = () => {
     setIsTyping(true);
 
     try {
-      const response = await fetch("http://localhost:4002/bot/v1/message", {
+      const response = await fetch("https://oz-chatbot-backend2.onrender.com/bot/v1/message", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text: newUserMessage.text }),
       });
 
       const data = await response.json();
+      if (!response.ok) throw new Error(data.error || "Server error");
 
       setTimeout(() => {
-        const botMessage = {
-          id: messages.length + 2,
-          text: data.botMessage || "Sorry, I couldn’t understand.",
-          sender: "bot",
-          timestamp: new Date(),
-        };
-        setMessages((prev) => [...prev, botMessage]);
+        setMessages((prev) => [
+          ...prev,
+          {
+            id: prev.length + 1,
+            text: data.botMessage || "Sorry, I couldn’t understand.",
+            sender: "bot",
+            timestamp: new Date(),
+          },
+        ]);
         setIsTyping(false);
       }, 1500);
     } catch (error) {
@@ -357,7 +350,7 @@ const Chatboat = () => {
       setMessages((prev) => [
         ...prev,
         {
-          id: messages.length + 2,
+          id: prev.length + 1,
           text: "Server error. Please try again.",
           sender: "bot",
           timestamp: new Date(),
@@ -474,7 +467,9 @@ const Chatboat = () => {
                   <div
                     key={message.id}
                     className={`flex transition-all ${
-                      message.sender === "user" ? "justify-end" : "justify-start"
+                      message.sender === "user"
+                        ? "justify-end"
+                        : "justify-start"
                     }`}
                   >
                     <div
