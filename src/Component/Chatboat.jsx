@@ -266,6 +266,7 @@
 
 // export default Chatboat;
 
+// chatbot updated 
 import React, { useState, useEffect, useRef } from "react";
 import { MessageCircle, X, Send, User, Mail, Phone } from "lucide-react";
 
