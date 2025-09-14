@@ -55,11 +55,11 @@ const Chatboat = () => {
 
     try {
       const response = await fetch(
-        "https://oz-chatboat-backend.onrender.com/bot/v1/message", // new  correct renders  backend endpoint
+        "https://oz-chatboat-backend.onrender.com/chat",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ text: inputMessage }), // 
+          body: JSON.stringify({ message: inputMessage }), // ✅ match backend
         }
       );
 
@@ -67,7 +67,7 @@ const Chatboat = () => {
 
       const botMessage = {
         id: messages.length + 2,
-        text: data.botMessage || "Sorry, no reply received.",
+        text: data.reply || "Sorry, no reply received.", // ✅ backend sends {reply: answer}
         sender: "bot",
         timestamp: new Date(),
       };
