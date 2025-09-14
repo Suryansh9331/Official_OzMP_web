@@ -55,11 +55,11 @@ const Chatboat = () => {
 
     try {
       const response = await fetch(
-        "https://oz-chatboat-backend.onrender.com/bot/v1/message", // ✅ correct backend endpoint
+        "https://oz-chatboat-backend.onrender.com/bot/v1/message", // new  correct renders  backend endpoint
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ text: inputMessage }), // ✅ match backend field
+          body: JSON.stringify({ text: inputMessage }), //  match backend field
         }
       );
 
