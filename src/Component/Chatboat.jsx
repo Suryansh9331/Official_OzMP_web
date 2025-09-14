@@ -59,7 +59,7 @@ const Chatboat = () => {
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ text: inputMessage }), //  match backend field
+          body: JSON.stringify({ text: inputMessage }), // 
         }
       );
 
