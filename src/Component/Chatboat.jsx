@@ -40,54 +40,54 @@ const Chatboat = () => {
     setUserInfo((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSendMessage = async (e) => {
-    e.preventDefault();
-    if (inputMessage.trim()) {
-      const newUserMessage = {
-        id: messages.length + 1,
-        text: inputMessage,
-        sender: "user",
+ const handleSendMessage = async (e) => {
+  e.preventDefault();
+  if (inputMessage.trim()) {
+    const newUserMessage = {
+      id: messages.length + 1,
+      text: inputMessage,
+      sender: "user",
+      timestamp: new Date(),
+    };
+    setMessages((prev) => [...prev, newUserMessage]);
+    setInputMessage("");
+    setIsTyping(true);
+
+    try {
+      const response = await fetch(
+        "https://oz-chatboat-backend.onrender.com/bot/v1/message", // ✅ correct backend endpoint
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ text: inputMessage }), // ✅ match backend field
+        }
+      );
+
+      const data = await response.json();
+
+      const botMessage = {
+        id: messages.length + 2,
+        text: data.botMessage || "Sorry, no reply received.",
+        sender: "bot",
         timestamp: new Date(),
       };
-      setMessages((prev) => [...prev, newUserMessage]);
-      setInputMessage("");
-      setIsTyping(true);
-
-      try {
-        const response = await fetch(
-          "https://oz-chatboat-backend.onrender.com/api/chat",
-          {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ question: inputMessage }),
-          }
-        );
-
-        const data = await response.json();
-
-        const botMessage = {
+      setMessages((prev) => [...prev, botMessage]);
+    } catch (error) {
+      console.error("Error:", error);
+      setMessages((prev) => [
+        ...prev,
+        {
           id: messages.length + 2,
-          text: data.reply || "Sorry, no reply received.",
+          text: "Server error. Please try again.",
           sender: "bot",
           timestamp: new Date(),
-        };
-        setMessages((prev) => [...prev, botMessage]);
-      } catch (error) {
-        console.error("Error:", error);
-        setMessages((prev) => [
-          ...prev,
-          {
-            id: messages.length + 2,
-            text: "Server error. Please try again.",
-            sender: "bot",
-            timestamp: new Date(),
-          },
-        ]);
-      } finally {
-        setIsTyping(false);
-      }
+        },
+      ]);
+    } finally {
+      setIsTyping(false);
     }
-  };
+  }
+};
 
   const handleStartChat = () => {
     if (userInfo.name && userInfo.email && userInfo.phone) {
