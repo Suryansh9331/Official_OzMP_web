@@ -787,7 +787,7 @@ const Chatboat = () => {
                     }`}
                   >
                     <div
-                      className={`max-w-[75%] p-3 rounded-lg animate-fadeIn ${
+                      className={`max-w-[75%] p-3 rounded-lg animate-slidefade ${
                         message.sender === "user"
                           ? "bg-[#dcd4ff] rounded-br-none"
                           : "bg-gray-100 rounded-bl-none"
@@ -875,6 +875,16 @@ const Chatboat = () => {
           )}
         </div>
       </div>
+       {/* Animations */}
+ <style>{`
+   @keyframes slideFade {
+     from { opacity: 0; transform: translateY(8px); }
+     to { opacity: 1; transform: translateY(0); }
+   }
+   .animate-slideFade {
+     animation: slideFade 0.4s ease-out;
+   }
+       `}</style>
     </div>
   );
 };
