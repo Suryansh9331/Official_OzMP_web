@@ -652,7 +652,7 @@ const Chatboat = () => {
             setDisplayedText("");
             setIsTyping(false);
           }
-        }, 25); // slower speed
+        }, 10); // slower speed
       } catch (error) {
         console.error("Error:", error);
         setMessages((prev) => [
