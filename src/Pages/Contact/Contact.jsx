@@ -112,11 +112,11 @@
 //         >
 //           <div className="flex items-center gap-3">
 //             <FaEnvelope className="text-purple-600" />
-//             <span>info@ozmediaplanet.com.com</span>
+//             <span>hr@ozmediaplanet.com</span>
 //           </div>
 //           <div className="flex items-center gap-3">
 //             <FaPhoneAlt className="text-purple-600" />
-//             <span>+91 9876543210</span>
+//             <span>+91 9893361102</span>
 //           </div>
 //           <div className="flex items-center gap-3">
 //             <FaMapMarkerAlt className="text-purple-600" />
@@ -356,16 +356,23 @@ const Contact = () => {
           <div className="flex items-center gap-3">
             <FaEnvelope className="text-purple-600" />
             <a
-              href="mailto:info@ozmediaplanet.com.com"
+              href="mailto:hr@ozmediaplanet.com"
               className="hover:text-purple-800"
             >
-              info@ozmediaplanet.com.com
+              hr@ozmediaplanet.com
             </a>
           </div>
           <div className="flex items-center gap-3">
             <FaPhoneAlt className="text-purple-600" />
-            <a href="tel:+919876543210" className="hover:text-purple-800">
-              +91 9876543210
+            <a href="tel:+919893361102" className="hover:text-purple-800">
+              +91 9893361102
+            </a>
+          </div>
+          <div className="flex items-center gap-3">
+            <FaPhoneAlt className="text-purple-600" />
+            <span>HR Contact:</span>
+            <a href="tel:+919399333511" className="hover:text-purple-800">
+              +91 9399333511
             </a>
           </div>
           <div className="flex items-center gap-3">
@@ -495,7 +502,7 @@ const Contact = () => {
         className="fixed bottom-6 left-6 z-50 hidden md:block "
       >
         <a
-          href="mailto:info@ozmediaplanet.com.com"
+          href="mailto:hr@ozmediaplanet.com"
           className="flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-full shadow-lg md:animate-bounce  "
         >
           <FaEnvelope />
