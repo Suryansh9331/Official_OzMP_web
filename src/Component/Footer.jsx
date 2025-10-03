@@ -326,7 +326,7 @@ const Footer = () => {
 
             
               <a
-                href="https://wa.me/9893361102" 
+                href="https://wa.me/9399333511" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-700/50 hover:bg-[#DBD2FE] rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-green-500/20"
               >
@@ -352,7 +352,7 @@ const Footer = () => {
 
               
               <a
-                href="tel:+919893361102" 
+                href="tel:+919399333511" 
                 className="w-10 h-10 bg-gray-700/50 hover:bg-[#DBD2FE] rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20"
               >
                 <Phone className="w-5 h-5 text-gray-300 group-hover:text-[#1C1A1F] transition-colors duration-300" />
@@ -360,7 +360,7 @@ const Footer = () => {
 
              
               <a
-                href="mailto:info@ozmediaplanet.com" 
+                href="mailto:hr@ozmediaplanet.com" 
                 className="w-10 h-10 bg-gray-700/50 hover:bg-[#DBD2FE] rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-red-500/20"
               >
                 <Mail className="w-5 h-5 text-gray-300 group-hover:text-[#1C1A1F] transition-colors duration-300" />

@@ -479,7 +479,7 @@ export default function Navbar() {
                     <FaLinkedinIn size={20} />
                   </a>
                   <a
-                    href="https://wa.me/9893361102"
+                    href="https://wa.me/9399333511"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-full bg-gray-100 hover:bg-purple-200 transition"
@@ -487,7 +487,7 @@ export default function Navbar() {
                     <FaWhatsapp size={20} />
                   </a>
                   <a
-                    href="mailto:info@ozmediaplanet.com "
+                    href="mailto:hr@ozmediaplanet.com "
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-full bg-gray-100 hover:bg-purple-200 transition"

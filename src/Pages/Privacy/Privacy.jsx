@@ -265,12 +265,12 @@
 //               <div className={`bg-white/10 backdrop-blur-sm p-6 rounded-xl ${hoverEffect}`}>
 //                 <Mail className="w-8 h-8 mx-auto mb-4" />
 //                 <p className="font-['Inter'] font-semibold mb-2">General Inquiries</p>
-//                 <p className="font-['Poppins'] text-sm">info@ozmediaplanet.com</p>
+//                 <p className="font-['Poppins'] text-sm">hr@ozmediaplanet.com</p>
 //               </div>
 //               <div className={`bg-white/10 backdrop-blur-sm p-6 rounded-xl ${hoverEffect}`}>
 //                 <Phone className="w-8 h-8 mx-auto mb-4" />
 //                 <p className="font-['Inter'] font-semibold mb-2">Support Team</p>
-//                 <p className="font-['Poppins'] text-sm">support@ozmediaplanet.com</p>
+//                 <p className="font-['Poppins'] text-sm">hr@ozmediaplanet.com</p>
 //               </div>
 //             </div>
 //           </div>
@@ -291,8 +291,8 @@
 //               <div className={`bg-gray-800 p-6 rounded-xl ${hoverEffect}`}>
 //                 <Mail className="w-8 h-8 text-purple-400 mx-auto mb-4" />
 //                 <p className="font-['Inter'] font-semibold mb-2">Email Us</p>
-//                 <p className="font-['Poppins'] text-sm text-gray-300">info@ozmediaplanet.com</p>
-//                 <p className="font-['Poppins'] text-sm text-gray-300">support@ozmediaplanet.com</p>
+//                 <p className="font-['Poppins'] text-sm text-gray-300">hr@ozmediaplanet.com</p>
+//                 <p className="font-['Poppins'] text-sm text-gray-300">hr@ozmediaplanet.com</p>
 //               </div>
 //               <div className={`bg-gray-800 p-6 rounded-xl ${hoverEffect}`}>
 //                 <MapPin className="w-8 h-8 text-purple-400 mx-auto mb-4" />
@@ -413,7 +413,7 @@ const PrivacyPolicy = () => {
       id: 'contact',
       title: 'Contact Us',
       icon: <Mail className="w-6 h-6" />,
-      content: `Email: privacy@ozmediaplanet.com\nPhone: +91-XXXXXXXXXX`,
+      content: `Email: hr@ozmediaplanet.com\nPhone: +91-9399333511`,
     },
   ];
 
@@ -590,12 +590,12 @@ const PrivacyPolicy = () => {
               <div className={`bg-white/10 backdrop-blur-sm p-6 rounded-xl ${hoverEffect}`}>
                 <Mail className="w-8 h-8 mx-auto mb-4" />
                 <p className="font-['Inter'] font-semibold mb-2">General Inquiries</p>
-                <p className="font-['Poppins'] text-sm">info@ozmediaplanet.com</p>
+                <p className="font-['Poppins'] text-sm">hr@ozmediaplanet.com</p>
               </div>
               <div className={`bg-white/10 backdrop-blur-sm p-6 rounded-xl ${hoverEffect}`}>
                 <Phone className="w-8 h-8 mx-auto mb-4" />
                 <p className="font-['Inter'] font-semibold mb-2">Support Team</p>
-                <p className="font-['Poppins'] text-sm">support@ozmediaplanet.com</p>
+                <p className="font-['Poppins'] text-sm ">+91 9399333511</p>
               </div>
             </div>
           </div>
@@ -616,8 +616,8 @@ const PrivacyPolicy = () => {
               <div className={`bg-gray-800 p-6 rounded-xl ${hoverEffect}`}>
                 <Mail className="w-8 h-8 text-purple-400 mx-auto mb-4" />
                 <p className="font-['Inter'] font-semibold mb-2">Email Us</p>
-                <p className="font-['Poppins'] text-sm text-gray-300">info@ozmediaplanet.com</p>
-                <p className="font-['Poppins'] text-sm text-gray-300">support@ozmediaplanet.com</p>
+                <p className="font-['Poppins'] text-sm text-gray-300">hr@ozmediaplanet.com</p>
+                {/* <p className="font-['Poppins'] text-sm text-gray-300">hr@ozmediaplanet.com</p> */}
               </div>
               <div className={`bg-gray-800 p-6 rounded-xl ${hoverEffect}`}>
                 <MapPin className="w-8 h-8 text-purple-400 mx-auto mb-4" />

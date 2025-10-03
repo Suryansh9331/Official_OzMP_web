@@ -116,7 +116,7 @@
 //           </div>
 //           <div className="flex items-center gap-3">
 //             <FaPhoneAlt className="text-purple-600" />
-//             <span>+91 9893361102</span>
+//             <span>+91 9399333511</span>
 //           </div>
 //           <div className="flex items-center gap-3">
 //             <FaMapMarkerAlt className="text-purple-600" />
