@@ -14,6 +14,8 @@ export default {
           "100%": { transform: "translateY(0)", opacity: 1 },
         },
       },
+    
+
       transitionDelay: {
         75: "75ms",
         150: "150ms",
@@ -35,6 +37,7 @@ export default {
      borderRadius: {
       'xl': '1.25rem' // match reference image corner
     }
+    
     
     },
   },

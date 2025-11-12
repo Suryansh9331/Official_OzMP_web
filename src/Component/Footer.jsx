@@ -236,11 +236,16 @@ const footerSections = [
 ];
 
 const Footer = () => {
-  const [isChecked, setIsChecked] = useState(false);
+  // const [isChecked, setIsChecked] = useState(false);
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubscribed, setIsSubscribed] = useState(
+    localStorage.getItem("newsletter_subscribed") === "true"
+  );
 
   return (
     <footer className="relative bg-[#1C1A1F] text-white font-body overflow-hidden">
-     
       <div className="absolute inset-0 opacity-5 bg-grid-pattern pointer-events-none z-0"></div>
       <div className="border-t border-gray-700 mt-12  mx-4 max-w-full"></div>
       <div className="relative z-10 w-full mx-auto px-6 lg:py-16 md:py-12 py-8 ">
@@ -273,7 +278,8 @@ const Footer = () => {
               measurable results in the ever-evolving digital landscape.
             </p>
 
-            <div className="mb-6 p-4 bg-gray-800/50 rounded-none border border-gray-700/50">
+            {/* newsletter */}
+            {/* <div className="mb-6 p-4 bg-gray-800/50 rounded-none border border-gray-700/50">
               <h4 className="text-[#DBD2FE] font-medium mb-3 font-heading">
                 Stay Updated
               </h4>
@@ -311,12 +317,99 @@ const Footer = () => {
                   Subscribe to our newsletter for latest updates
                 </span>
               </div>
+            </div> */}
+
+            {/* newsletter */}
+            {/* newsletter */}
+            <div className="mb-6 p-4 bg-gray-800/50 rounded-none border border-gray-700/50">
+              <h4 className="text-[#DBD2FE] font-medium mb-3 font-heading">
+                Stay Updated
+              </h4>
+
+              {!isSubscribed ? (
+                <form
+                  onSubmit={async (e) => {
+                    e.preventDefault();
+                    if (!email.trim())
+                      return setMessage("Please enter a valid email.");
+                    setIsSubmitting(true);
+                    setMessage("Submitting...");
+
+                    try {
+                      const res = await fetch(
+                        "https://sheetdb.io/api/v1/n401g8fmyono6",
+                        {
+                          method: "POST",
+                          headers: { "Content-Type": "application/json" },
+                          body: JSON.stringify({ data: [{ email }] }),
+                        }
+                      );
+
+                      if (res.ok) {
+                        setMessage("🎉 Thanks for subscribing!");
+                        localStorage.setItem("newsletter_subscribed", "true");
+                        setIsSubscribed(true);
+                        setEmail("");
+                      } else {
+                        setMessage("⚠️ Something went wrong. Try again.");
+                      }
+                    } catch (err) {
+                      console.error(err);
+                      setMessage("❌ Error connecting to server.");
+                    } finally {
+                      setIsSubmitting(false);
+                    }
+                  }}
+                  className="space-y-3"
+                >
+                  <div className="flex items-center space-x-2">
+                    <input
+                      type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="Enter your email"
+                      className="w-full px-3 py-2 rounded-md bg-gray-900 text-gray-200 border border-gray-700 focus:outline-none focus:border-[#DBD2FE] text-sm"
+                      disabled={isSubmitting}
+                      required
+                    />
+                    <button
+                      type="submit"
+                      disabled={isSubmitting}
+                      className="px-4 py-2 text-sm rounded-md bg-[#DBD2FE] hover:bg-[#C7B8FD] text-black transition-all duration-300 disabled:opacity-70"
+                    >
+                      {isSubmitting ? "..." : "Subscribe"}
+                    </button>
+                  </div>
+                  {message && (
+                    <p className="text-xs text-gray-400 mt-1 animate-fadeIn">
+                      {message}
+                    </p>
+                  )}
+                </form>
+              ) : (
+                <div className="flex items-center space-x-2 bg-gray-900/60 px-4 py-2 rounded-md border border-gray-700 animate-fadeIn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-5 h-5 text-green-400"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  <span className="text-green-400 text-sm font-medium">
+                    Subscribed ✓
+                  </span>
+                </div>
+              )}
             </div>
 
-           
             <div className="flex flex-wrap gap-3 mt-4">
               <a
-                href="https://www.linkedin.com/company/oz-media-planet-1/" 
+                href="https://www.linkedin.com/company/oz-media-planet-1/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-700/50 hover:bg-[#DBD2FE] rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-[#DBD2FE]/20"
@@ -324,9 +417,8 @@ const Footer = () => {
                 <Linkedin className="w-5 h-5 text-gray-300 group-hover:text-[#1C1A1F] transition-colors duration-300" />
               </a>
 
-            
               <a
-                href="https://wa.me/9399333511" 
+                href="https://wa.me/9399333511"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-700/50 hover:bg-[#DBD2FE] rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-green-500/20"
               >
@@ -340,9 +432,8 @@ const Footer = () => {
                 </svg>
               </a>
 
-            
               <a
-                href=" https://www.instagram.com/ozmediaplanet?igsh=ZmczbzR1cGVtemty&utm_source=qr" 
+                href=" https://www.instagram.com/ozmediaplanet?igsh=ZmczbzR1cGVtemty&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-700/50 hover:bg-[#DBD2FE] rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-pink-500/20"
@@ -350,17 +441,15 @@ const Footer = () => {
                 <Instagram className="w-5 h-5 text-gray-300 group-hover:text-[#1C1A1F] transition-colors duration-300" />
               </a>
 
-              
               <a
-                href="tel:+919399333511" 
+                href="tel:+919399333511"
                 className="w-10 h-10 bg-gray-700/50 hover:bg-[#DBD2FE] rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20"
               >
                 <Phone className="w-5 h-5 text-gray-300 group-hover:text-[#1C1A1F] transition-colors duration-300" />
               </a>
 
-             
               <a
-                href="mailto:hr@ozmediaplanet.com" 
+                href="mailto:hr@ozmediaplanet.com"
                 className="w-10 h-10 bg-gray-700/50 hover:bg-[#DBD2FE] rounded-md flex items-center justify-center transition-all duration-300 group hover:scale-110 hover:shadow-lg hover:shadow-red-500/20"
               >
                 <Mail className="w-5 h-5 text-gray-300 group-hover:text-[#1C1A1F] transition-colors duration-300" />
@@ -368,7 +457,6 @@ const Footer = () => {
             </div>
           </div>
 
-          
           {footerSections.map((section, idx) => (
             <div key={idx}>
               <h3 className="text-lg font-semibold mb-4 text-[#DBD2FE] font-heading">
